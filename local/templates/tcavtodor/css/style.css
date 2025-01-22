@@ -605,6 +605,14 @@ body {
   position: relative;
 }
 
+.slider-item-show4 {
+  --swiffy-slider-item-count: 4;
+}
+
+.slider-item-show3 {
+  --swiffy-slider-item-count: 3;
+}
+
 .aspect-16-9 {
   aspect-ratio: 16 / 9;
 }
@@ -830,10 +838,6 @@ body {
 
 .z-\[110\] {
   z-index: 110;
-}
-
-.col-span-3 {
-  grid-column: span 3 / span 3;
 }
 
 .float-start {
@@ -1083,10 +1087,6 @@ body {
   height: 2rem;
 }
 
-.h-\[23\.5rem\] {
-  height: 23.5rem;
-}
-
 .h-\[7\.5rem\] {
   height: 7.5rem;
 }
@@ -1130,10 +1130,6 @@ body {
 
 .w-0 {
   width: 0px;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .w-10 {
@@ -1656,10 +1652,6 @@ body {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-cols-4 {
@@ -2909,11 +2901,6 @@ body {
   line-height: 2.5rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -3520,6 +3507,11 @@ body {
   container-type: inline-size;
 }
 
+.\@container\/body {
+  container-type: inline-size;
+  container-name: body;
+}
+
 .\@container\/footer {
   container-type: inline-size;
   container-name: footer;
@@ -3533,6 +3525,11 @@ body {
 .\@container\/main {
   container-type: inline-size;
   container-name: main;
+}
+
+.\@container\/card {
+  container-type: inline-size;
+  container-name: card;
 }
 
 .animation-delay-\[0\.5s\] {
@@ -3569,6 +3566,62 @@ body {
 
 .animation-delay-\[4s\] {
   animation-delay: 4s;
+}
+
+@container body (min-width: 20rem) {
+  .\@xs\/body\:slider-item-show1 {
+    --swiffy-slider-item-count: 1;
+  }
+}
+
+@container header (min-width: 20rem) {
+  .\@xs\/header\:zoom-75 {
+    zoom: 0.75;
+  }
+}
+
+@container (min-width: 20rem) {
+  .\@xs\:aspect-16-9 {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@container body (min-width: 48rem) {
+  .\@3xl\/body\:slider-item-show2 {
+    --swiffy-slider-item-count: 2;
+  }
+}
+
+@container body (min-width: 56rem) {
+  .\@4xl\/body\:slider-item-show3 {
+    --swiffy-slider-item-count: 3;
+  }
+}
+
+@container (min-width: 56rem) {
+  .\@4xl\:aspect-1-1 {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+@container header (min-width: 64rem) {
+  .\@5xl\/header\:zoom-full {
+    zoom: 1;
+  }
+}
+
+@container body (min-width: 72rem) {
+  .\@6xl\/body\:zoom-150 {
+    zoom: 1.5;
+  }
+
+  .\@6xl\/body\:slider-item-show4 {
+    --swiffy-slider-item-count: 4;
+  }
+
+  .\@6xl\/body\:slider-item-show3 {
+    --swiffy-slider-item-count: 3;
+  }
 }
 
 @media (min-width: 640px) {
@@ -4016,14 +4069,140 @@ body {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
+@container body (min-width: 20rem) {
+  .\@xs\/body\:order-1 {
+    order: 1;
+  }
+
+  .\@xs\/body\:order-2 {
+    order: 2;
+  }
+
+  .\@xs\/body\:order-3 {
+    order: 3;
+  }
+
+  .\@xs\/body\:order-4 {
+    order: 4;
+  }
+
+  .\@xs\/body\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .\@xs\/body\:contents {
+    display: contents;
+  }
+
+  .\@xs\/body\:h-\[16rem\] {
+    height: 16rem;
+  }
+
+  .\@xs\/body\:w-max {
+    width: -moz-max-content;
+    width: max-content;
+  }
+
+  .\@xs\/body\:grid-cols-full {
+    grid-template-columns: 100%;
+  }
+
+  .\@xs\/body\:flex-col {
+    flex-direction: column;
+  }
+
+  .\@xs\/body\:items-center {
+    align-items: center;
+  }
+
+  .\@xs\/body\:justify-center {
+    justify-content: center;
+  }
+
+  .\@xs\/body\:gap-16 {
+    gap: 4rem;
+  }
+
+  .\@xs\/body\:overflow-x-scroll {
+    overflow-x: scroll;
+  }
+
+  .\@xs\/body\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .\@xs\/body\:pb-2 {
+    padding-bottom: 0.5rem;
+  }
+
+  .\@xs\/body\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .\@xs\/body\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .\@xs\/body\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@container card (min-width: 20rem) {
+  .\@xs\/card\:grid-cols-full {
+    grid-template-columns: 100%;
+  }
+
+  .\@xs\/card\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
 @container footer (min-width: 20rem) {
+  .\@xs\/footer\:grid-cols-full {
+    grid-template-columns: 100%;
+  }
+
+  .\@xs\/footer\:flex-col {
+    flex-direction: column;
+  }
+
+  .\@xs\/footer\:gap-8 {
+    gap: 2rem;
+  }
+
   .\@xs\/footer\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  .\@xs\/footer\:pt-0 {
+    padding-top: 0px;
+  }
 }
 
 @container header (min-width: 20rem) {
+  .\@xs\/header\:hidden {
+    display: none;
+  }
+
+  .\@xs\/header\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .\@xs\/header\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .\@xs\/header\:gap-4 {
+    gap: 1rem;
+  }
+
   .\@xs\/header\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -4033,6 +4212,12 @@ body {
 @container main (min-width: 20rem) {
   .\@xs\/main\:grid-cols-full {
     grid-template-columns: 100%;
+  }
+}
+
+@container header (min-width: 24rem) {
+  .\@sm\/header\:gap-4 {
+    gap: 1rem;
   }
 }
 
@@ -4046,6 +4231,16 @@ body {
   }
 }
 
+@container footer (min-width: 32rem) {
+  .\@lg\/footer\:gap-4 {
+    gap: 1rem;
+  }
+
+  .\@lg\/footer\:pt-9 {
+    padding-top: 2.25rem;
+  }
+}
+
 @container (min-width: 36rem) {
   .\@xl\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -4056,7 +4251,105 @@ body {
   }
 }
 
+@container body (min-width: 42rem) {
+  .\@2xl\/body\:grid-cols-1fr-1fr {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .\@2xl\/body\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .\@2xl\/body\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@container footer (min-width: 42rem) {
+  .\@2xl\/footer\:grid-cols-auto-auto {
+    grid-template-columns: auto auto;
+  }
+
+  .\@2xl\/footer\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@container header (min-width: 42rem) {
+  .\@2xl\/header\:gap-4 {
+    gap: 1rem;
+  }
+}
+
+@container body (min-width: 48rem) {
+  .\@3xl\/body\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@container footer (min-width: 48rem) {
+  .\@3xl\/footer\:grid-cols-auto-auto {
+    grid-template-columns: auto auto;
+  }
+
+  .\@3xl\/footer\:flex-col {
+    flex-direction: column;
+  }
+}
+
+@container body (min-width: 56rem) {
+  .\@4xl\/body\:flex-row {
+    flex-direction: row;
+  }
+
+  .\@4xl\/body\:flex-col {
+    flex-direction: column;
+  }
+
+  .\@4xl\/body\:items-start {
+    align-items: flex-start;
+  }
+
+  .\@4xl\/body\:justify-normal {
+    justify-content: normal;
+  }
+}
+
+@container body (min-width: 64rem) {
+  .\@5xl\/body\:grid {
+    display: grid;
+  }
+
+  .\@5xl\/body\:w-auto {
+    width: auto;
+  }
+
+  .\@5xl\/body\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .\@5xl\/body\:overflow-x-auto {
+    overflow-x: auto;
+  }
+
+  .\@5xl\/body\:pb-0 {
+    padding-bottom: 0px;
+  }
+}
+
 @container footer (min-width: 64rem) {
+  .\@5xl\/footer\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .\@5xl\/footer\:gap-12 {
+    gap: 3rem;
+  }
+
+  .\@5xl\/footer\:gap-y-20 {
+    row-gap: 5rem;
+  }
+
   .\@5xl\/footer\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -4065,9 +4358,25 @@ body {
   .\@5xl\/footer\:pl-\[4\.5rem\] {
     padding-left: 4.5rem;
   }
+
+  .\@5xl\/footer\:pt-9 {
+    padding-top: 2.25rem;
+  }
 }
 
 @container header (min-width: 64rem) {
+  .\@5xl\/header\:block {
+    display: block;
+  }
+
+  .\@5xl\/header\:flex {
+    display: flex;
+  }
+
+  .\@5xl\/header\:gap-20 {
+    gap: 5rem;
+  }
+
   .\@5xl\/header\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -4075,6 +4384,103 @@ body {
 
   .\@5xl\/header\:pl-\[4\.5rem\] {
     padding-left: 4.5rem;
+  }
+}
+
+@container body (min-width: 72rem) {
+  .\@6xl\/body\:-order-none {
+    order: 0;
+  }
+
+  .\@6xl\/body\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .\@6xl\/body\:mb-32 {
+    margin-bottom: 8rem;
+  }
+
+  .\@6xl\/body\:flex {
+    display: flex;
+  }
+
+  .\@6xl\/body\:grid {
+    display: grid;
+  }
+
+  .\@6xl\/body\:h-\[23\.5rem\] {
+    height: 23.5rem;
+  }
+
+  .\@6xl\/body\:grid-cols-1fr-1fr {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .\@6xl\/body\:grid-cols-full {
+    grid-template-columns: 100%;
+  }
+
+  .\@6xl\/body\:gap-32 {
+    gap: 8rem;
+  }
+
+  .\@6xl\/body\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .\@6xl\/body\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@container card (min-width: 72rem) {
+  .\@6xl\/card\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .\@6xl\/card\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@container footer (min-width: 80rem) {
+  .\@7xl\/footer\:grid-cols-auto-1fr {
+    grid-template-columns: auto 1fr;
+  }
+
+  .\@7xl\/footer\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .\@7xl\/footer\:pl-\[4\.5rem\] {
+    padding-left: 4.5rem;
+  }
+}
+
+@container header (min-width: 80rem) {
+  .\@7xl\/header\:flex {
+    display: flex;
+  }
+
+  .\@7xl\/header\:justify-normal {
+    justify-content: normal;
+  }
+}
+
+@container footer (min-width: 90rem) {
+  .\@8xl\/footer\:gap-32 {
+    gap: 8rem;
+  }
+}
+
+@container (min-width: 90rem) {
+  .\@8xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 

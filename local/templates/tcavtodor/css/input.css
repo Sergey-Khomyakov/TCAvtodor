@@ -35,6 +35,34 @@
         position: relative;
     }
 
+    .zoom-full {
+        zoom: 1;
+    }
+
+    .zoom-75 {
+        zoom: 0.75;
+    }
+
+    .zoom-150 {
+        zoom: 1.5;
+    }
+
+    .slider-item-show4 {
+        --swiffy-slider-item-count: 4;
+    }
+
+    .slider-item-show3 {
+        --swiffy-slider-item-count: 3;
+    }
+
+    .slider-item-show2 {
+        --swiffy-slider-item-count: 2;
+    }
+
+    .slider-item-show1 {
+        --swiffy-slider-item-count: 1;
+    }
+
     .aspect-16-9 {
         aspect-ratio: 16 / 9;
     }

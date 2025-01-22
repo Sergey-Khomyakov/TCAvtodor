@@ -12,7 +12,7 @@
   <body class="overflow-x-hidden bg-white">
     <div id="content-wrapper">
       <header class="@container/header border-b border-secondary pb-1 sticky top-0 z-10 bg-white">
-        <div class="@xs/header:px-4 @5xl/header:px-8 @5xl/header:pl-[4.5rem] h-16 w-full grid grid-cols-auto-1fr items-center gap-20"><a href="index.html">
+        <div class="@xs/header:px-4 @5xl/header:px-8 @5xl/header:pl-[4.5rem] h-16 w-full grid grid-cols-auto-1fr items-center @xs/header:gap-4 @5xl/header:gap-20"><a class="@xs/header:zoom-75 @5xl/header:zoom-full" href="index.html">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="256" height="50" version="1.1">
               <g class="layer">
                 <g id="svg_39" transform="translate(-11 -14) translate(261.873 17.2427) matrix(0.12025 0 0 0.12025 -247.287 -40.6059)">
@@ -57,8 +57,8 @@
                 </g>
               </g>
             </svg></a>
-          <div class="grid grid-cols-1fr-auto gap-4">
-            <div class="flex flex-wrap gap-4 items-center w-full h-full">
+          <div class="grid grid-cols-1fr-auto @sm/header:gap-4">
+            <div class="@xs/header:hidden @7xl/header:flex flex-wrap gap-4 items-center w-full h-full">
               <div class="rounded-lg relative w-max h-full p-2 flex items-center gap-2 bg-gradient-orange">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="none">
                   <path d="M11 8H27" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -70,21 +70,21 @@
                 </svg>
                 <p class="font-Helvetica font-medium text-white">Каталог программ</p><a class="inset-0 absolute top-0 left-0" href="katalog-napravlenij.html"></a>
               </div>
-              <div class="rounded-lg relative w-max h-full p-2 flex items-center gap-2 border border-black group hover:border-primary">
+              <div class="rounded-lg relative w-max h-full p-2 flex  items-center gap-2 border border-black group hover:border-primary">
                 <p class="font-Helvetica font-medium text-black group-hover:text-primary">Об Учебном центре</p><a class="inset-0 absolute top-0 left-0" href="ob-uchebnom-centre.html"></a>
               </div>
-              <div class="rounded-lg relative w-max h-full p-2 flex items-center gap-2 border border-black group hover:border-primary">
-                <p class="font-Helvetica font-medium text-black group-hover:text-primary">Контакты</p><a class="inset-0 absolute top-0 left-0" href="kontakty.html"></a>
+              <div class="rounded-lg relative w-max h-full p-2 flex  items-center gap-2 border border-black group hover:border-primary">
+                <p class="font-Helvetica font-medium text-black group-hover:text-primary  ">Контакты</p><a class="inset-0 absolute top-0  left-0" href="kontakty.html"></a>
               </div>
             </div>
-            <div class="flex flex-wrap gap-4 items-center w-full h-full">
-              <div class="relative w-max h-max">
+            <div class="flex flex-wrap @xs/header:gap-2 @2xl/header:gap-4 items-center w-full h-full @xs/header:justify-end @7xl/header:justify-normal  ">
+              <div class="@xs/header:hidden @5xl/header:block relative w-max h-max">
                 <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 6.99902C6 6.99902 2 16 2 16C2 16 6 24.999 16 24.999C26 24.999 30 16 30 16C30 16 26 6.99902 16 6.99902Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                   <path d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg><a class="inset-0 absolute top-0 left-0" href="#"></a>
               </div>
-              <div class="rounded-lg relative w-max h-full p-2 flex items-center gap-2 border border-black group hover:border-primary" dialog-btn="registration">
+              <div class="@xs/header:hidden rounded-lg relative w-max h-full p-2 @5xl/header:flex items-center gap-2 border border-black group hover:border-primary" dialog-btn="registration">
                 <p class="font-Helvetica font-medium text-black group-hover:text-primary">Регистрация</p><a class="inset-0 absolute top-0 left-0" href="#"></a>
               </div>
               <div class="rounded-lg relative w-max h-full p-2 flex items-center gap-2 border border-black group hover:border-primary" dialog-btn="login">
@@ -163,33 +163,35 @@
           </template>
         </div>
       </dialog>
-      <main>
-        <div class="flex flex-col gap-32 mb-32">
+      <main class="@container/body overflow-hidden">
+        <div class="@xs/body:px-4 @8xl:px-0 flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32">
           <div class="container mx-auto flex flex-col gap-8 pt-10">
-            <div class="grid grid-cols-1fr-1fr gap-8">
-              <div class="flex flex-col gap-4">
-                <h1 class="font-Helvetica font-semibold text-5xl text-black text-center">Из опыта в знания</h1>
-                <p class="font-Helvetica font-medium text-base text-black text-center">Учебный центр ООО "Автодор-Инжиниринг"</p>
+            <div class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8">
+              <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr @6xl/body:grid-cols-full gap-4">
+                <div class="flex flex-col gap-4">
+                  <h1 class="font-Helvetica font-semibold @xs/body:text-3xl @6xl/body:text-5xl text-black text-center text-balance">Из опыта в знания</h1>
+                  <p class="font-Helvetica font-medium text-base text-black text-center">Учебный центр ООО "Автодор-Инжиниринг"</p>
+                </div>
                 <div class="swiffy-slider slider-indicators-round slider-nav-round slider-nav-noloop w-full h-full rounded-lg overflow-hidden" id="slider1">
                   <div class="slider-container">
-                    <div class="w-full flex flex-col shadow-md h-[23.5rem] relative">
+                    <div class="w-full flex flex-col shadow-md @xs/body:h-[16rem] @6xl/body:h-[23.5rem] relative">
                       <p class="font-Helvetica font-medium text-base text-black p-4 bg-white/80 w-full absolute top-0 left-0">4 000 партнёров уже предложили практику и сделали офер лучшим студентам</p><img class="w-full h-full object-cover" src="./local/templates/tcavtodor/img/other/755644626481422.jpeg"><a class=" absolute left-0 top-0 inset-0" href="news.html"></a>
                     </div>
-                    <div class="w-full flex flex-col shadow-md h-[23.5rem] relative">
+                    <div class="w-full flex flex-col shadow-md @xs/body:h-[16rem] @6xl/body:h-[23.5rem] relative">
                       <p class="font-Helvetica font-medium text-base text-black p-4 bg-white/80 w-full absolute top-0 left-0">Формат «живого» общения с экспертами, чтобы обсудить вопросы и сложные темы</p><img class="w-full h-full object-cover" src="./local/templates/tcavtodor/img/other/original-20g.jpg"><a class=" absolute left-0 top-0 inset-0" href="news.html"></a>
                     </div>
-                    <div class="w-full flex flex-col shadow-md h-[23.5rem] relative">
+                    <div class="w-full flex flex-col shadow-md @xs/body:h-[16rem] @6xl/body:h-[23.5rem] relative">
                       <p class="font-Helvetica font-medium text-base text-black p-4 bg-white/80 w-full absolute top-0 left-0">4 000 партнёров уже предложили практику и сделали офер лучшим студентам</p><img class="w-full h-full object-cover" src="./local/templates/tcavtodor/img/other/Rectangle 76634.png"><a class=" absolute left-0 top-0 inset-0" href="news.html"></a>
                     </div>
                   </div>
-                  <div class="slider-indicators">
+                  <div class="slider-indicators flex">
                     <button class="active"></button>
                     <button></button>
                     <button></button>
                   </div>
                 </div>
               </div>
-              <div class="grid grid-cols-3 gap-4">
+              <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-2 @5xl/body:grid-cols-3 gap-4">
                 <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden">
                   <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 8V18" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -225,7 +227,7 @@
                     <p class="font-Helvetica font-medium text-black text-xl">Страть Партнером </p>
                   </div><a class="absolute top-0 left-0 inset-0" href="partneram.html" target="_blank"></a>
                 </div>
-                <div class="grid grid-cols-2 gap-4 col-span-3">
+                <div class="contents @6xl/body:grid grid-cols-2 gap-4 @6xl/body:col-span-3">
                   <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer overflow-hidden">
                     <div class="flex flex-wrap gap-2 items-center">
                       <p class="font-Helvetica font-medium text-black text-xl">3D Практикум</p>
@@ -251,7 +253,7 @@
                     </div><a class="absolute top-0 left-0 inset-0" href="udostoverenie-gos.obrazca.html" target="_blank"></a>
                   </div>
                 </div>
-                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative col-span-3 cursor-pointer overflow-hidden">
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative @6xl/body:col-span-3 cursor-pointer overflow-hidden">
                   <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19 14H24" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
                     <path d="M19 18H24" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -265,104 +267,106 @@
                 </div>
               </div>
             </div>
-            <div class="grid grid-cols-3 gap-4">
-              <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
-                <p class="font-Helvetica font-medium text-black text-lg text-balance">Содержание искусственных сооружений</p>
-                <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
-                  <p class="font-Helvetica font-medium text-sm text-primary">7 программ</p>
-                  <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
-              </article>
-              <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
-                <p class="font-Helvetica font-medium text-black text-lg text-balance">Строительство автомобильных дорог и ИССО </p>
-                <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
-                  <p class="font-Helvetica font-medium text-sm text-primary">7 программ</p>
-                  <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
-              </article>
-              <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
-                <p class="font-Helvetica font-medium text-black text-lg text-balance">Экология</p>
-                <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
-                  <p class="font-Helvetica font-medium text-sm text-primary">7 программ</p>
-                  <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
-              </article>
-              <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
-                <p class="font-Helvetica font-medium text-black text-lg text-balance">Содержание автомобильных дорог</p>
-                <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
-                  <p class="font-Helvetica font-medium text-sm text-primary">7 программ</p>
-                  <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
-              </article>
-              <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
-                <p class="font-Helvetica font-medium text-black text-lg text-balance">Изыскания и проектирование</p>
-                <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
-                  <p class="font-Helvetica font-medium text-sm text-primary">7 программ</p>
-                  <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
-              </article>
-              <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
-                <p class="font-Helvetica font-medium text-black text-lg text-balance">Иммерсивные технологии</p>
-                <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
-                  <p class="font-Helvetica font-medium text-sm text-primary">7 программ</p>
-                  <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
-              </article>
-              <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
-                <p class="font-Helvetica font-medium text-black text-lg text-balance">Строительные материлаы и оборудование</p>
-                <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
-                  <p class="font-Helvetica font-medium text-sm text-primary">7 программ</p>
-                  <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
-              </article>
-              <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
-                <p class="font-Helvetica font-medium text-black text-lg text-balance">Строительный, геодезический и лабораторный контроль</p>
-                <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
-                  <p class="font-Helvetica font-medium text-sm text-primary">7 программ</p>
-                  <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
-              </article>
-              <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
-                <p class="font-Helvetica font-medium text-black text-lg text-balance">Программное обеспечение общего пользования</p>
-                <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
-                  <p class="font-Helvetica font-medium text-sm text-primary">7 программ</p>
-                  <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
-              </article>
+            <div class="@xs/body:pb-2 @5xl/body:pb-0 @xs/body:overflow-x-scroll @5xl/body:overflow-x-auto">
+              <div class="flex @xs/body:w-max @5xl/body:w-auto @5xl/body:grid @5xl/body:grid-cols-3 gap-4  ">
+                <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
+                  <p class="font-Helvetica font-medium text-black text-lg text-balance">Содержание искусственных сооружений</p>
+                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
+                    <p class="font-Helvetica font-medium text-sm text-primary">7 программ</p>
+                    <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
+                </article>
+                <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
+                  <p class="font-Helvetica font-medium text-black text-lg text-balance">Строительство автомобильных дорог и ИССО </p>
+                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
+                    <p class="font-Helvetica font-medium text-sm text-primary">7 программ</p>
+                    <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
+                </article>
+                <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
+                  <p class="font-Helvetica font-medium text-black text-lg text-balance">Экология</p>
+                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
+                    <p class="font-Helvetica font-medium text-sm text-primary">7 программ</p>
+                    <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
+                </article>
+                <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
+                  <p class="font-Helvetica font-medium text-black text-lg text-balance">Содержание автомобильных дорог</p>
+                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
+                    <p class="font-Helvetica font-medium text-sm text-primary">7 программ</p>
+                    <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
+                </article>
+                <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
+                  <p class="font-Helvetica font-medium text-black text-lg text-balance">Изыскания и проектирование</p>
+                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
+                    <p class="font-Helvetica font-medium text-sm text-primary">7 программ</p>
+                    <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
+                </article>
+                <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
+                  <p class="font-Helvetica font-medium text-black text-lg text-balance">Иммерсивные технологии</p>
+                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
+                    <p class="font-Helvetica font-medium text-sm text-primary">7 программ</p>
+                    <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
+                </article>
+                <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
+                  <p class="font-Helvetica font-medium text-black text-lg text-balance">Строительные материлаы и оборудование</p>
+                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
+                    <p class="font-Helvetica font-medium text-sm text-primary">7 программ</p>
+                    <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
+                </article>
+                <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
+                  <p class="font-Helvetica font-medium text-black text-lg text-balance">Строительный, геодезический и лабораторный контроль</p>
+                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
+                    <p class="font-Helvetica font-medium text-sm text-primary">7 программ</p>
+                    <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
+                </article>
+                <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
+                  <p class="font-Helvetica font-medium text-black text-lg text-balance">Программное обеспечение общего пользования</p>
+                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
+                    <p class="font-Helvetica font-medium text-sm text-primary">7 программ</p>
+                    <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
+                </article>
+              </div>
             </div>
           </div>
           <div class="container mx-auto flex flex-col gap-8">
-            <h2 class="font-Helvetica font-semibold text-4xl text-black">Наши популярные программы</h2>
-            <div class="swiffy-slider slider-indicators-round slider-indicators-outside slider-nav-round slider-nav-noloop slider-custom-1 slider-item-show4 slider-indicators-dark">
+            <h2 class="font-Helvetica font-semibold  @xs/body:text-2xl @6xl/body:text-4xl text-black">Наши популярные программы</h2>
+            <div class="swiffy-slider slider-indicators-round slider-indicators-outside slider-nav-round slider-nav-noloop slider-custom-1 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark">
               <div class="slider-container pb-1">
-                <article class="flex flex-col gap-4 w-full"><img class="w-full aspect-1-1 rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка продукта"/>
+                <article class="flex flex-col gap-4 w-full"><img class="w-full @xs:aspect-16-9 @4xl:aspect-1-1 rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка продукта"/>
                   <div class="flex flex-col gap-2">
                     <div class="flex items-center justify-between gap-4 w-full">
                       <p class="font-Helvetica font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Курс</p>
@@ -386,7 +390,7 @@
                     </div>
                   </div><a class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Helvetica font-medium text-base text-center" href="kartochka-programmy.html">Подробнее</a>
                 </article>
-                <article class="flex flex-col gap-4 w-full"><img class="w-full aspect-1-1 rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка продукта"/>
+                <article class="flex flex-col gap-4 w-full"><img class="w-full @xs:aspect-16-9 @4xl:aspect-1-1 rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка продукта"/>
                   <div class="flex flex-col gap-2">
                     <div class="flex items-center justify-between gap-4 w-full">
                       <p class="font-Helvetica font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Курс</p>
@@ -410,7 +414,7 @@
                     </div>
                   </div><a class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Helvetica font-medium text-base text-center" href="kartochka-programmy.html">Подробнее</a>
                 </article>
-                <article class="flex flex-col gap-4 w-full"><img class="w-full aspect-1-1 rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка продукта"/>
+                <article class="flex flex-col gap-4 w-full"><img class="w-full @xs:aspect-16-9 @4xl:aspect-1-1 rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка продукта"/>
                   <div class="flex flex-col gap-2">
                     <div class="flex items-center justify-between gap-4 w-full">
                       <p class="font-Helvetica font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Курс</p>
@@ -434,7 +438,7 @@
                     </div>
                   </div><a class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Helvetica font-medium text-base text-center" href="kartochka-programmy.html">Подробнее</a>
                 </article>
-                <article class="flex flex-col gap-4 w-full"><img class="w-full aspect-1-1 rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка продукта"/>
+                <article class="flex flex-col gap-4 w-full"><img class="w-full @xs:aspect-16-9 @4xl:aspect-1-1 rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка продукта"/>
                   <div class="flex flex-col gap-2">
                     <div class="flex items-center justify-between gap-4 w-full">
                       <p class="font-Helvetica font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Курс</p>
@@ -466,9 +470,9 @@
             <button class="bg-gradient-orange text-white rounded-lg p-4 px-6 text-xl w-max mx-auto" dialog-btn="consultation" type="button">Получить консультацию</button>
           </div>
           <div class="container mx-auto flex flex-col gap-8">
-            <h2 class="font-Helvetica font-semibold text-4xl text-black text-center text-pr">Этапы обучения</h2>
-            <div class="flex gap-3 justify-center" style="zoom: 1.5">
-              <article class="flex flex-col gap-4 relative">
+            <h2 class="font-Helvetica font-semibold  @xs/body:text-2xl @6xl/body:text-4xl text-black text-center text-pr">Этапы обучения</h2>
+            <div class="flex @xs/body:flex-col @4xl/body:flex-row gap-3 justify-center @6xl/body:zoom-150">
+              <article class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative">
                 <svg width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
                   <g class="layer" id="svg_3">
                     <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="none" id="svg_1" stroke="#000000"></path>
@@ -477,7 +481,7 @@
                 </svg>
                 <p class="font-Helvetica font-medium text-sm text-black w-36 text-balance pl-2">Выбираете программу</p>
               </article>
-              <article class="flex flex-col gap-4 relative">
+              <article class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative">
                 <svg width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
                   <g class="layer" id="svg_3">
                     <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="none" id="svg_1" stroke="#000000"></path>
@@ -486,7 +490,7 @@
                 </svg>
                 <p class="font-Helvetica font-medium text-sm text-black w-36 text-balance pl-2">Подписываете договор и вносите оплату</p>
               </article>
-              <article class="flex flex-col gap-4 relative">
+              <article class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative">
                 <svg width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
                   <g class="layer" id="svg_3">
                     <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="none" id="svg_1" stroke="#000000"></path>
@@ -495,7 +499,7 @@
                 </svg>
                 <p class="font-Helvetica font-medium text-sm text-black w-36 text-balance pl-2">Проходите обучение</p>
               </article>
-              <article class="flex flex-col gap-4 relative">
+              <article class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative">
                 <svg width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
                   <g class="layer" id="svg_3">
                     <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="none" id="svg_1" stroke="#000000"></path>
@@ -504,7 +508,7 @@
                 </svg>
                 <p class="font-Helvetica font-medium text-sm text-black w-36 text-balance pl-2">Прикрепляете необходимых документов в ЛК</p>
               </article>
-              <article class="flex flex-col gap-4 relative">
+              <article class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative">
                 <svg width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
                   <g class="layer" id="svg_3">
                     <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="none" id="svg_1" stroke="#000000"></path>
@@ -517,9 +521,9 @@
           </div>
           <div class="bg-lightGray py-16">
             <div class="container mx-auto flex flex-col gap-8">
-              <div class="grid grid-cols-1fr-1fr gap-8">
+              <div class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8">
                 <div class="flex flex-col gap-6">
-                  <h2 class="font-Helvetica font-semibold text-4xl text-black">Удостоверение гос.образца</h2>
+                  <h2 class="font-Helvetica font-semibold @xs/body:text-2xl @6xl/body:text-4xl text-black">Удостоверение гос.образца</h2>
                   <ul class="list-disc pl-4">
                     <li class=" marker:text-primary">
                       <p class="font-Helvetica font-medium text-lg text-black">Широкие карьерные перспективы</p>
@@ -539,17 +543,17 @@
             </div>
           </div>
           <div class="container mx-auto flex flex-col gap-8">
-            <div class="grid grid-cols-1fr-1fr gap-8"><img class="rounded-lg w-full h-full aspect-16-9 object-cover" src="./local/templates/tcavtodor/img/other/teacher.png">
-              <div class="flex flex-col gap-6">
-                <h2 class="font-Helvetica font-semibold text-4xl text-black">Об учебном центре</h2>
-                <p class="font-Helvetica font-normal text-base text-black">Учебный центр Государственной компании «Автодор» на базе ООО «Автодор-Инжиниринг» приглашает пройти обучение с повышением квалификации по учебным программам, сформированным на основе уникального практического опыта проектирования, строительства и эксплуатации высокоскоростных автомагистралей.</p><a class="mt-auto ml-auto w-max p-4 rounded-lg bg-gradient-orange text-white font-Helvetica font-medium text-base text-center" href="ob-uchebnom-centre.html">Узнать больше</a>
+            <div class="grid  @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8"><img class="@xs/body:order-2 @6xl/body:-order-none rounded-lg w-full h-full aspect-16-9 object-cover" src="./local/templates/tcavtodor/img/other/teacher.png">
+              <div class="@xs/body:contents @6xl/body:flex flex-col gap-6">
+                <h2 class="@xs/body:order-1 @6xl/body:-order-none font-Helvetica font-semibold  @xs/body:text-2xl @6xl/body:text-4xl text-black">Об учебном центре</h2>
+                <p class="@xs/body:order-3 @6xl/body:-order-none font-Helvetica font-normal text-base text-black">Учебный центр Государственной компании «Автодор» на базе ООО «Автодор-Инжиниринг» приглашает пройти обучение с повышением квалификации по учебным программам, сформированным на основе уникального практического опыта проектирования, строительства и эксплуатации высокоскоростных автомагистралей.</p><a class="@xs/body:order-4 @6xl/body:-order-none mt-auto ml-auto w-max p-4 rounded-lg bg-gradient-orange text-white font-Helvetica font-medium text-base text-center" href="ob-uchebnom-centre.html">Узнать больше</a>
               </div>
             </div>
           </div>
           <div class="container mx-auto">
-            <div class="rounded-lg shadow-md py-4 px-8 flex flex-col gap-6 bg-lightGray">
-              <p class="font-Helvetica font-semibold text-4xl text-black">Получить консультацию</p>
-              <div class="grid grid-cols-4 gap-4">
+            <div class="@container/card rounded-lg shadow-md py-4 px-8 flex flex-col gap-6 bg-lightGray">
+              <p class="font-Helvetica font-semibold @xs/card:text-2xl @6xl/card:text-4xl text-black">Получить консультацию</p>
+              <div class="grid @xs/card:grid-cols-full @6xl/card:grid-cols-4 gap-4">
                 <div class="relative">
                   <input class="peer w-full border border-gray-300 rounded-md py-2 px-3 font-montserrat font-semibold text-gray-600 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary transition duration-200 ease-in-out" id="Name" type="text" name="Name" required>
                   <label class=" absolute top-[0.675rem] peer-focus:-top-[0.675rem] peer-valid:-top-[0.675rem] bg-white px-1 block font-Helvetica font-normal text-gray-400 text-base peer-focus:text-sm peer-valid:text-sm leading-[1] left-2 transition-all duration-200 ease-in-out rounded-full" for="Name">Имя</label>
@@ -570,8 +574,8 @@
           </div>
           <div class="bg-lightGray py-16">
             <div class="container mx-auto flex flex-col gap-8">
-              <h2 class="font-Helvetica font-semibold text-4xl text-black text-center">Отзывы</h2>
-              <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-indicators-outside slider-nav-noloop slider-item-show3 slider-indicators-dark slider-nav-visible">
+              <h2 class="font-Helvetica font-semibold @xs/body:text-2xl @6xl/body:text-4xl text-black text-center">Отзывы</h2>
+              <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-indicators-outside slider-nav-noloop @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @6xl/body:slider-item-show3 slider-indicators-dark slider-nav-visible">
                 <div class="slider-container pb-1">
                   <article class="flex flex-col gap-4 w-full rounded-lg shadow-md p-4 bg-white">
                     <div class="flex gap-4 items-center"><img class="w-16 h-16 rounded-full border-2 border-primary object-cover" src="./local/templates/tcavtodor/img/people/profile.png" alt="фото сотрудника"/>
@@ -628,8 +632,8 @@
             </div>
           </div>
           <div class="container mx-auto flex flex-col gap-8">
-            <h2 class="font-Helvetica font-semibold text-4xl text-black text-center">Наши партнеры</h2>
-            <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible">
+            <h2 class="font-Helvetica font-semibold @xs/body:text-2xl @6xl/body:text-4xl text-black text-center">Наши партнеры</h2>
+            <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
               <div class="slider-container pb-1"><img class="max-h-32 object-contain" src="./local/templates/tcavtodor/img/logo/250.png" alt="Партнер"><img class="max-h-32 object-contain" src="./local/templates/tcavtodor/img/logo/RUT_rus.svg" alt="Партнер"><img class="max-h-32 object-contain" src="./local/templates/tcavtodor/img/logo/250.png" alt="Партнер"><img class="max-h-32 object-contain" src="./local/templates/tcavtodor/img/logo/RUT_rus.svg" alt="Партнер"></div>
               <button class="slider-nav" type="button">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -646,9 +650,9 @@
         </div>
       </main>
       <footer class="@container/footer py-16 bg-lightGray">
-        <div class="@xs/footer:px-4 @5xl/footer:px-8 @5xl/footer:pl-[4.5rem] min-h-16 w-full">
-          <div class="grid grid-cols-auto-1fr-auto gap-32">
-            <div class="flex flex-col gap-4">
+        <div class="@xs/footer:px-4 @7xl/footer:px-8 @7xl/footer:pl-[4.5rem] min-h-16 w-full relative">
+          <div class="grid @xs/footer:grid-cols-full @3xl/footer:grid-cols-auto-auto @7xl/footer:grid-cols-auto-1fr gap-4 @5xl/footer:gap-12 @8xl/footer:gap-32">
+            <div class="flex @xs/footer:flex-col @2xl/footer:flex-row @3xl/footer:flex-col w-full gap-4  ">
               <div class="relative">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="256" height="50" version="1.1">
                   <g class="layer">
@@ -695,18 +699,33 @@
                   </g>
                 </svg><a class="absolute inset-0 top-0 left-0 " href="index.html"></a>
               </div>
-              <div class="flex flex-col gap-2"><a class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base" href="#">ГК Автодор</a><a class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base" href="#">ООО "Автодор-Инжиниринг"</a><a class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base" href="#">Публичная оферта</a><a class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base" href="#">Политика обработки персональных данных</a><a class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base" href="#">Обращение в поддержку</a></div>
-              <div class="flex flex-col gap-4">
-                <div class="flex items-center gap-2 h-max relative">
-                  <div class="w-max h-max">
-                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M16 6.99902C6 6.99902 2 16 2 16C2 16 6 24.999 16 24.999C26 24.999 30 16 30 16C30 16 26 6.99902 16 6.99902Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                  </div>
-                  <p class="font-Helvetica font-normal text-black text-base">
-                     Версия для слабовидящих</p><a class="inset-0 absolute top-0 left-0" href="#"></a>
-                </div>
+              <div class="flex flex-col gap-2">
+                <p class="font-Helvetica font-semibold text-black text-lg  ">
+                   Государственная<br>Лицензия</p><a href="#"><img class="w-16 object-contain" alt="лицензия" src="./local/templates/tcavtodor/img/other/license.png"></a>
+              </div>
+            </div>
+            <div class="grid @xs/footer:grid-cols-full @2xl/footer:grid-cols-auto-auto @5xl/footer:grid-cols-4 @xs/footer:gap-8 @lg/footer:gap-4 @5xl/footer:gap-y-20">
+              <div class="flex flex-col gap-2">
+                <p class="font-Helvetica font-semibold text-lg text-black">Информация</p><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="index.html">Главная</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="katalog-napravlenij.html">Каталог</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="3d-praktikum.html">3D Практикум </a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="ob-uchebnom-centre.html">Об учебном центре</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="kontakty.html">Контакты </a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="#">Личный кабинет</a>
+              </div>
+              <div class="flex flex-col gap-2 @xs/footer:pt-0 @lg/footer:pt-9"><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="slushateljam.html">Случателям</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="dlja-jur-lic.html">Для юр.лиц</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="partneram.html">Стать партнером</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="udostoverenie-gos.obrazca.html">Удостоверение гос.образца</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="jeksperty.html">Эксперты</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="spec.predlozhenija.html">Спец.предложения</a></div>
+              <div class="flex flex-col gap-2 @5xl/footer:pt-9  "><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="#">Наши партнеры</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="#">Отзывы</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="news.html">Новости</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover mt-8" dialog-btn="consultation" href="#">Получить консультацию</a></div>
+              <div class="flex flex-col gap-2 @5xl/footer:pt-9"><a class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base" href="#">ГК Автодор</a><a class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base" href="#">ООО "Автодор-Инжиниринг"</a><a class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base" href="#">Публичная оферта</a><a class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base" href="#">Политика обработки персональных данных</a><a class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base" href="#">Обращение в поддержку</a></div>
+              <div class="flex flex-col gap-1">
+                <p class="font-Helvetica font-semibold text-lg text-black">Мы находимся</p>
+                <p class="font-Helvetica font-medium text-black text-base">г.Москва, Звенигородское<br>шоссе, 18/20 к1.</p>
+              </div>
+              <div class="flex flex-col gap-1">
+                <p class="font-Helvetica font-semibold text-lg text-black">Свяжись с нами</p>
+                <address class="flex gap-2 items-center">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 7H28V24C28 24.2652 27.8946 24.5196 27.7071 24.7071C27.5196 24.8946 27.2652 25 27 25H5C4.73478 25 4.48043 24.8946 4.29289 24.7071C4.10536 24.5196 4 24.2652 4 24V7Z" stroke="#404040" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M28 7L16 18L4 7" stroke="#404040" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg><a class="font-Helvetica font-normal text-black hover:text-primary text-base" href="mailto:educentr@avtodor-eng.ru">educentr@avtodor-eng.ru</a>
+                </address>
+              </div>
+              <div class="flex flex-col gap-1">
+                <p class="font-Helvetica font-semibold text-lg text-black">Мы в соц.сетях</p>
                 <div class="flex items-center gap-2">
                   <div class="relative">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="36" height="36">
@@ -725,23 +744,18 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="grid grid-cols-3 gap-4">
-              <div class="flex flex-col gap-2"><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="index.html">Главная</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="katalog-napravlenij.html">Каталог</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="3d-praktikum.html">3D Практикум </a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="ob-uchebnom-centre.html">Об учебном центре</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="kontakty.html">Контакты </a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="#">Личный кабинет</a></div>
-              <div class="flex flex-col gap-2"><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="slushateljam.html">Случателям</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="dlja-jur-lic.html">Для юр.лиц</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="partneram.html">Стать партнером</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="udostoverenie-gos.obrazca.html">Удостоверение гос.образца</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="jeksperty.html">Эксперты</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="spec.predlozhenija.html">Спец.предложения</a></div>
-              <div class="flex flex-col gap-2"><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="#">Наши партнеры</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="#">Отзывы</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover " href="news.html">Новости</a><a class="font-Helvetica font-normal text-base text-black hover:text-primaryHover mt-8" dialog-btn="consultation" href="#">Получить консультацию</a></div>
-            </div>
-            <div class="flex flex-col gap-4">
-              <div class="flex flex-col gap-2 items-end">
-                <p class="font-Helvetica font-semibold text-black text-lg">Лицензия</p><a href="#"><img class="w-16 object-contain" alt="лицензия" src="./local/templates/tcavtodor/img/other/license.png"></a>
+              <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-2 h-max relative">
+                  <div class="w-max h-max">
+                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 6.99902C6 6.99902 2 16 2 16C2 16 6 24.999 16 24.999C26 24.999 30 16 30 16C30 16 26 6.99902 16 6.99902Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                  <p class="font-Helvetica font-normal text-black text-base">
+                     Версия для слабовидящих</p><a class="inset-0 absolute top-0 left-0  " href="#"></a>
+                </div>
               </div>
-              <address class="flex gap-2 items-center mt-auto">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 7H28V24C28 24.2652 27.8946 24.5196 27.7071 24.7071C27.5196 24.8946 27.2652 25 27 25H5C4.73478 25 4.48043 24.8946 4.29289 24.7071C4.10536 24.5196 4 24.2652 4 24V7Z" stroke="#404040" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M28 7L16 18L4 7" stroke="#404040" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg><a class="font-Helvetica font-normal text-black hover:text-primary text-base" href="mailto:educentr@avtodor-eng.ru">educentr@avtodor-eng.ru</a>
-              </address>
-              <p class="font-Helvetica font-semibold text-black text-base">г.Москва, Звенигородское<br>шоссе, 18/20 к1.</p>
             </div>
           </div>
         </div>

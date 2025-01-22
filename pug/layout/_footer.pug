@@ -1,26 +1,60 @@
 - var path = "./local/templates/tcavtodor"
 footer(class="@container/footer py-16 bg-lightGray")
-    div(class="@xs/footer:px-4 @5xl/footer:px-8 @5xl/footer:pl-[4.5rem] min-h-16 w-full")
-        div(class="grid grid-cols-auto-1fr-auto gap-32")
-            div(class="flex flex-col gap-4")
+    div(class="@xs/footer:px-4 @7xl/footer:px-8 @7xl/footer:pl-[4.5rem] min-h-16 w-full relative")
+        div(class="grid @xs/footer:grid-cols-full @3xl/footer:grid-cols-auto-auto @7xl/footer:grid-cols-auto-1fr gap-4 @5xl/footer:gap-12 @8xl/footer:gap-32")
+            div(class="flex @xs/footer:flex-col @2xl/footer:flex-row @3xl/footer:flex-col w-full gap-4  ")
                 div(class="relative")
                     include ../ui/_logo.pug
                     a(href="index.html", class="absolute inset-0 top-0 left-0 ")
                 div(class="flex flex-col gap-2")
+                    p(class="font-Helvetica font-semibold text-black text-lg  ") 
+                        | Государственная
+                        br
+                        | Лицензия
+                    a(href="#", class="")
+                        img(class="w-16 object-contain", alt="лицензия" src=`${path}/img/other/license.png`)
+            div(class="grid @xs/footer:grid-cols-full @2xl/footer:grid-cols-auto-auto @5xl/footer:grid-cols-4 @xs/footer:gap-8 @lg/footer:gap-4 @5xl/footer:gap-y-20")
+                div(class="flex flex-col gap-2")
+                    p(class="font-Helvetica font-semibold text-lg text-black") Информация
+                    a(href="index.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Главная
+                    a(href="katalog-napravlenij.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Каталог
+                    a(href="3d-praktikum.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") 3D Практикум 
+                    a(href="ob-uchebnom-centre.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Об учебном центре
+                    a(href="kontakty.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Контакты 
+                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Личный кабинет
+                div(class="flex flex-col gap-2 @xs/footer:pt-0 @lg/footer:pt-9")
+                    a(href="slushateljam.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Случателям
+                    a(href="dlja-jur-lic.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Для юр.лиц
+                    a(href="partneram.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Стать партнером
+                    a(href="udostoverenie-gos.obrazca.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Удостоверение гос.образца
+                    a(href="jeksperty.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Эксперты
+                    a(href="spec.predlozhenija.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Спец.предложения
+                div(class="flex flex-col gap-2 @5xl/footer:pt-9  ")
+                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Наши партнеры
+                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Отзывы
+                    a(href="news.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Новости
+                    a(dialog-btn="consultation", href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover mt-8") Получить консультацию
+                div(class="flex flex-col gap-2 @5xl/footer:pt-9")
                     a(href="#", class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base") ГК Автодор
                     a(href="#", class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base") ООО "Автодор-Инжиниринг"
                     a(href="#", class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base") Публичная оферта
                     a(href="#", class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base") Политика обработки персональных данных
                     a(href="#", class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base") Обращение в поддержку
-                div(class="flex flex-col gap-4")
-                    div(class="flex items-center gap-2 h-max relative")
-                        div(class="w-max h-max")
-                            svg(width="24", height="24", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
-                                path(d="M16 6.99902C6 6.99902 2 16 2 16C2 16 6 24.999 16 24.999C26 24.999 30 16 30 16C30 16 26 6.99902 16 6.99902Z", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                                path(d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                        p(class="font-Helvetica font-normal text-black text-base") 
-                            | Версия для слабовидящих
-                        a(href="#", class="inset-0 absolute top-0 left-0")
+                div(class="flex flex-col gap-1")
+                    p(class="font-Helvetica font-semibold text-lg text-black") Мы находимся
+                    p(class="font-Helvetica font-medium text-black text-base")
+                        | г.Москва, Звенигородское
+                        br
+                        | шоссе, 18/20 к1.
+                div(class="flex flex-col gap-1")
+                    p(class="font-Helvetica font-semibold text-lg text-black") Свяжись с нами
+                    address(class="flex gap-2 items-center")
+                        svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                            path(d="M4 7H28V24C28 24.2652 27.8946 24.5196 27.7071 24.7071C27.5196 24.8946 27.2652 25 27 25H5C4.73478 25 4.48043 24.8946 4.29289 24.7071C4.10536 24.5196 4 24.2652 4 24V7Z", stroke="#404040", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            path(d="M28 7L16 18L4 7", stroke="#404040", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                        a(href="mailto:educentr@avtodor-eng.ru", class="font-Helvetica font-normal text-black hover:text-primary text-base") educentr@avtodor-eng.ru
+                div(class="flex flex-col gap-1")
+                    p(class="font-Helvetica font-semibold text-lg text-black") Мы в соц.сетях
                     div(class="flex items-center gap-2")
                         div(class="relative")
                             svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 50 50", width="36", height="36")
@@ -34,37 +68,12 @@ footer(class="@container/footer py-16 bg-lightGray")
                             svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 50 50", width="36", height="36")
                                 path(d="M46.894 23.986c.004 0 .007 0 .011 0 .279 0 .545-.117.734-.322.192-.208.287-.487.262-.769C46.897 11.852 38.154 3.106 27.11 2.1c-.28-.022-.562.069-.77.262-.208.192-.324.463-.321.746C26.193 17.784 28.129 23.781 46.894 23.986zM46.894 26.014c-18.765.205-20.7 6.202-20.874 20.878-.003.283.113.554.321.746.186.171.429.266.679.266.03 0 .061-.001.091-.004 11.044-1.006 19.787-9.751 20.79-20.795.025-.282-.069-.561-.262-.769C47.446 26.128 47.177 26.025 46.894 26.014zM22.823 2.105C11.814 3.14 3.099 11.884 2.1 22.897c-.025.282.069.561.262.769.189.205.456.321.734.321.004 0 .008 0 .012 0 18.703-.215 20.634-6.209 20.81-20.875.003-.283-.114-.555-.322-.747C23.386 2.173 23.105 2.079 22.823 2.105zM3.107 26.013c-.311-.035-.555.113-.746.321-.192.208-.287.487-.262.769.999 11.013 9.715 19.757 20.724 20.792.031.003.063.004.094.004.25 0 .492-.094.678-.265.208-.192.325-.464.322-.747C23.741 32.222 21.811 26.228 3.107 26.013z")
                             a(href="#", class=" absolute inset-0 left-0 top-0")
-            div(class="grid grid-cols-3 gap-4")
-                div(class="flex flex-col gap-2")
-                    a(href="index.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Главная
-                    a(href="katalog-napravlenij.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Каталог
-                    a(href="3d-praktikum.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") 3D Практикум 
-                    a(href="ob-uchebnom-centre.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Об учебном центре
-                    a(href="kontakty.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Контакты 
-                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Личный кабинет
-                div(class="flex flex-col gap-2")
-                    a(href="slushateljam.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Случателям
-                    a(href="dlja-jur-lic.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Для юр.лиц
-                    a(href="partneram.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Стать партнером
-                    a(href="udostoverenie-gos.obrazca.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Удостоверение гос.образца
-                    a(href="jeksperty.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Эксперты
-                    a(href="spec.predlozhenija.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Спец.предложения
-                div(class="flex flex-col gap-2")
-                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Наши партнеры
-                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Отзывы
-                    a(href="news.html", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Новости
-                    a(dialog-btn="consultation", href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover mt-8") Получить консультацию
-            div(class="flex flex-col gap-4")
-                div(class="flex flex-col gap-2 items-end")
-                    p(class="font-Helvetica font-semibold text-black text-lg") Лицензия
-                    a(href="#", class="")
-                        img(class="w-16 object-contain", alt="лицензия" src=`${path}/img/other/license.png`)
-                address(class="flex gap-2 items-center mt-auto")
-                    svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
-                        path(d="M4 7H28V24C28 24.2652 27.8946 24.5196 27.7071 24.7071C27.5196 24.8946 27.2652 25 27 25H5C4.73478 25 4.48043 24.8946 4.29289 24.7071C4.10536 24.5196 4 24.2652 4 24V7Z", stroke="#404040", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                        path(d="M28 7L16 18L4 7", stroke="#404040", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                    a(href="mailto:educentr@avtodor-eng.ru", class="font-Helvetica font-normal text-black hover:text-primary text-base") educentr@avtodor-eng.ru
-                p(class="font-Helvetica font-semibold text-black text-base")
-                    | г.Москва, Звенигородское
-                    br
-                    | шоссе, 18/20 к1.
+                div(class="flex flex-col gap-4")
+                    div(class="flex items-center gap-2 h-max relative")
+                        div(class="w-max h-max")
+                            svg(width="24", height="24", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                path(d="M16 6.99902C6 6.99902 2 16 2 16C2 16 6 24.999 16 24.999C26 24.999 30 16 30 16C30 16 26 6.99902 16 6.99902Z", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                path(d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                        p(class="font-Helvetica font-normal text-black text-base") 
+                            | Версия для слабовидящих
+                        a(href="#", class="inset-0 absolute top-0 left-0  ")

@@ -3,6 +3,9 @@ module.exports = {
   content: ["./**/*.{html,js,mjs,jsx,pug}", "./*.html"],
   theme: {
     extend: {
+      containers: {
+        '8xl': '90rem',
+      },
       marging:{
         'unset': 'unset',
       },
@@ -11,8 +14,8 @@ module.exports = {
       },
       container:{
         screens:{
-          xs: "100%",
-          sm: "100%",
+          xs: '100%',
+          sm: '100%',
           md: '100%',
           lg: '90rem',
         }

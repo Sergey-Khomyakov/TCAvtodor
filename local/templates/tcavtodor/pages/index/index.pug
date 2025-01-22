@@ -20,32 +20,33 @@ block head
 block content
     - var authorization = false;
     +header(authorization)
-    main(class="")
-        div(class="flex flex-col gap-32 mb-32")
+    main(class="@container/body overflow-hidden")
+        div(class="@xs/body:px-4 @8xl:px-0 flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32")
             div(class="container mx-auto flex flex-col gap-8 pt-10")
-                div(class="grid grid-cols-1fr-1fr gap-8")
-                    div(class="flex flex-col gap-4")
-                        h1(class="font-Helvetica font-semibold text-5xl text-black text-center") Из опыта в знания
-                        p(class="font-Helvetica font-medium text-base text-black text-center") Учебный центр ООО "Автодор-Инжиниринг"
+                div(class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8")
+                    div(class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr @6xl/body:grid-cols-full gap-4")
+                        div(class="flex flex-col gap-4")
+                            h1(class="font-Helvetica font-semibold @xs/body:text-3xl @6xl/body:text-5xl text-black text-center text-balance") Из опыта в знания
+                            p(class="font-Helvetica font-medium text-base text-black text-center") Учебный центр ООО "Автодор-Инжиниринг"
                         div#slider1(class="swiffy-slider slider-indicators-round slider-nav-round slider-nav-noloop w-full h-full rounded-lg overflow-hidden")
                             div(class="slider-container")
-                                div(class="w-full flex flex-col shadow-md h-[23.5rem] relative")
+                                div(class="w-full flex flex-col shadow-md @xs/body:h-[16rem] @6xl/body:h-[23.5rem] relative")
                                     p(class="font-Helvetica font-medium text-base text-black p-4 bg-white/80 w-full absolute top-0 left-0") 4 000 партнёров уже предложили практику и сделали офер лучшим студентам
                                     img(src=`${path}/img/other/755644626481422.jpeg`, class="w-full h-full object-cover")
                                     a(href="news.html", class=" absolute left-0 top-0 inset-0")
-                                div(class="w-full flex flex-col shadow-md h-[23.5rem] relative")
+                                div(class="w-full flex flex-col shadow-md @xs/body:h-[16rem] @6xl/body:h-[23.5rem] relative")
                                     p(class="font-Helvetica font-medium text-base text-black p-4 bg-white/80 w-full absolute top-0 left-0") Формат «живого» общения с экспертами, чтобы обсудить вопросы и сложные темы
                                     img(src=`${path}/img/other/original-20g.jpg`, class="w-full h-full object-cover")
                                     a(href="news.html", class=" absolute left-0 top-0 inset-0")
-                                div(class="w-full flex flex-col shadow-md h-[23.5rem] relative")
+                                div(class="w-full flex flex-col shadow-md @xs/body:h-[16rem] @6xl/body:h-[23.5rem] relative")
                                     p(class="font-Helvetica font-medium text-base text-black p-4 bg-white/80 w-full absolute top-0 left-0") 4 000 партнёров уже предложили практику и сделали офер лучшим студентам
                                     img(src=`${path}/img/other/Rectangle 76634.png`, class="w-full h-full object-cover")
                                     a(href="news.html", class=" absolute left-0 top-0 inset-0")
-                            div(class="slider-indicators")
+                            div(class="slider-indicators flex")
                                 button.active
                                 button
                                 button
-                    div(class="grid grid-cols-3 gap-4")
+                    div(class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-2 @5xl/body:grid-cols-3 gap-4")
                         div(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden")
                             svg(width="128", height="128", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4")
                                 path(d="M4 8V18", stroke="#fd7e14", stroke-width="1", stroke-linecap="round", stroke-linejoin="round")
@@ -75,7 +76,7 @@ block content
                             div(class="flex flex-wrap gap-2 items-center")
                                 p(class="font-Helvetica font-medium text-black text-xl") Страть Партнером 
                             a(class="absolute top-0 left-0 inset-0", href="partneram.html", target="_blank")
-                        div(class="grid grid-cols-2 gap-4 col-span-3")
+                        div(class="contents @6xl/body:grid grid-cols-2 gap-4 @6xl/body:col-span-3")
                             div(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer overflow-hidden")
                                 div(class="flex flex-wrap gap-2 items-center")
                                     p(class="font-Helvetica font-medium text-black text-xl") 3D Практикум
@@ -96,7 +97,7 @@ block content
                                 div(class="flex flex-wrap gap-2 items-center")
                                     p(class="font-Helvetica font-medium text-black text-xl") Удостоверение гос.образца
                                 a(class="absolute top-0 left-0 inset-0", href="udostoverenie-gos.obrazca.html", target="_blank")
-                        div(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative col-span-3 cursor-pointer overflow-hidden")
+                        div(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative @6xl/body:col-span-3 cursor-pointer overflow-hidden")
                             svg(width="128", height="128", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4")
                                 path(d="M19 14H24", stroke="#fd7e14", stroke-width="1", stroke-linecap="round", stroke-linejoin="round")
                                 path(d="M19 18H24", stroke="#fd7e14", stroke-width="1", stroke-linecap="round", stroke-linejoin="round")
@@ -106,82 +107,83 @@ block content
                             div(class="flex flex-wrap gap-2 items-center")
                                 p(class="font-Helvetica font-medium text-black text-xl") Наши эксперты
                             a(class="absolute top-0 left-0 inset-0", href="jeksperty.html", target="_blank")
-                div(class="grid grid-cols-3 gap-4")
-                    article(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center")
-                        p(class="font-Helvetica font-medium text-black text-lg text-balance") Содержание искусственных сооружений
-                        div(class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary")
-                            p(class="font-Helvetica font-medium text-sm text-primary") 7 программ
-                            svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
-                                path(d="M5 16H27", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                                path(d="M18 7L27 16L18 25", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                        a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
-                    article(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center")
-                        p(class="font-Helvetica font-medium text-black text-lg text-balance") Строительство автомобильных дорог и ИССО 
-                        div(class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary")
-                            p(class="font-Helvetica font-medium text-sm text-primary") 7 программ
-                            svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
-                                path(d="M5 16H27", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                                path(d="M18 7L27 16L18 25", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                        a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
-                    article(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center")
-                        p(class="font-Helvetica font-medium text-black text-lg text-balance") Экология
-                        div(class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary")
-                            p(class="font-Helvetica font-medium text-sm text-primary") 7 программ
-                            svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
-                                path(d="M5 16H27", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                                path(d="M18 7L27 16L18 25", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                        a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
-                    article(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center")
-                        p(class="font-Helvetica font-medium text-black text-lg text-balance") Содержание автомобильных дорог
-                        div(class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary")
-                            p(class="font-Helvetica font-medium text-sm text-primary") 7 программ
-                            svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
-                                path(d="M5 16H27", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                                path(d="M18 7L27 16L18 25", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                        a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
-                    article(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center")
-                        p(class="font-Helvetica font-medium text-black text-lg text-balance") Изыскания и проектирование
-                        div(class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary")
-                            p(class="font-Helvetica font-medium text-sm text-primary") 7 программ
-                            svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
-                                path(d="M5 16H27", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                                path(d="M18 7L27 16L18 25", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                        a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
-                    article(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center")
-                        p(class="font-Helvetica font-medium text-black text-lg text-balance") Иммерсивные технологии
-                        div(class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary")
-                            p(class="font-Helvetica font-medium text-sm text-primary") 7 программ
-                            svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
-                                path(d="M5 16H27", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                                path(d="M18 7L27 16L18 25", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                        a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
-                    article(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center")
-                        p(class="font-Helvetica font-medium text-black text-lg text-balance") Строительные материлаы и оборудование
-                        div(class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary")
-                            p(class="font-Helvetica font-medium text-sm text-primary") 7 программ
-                            svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
-                                path(d="M5 16H27", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                                path(d="M18 7L27 16L18 25", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                        a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
-                    article(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center")
-                        p(class="font-Helvetica font-medium text-black text-lg text-balance") Строительный, геодезический и лабораторный контроль
-                        div(class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary")
-                            p(class="font-Helvetica font-medium text-sm text-primary") 7 программ
-                            svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
-                                path(d="M5 16H27", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                                path(d="M18 7L27 16L18 25", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                        a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
-                    article(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center")
-                        p(class="font-Helvetica font-medium text-black text-lg text-balance") Программное обеспечение общего пользования
-                        div(class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary")
-                            p(class="font-Helvetica font-medium text-sm text-primary") 7 программ
-                            svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
-                                path(d="M5 16H27", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                                path(d="M18 7L27 16L18 25", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                        a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
+                div(class="@xs/body:pb-2 @5xl/body:pb-0 @xs/body:overflow-x-scroll @5xl/body:overflow-x-auto")
+                    div(class="flex @xs/body:w-max @5xl/body:w-auto @5xl/body:grid @5xl/body:grid-cols-3 gap-4  ")
+                        article(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center")
+                            p(class="font-Helvetica font-medium text-black text-lg text-balance") Содержание искусственных сооружений
+                            div(class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary")
+                                p(class="font-Helvetica font-medium text-sm text-primary") 7 программ
+                                svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M5 16H27", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                    path(d="M18 7L27 16L18 25", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
+                        article(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center")
+                            p(class="font-Helvetica font-medium text-black text-lg text-balance") Строительство автомобильных дорог и ИССО 
+                            div(class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary")
+                                p(class="font-Helvetica font-medium text-sm text-primary") 7 программ
+                                svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M5 16H27", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                    path(d="M18 7L27 16L18 25", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
+                        article(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center")
+                            p(class="font-Helvetica font-medium text-black text-lg text-balance") Экология
+                            div(class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary")
+                                p(class="font-Helvetica font-medium text-sm text-primary") 7 программ
+                                svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M5 16H27", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                    path(d="M18 7L27 16L18 25", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
+                        article(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center")
+                            p(class="font-Helvetica font-medium text-black text-lg text-balance") Содержание автомобильных дорог
+                            div(class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary")
+                                p(class="font-Helvetica font-medium text-sm text-primary") 7 программ
+                                svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M5 16H27", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                    path(d="M18 7L27 16L18 25", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
+                        article(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center")
+                            p(class="font-Helvetica font-medium text-black text-lg text-balance") Изыскания и проектирование
+                            div(class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary")
+                                p(class="font-Helvetica font-medium text-sm text-primary") 7 программ
+                                svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M5 16H27", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                    path(d="M18 7L27 16L18 25", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
+                        article(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center")
+                            p(class="font-Helvetica font-medium text-black text-lg text-balance") Иммерсивные технологии
+                            div(class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary")
+                                p(class="font-Helvetica font-medium text-sm text-primary") 7 программ
+                                svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M5 16H27", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                    path(d="M18 7L27 16L18 25", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
+                        article(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center")
+                            p(class="font-Helvetica font-medium text-black text-lg text-balance") Строительные материлаы и оборудование
+                            div(class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary")
+                                p(class="font-Helvetica font-medium text-sm text-primary") 7 программ
+                                svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M5 16H27", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                    path(d="M18 7L27 16L18 25", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
+                        article(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center")
+                            p(class="font-Helvetica font-medium text-black text-lg text-balance") Строительный, геодезический и лабораторный контроль
+                            div(class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary")
+                                p(class="font-Helvetica font-medium text-sm text-primary") 7 программ
+                                svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M5 16H27", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                    path(d="M18 7L27 16L18 25", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
+                        article(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center")
+                            p(class="font-Helvetica font-medium text-black text-lg text-balance") Программное обеспечение общего пользования
+                            div(class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary")
+                                p(class="font-Helvetica font-medium text-sm text-primary") 7 программ
+                                svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M5 16H27", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                    path(d="M18 7L27 16L18 25", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
             div(class="container mx-auto flex flex-col gap-8")
-                h2(class="font-Helvetica font-semibold text-4xl text-black") Наши популярные программы
-                div(class="swiffy-slider slider-indicators-round slider-indicators-outside slider-nav-round slider-nav-noloop slider-custom-1 slider-item-show4 slider-indicators-dark")
+                h2(class="font-Helvetica font-semibold  @xs/body:text-2xl @6xl/body:text-4xl text-black") Наши популярные программы
+                div(class="swiffy-slider slider-indicators-round slider-indicators-outside slider-nav-round slider-nav-noloop slider-custom-1 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark")
                     div(class="slider-container pb-1")
                         -
                             var items = [
@@ -223,33 +225,33 @@ block content
                         button.active
                 button(dialog-btn="consultation", type="button", class="bg-gradient-orange text-white rounded-lg p-4 px-6 text-xl w-max mx-auto") Получить консультацию
             div(class="container mx-auto flex flex-col gap-8")
-                h2(class="font-Helvetica font-semibold text-4xl text-black text-center text-pr") Этапы обучения
-                div(class="flex gap-3 justify-center", style="zoom: 1.5")
-                    article(class="flex flex-col gap-4 relative")
+                h2(class="font-Helvetica font-semibold  @xs/body:text-2xl @6xl/body:text-4xl text-black text-center text-pr") Этапы обучения
+                div(class="flex @xs/body:flex-col @4xl/body:flex-row gap-3 justify-center @6xl/body:zoom-150")
+                    article(class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative")
                         svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg")
                             g(class="layer", id="svg_3")
                                 path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
                                 text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Helvetica font-medium") 1
                         p(class="font-Helvetica font-medium text-sm text-black w-36 text-balance pl-2") Выбираете программу
-                    article(class="flex flex-col gap-4 relative")
+                    article(class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative")
                         svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg")
                             g(class="layer", id="svg_3")
                                 path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
                                 text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Helvetica font-medium") 2
                         p(class="font-Helvetica font-medium text-sm text-black w-36 text-balance pl-2") Подписываете договор и вносите оплату
-                    article(class="flex flex-col gap-4 relative")
+                    article(class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative")
                         svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg")
                             g(class="layer", id="svg_3")
                                 path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
                                 text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Helvetica font-medium") 3
                         p(class="font-Helvetica font-medium text-sm text-black w-36 text-balance pl-2") Проходите обучение
-                    article(class="flex flex-col gap-4 relative")
+                    article(class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative")
                         svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg")
                             g(class="layer", id="svg_3")
                                 path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
                                 text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Helvetica font-medium") 4
                         p(class="font-Helvetica font-medium text-sm text-black w-36 text-balance pl-2") Прикрепляете необходимых документов в ЛК
-                    article(class="flex flex-col gap-4 relative")
+                    article(class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative")
                         svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg")
                             g(class="layer", id="svg_3")
                                 path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
@@ -257,9 +259,9 @@ block content
                         p(class="font-Helvetica font-medium text-sm text-black w-36 text-balance pl-2") Получаете удостоверение гос. образца
             div(class="bg-lightGray py-16")
                 div(class="container mx-auto flex flex-col gap-8")
-                    div(class="grid grid-cols-1fr-1fr gap-8")
+                    div(class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8")
                         div(class="flex flex-col gap-6")
-                            h2(class="font-Helvetica font-semibold text-4xl text-black") Удостоверение гос.образца
+                            h2(class="font-Helvetica font-semibold @xs/body:text-2xl @6xl/body:text-4xl text-black") Удостоверение гос.образца
                             ul(class="list-disc pl-4")
                                 li(class=" marker:text-primary")
                                     p(class="font-Helvetica font-medium text-lg text-black") Широкие карьерные перспективы
@@ -271,18 +273,18 @@ block content
                                     p(class="font-Helvetica font-medium text-lg text-black") Внесение в Реестр
                         img(src=`${path}/img/other/GosDoc.png`, class="rounded-lg w-full h-full aspect-16-9 object-cover")
             div(class="container mx-auto flex flex-col gap-8")
-                div(class="grid grid-cols-1fr-1fr gap-8")
-                    img(src=`${path}/img/other/teacher.png`, class="rounded-lg w-full h-full aspect-16-9 object-cover")
-                    div(class="flex flex-col gap-6")
-                        h2(class="font-Helvetica font-semibold text-4xl text-black") Об учебном центре
-                        p(class="font-Helvetica font-normal text-base text-black") Учебный центр Государственной компании «Автодор» на базе ООО «Автодор-Инжиниринг» приглашает пройти обучение с повышением квалификации по учебным программам, сформированным на основе уникального практического опыта проектирования, строительства и эксплуатации высокоскоростных автомагистралей.
-                        a(href="ob-uchebnom-centre.html", class="mt-auto ml-auto w-max p-4 rounded-lg bg-gradient-orange text-white font-Helvetica font-medium text-base text-center") Узнать больше
+                div(class="grid  @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8")
+                    img(src=`${path}/img/other/teacher.png`, class="@xs/body:order-2 @6xl/body:-order-none rounded-lg w-full h-full aspect-16-9 object-cover")
+                    div(class="@xs/body:contents @6xl/body:flex flex-col gap-6")
+                        h2(class="@xs/body:order-1 @6xl/body:-order-none font-Helvetica font-semibold  @xs/body:text-2xl @6xl/body:text-4xl text-black") Об учебном центре
+                        p(class="@xs/body:order-3 @6xl/body:-order-none font-Helvetica font-normal text-base text-black") Учебный центр Государственной компании «Автодор» на базе ООО «Автодор-Инжиниринг» приглашает пройти обучение с повышением квалификации по учебным программам, сформированным на основе уникального практического опыта проектирования, строительства и эксплуатации высокоскоростных автомагистралей.
+                        a(href="ob-uchebnom-centre.html", class="@xs/body:order-4 @6xl/body:-order-none mt-auto ml-auto w-max p-4 rounded-lg bg-gradient-orange text-white font-Helvetica font-medium text-base text-center") Узнать больше
             div(class="container mx-auto")
                 include ../../../../../pug/Components/_consultationCard.pug
             div(class="bg-lightGray py-16")
                 div(class="container mx-auto flex flex-col gap-8")
-                    h2(class="font-Helvetica font-semibold text-4xl text-black text-center") Отзывы
-                    div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-indicators-outside slider-nav-noloop slider-item-show3 slider-indicators-dark slider-nav-visible")
+                    h2(class="font-Helvetica font-semibold @xs/body:text-2xl @6xl/body:text-4xl text-black text-center") Отзывы
+                    div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-indicators-outside slider-nav-noloop @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @6xl/body:slider-item-show3 slider-indicators-dark slider-nav-visible")
                         div(class="slider-container pb-1")
                             -
                                 var items = [
@@ -328,8 +330,8 @@ block content
                             button.active
                             button
             div(class="container mx-auto flex flex-col gap-8")
-                h2(class="font-Helvetica font-semibold text-4xl text-black text-center") Наши партнеры
-                div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                h2(class="font-Helvetica font-semibold @xs/body:text-2xl @6xl/body:text-4xl text-black text-center") Наши партнеры
+                div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                     div(class="slider-container pb-1")
                         img(src=`${path}/img/logo/250.png` class="max-h-32 object-contain", alt="Партнер")
                         img(src=`${path}/img/logo/RUT_rus.svg` class="max-h-32 object-contain", alt="Партнер")
