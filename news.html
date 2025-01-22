@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="./local/templates/tcavtodor/libs/swiffy-slider-1.6.0/swiffy-slider.min.css">
     <link rel="stylesheet" href="./local/templates/tcavtodor/css/style.css">
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" href="./local/templates/tcavtodor/img/other/favicon.ico" type="image/x-icon"/>
-    <title>Новости - avtodor</title>
+    <title>Новость - avtodor</title>
     <meta name="description" content=""/>
   </head>
   <body class="overflow-x-hidden bg-white">
@@ -167,7 +168,42 @@
       <main>
         <div class="flex flex-col gap-32 mb-32">
           <div class="container mx-auto flex flex-col gap-8 pt-10">
-            <h1 class="font-Helvetica font-semibold text-4xl text-black">Новости</h1>
+            <div class="flex flex-wrap gap-2">
+              <div class="flex gap-2 items-center"><a class="font-Helvetica font-normal text-base text-primary hover:text-primaryHover" href="index.html">Главная</a>
+                <p class="font-Helvetica font-normal text-base text-secondary">/</p>
+              </div>
+              <div class="flex gap-2 items-center"><a class="font-Helvetica font-normal text-base text-primary hover:text-primaryHover" href="#">Каталог новостей</a>
+                <p class="font-Helvetica font-normal text-base text-secondary">/</p>
+              </div>
+              <div class="flex gap-2 items-center"><a class="font-Helvetica  font-normal text-base text-secondary">Новость</a>
+              </div>
+            </div>
+            <h1 class="font-Helvetica font-semibold text-4xl text-black w-3/4 text-balance">4 000 партнёров уже предложили практику и сделали офер лучшим студентам</h1>
+            <div class="grid grid-cols-1fr-1fr gap-8"><img class="w-full aspect-16-9 object-cover rounded-md" alt="лого" src="./local/templates/tcavtodor/img/other/thumb__1920_1080_0_0_auto.jpg">
+              <div class="flex flex-col gap-4">
+                <p class="font-Helvetica font-medium text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dignissimos sit autem deleniti laudantium possimus, quisquam error, ratione assumenda, doloremque aspernatur labore. Sunt quibusdam odio distinctio tenetur beatae, fugit porro?</p>
+              </div>
+            </div>
+          </div>
+          <div class="container mx-auto">
+            <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible">
+              <div class="slider-container pb-1">
+                <article class="flex flex-col gap-2 group relative"><img class="w-full aspect-16-9 rounded-lg" alt="картинка программы" src="./local/templates/tcavtodor/img/stub.jpg"></article>
+                <article class="flex flex-col gap-2 group relative"><img class="w-full aspect-16-9 rounded-lg" alt="картинка программы" src="./local/templates/tcavtodor/img/stub.jpg"></article>
+                <article class="flex flex-col gap-2 group relative"><img class="w-full aspect-16-9 rounded-lg" alt="картинка программы" src="./local/templates/tcavtodor/img/stub.jpg"></article>
+                <article class="flex flex-col gap-2 group relative"><img class="w-full aspect-16-9 rounded-lg" alt="картинка программы" src="./local/templates/tcavtodor/img/stub.jpg"></article>
+              </div>
+              <button class="slider-nav" type="button">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 26L10 16L20 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <button class="slider-nav slider-nav-next" type="button">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 6L22 16L12 26" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </main>
@@ -274,6 +310,7 @@
       </footer>
     </div>
     <script src="./local/templates/tcavtodor/libs/jquery/jquery-3.7.1.min.js"></script>
+    <script src="./local/templates/tcavtodor/libs/swiffy-slider-1.6.0/swiffy-slider.min.js"></script>
     <script src="./local/templates/tcavtodor/pages/news/js/index.js" type="module"></script>
   </body>
 </html>

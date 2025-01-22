@@ -1,17 +1,20 @@
 extends ../../../../../pug/layout/_layout.pug
 include ../../../../../pug/layout/_head.pug
 include ../../../../../pug/layout/_header.pug
+include ../../../../../pug/ui/_breadcrumbs.pug
 
 block scripts
     - var path = "./local/templates/tcavtodor"
     script(src=`${path}/libs/jquery/jquery-3.7.1.min.js`)
+    script(src=`${path}/libs/swiffy-slider-1.6.0/swiffy-slider.min.js`)
     script(src=`${path}/pages/news/js/index.js`, type="module")
 
 
 block head
     - var path = "./local/templates/tcavtodor"
+    link(rel="stylesheet", href=`${path}/libs/swiffy-slider-1.6.0/swiffy-slider.min.css`)
     link(rel="stylesheet", href=`${path}/css/style.css`)
-    +head('Новости - avtodor', '') 
+    +head('Новость - avtodor', '') 
 
 block content
     - var authorization = true;
@@ -19,6 +22,42 @@ block content
     main(class="")
         div(class="flex flex-col gap-32 mb-32")
             div(class="container mx-auto flex flex-col gap-8 pt-10")
-                h1(class="font-Helvetica font-semibold text-4xl text-black") Новости
-
+                -
+                    var items = [
+                        {
+                            link: "index.html",
+                            name: "Главная"
+                        },
+                        {
+                            link: "#",
+                            name: "Каталог новостей"
+                        },
+                        {
+                            link: "#",
+                            name: "Новость"
+                        },
+                    ]
+                +breadcrumbs(items)
+                h1(class="font-Helvetica font-semibold text-4xl text-black w-3/4 text-balance") 4 000 партнёров уже предложили практику и сделали офер лучшим студентам
+                div(class="grid grid-cols-1fr-1fr gap-8")
+                    img(class="w-full aspect-16-9 object-cover rounded-md", alt="лого", src=`${path}/img/other/thumb__1920_1080_0_0_auto.jpg`)
+                    div(class="flex flex-col gap-4")
+                        p(class="font-Helvetica font-medium text-lg text-black") Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dignissimos sit autem deleniti laudantium possimus, quisquam error, ratione assumenda, doloremque aspernatur labore. Sunt quibusdam odio distinctio tenetur beatae, fugit porro?
+            div(class="container mx-auto")
+                div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                    div(class="slider-container pb-1")
+                        article(class="flex flex-col gap-2 group relative")
+                            img(class="w-full aspect-16-9 rounded-lg", alt="картинка программы", src=`${path}/img/stub.jpg`)
+                        article(class="flex flex-col gap-2 group relative")
+                            img(class="w-full aspect-16-9 rounded-lg", alt="картинка программы", src=`${path}/img/stub.jpg`)
+                        article(class="flex flex-col gap-2 group relative")
+                            img(class="w-full aspect-16-9 rounded-lg", alt="картинка программы", src=`${path}/img/stub.jpg`)
+                        article(class="flex flex-col gap-2 group relative")
+                            img(class="w-full aspect-16-9 rounded-lg", alt="картинка программы", src=`${path}/img/stub.jpg`)
+                    button(class="slider-nav", type="button")
+                        svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                            path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                    button(class="slider-nav slider-nav-next", type="button")
+                        svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                            path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
     include ../../../../../pug/layout/_footer.pug
