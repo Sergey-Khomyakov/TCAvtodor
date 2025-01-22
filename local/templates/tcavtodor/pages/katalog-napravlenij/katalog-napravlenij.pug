@@ -1,0 +1,99 @@
+extends ../../../../../pug/layout/_layout.pug
+include ../../../../../pug/layout/_head.pug
+include ../../../../../pug/layout/_header.pug
+include ../../../../../pug/ui/_breadcrumbs.pug
+include ../../../../../pug/ui/_directionCard.pug
+
+block scripts
+    - var path = "./local/templates/tcavtodor"
+    script(src=`${path}/libs/jquery/jquery-3.7.1.min.js`)
+    script(src=`${path}/pages/katalog-napravlenij/js/index.js`, type="module")
+
+
+block head
+    - var path = "./local/templates/tcavtodor"
+    link(rel="stylesheet", href=`${path}/css/style.css`)
+    +head('Каталог "Направления обучения" - avtodor', '') 
+
+block content
+    - var authorization = true;
+    +header(authorization)
+    main(class="")
+        div(class="flex flex-col gap-32 mb-32")
+            div(class="container mx-auto flex flex-col gap-8 pt-10")
+                -
+                    var items = [
+                        {
+                            link: "#",
+                            name: "Главная"
+                        },
+                        {
+                            link: "#",
+                            name: "Каталог"
+                        },
+                    ]
+                +breadcrumbs(items)
+                h1(class="font-Helvetica font-semibold text-4xl text-black") Направления обучения
+                div(class="@container/main")
+                    div(class="grid @xs/main:grid-cols-full @md/main:grid-cols-2 @xl:grid-cols-3 gap-6")
+                        -
+                            var items = [
+                                {
+                                    link: "#",
+                                    title: "Содержание искусственных сооружений",
+                                    count: "7",
+                                    src: `${path}/img/stub.jpg`
+                                },
+                                {
+                                    link: "#",
+                                    title: "Содержание искусственных сооружений",
+                                    count: "7",
+                                    src: `${path}/img/stub.jpg`
+                                },
+                                {
+                                    link: "#",
+                                    title: "Содержание искусственных сооружений",
+                                    count: "7",
+                                    src: `${path}/img/stub.jpg`
+                                },
+                                {
+                                    link: "#",
+                                    title: "Содержание искусственных сооружений",
+                                    count: "7",
+                                    src: `${path}/img/stub.jpg`
+                                },
+                                {
+                                    link: "#",
+                                    title: "Содержание искусственных сооружений",
+                                    count: "7",
+                                    src: `${path}/img/stub.jpg`
+                                },
+                                {
+                                    link: "#",
+                                    title: "Содержание искусственных сооружений",
+                                    count: "7",
+                                    src: `${path}/img/stub.jpg`
+                                },
+                                {
+                                    link: "#",
+                                    title: "Содержание искусственных сооружений",
+                                    count: "7",
+                                    src: `${path}/img/stub.jpg`
+                                },
+                                {
+                                    link: "#",
+                                    title: "Содержание искусственных сооружений",
+                                    count: "7",
+                                    src: `${path}/img/stub.jpg`
+                                },
+                                {
+                                    link: "#",
+                                    title: "Содержание искусственных сооружений",
+                                    count: "7",
+                                    src: `${path}/img/stub.jpg`
+                                }
+                            ]
+                        +directionCard(items)
+            div(class="container mx-auto")
+                include ../../../../../pug/Components/_consultationCard.pug
+    include ../../../../../pug/layout/_footer.pug

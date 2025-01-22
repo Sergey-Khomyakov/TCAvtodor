@@ -1,0 +1,18 @@
+div(class="rounded-lg shadow-md py-4 px-8 flex flex-col gap-6 bg-lightGray")
+    p(class="font-Helvetica font-semibold text-4xl text-black") Получить консультацию
+    div(class="grid grid-cols-4 gap-4")
+        div(class="relative")
+            input(class="peer w-full border border-gray-300 rounded-md py-2 px-3 font-montserrat font-semibold text-gray-600 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary transition duration-200 ease-in-out", id="Name", type="text", name="Name", required)
+            label(for="Name", class=" absolute top-[0.675rem] peer-focus:-top-[0.675rem] peer-valid:-top-[0.675rem] bg-white px-1 block font-Helvetica font-normal text-gray-400 text-base peer-focus:text-sm peer-valid:text-sm leading-[1] left-2 transition-all duration-200 ease-in-out rounded-full")
+                | Имя
+        div(class="relative")
+            input(class="peer w-full border border-gray-300 rounded-md py-2 px-3 font-montserrat font-semibold text-gray-600 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary transition duration-200 ease-in-out", id="Phone", type="tel", name="Phone", required)
+            label(for="Phone", class=" absolute top-[0.675rem] peer-focus:-top-[0.675rem] peer-valid:-top-[0.675rem] bg-white px-1 block font-Helvetica font-normal text-gray-400 text-base peer-focus:text-sm peer-valid:text-sm leading-[1] left-2 transition-all duration-200 ease-in-out rounded-full")
+                | Телефон
+        div(class="relative")
+            input(class="peer w-full border border-gray-300 rounded-md py-2 px-3 font-montserrat font-semibold text-gray-600 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary transition duration-200 ease-in-out", id="Email", type="text", name="Email", required)
+            label(for="Email", class=" absolute top-[0.675rem] peer-focus:-top-[0.675rem] peer-valid:-top-[0.675rem] bg-white px-1 block font-Helvetica font-normal text-gray-400 text-base peer-focus:text-sm peer-valid:text-sm leading-[1] left-2 transition-all duration-200 ease-in-out rounded-full")
+                | Почта
+        button(type="button", class=" bg-gradient-orange rounded-lg p-1 text-white") 
+            | Получить консультацию
+    p(class="font-Helvetica font-normal text-base text-black ml-auto") Продолжая, вы соглашаетесь с Политикой конфиденциальности

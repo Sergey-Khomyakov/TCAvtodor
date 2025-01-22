@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Helvetica';
+        font-weight: 600;
+        src: url(./../fonts/Helvetica-Bold.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Helvetica';
+        font-weight: 500;
+        src: url(./../fonts/Helvetica.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Helvetica';
+        font-weight: 400;
+        src: url(./../fonts/helvetica-light-587ebe5a59211.ttf) format('truetype');
+    }
+}
+
+@layer components {
+
+    #content-wrapper {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    body {
+        position: relative;
+    }
+
+    .aspect-16-9 {
+        aspect-ratio: 16 / 9;
+    }
+
+    .aspect-16-8 {
+        aspect-ratio: 16 / 8;
+    }
+
+    .aspect-16-7 {
+        aspect-ratio: 16 / 7;
+    }
+
+    .aspect-16-6 {
+        aspect-ratio: 16 / 6;
+    }
+
+    .aspect-16-5 {
+        aspect-ratio: 16 / 5;
+    }
+
+    .aspect-15-9 {
+        aspect-ratio: 15 / 9;
+    }
+
+    .aspect-9-9 {
+        aspect-ratio: 9 / 9;
+    }
+
+    .aspect-1-1 {
+        aspect-ratio: 1 / 1;
+    }
+
+    .right-chevron {
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    }
+
+    .aspect-none {
+        aspect-ratio: unset;
+    }
+
+    .pos-unset {
+        position: unset !important;
+    }
+
+    .shrink-none {
+        flex-shrink: unset;
+    }
+
+    .items-unset {
+        align-items: unset;
+    }
+
+    .z-full {
+        z-index: 9999;
+    }
+
+    .slider-custom-1 {
+        --swiffy-slider-item-gap: 2rem;
+    }
+
+    .slider-custom-2 .slider-nav {
+        filter: unset;
+    }
+
+    .slider-custom-2 .slider-nav::after {
+        content: unset;
+    }
+
+    .slider-custom-2 .slider-nav::before {
+        content: unset;
+    }
+
+    @supports (position-area: bottom) {
+        .anhore-filterlist {
+            anchor-name: --filterList;
+        }
+
+        .position-anchor-filterlist {
+            inset-block-start: anchor(start);
+            position-anchor: --filterList;
+            position-area: bottom;
+            top: 0;
+        }
+    }
+
+    @supports (position-area: bottom) {
+
+        .anhore-burgerlist {
+            anchor-name: --burgerlist;
+        }
+
+        .position-anchor-burgerlist {
+            position-anchor: --burgerlist;
+            position-area: bottom;
+            top: 0;
+        }
+    }
+
+    @supports not (position-area: bottom) {
+        .position-anchor-filterlist {
+            top: 8rem !important;
+        }
+
+    }
+
+    @supports not (position-area: bottom) {
+
+        .position-anchor-burgerlist {
+            top: 5rem !important;
+        }
+    }
+
+}

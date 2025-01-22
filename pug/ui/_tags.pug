@@ -1,0 +1,6 @@
+mixin tags(items)
+    each item, index in items
+        div(class="flex gap-2 items-center")
+            if item.src !== null
+                img(src=item.src, alt="иконка", class="w-6 h-6 object-contain icon-filter-success-500")
+            p(tag="", class="font-inter font-normal text-sm leading-[1.7] text-success-500 ") #{item.name}

@@ -1,0 +1,173 @@
+extends ../../../../../pug/layout/_layout.pug
+include ../../../../../pug/layout/_head.pug
+include ../../../../../pug/layout/_header.pug
+include ../../../../../pug/ui/_breadcrumbs.pug
+include ../../../../../pug/ui/_productCard.pug
+
+block scripts
+    - var path = "./local/templates/tcavtodor"
+    script(src=`${path}/libs/jquery/jquery-3.7.1.min.js`)
+    script(src=`${path}/libs/swiffy-slider-1.6.0/swiffy-slider.min.js`)
+    script(src=`${path}/pages/kartochka-napravlenija/js/index.js`, type="module")
+
+
+block head
+    - var path = "./local/templates/tcavtodor"
+    link(rel="stylesheet", href=`${path}/libs/swiffy-slider-1.6.0/swiffy-slider.min.css`)
+    link(rel="stylesheet", href=`${path}/css/style.css`)
+    +head('Карточка направления - avtodor', '') 
+
+block content
+    - var authorization = true;
+    +header(authorization)
+    main(class="")
+        div(class="flex flex-col gap-32 mb-32")
+            div(class="container mx-auto flex flex-col gap-8 pt-10")
+                -
+                    var items = [
+                        {
+                            link: "#",
+                            name: "Главная"
+                        },
+                        {
+                            link: "#",
+                            name: "Направления"
+                        },
+                        {
+                            link: "#",
+                            name: "Содержание искусственных сооружений"
+                        },
+                    ]
+                +breadcrumbs(items)
+                h1(class="font-Helvetica font-semibold text-4xl text-black") Содержание искусственных сооружений
+                div(class="grid grid-cols-1fr-1fr gap-8")
+                    img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
+                    div(class="flex flex-col gap-6")
+                        p(class="font-Helvetica font-medium text-black text-lg") Описание нарпавления
+            div(class="container mx-auto flex flex-col gap-8")
+                h2(class="font-Helvetica font-semibold text-4xl text-black text-center") Программы
+                div(class="@container/main")
+                    div(class="grid @xs/main:grid-cols-full @md/main:grid-cols-3 @xl:grid-cols-4 gap-6")
+                        -
+                            var items = [
+                                {
+                                    link: "#",
+                                    title: "Содержание искусственных сооружений",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                    prise: '40 000',
+                                    category: "курс"
+                                },
+                                {
+                                    link: "#",
+                                    title: "Содержание искусственных сооружений",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                    prise: '40 000',
+                                    category: "курс"
+                                },
+                                {
+                                    link: "#",
+                                    title: "Содержание искусственных сооружений",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                    prise: '40 000',
+                                    category: "курс"
+                                },
+                                {
+                                    link: "#",
+                                    title: "Содержание искусственных сооружений",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                    prise: '40 000',
+                                    category: "курс"
+                                },
+                                {
+                                    link: "#",
+                                    title: "Содержание искусственных сооружений",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                    prise: '40 000',
+                                    category: "курс"
+                                },
+                                {
+                                    link: "#",
+                                    title: "Содержание искусственных сооружений",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                    prise: '40 000',
+                                    category: "курс"
+                                },
+                                {
+                                    link: "#",
+                                    title: "Содержание искусственных сооружений",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                    prise: '40 000',
+                                    category: "курс"
+                                },
+                                {
+                                    link: "#",
+                                    title: "Содержание искусственных сооружений",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                    prise: '40 000',
+                                    category: "курс"
+                                }
+                            ]
+                        +productCard(items)
+            div(class="container mx-auto flex flex-col gap-8")
+                h2(class="font-Helvetica font-semibold text-4xl text-black text-center") Разработчик
+                div(class="grid grid-cols-1fr-1fr gap-8")
+                    img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
+                    div(class="flex flex-col gap-4")
+                        p(class="font-Helvetica font-semibold text-2xl text-black") Иванов И.И 
+                        ul(class="list-disc pl-4")
+                            li(class=" marker:text-primary")
+                                p(class="font-Helvetica font-medium text-secondary text-lg") Руководитель отдела торговли и аналитики
+                        a(dialog-btn="authorInfo", author-id="1", href="#", class="bg-gradient-orange text-white rounded-lg p-2 px-4 text-xl w-max h-max mt-auto ml-auto") Об Авторе
+            div(class="container mx-auto flex flex-col gap-8")
+                h2(class="font-Helvetica font-semibold text-4xl text-black text-center") Авторы
+                div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                    div(class="slider-container pb-1")
+                        article(class="flex flex-col items-center gap-4 p-2")
+                            img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                            div(class="flex flex-col gap-1")
+                                p(class="font-Helvetica font-medium text-black text-lg text-center") Mildred Powers
+                                ul(class="list-disc pl-4")
+                                    li(class=" marker:text-primary")
+                                        p(class="font-Helvetica font-medium text-secondary text-lg") Руководитель отдела торговли и аналитики
+                            a(dialog-btn="authorInfo", author-id="1", href="#", class="bg-gradient-orange text-white rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                        article(class="flex flex-col items-center gap-4 p-2")
+                            img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                            div(class="flex flex-col gap-1")
+                                p(class="font-Helvetica font-medium text-black text-lg text-center") Mildred Powers
+                                ul(class="list-disc pl-4")
+                                    li(class=" marker:text-primary")
+                                        p(class="font-Helvetica font-medium text-secondary text-lg") Руководитель отдела торговли и аналитики
+                            a(dialog-btn="authorInfo", author-id="1", href="#", class="bg-gradient-orange text-white rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                        article(class="flex flex-col items-center gap-4 p-2")
+                            img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                            div(class="flex flex-col gap-1")
+                                p(class="font-Helvetica font-medium text-black text-lg text-center") Mildred Powers
+                                ul(class="list-disc pl-4")
+                                    li(class=" marker:text-primary")
+                                        p(class="font-Helvetica font-medium text-secondary text-lg") Руководитель отдела торговли и аналитики
+                            a(dialog-btn="authorInfo", author-id="1", href="#", class="bg-gradient-orange text-white rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                        article(class="flex flex-col items-center gap-4 p-2")
+                            img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                            div(class="flex flex-col gap-1")
+                                p(class="font-Helvetica font-medium text-black text-lg text-center") Mildred Powers
+                                ul(class="list-disc pl-4")
+                                    li(class=" marker:text-primary")
+                                        p(class="font-Helvetica font-medium text-secondary text-lg") Руководитель отдела торговли и аналитики
+                            a(dialog-btn="authorInfo", author-id="1", href="#", class="bg-gradient-orange text-white rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                    button(class="slider-nav", type="button")
+                        svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                            path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                    button(class="slider-nav slider-nav-next", type="button")
+                        svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                            path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+            div(class="container mx-auto")
+                include ../../../../../pug/Components/_consultationCard.pug
+    include ../../../../../pug/layout/_footer.pug

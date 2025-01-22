@@ -1,0 +1,8 @@
+mixin checkbox(trigger="")
+    label(class="relative inline-block w-5 h-5 group")
+        input(type="checkbox", class="opacity-0 w-0 h-0 peer", name=trigger)
+        span(class="absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-white transition-all duration-400 border border-gray-400 rounded-[0.38rem] group-hover:border-success-500 group-hover:bg-success-100 peer-checked:border-success-500 peer-checked:bg-success-25 peer-focus:shadow-custom-7 peer-focus:bg-white peer-focus:ring-opacity-50 peer-disabled:border-gray-400 peer-disabled:bg-gray-100")
+        span(class="absolute top-0 left-0 cursor-pointer w-full h-full hidden peer-checked:icon-filter-success-500 peer-disabled:icon-filter-gray-500 peer-checked:flex peer-checked:items-center peer-checked:justify-center")
+            svg(width="14", height="14", viewBox="0 0 14 14", fill="none", xmlns="http://www.w3.org/2000/svg")
+                path(d="M11.6668 3.5L5.25016 9.91667L2.3335 7", stroke="#fd7e14", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+

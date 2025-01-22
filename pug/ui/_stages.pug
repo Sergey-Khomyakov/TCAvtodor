@@ -1,0 +1,17 @@
+mixin stages(items)
+    - var path = "./local/templates/nmigroup"
+    each item, index in items
+        div(class="flex gap-4")
+            div(class=" shrink-0 relative bg-white mt-1")
+                - var classNameIcon = "w-6 h-6"
+                - var classNameLine = "after:content-[''] after:absolute after:left-3 after:w-[0.125rem] after:h-full after:top-1"
+                if index === items.length - 1
+                    - classNameLine = classNameLine + " after:bg-transparent"
+                else 
+                    - classNameLine = classNameLine + " after:bg-primary"
+                div(class="w-6 h-6 rounded-full bg-primary")
+                div(class=classNameLine)
+            div(class="flex flex-col gap-1 pb-4")
+                p(class="font-Helvetica font-medium text-2xl leading-[1.5] text-black") #{item.title}
+                if item.description !== null
+                    p(class="font-Helvetica font-normal text-base leading-[1.7] text-secondary ") #{item.description}

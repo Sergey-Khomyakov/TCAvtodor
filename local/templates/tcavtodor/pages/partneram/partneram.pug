@@ -1,0 +1,156 @@
+extends ../../../../../pug/layout/_layout.pug
+include ../../../../../pug/layout/_head.pug
+include ../../../../../pug/layout/_header.pug
+include ../../../../../pug/ui/_stages.pug
+include ../../../../../pug/ui/_cardDocs.pug
+
+block scripts
+    - var path = "./local/templates/tcavtodor"
+    script(src=`${path}/libs/jquery/jquery-3.7.1.min.js`)
+    script(src=`${path}/pages/partneram/js/index.js`, type="module")
+
+
+block head
+    - var path = "./local/templates/tcavtodor"
+    link(rel="stylesheet", href=`${path}/css/style.css`)
+    +head('Партнерам - avtodor', '') 
+
+block content
+    - var authorization = true;
+    +header(authorization)
+    main(class="")
+        div(class="flex flex-col gap-32 mb-32")
+            div(class="container mx-auto flex flex-col gap-8 pt-10")
+                h1(class="font-Helvetica font-semibold text-4xl text-black") Стать партнером
+                div(class="grid grid-cols-1fr-1fr gap-8")
+                    img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
+                    div(class="flex flex-col gap-6")
+                        h2(class="font-Helvetica font-semibold text-3xl text-black")
+                            | Текст
+            div(class="container mx-auto flex flex-col gap-8")
+                h2(class="font-Helvetica font-semibold text-4xl text-black text-center") Как строиться дистрибьютерская сетка
+                div(class="w-full flex flex-col items-center aspect-16-9 relative justify-center overflow-hidden")
+                    div(class="aspect-1-1 w-max flex flex-col items-center relative justify-center p-4 border border-primary rounded-full")
+                        p(class="font-Helvetica font-semibold text-2xl text-center") 
+                            | Учебный центр ООО
+                            br
+                            | "Автодор-Инжиниринг"
+                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-0")
+                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[0.5s]")
+                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[1s]")
+                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[1.5s]")
+                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[2s]")
+                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[2.5s]")
+                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[3s]")
+                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[3.5s]")
+                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[4s]")
+                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[4.5s]")
+                    p(class=" absolute w-max font-Helvetica font-medium top-0 left-[46.5%] text-center") 
+                        | Приволжский 
+                        br
+                        | Федеральный 
+                        br
+                        |Округ
+                    p(class=" absolute w-max font-Helvetica font-medium top-[10%] left-[70%] text-center") 
+                        | Дальневост. 
+                        br
+                        | Федеральный 
+                        br
+                        |Округ
+                    p(class=" absolute w-max font-Helvetica font-medium top-[45.5%] left-[80%] text-center") 
+                        | Сибирский 
+                        br
+                        | Федеральный 
+                        br
+                        |Округ
+                    p(class=" absolute w-max font-Helvetica font-medium top-[81.5%] left-[70%] text-center") 
+                        | Уральский 
+                        br
+                        | Федеральный 
+                        br
+                        |Округ
+                    p(class=" absolute w-max font-Helvetica font-medium top-[90%] left-[45%] text-center") 
+                        | Северо-Кавказский 
+                        br
+                        | Федеральный 
+                        br
+                        |Округ
+                    p(class=" absolute w-max font-Helvetica font-medium top-[82%] left-[23%] text-center") 
+                        | Северо-Западный 
+                        br
+                        | Федеральный 
+                        br
+                        |Округ
+                    p(class=" absolute w-max font-Helvetica font-medium top-[46%] left-[15%] text-center") 
+                        | Центральный 
+                        br
+                        | Федеральный 
+                        br
+                        |Округ
+                    p(class=" absolute w-max font-Helvetica font-medium top-[10%] left-[24%] text-center") 
+                        | Южный 
+                        br
+                        | Федеральный 
+                        br
+                        |Округ
+            div(class="container mx-auto flex flex-col gap-8")
+                h2(class="font-Helvetica font-semibold text-4xl text-black text-center") Выгоды для партнеров работы с УЦ
+            div(class="container mx-auto flex flex-col gap-8")
+                h2(class="font-Helvetica font-semibold text-4xl text-black text-center") Этапы сотрудничества
+                div(class="flex flex-col gap-0 w-max mx-auto")
+                    -
+                        var items = [
+                            {
+                                title: "Отправляете заявку на партнерство",
+                                description: null,
+                            },
+                            {
+                                title: "Заключаем договор",
+                                description: null,
+                            },
+                            {
+                                title: "Отправляем учебные программы для слушателей",
+                                description: null,
+                            },
+                            {
+                                title: "Размещаем информацию о партнёрстве на сейте УЦ",
+                                description: null,
+                            },
+                            {
+                                title: "Обучаем продукту",
+                                description: null,
+                            },
+                            {
+                                title: "Обеспечиваем маркетинговую поддержку продаж",
+                                description: null,
+                            },
+                        ]
+                    +stages(items)
+            div(class="container mx-auto grid grid-cols-1fr-1fr gap-8")
+                img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
+                div(class="flex flex-col gap-6")
+                    h2(class="font-Helvetica font-semibold text-3xl text-black") Готовы начать сотрудничество?
+                    div(class="flex flex-col gap-4")
+                        p(class="font-Helvetica font-medium text-base text-black") Мы подготовили шаблон документа, которы сделает процесс партнерства максимально удобным и прозрачным. Оформляйте соглашения легко и быстро!
+                            -
+                                var items = [
+                                    {
+                                        type: "pdf",
+                                        link: "#",
+                                        name: `Шаблон договора`,
+                                    }
+                                ]
+                            +cardDocs(items)
+                        p(class="font-Helvetica font-medium text-base text-black") Ознакомьтесь с нашим полным списком программ, которые помогут вам стать успешным партнером.
+                            -
+                                var items = [
+                                    {
+                                        type: "pdf",
+                                        link: "#",
+                                        name: `Список программ`,
+                                    },
+                                ]
+                            +cardDocs(items)
+                    div(class="flex flex-col gap-4")
+                    button(dialog-btn="bid", type="button", class="bg-gradient-orange text-white rounded-lg p-4 px-6 text-xl w-max mt-auto ml-auto") Оставить заявку
+    include ../../../../../pug/layout/_footer.pug

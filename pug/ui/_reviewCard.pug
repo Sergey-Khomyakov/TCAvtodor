@@ -1,0 +1,8 @@
+mixin reviewCard(items)
+    - var path = "./local/templates/tcavtodor"
+    each item, index in items
+        article(class="flex flex-col gap-4 w-full rounded-lg shadow-md p-4 bg-white")
+            div(class="flex gap-4 items-center")
+                img(src=item.img, class="w-16 h-16 rounded-full border-2 border-primary object-cover", alt="фото сотрудника")
+                p(class="font-Helvetica font-semibold text-lg text-black") #{item.name}
+            p(class="font-Helvetica font-normal text-base text-black") #{item.comment}

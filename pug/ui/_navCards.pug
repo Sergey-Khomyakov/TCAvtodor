@@ -1,0 +1,7 @@
+mixin navCards(items)
+    each item in items 
+        div(class="group")
+            div(class="flex flex-col xs:gap-4 lg:gap-3 p-4 rounded-2xl group-hover:border-success-500 group-hover:bg-success-25 relative border border-gray-200 shadow-custom-1 h-[7.5rem] bg-white")
+                div(class="w-8 h-8")
+                    img(src=item.src, alt="Иконка", class="w-full h-full object-contain icon-filter-gray-600 group-hover:icon-filter-success-500")
+                a(href=item.link, class="font-inter font-semibold text-base text-gray-600 group-hover:text-success-500 after:content-[''] after:absolute after:inset-0") #{item.name}

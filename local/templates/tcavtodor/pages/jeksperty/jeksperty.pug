@@ -1,0 +1,158 @@
+extends ../../../../../pug/layout/_layout.pug
+include ../../../../../pug/layout/_head.pug
+include ../../../../../pug/layout/_header.pug
+include ../../../../../pug/ui/_userCard.pug
+
+block scripts
+    - var path = "./local/templates/tcavtodor"
+    script(src=`${path}/libs/jquery/jquery-3.7.1.min.js`)
+    script(src=`${path}/pages/jeksperty/js/index.js`, type="module")
+
+
+block head
+    - var path = "./local/templates/tcavtodor"
+    link(rel="stylesheet", href=`${path}/css/style.css`)
+    +head('Эксперты - avtodor', '') 
+
+block content
+    - var authorization = true;
+    +header(authorization)
+    main(class="")
+        div(class="flex flex-col gap-32 mb-32")
+            div(class="container mx-auto flex flex-col gap-8 pt-10")
+                h1(class="font-Helvetica font-semibold text-4xl text-black") Наша команда
+                div(class="grid grid-cols-1fr-1fr gap-8")
+                    img(class="w-full aspect-16-9 object-cover rounded-md", alt="лого", src=`${path}/img/other/teacher.png`)
+                    div(class="flex flex-col gap-4")
+                        h2(class="font-Helvetica font-semibold text-3xl text-black")
+                            | Текстовый блок
+            div(class="container mx-auto flex flex-col gap-20")
+                h2(class="font-Helvetica font-semibold text-4xl text-black text-center") Команда Учебного центра
+                div(class="grid grid-cols-2 gap-14")
+                    -
+                        var items = [
+                            {
+                                name: "Иванов И.И.",
+                                img: `${path}/img/people/profile.png`,
+                                achievements: [
+                                    {
+                                        name: "Представитель компании"
+                                    },
+                                    {
+                                        name: "Консультант по криптовалюте"
+                                    },
+                                    {
+                                        name: "Зарабатывает в интернете более 6 лет"
+                                    }
+                                ],
+                            },
+                            {
+                                name: "Иванов И.И.",
+                                img: `${path}/img/people/profile.png`,
+                                achievements: [
+                                    {
+                                        name: "Представитель компании"
+                                    },
+                                    {
+                                        name: "Консультант по криптовалюте"
+                                    },
+                                    {
+                                        name: "Зарабатывает в интернете более 6 лет"
+                                    }
+                                ],
+                            },
+                            {
+                                name: "Иванов И.И.",
+                                img: `${path}/img/people/profile.png`,
+                                achievements: [
+                                    {
+                                        name: "Представитель компании"
+                                    },
+                                    {
+                                        name: "Консультант по криптовалюте"
+                                    },
+                                    {
+                                        name: "Зарабатывает в интернете более 6 лет"
+                                    }
+                                ],
+                            },
+                            {
+                                name: "Иванов И.И.",
+                                img: `${path}/img/people/profile.png`,
+                                achievements: [
+                                    {
+                                        name: "Представитель компании"
+                                    },
+                                    {
+                                        name: "Консультант по криптовалюте"
+                                    },
+                                    {
+                                        name: "Зарабатывает в интернете более 6 лет"
+                                    }
+                                ],
+                            },
+                            {
+                                name: "Иванов И.И.",
+                                img: `${path}/img/people/profile.png`,
+                                achievements: [
+                                    {
+                                        name: "Представитель компании"
+                                    },
+                                    {
+                                        name: "Консультант по криптовалюте"
+                                    },
+                                    {
+                                        name: "Зарабатывает в интернете более 6 лет"
+                                    }
+                                ],
+                            },
+                            {
+                                name: "Иванов И.И.",
+                                img: `${path}/img/people/profile.png`,
+                                achievements: [
+                                    {
+                                        name: "Представитель компании"
+                                    },
+                                    {
+                                        name: "Консультант по криптовалюте"
+                                    },
+                                    {
+                                        name: "Зарабатывает в интернете более 6 лет"
+                                    }
+                                ],
+                            },
+                            {
+                                name: "Иванов И.И.",
+                                img: `${path}/img/people/profile.png`,
+                                achievements: [
+                                    {
+                                        name: "Представитель компании"
+                                    },
+                                    {
+                                        name: "Консультант по криптовалюте"
+                                    },
+                                    {
+                                        name: "Зарабатывает в интернете более 6 лет"
+                                    }
+                                ],
+                            },
+                            {
+                                name: "Иванов И.И.",
+                                img: `${path}/img/people/profile.png`,
+                                achievements: [
+                                    {
+                                        name: "Представитель компании"
+                                    },
+                                    {
+                                        name: "Консультант по криптовалюте"
+                                    },
+                                    {
+                                        name: "Зарабатывает в интернете более 6 лет"
+                                    }
+                                ],
+                            },
+                        ]
+                    +userCard(items)
+            div(class="container mx-auto")
+                include ../../../../../pug/Components/_consultationCard.pug
+    include ../../../../../pug/layout/_footer.pug

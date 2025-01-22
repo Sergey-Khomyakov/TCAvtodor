@@ -1,0 +1,27 @@
+mixin dropdowns(items)
+    - var path = "./local/templates/nmigroup"
+    each item in items 
+        div(dropdowns="", class="relative group cursor-pointer")
+            div(class="flex py-2 px-5 gap-2 xs:justify-between lg:justify-start items-center xs:h-max lg:h-full rounded-3xl group-hover:bg-gray-100")
+                p(class="font-inter font-semibold text-lg leading-[1.3] text-gray-600 cursor-default") #{item.text}
+                img(dropdownsBtn="", src=`${path}/img/icons/CaretDown.svg`, alt="иконка", class="w-4 h-4 object-contain transition-all icon-filter-success-500 lg:hidden")
+            div(dropdownsList="", class="lg:absolute transition-all duration-300 max-h-0 overflow-hidden lg:group-hover:overflow-visible lg:left-1/2 lg:-translate-x-1/2 z-full")
+                div(class="flex flex-col gap-1 xs:w-full lg:w-max bg-white z-50 relative py-3 shadow-custom-2 rounded-md ")
+                    each child in item.childs 
+                        div(dropdownsItem="", class="group/item xs:grid xs:grid-cols-full sm:grid-cols-1fr-1fr lg:block xs:w-full lg:w-auto")
+                            div(class="flex gap-4 bg-white h-max cursor-pointer group-hover/item:bg-[#f6f6f7] p-3 rounded-lg")
+                                div(class="w-12 h-12 rounded-lg bg-success-50 shadow-custom-1 p-3 group-hover/item:bg-white")
+                                    img(src=child.icon, alt="иконка", class="w-full h-full object-contain icon-filter-success-500")
+                                div(class="flex flex-col gap-1")
+                                    a(href=child.link, class="font-inter font-semibold text-base text-gray-600 max-w-52") #{child.name}
+                                    p(class="font-inter font-normal text-sm leading-[1.4] text-gray-500 max-w-52") #{child.description}
+                            if child.childLevel2.length > 0
+                                div(childLevel2Block="", class="hidden xs:pos-unset lg:!absolute top-0 left-[calc(100%-0.25rem)] group-hover/item:block h-max xs:w-full lg:w-[34rem] border border-gray-100 pt-3 xs:bg-white lg:bg-[#f6f6f7] shadow-custom-2")
+                                    each childLevel2 in child.childLevel2
+                                        div(class="group/item2")
+                                            div(class="flex gap-4  cursor-pointer group-hover/item2:bg-gray-100 p-3 rounded-lg")
+                                                div(class="w-12 h-12 rounded-lg bg-success-50 shadow-custom-1 p-3 group-hover/item2:bg-white")
+                                                    img(src=childLevel2.icon, alt="иконка", class="w-full h-full object-contain icon-filter-success-500")
+                                                div(class="flex flex-col gap-1")
+                                                    a(href=childLevel2.link, class="font-inter font-semibold text-base text-gray-600 max-w-52") #{childLevel2.name}
+                                                    p(class="font-inter font-normal text-sm leading-[1.4] text-gray-500 max-w-52") #{childLevel2.description}

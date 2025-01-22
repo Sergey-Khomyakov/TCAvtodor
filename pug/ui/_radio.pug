@@ -1,0 +1,7 @@
+mixin radio(trigger="")
+    label(class="relative inline-block w-5 h-5 group")
+        input(type="radio", class="opacity-0 w-0 h-0 peer", name=trigger)
+        span(class="group-hover:border-success-500 group-hover:bg-success-100 absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-white border border-gray-400 transition-all duration-400 rounded-full peer-focus:shadow-custom-7 peer-focus:bg-white peer-focus:border-success-200 peer-focus:ring-opacity-50 peer-disabled:border-gray-400 peer-disabled:bg-gray-100")
+        span(class="absolute top-0 cursor-pointer w-full h-full hidden peer-checked:flex peer-checked:items-center peer-checked:justify-center peer-checked:bg-success-500 peer-checked: peer-checked:rounded-full")
+            svg(width="14", height="14", viewBox="0 0 14 14", fill="none", xmlns="http://www.w3.org/2000/svg")
+                path(d="M11.6668 3.5L5.25016 9.91667L2.3335 7", stroke="white", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")

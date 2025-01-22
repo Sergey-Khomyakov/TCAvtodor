@@ -1,0 +1,30 @@
+extends ../../../../../pug/layout/_layout.pug
+include ../../../../../pug/layout/_head.pug
+include ../../../../../pug/layout/_header.pug
+
+block scripts
+    - var path = "./local/templates/tcavtodor"
+    script(src=`${path}/libs/jquery/jquery-3.7.1.min.js`)
+    script(src=`${path}/pages/udostoverenie-gos.obrazca/js/index.js`, type="module")
+
+
+block head
+    - var path = "./local/templates/tcavtodor"
+    link(rel="stylesheet", href=`${path}/css/style.css`)
+    +head('Удостоверение гос.образца - avtodor', '') 
+
+block content
+    - var authorization = true;
+    +header(authorization)
+    main(class="")
+        div(class="flex flex-col gap-32 mb-32")
+            div(class="container mx-auto flex flex-col gap-8 pt-10")
+                h1(class="font-Helvetica font-semibold text-4xl text-black") Удостоверение гос.образца
+                div(class="grid grid-cols-1fr-1fr gap-8")
+                    img(class="w-full aspect-16-9 object-cover rounded-md", alt="лого", src=`${path}/img/other/GosDoc.png`)
+                    div(class="flex flex-col gap-4")
+                        h2(class="font-Helvetica font-semibold text-3xl text-black")
+                            | Выгоды работы с УЦ
+            div(class="container mx-auto")
+                include ../../../../../pug/Components/_consultationCard.pug
+    include ../../../../../pug/layout/_footer.pug

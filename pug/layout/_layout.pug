@@ -1,0 +1,9 @@
+doctype html
+html(lang='ru')
+    head
+        block head
+    body(class="overflow-x-hidden bg-white")
+        #content-wrapper
+            block content
+        include ../Components/_scrollPage
+        block scripts

@@ -1,0 +1,40 @@
+mixin select(trigger = "", values = [], status = "")
+    - var path = "./local/templates/nmigroup"
+    - var className = "border rounded-md h-full py-2 px-3 relative group-focus:border-success-600 group-focus:shadow-custom-8"
+    if status == 'error' 
+        - className = className + " border-error-400 bg-white"
+    else if status == 'disabled' 
+        - className = className + " border-gray-400 disabled bg-[#f6f6f7]"
+    else 
+        - className = className + " bg-white"
+    div(class="group")
+        div(class=className, data-select=trigger)
+            div(listInput='',class="flex gap-2 justify-between items-center cursor-pointer")
+                p(class="font-inter font-normal text-base leading-[1.5] w-calc-input text-gray-600", data-value=`${values[0].id}`) #{values[0].name}
+                - var classIcons = "w-4 h-4 object-contain transition-all "
+                if status == 'disabled' 
+                    - classIcons = classIcons + " icon-filter-gray-200"
+                else
+                    - classIcons = classIcons + " icon-filter-success-500"
+                img(src=`${path}/img/icons/CaretDown.svg`, class=classIcons, list-btn='', alt="Иконка")
+            div(class="absolute left-0 w-full overflow-hidden h-0 top-full z-[110]", list='')
+                div(listBlock='', class="flex flex-col gap-2 bg-white shadow-md rounded-lg border border-gray-100 py-2 max-h-80 overflow-y-auto custom-scrollbar mt-[1px]")
+                    each val, index in values
+                        if index === 0
+                            div(class="group/item")
+                                div(class="transition transition-timing-productive duration-300 group-hover/item:bg-[#f6f6f7] py-2 px-3 cursor-pointer", data-value=val.id)
+                                    p(selectVal='', class="font-inter font-normal text-base leading-[1.5] text-gray-600") #{val.name}
+                                    if val.description !== null
+                                        p(class="font-inter font-normal text-base leading-[1.5] text-gray-400") #{val.description}
+                        else if index === values.length - 1
+                            div(class="group/item")
+                                div(class="transition transition-timing-productive duration-300 group-hover/item:bg-[#f6f6f7] py-2 px-3 cursor-pointer", data-value=val.id)
+                                    p(selectVal='',class="font-inter font-normal text-base leading-[1.5] text-gray-600") #{val.name}
+                                    if val.description !== null
+                                        p(class="font-inter font-normal text-base leading-[1.5] text-gray-400") #{val.description}
+                        else
+                            div(class="group/item")
+                                div(class="transition transition-timing-productive duration-300 group-hover/item:bg-[#f6f6f7] py-2 px-3 cursor-pointer", data-value=val.id)
+                                    p(selectVal='', class="font-inter font-normal text-base leading-[1.5] text-gray-600") #{val.name}
+                                    if val.description !== null
+                                        p(class="font-inter font-normal text-base leading-[1.5] text-gray-400") #{val.description}

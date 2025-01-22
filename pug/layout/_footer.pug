@@ -1,0 +1,70 @@
+- var path = "./local/templates/tcavtodor"
+footer(class="@container/footer py-16 bg-lightGray")
+    div(class="@xs/footer:px-4 @5xl/footer:px-8 @5xl/footer:pl-[4.5rem] min-h-16 w-full")
+        div(class="grid grid-cols-auto-1fr-auto gap-32")
+            div(class="flex flex-col gap-4")
+                div(class="relative")
+                    include ../ui/_logo.pug
+                    a(href="#", class="absolute inset-0 top-0 left-0 ")
+                div(class="flex flex-col gap-2")
+                    a(href="#", class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base") ГК Автодор
+                    a(href="#", class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base") ООО "Автодор-Инжиниринг"
+                    a(href="#", class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base") Публичная оферта
+                    a(href="#", class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base") Политика обработки персональных данных
+                    a(href="#", class=" font-Helvetica font-normal text-primary hover:text-primaryHover text-base") Обращение в поддержку
+                div(class="flex flex-col gap-4")
+                    div(class="flex items-center gap-2 h-max relative")
+                        div(class="w-max h-max")
+                            svg(width="24", height="24", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                path(d="M16 6.99902C6 6.99902 2 16 2 16C2 16 6 24.999 16 24.999C26 24.999 30 16 30 16C30 16 26 6.99902 16 6.99902Z", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                path(d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                        p(class="font-Helvetica font-normal text-black text-base") 
+                            | Версия для слабовидящих
+                        a(href="#", class="inset-0 absolute top-0 left-0")
+                    div(class="flex items-center gap-2")
+                        div(class="relative")
+                            svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 50 50", width="36", height="36")
+                                path(d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37.72,33l-3.73-0.01 c0,0-0.08,0.01-0.21,0.01c-0.3,0-0.92-0.08-1.65-0.58c-1.31-0.91-2.56-3.17-3.55-3.17c-0.07,0-0.13,0.01-0.19,0.03 c-0.86,0.27-1.12,1.13-1.12,2.18c0,0.37-0.26,0.54-0.96,0.54h-1.93c-2.16,0-4.25-0.05-6.6-2.62c-3.46-3.79-6.7-10.53-6.7-10.53 s-0.18-0.39,0.01-0.62c0.18-0.21,0.6-0.23,0.76-0.23c0.04,0,0.06,0,0.06,0h4c0,0,0.37,0.07,0.64,0.27c0.23,0.17,0.35,0.48,0.35,0.48 s0.68,1.32,1.53,2.81c1.43,2.46,2.2,3.28,2.75,3.28c0.09,0,0.18-0.02,0.27-0.07c0.82-0.45,0.58-4.09,0.58-4.09s0.01-1.32-0.42-1.9 c-0.33-0.46-0.96-0.59-1.24-0.63c-0.22-0.03,0.14-0.55,0.62-0.79c0.62-0.3,1.65-0.36,2.89-0.36h0.6c1.17,0.02,1.2,0.14,1.66,0.25 c1.38,0.33,0.91,1.62,0.91,4.71c0,0.99-0.18,2.38,0.53,2.85c0.05,0.03,0.12,0.05,0.21,0.05c0.46,0,1.45-0.59,3.03-3.26 c0.88-1.52,1.56-3.03,1.56-3.03s0.15-0.27,0.38-0.41c0.22-0.13,0.22-0.13,0.51-0.13h0.03c0.32,0,3.5-0.03,4.2-0.03h0.08 c0.67,0,1.28,0.01,1.39,0.42c0.16,0.62-0.49,1.73-2.2,4.03c-2.82,3.77-3.14,3.49-0.8,5.67c2.24,2.08,2.7,3.09,2.78,3.22 C39.68,32.88,37.72,33,37.72,33z")
+                            a(href="#", class=" absolute inset-0 left-0 top-0")
+                        div(class="relative")
+                            svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 50 50", width="36", height="36")
+                                path(d="M25,2c12.703,0,23,10.297,23,23S37.703,48,25,48S2,37.703,2,25S12.297,2,25,2z M32.934,34.375	c0.423-1.298,2.405-14.234,2.65-16.783c0.074-0.772-0.17-1.285-0.648-1.514c-0.578-0.278-1.434-0.139-2.427,0.219	c-1.362,0.491-18.774,7.884-19.78,8.312c-0.954,0.405-1.856,0.847-1.856,1.487c0,0.45,0.267,0.703,1.003,0.966	c0.766,0.273,2.695,0.858,3.834,1.172c1.097,0.303,2.346,0.04,3.046-0.395c0.742-0.461,9.305-6.191,9.92-6.693	c0.614-0.502,1.104,0.141,0.602,0.644c-0.502,0.502-6.38,6.207-7.155,6.997c-0.941,0.959-0.273,1.953,0.358,2.351	c0.721,0.454,5.906,3.932,6.687,4.49c0.781,0.558,1.573,0.811,2.298,0.811C32.191,36.439,32.573,35.484,32.934,34.375z")
+                            a(href="#", class=" absolute inset-0 left-0 top-0")
+                        div(class="relative")
+                            svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 50 50", width="36", height="36")
+                                path(d="M46.894 23.986c.004 0 .007 0 .011 0 .279 0 .545-.117.734-.322.192-.208.287-.487.262-.769C46.897 11.852 38.154 3.106 27.11 2.1c-.28-.022-.562.069-.77.262-.208.192-.324.463-.321.746C26.193 17.784 28.129 23.781 46.894 23.986zM46.894 26.014c-18.765.205-20.7 6.202-20.874 20.878-.003.283.113.554.321.746.186.171.429.266.679.266.03 0 .061-.001.091-.004 11.044-1.006 19.787-9.751 20.79-20.795.025-.282-.069-.561-.262-.769C47.446 26.128 47.177 26.025 46.894 26.014zM22.823 2.105C11.814 3.14 3.099 11.884 2.1 22.897c-.025.282.069.561.262.769.189.205.456.321.734.321.004 0 .008 0 .012 0 18.703-.215 20.634-6.209 20.81-20.875.003-.283-.114-.555-.322-.747C23.386 2.173 23.105 2.079 22.823 2.105zM3.107 26.013c-.311-.035-.555.113-.746.321-.192.208-.287.487-.262.769.999 11.013 9.715 19.757 20.724 20.792.031.003.063.004.094.004.25 0 .492-.094.678-.265.208-.192.325-.464.322-.747C23.741 32.222 21.811 26.228 3.107 26.013z")
+                            a(href="#", class=" absolute inset-0 left-0 top-0")
+            div(class="grid grid-cols-3 gap-4")
+                div(class="flex flex-col gap-2")
+                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Главная
+                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Каталог
+                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") 3D Практикум 
+                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Об учебном центре
+                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Контакты 
+                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Личный кабинет
+                div(class="flex flex-col gap-2")
+                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Случателям
+                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Для юр.лиц
+                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Стать партнером
+                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Удостоверение гос.образца
+                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Эксперты
+                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Спец.предложения
+                div(class="flex flex-col gap-2")
+                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Наши партнеры
+                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Отзывы
+                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover ") Новости
+                    a(href="#", class="font-Helvetica font-normal text-base text-black hover:text-primaryHover mt-8") Получить консультацию
+            div(class="flex flex-col gap-4")
+                div(class="flex flex-col gap-2 items-end")
+                    p(class="font-Helvetica font-semibold text-black text-lg") Лицензия
+                    a(href="#", class="")
+                        img(class="w-16 object-contain", alt="лицензия" src=`${path}/img/other/license.png`)
+                address(class="flex gap-2 items-center mt-auto")
+                    svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                        path(d="M4 7H28V24C28 24.2652 27.8946 24.5196 27.7071 24.7071C27.5196 24.8946 27.2652 25 27 25H5C4.73478 25 4.48043 24.8946 4.29289 24.7071C4.10536 24.5196 4 24.2652 4 24V7Z", stroke="#404040", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                        path(d="M28 7L16 18L4 7", stroke="#404040", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                    a(href="mailto:educentr@avtodor-eng.ru", class="font-Helvetica font-normal text-black hover:text-primary text-base") educentr@avtodor-eng.ru
+                p(class="font-Helvetica font-semibold text-black text-base")
+                    | г.Москва, Звенигородское
+                    br
+                    | шоссе, 18/20 к1.
