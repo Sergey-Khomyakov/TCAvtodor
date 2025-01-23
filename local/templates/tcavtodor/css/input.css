@@ -4,21 +4,21 @@
 
 @layer base {
     @font-face {
-        font-family: 'Helvetica';
+        font-family: 'Montserrat';
         font-weight: 600;
-        src: url(./../fonts/Helvetica-Bold.ttf) format('truetype');
+        src: url(./../fonts/Montserrat-Bold.ttf) format('truetype');
     }
 
     @font-face {
-        font-family: 'Helvetica';
+        font-family: 'Montserrat';
         font-weight: 500;
-        src: url(./../fonts/Helvetica.ttf) format('truetype');
+        src: url(./../fonts/Montserrat-Medium.ttf) format('truetype');
     }
 
     @font-face {
         font-family: 'Helvetica';
         font-weight: 400;
-        src: url(./../fonts/helvetica-light-587ebe5a59211.ttf) format('truetype');
+        src: url(./../fonts/Montserrat-Regular.ttf) format('truetype');
     }
 }
 

@@ -15,13 +15,13 @@ mixin header(authorization)
                             path(d="M5.5 9.5C6.32843 9.5 7 8.82843 7 8C7 7.17157 6.32843 6.5 5.5 6.5C4.67157 6.5 4 7.17157 4 8C4 8.82843 4.67157 9.5 5.5 9.5Z", fill="white")
                             path(d="M5.5 17.5C6.32843 17.5 7 16.8284 7 16C7 15.1716 6.32843 14.5 5.5 14.5C4.67157 14.5 4 15.1716 4 16C4 16.8284 4.67157 17.5 5.5 17.5Z", fill="white")
                             path(d="M5.5 25.5C6.32843 25.5 7 24.8284 7 24C7 23.1716 6.32843 22.5 5.5 22.5C4.67157 22.5 4 23.1716 4 24C4 24.8284 4.67157 25.5 5.5 25.5Z", fill="white")
-                        p(class="font-Helvetica font-medium text-white") Каталог программ
+                        p(class="font-Montserrat font-medium text-white") Каталог программ
                         a(href="katalog-napravlenij.html", class="inset-0 absolute top-0 left-0")
                     div(class="rounded-lg relative w-max h-full p-2 flex  items-center gap-2 border border-black group hover:border-primary")
-                        p(class="font-Helvetica font-medium text-black group-hover:text-primary") Об Учебном центре
+                        p(class="font-Montserrat font-medium text-black group-hover:text-primary") Об Учебном центре
                         a(href="ob-uchebnom-centre.html", class="inset-0 absolute top-0 left-0")
                     div(class="rounded-lg relative w-max h-full p-2 flex  items-center gap-2 border border-black group hover:border-primary")
-                        p(class="font-Helvetica font-medium text-black group-hover:text-primary  ") Контакты
+                        p(class="font-Montserrat font-medium text-black group-hover:text-primary  ") Контакты
                         a(href="kontakty.html", class="inset-0 absolute top-0  left-0")
                 div(class="flex flex-wrap @xs/header:gap-2 @2xl/header:gap-4 items-center w-full h-full @xs/header:justify-end @7xl/header:justify-normal  ")
                     div(class="@xs/header:hidden @5xl/header:block relative w-max h-max")
@@ -41,10 +41,10 @@ mixin header(authorization)
                                     path(d="M13 27H6C5.73478 27 5.48043 26.8946 5.29289 26.7071C5.10536 26.5196 5 26.2652 5 26V6C5 5.73478 5.10536 5.48043 5.29289 5.29289C5.48043 5.10536 5.73478 5 6 5H13", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                     else
                         div(dialog-btn="registration", class="@xs/header:hidden rounded-lg relative w-max h-full p-2 @5xl/header:flex items-center gap-2 border border-black group hover:border-primary")
-                            p(class="font-Helvetica font-medium text-black group-hover:text-primary") Регистрация
+                            p(class="font-Montserrat font-medium text-black group-hover:text-primary") Регистрация
                             a(href="#", class="inset-0 absolute top-0 left-0")
                         div(dialog-btn="login", class="rounded-lg relative w-max h-full p-2 flex items-center gap-2 border border-black group hover:border-primary")
-                            p(class="font-Helvetica font-medium text-black group-hover:text-primary") Вход
+                            p(class="font-Montserrat font-medium text-black group-hover:text-primary") Вход
                             a(href="#", class="inset-0 absolute top-0 left-0")
     dialog#dialog(class="", aria-modal="true", class="rounded-lg relative")
         div(class="absolute top-1 right-1 cursor-pointer w-max", dialog-btn="close")
@@ -56,22 +56,22 @@ mixin header(authorization)
                 include ../ui/_logo.pug
             div(dialogBody="")
                 //- form(action="", method="dialog", class="flex flex-col gap-4")
-                //-     p(class="font-Helvetica font-semibold text-base text-black") Вход в личный кабинет
+                //-     p(class="font-Montserrat font-semibold text-base text-black") Вход в личный кабинет
                 //-     div(class="flex items-center gap-4 justify-between")
                 //-         div(class="flex gap-2 items-center")
                 //-             +checkbox("save-account")
-                //-             p(class="font-Helvetica font-normal text-black text-base") Запомнить меня
-                //-         a(href="#", class="font-Helvetica font-normal text-primary hover:text-primaryHover text-base") Забыли пароль?
+                //-             p(class="font-Montserrat font-normal text-black text-base") Запомнить меня
+                //-         a(href="#", class="font-Montserrat font-normal text-primary hover:text-primaryHover text-base") Забыли пароль?
                 //-     button(type="submit", class="bg-gradient-orange text-white px-4 py-2 w-full rounded-lg") Войти
                 //-     button(type="button", class="px-4 py-2 w-full rounded-lg border border-primary text-primary") Регистрация
-            p(dialogPolicy="", class="font-Helvetica font-normal text-black text-sm") 
+            p(dialogPolicy="", class="font-Montserrat font-normal text-black text-sm") 
                 | Продолжая, вы соглашаетесь с 
-                a(href="#", class="font-Helvetica font-normal text-primary hover:text-primaryHover text-sm") политикой конфиденциальности
+                a(href="#", class="font-Montserrat font-normal text-primary hover:text-primaryHover text-sm") политикой конфиденциальности
             template(dialogInputTemplate="")
                 div(class="flex flex-col gap-1")
-                    p(class="font-Helvetica font-semibold text-black text-base")
-                    input(class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white h-10 font-Helvetica font-normal text-base leading-[1.5] text-gray-400 w-full hover:border-primary focus:border-primary focus:transition-timing-focus focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none invalid:border-2 invalid:border-red-400 invalid:text-gray-400", type="text", placeholder="")
+                    p(class="font-Montserrat font-semibold text-black text-base")
+                    input(class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white h-10 font-Montserrat font-normal text-base leading-[1.5] text-gray-400 w-full hover:border-primary focus:border-primary focus:transition-timing-focus focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none invalid:border-2 invalid:border-red-400 invalid:text-gray-400", type="text", placeholder="")
             template(dialogTextareaTemplate="")
                 div(class="flex flex-col gap-1")
-                    p(class="font-Helvetica font-semibold text-black text-base")
+                    p(class="font-Montserrat font-semibold text-black text-base")
                     textarea(class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white w-full min-h-[4.75rem] hover:border-primary focus:transition-timing-focus focus:border-primary focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none invalid:border-2 invalid:border-red-400 invalid:text-gray-400", placeholder="")

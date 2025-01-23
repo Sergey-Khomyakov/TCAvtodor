@@ -9,7 +9,7 @@ mixin breadcrumbs(items)
                     svg(width="16", height="16", viewBox="0 0 16 16", fill="none", xmlns="http://www.w3.org/2000/svg")
                         path(d="M6 12L10 8L6 4", stroke="#BBB8C1", stroke-width="1.33333", stroke-linecap="round", stroke-linejoin="round")
                 else if index !== items.length - 1
-                    a(href=item.link, class="font-Helvetica font-normal text-base text-primary hover:text-primaryHover") #{item.name}
-                    p(class="font-Helvetica font-normal text-base text-secondary") /
+                    a(href=item.link, class="font-Montserrat font-normal text-base text-primary hover:text-primaryHover") #{item.name}
+                    p(class="font-Montserrat font-normal text-base text-secondary") /
                 else 
-                    a(class="font-Helvetica  font-normal text-base text-secondary") #{item.name}
+                    a(class="font-Montserrat  font-normal text-base text-secondary") #{item.name}

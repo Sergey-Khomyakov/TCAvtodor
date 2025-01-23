@@ -43,7 +43,7 @@ module.exports = {
         'auto-auto-auto': 'auto auto auto',
       },
       fontFamily:{
-        'Helvetica': ['Helvetica', 'sans-serif'],
+        'Montserrat': ['Montserrat', 'sans-serif'],
       },
       animation: {
         'custome-pulse': 'customePulse 5s infinite linear',

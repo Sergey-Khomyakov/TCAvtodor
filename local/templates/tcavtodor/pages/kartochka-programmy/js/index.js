@@ -1,6 +1,11 @@
 import { tariffs } from './data.mjs';
+import dialogMeneger from './../../../modules/dialogMeneger.mjs'
+import tabs from './../../../modules/tabs.mjs'
 
 $(function() { 
+    dialogMeneger();
+    tabs();
+    
     const tariffsBlock = document.querySelector('[tariffsBlock]');
     const tariffsBtns = tariffsBlock.querySelector('[tariffsBtns]');
     const tariffsBody = tariffsBlock.querySelector('[tariffsBody]');

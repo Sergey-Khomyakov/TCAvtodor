@@ -44,225 +44,230 @@ block content
                         },
                     ]
                 +breadcrumbs(items)
-                div(class="@container/main")
-                    div(class="grid grid-cols-1fr-1fr gap-16")
-                        img(src=`${path}/img/stub.jpg`, class="w-full aspect-16-9 object-cover rounded-lg")
-                        div(class="flex flex-col gap-12")
-                            h1(class="font-Helvetica font-semibold text-4xl text-black") Текущие осмотры искусственных сооружений
-                            div(tariffsBlock="", class="grid grid-cols-auto-1fr gap-8")
-                                div(tariffsBtns="", class="flex flex-col gap-4 min-w-48")
-                                div(class="flex flex-col gap-4")
-                                    div(tariffsBody="", class="bg-lightGray rounded-lg p-6 flex flex-col gap-4")
-                                        div(tariffsOptions="", class="flex flex-col gap-2")
-                                        div(class="flex flex-wrap items-center justify-between")
-                                            a(href="#", class="font-Helvetica font-medium text-secondary hover:text-primaryHover flex gap-1 items-center group" ) 
-                                                | Для юр.лиц спец.предложения 
-                                                svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg" class="stroke-secondary group-hover:stroke-primaryHover")
-                                                    path(d="M8 24L24 8", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                                                    path(d="M11 8H24V21", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                                            div(class="relative flex gap-2 items-start justify-end")
-                                                p(tariffsPrise="", class="font-Helvetica font-semibold text-black text-2xl text-end") 0
-                                                p(tariffsPriseDefoult="", class="font-Helvetica font-semibold text-black text-sm text-end align-super relative after:content-[''] after:absolute after:top-1/2 after:left-0 after:right-0 after:w-full after:bg-red-600 after:h-[.125rem] after:-rotate-12") 0
-                                        button(type="button", class="rounded-lg bg-gradient-orange text-white font-Helvetica font-normal text-base text-center p-2 w-full") Оформить
-            div(class="container mx-auto grid grid-cols-1fr-1fr gap-8")
-                div(class="flex flex-col gap-6")
-                    h2(class="font-Helvetica font-semibold text-4xl text-black") О программе
-                    p(class="font-Helvetica font-medium text-black text-base w-3/4") =Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex non iste totam iusto numquam quas eveniet animi rerum sint labore? Nemo neque optio, voluptatum eveniet autem nihil nulla reiciendis esse?
-                img(src=`${path}/img/stub.jpg`, class="rounded-lg w-full h-full aspect-16-9 object-cover")
+                h1(class="font-Montserrat font-semibold text-4xl text-black") Текущие осмотры искусственных сооружений
+                div(class="grid grid-cols-1fr-1fr gap-16")
+                    img(src=`${path}/img/stub.jpg`, class="w-full aspect-16-9 object-cover rounded-lg")
+                    div(tariffsBlock="", class="grid grid-cols-1fr-auto gap-8")
+                        div(tariffsBtns="", class="flex flex-col gap-4 min-w-48")
+                        div(class="flex flex-col gap-4")
+                            div(tariffsBody="", class="bg-lightGray rounded-lg p-6 flex flex-col gap-4 h-full")
+                                div(tariffsOptions="", class="flex flex-col gap-2")
+                                div(class="flex flex-col gap-4 mt-auto")
+                                    div(class="flex flex-col justify-between gap-2")
+                                        a(href="#", class="font-Montserrat font-medium text-sm text-secondary hover:text-primaryHover flex gap-1 items-center group" ) 
+                                            | Для юр.лиц спец.предложения 
+                                            svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg" class="stroke-secondary group-hover:stroke-primaryHover")
+                                                path(d="M8 24L24 8", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                                path(d="M11 8H24V21", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                        div(class="relative flex gap-2 items-start justify-end w-full")
+                                            p(tariffsPrise="", class="font-Montserrat font-semibold text-black text-2xl text-end") 0
+                                            p(tariffsPriseDefoult="", class="font-Montserrat font-semibold text-black text-sm text-end align-super relative after:content-[''] after:absolute after:top-1/2 after:left-0 after:right-0 after:w-full after:bg-red-600 after:h-[.125rem] after:-rotate-12") 0
+                                    button(type="button", class="rounded-lg bg-gradient-orange text-white font-Montserrat font-normal text-base text-center p-2 w-full") Оформить
+            div(class="container mx-auto")
+                div(tabBlock="", class="flex flex-col gap-4")
+                    div(tabNav="", class="flex flex-wrap gap-4 items-center")
+                        label(for="tab1", class=" cursor-pointer")
+                            input(tab="1", id="tab1", type="radio", name="drone", class="hidden peer", checked) 
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") О программе
+                        label(for="tab2", class=" cursor-pointer")
+                            input(tab="2",id="tab2", type="radio", name="drone", class="hidden peer") 
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") Структура программы
+                        label(for="tab3", class=" cursor-pointer")
+                            input(tab="3", id="tab3", type="radio", name="drone", class="hidden peer") 
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") Авторы
+                        label(for="tab4", class=" cursor-pointer")
+                            input(tab="4", id="tab4", type="radio", name="drone", class="hidden peer") 
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") Условия для слушателей
+                    div(tabContent="1", class="grid grid-cols-1fr-1fr gap-8")
+                        div(class="flex flex-col gap-2")
+                            p(class="font-Montserrat font-semibold text-black text-lg") 
+                                | Доступность: 
+                                span(class="font-medium ") 36 ак.часов.
+                            p(class="font-Montserrat font-semibold text-black text-lg") 
+                                | Период доступа: 
+                                span(class="font-medium ") 1 мес.
+                            p(class="font-Montserrat font-semibold text-black text-lg") 
+                                | Подтверждающий документ: 
+                                br
+                                span(class="font-medium ") Удостоверение повышения квалификации.
+                        div(class="flex flex-col gap-4")
+                            p(class="font-Montserrat font-semibold text-black text-lg") Курс
+                            ul(class="list-decimal pl-4")
+                                li(class=" marker:text-primary")
+                                    p(class="font-Montserrat font-medium text-lg text-black") Общие сведения об искусственных сооружениях
+                                li(class=" marker:text-primary")
+                                    p(class="font-Montserrat font-medium text-lg text-black") Комплексный подход к организации контроля состояния искусственных сооружений на всех этапах жизненного цикла
+                                li(class=" marker:text-primary")
+                                    p(class="font-Montserrat font-medium text-lg text-black") Визуальный осмотр искусственных сооружений
+                                li(class=" marker:text-primary")
+                                    p(class="font-Montserrat font-medium text-lg text-black") Организация работ по надзору и оценке технического состояния
+                                li(class=" marker:text-primary")
+                                    p(class="font-Montserrat font-medium text-lg text-black") Оценка состояния и отчетная продукция
+                                li(class=" marker:text-primary")
+                                    p(class="font-Montserrat font-medium text-lg text-black") Просмотр результатов и внесение текущих осмотров в Web-модуль АИС.
+                    div(tabContent="2", class="hidden grid-cols-1fr-1fr gap-8")
+                        div(class="flex flex-col gap-2")
+                            p(class="font-Montserrat font-medium text-black text-lg") 
+                                | 6 Курсов
+                            p(class="font-Montserrat font-medium text-black text-lg") 
+                                | 20 тем.
+                        div(class="flex flex-col gap-2")
+                            ul(class="list-disc pl-4")
+                                li(class=" marker:text-primary")
+                                    p(class="font-Montserrat font-medium text-lg text-black") Теоретическая часть
+                                li(class=" marker:text-primary")
+                                    p(class="font-Montserrat font-medium text-lg text-black") Тестирование
+                                li(class=" marker:text-primary")
+                                    p(class="font-Montserrat font-medium text-lg text-black") Практические задания
+                                li(class=" marker:text-primary")
+                                    p(class="font-Montserrat font-medium text-lg text-black") Видео-уроки
+                                li(class=" marker:text-primary")
+                                    p(class="font-Montserrat font-medium text-lg text-black") Презентационные материалы
+                                li(class=" marker:text-primary")
+                                    p(class="font-Montserrat font-medium text-lg text-black") 3D Практикум
+                    div(tabContent="3", class="hidden grid-cols-1fr-1fr gap-8")
+
+                    div(tabContent="4", class="hidden grid-cols-1fr-1fr gap-8")
+                        div(class="flex flex-col gap-2")
+                            ul(class="list-disc pl-4")
+                                li(class=" marker:text-primary")
+                                    p(class="font-Montserrat font-medium text-lg text-black") Лица, имеющие высшее образование
+                                li(class=" marker:text-primary")
+                                    p(class="font-Montserrat font-medium text-lg text-black") Лица, получающие высшее образование
+                                li(class=" marker:text-primary")
+                                    p(class="font-Montserrat font-medium text-lg text-black") Лица, получившие среднее специальное образование
+                        div(class="flex flex-col gap-4")
+                            p(class="font-Montserrat font-medium text-black text-lg") Получение Удостоверения о повышении квалификации при предоставлении списка документов.
+                            p(class="font-Montserrat font-medium text-black text-lg") Получение Сертификата о прохождении Программы без предоставления документов об обучении.
             div(class="container mx-auto flex flex-col gap-8")
-                h2(class="font-Helvetica font-semibold text-4xl text-black text-center") Содержание программы
-                div(class="grid grid-cols-4 gap-4")
-                    -
-                        var items = [
-                            {
-                                type: 'Курс',
-                                name: 'Методика проведения ОТС и надзора ИССО',
-                            },
-                            {
-                                type: 'Курс',
-                                name: 'Общие сведения об искусственных сооружениях',
-                            },
-                            {
-                                type: 'Тема',
-                                name: '100.0.2 Структура Специальностей и курсов по Направлению Содержание',
-                            },
-                            {
-                                type: 'Тест',
-                                name: '100.10.3 Динамические испытания',
-                            },
-                            {
-                                type: 'Тест',
-                                name: 'Состав работ в рамках надзора',
-                            },
-                        ]
-                    +card2(items)
-                div(class="rounded-lg p-8 bg-lightGray grid grid-cols-2 gap-8 mt-4")
-                    -
-                        var items = [
-                            {
-                                type: "pdf",
-                                link: "#",
-                                name: "Общие сведения об искусственных сооружениях",
-                            },
-                            {
-                                type: "doc",
-                                link: "#",
-                                name: "Общие сведения об искусственных сооружениях",
-                            },
-                            {
-                                type: "xlsx",
-                                link: "#",
-                                name: '100.10.3 Динамические испытания',
-                            },
-                        ]
-                    +cardDocs(items)
-            div(class="container mx-auto flex flex-col gap-8")
-                h2(class="font-Helvetica font-semibold text-4xl text-black text-center") Выберите тариф обучения
+                h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Выберите тариф обучения
                 div(class="grid grid-cols-auto-auto-auto gap-4 justify-center")
                     article(class="rounded-lg px-6 py-8 flex flex-col gap-8 w-80 shadow-md")
-                        p(class="font-Helvetica font-semibold text-2xl bg-clip-text bg-gradient-orange text-transparent") Базовый
+                        p(class="font-Montserrat font-semibold text-2xl bg-clip-text bg-gradient-orange text-transparent") Базовый
                         div(class="flex flex-col gap-4")
                             div(class="flex items-center gap-2")
                                 svg(width="24", height="24", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-green-400")
                                     path(d="M21.5 13L14.1666 20L10.5 16.5", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                     path(d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                                p(class="font-Helvetica font-medium text-lg text-black ") Теория
+                                p(class="font-Montserrat font-medium text-lg text-black ") Теория
                             div(class="flex items-center gap-2")
                                 svg(width="24", height="24", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-green-400")
                                     path(d="M21.5 13L14.1666 20L10.5 16.5", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                     path(d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                                p(class="font-Helvetica font-medium text-lg text-black ") Тестирование
+                                p(class="font-Montserrat font-medium text-lg text-black ") Тестирование
                             div(class="flex gap-2")
                                 svg(width="24", height="24", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-red-400 mt-[0.125rem]")
                                     path(d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z", stroke="", stroke-width="2", stroke-miterlimit="10")
                                     path(d="M20 12L12 20", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                     path(d="M20 20L12 12", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                 div(class="flex flex-col")
-                                    p(class="font-Helvetica font-medium text-lg text-secondary ") 3D Практикум
-                                    p(class="font-Helvetica font-medium text-sm text-secondary italic") Терминология
+                                    p(class="font-Montserrat font-medium text-lg text-secondary ") 3D Практикум
+                                    p(class="font-Montserrat font-medium text-sm text-secondary italic") Терминология
                             div(class="flex gap-2")
                                 svg(width="24", height="24", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-red-400 mt-[0.125rem]")
                                     path(d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z", stroke="", stroke-width="2", stroke-miterlimit="10")
                                     path(d="M20 12L12 20", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                     path(d="M20 20L12 12", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                 div(class="flex flex-col")
-                                    p(class="font-Helvetica font-medium text-lg text-secondary ") 3D Практикум
-                                    p(class="font-Helvetica font-medium text-sm text-secondary italic") Универсальный
+                                    p(class="font-Montserrat font-medium text-lg text-secondary ") 3D Практикум
+                                    p(class="font-Montserrat font-medium text-sm text-secondary italic") Универсальный
                             div(class="flex gap-2")
                                 svg(width="24", height="24", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-red-400 mt-[0.125rem]")
                                     path(d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z", stroke="", stroke-width="2", stroke-miterlimit="10")
                                     path(d="M20 12L12 20", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                     path(d="M20 20L12 12", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                 div(class="flex flex-col")
-                                    p(class="font-Helvetica font-medium text-lg text-secondary ") 3D Практикум
-                                    p(class="font-Helvetica font-medium text-sm text-secondary italic") Экспертный с отработкой
+                                    p(class="font-Montserrat font-medium text-lg text-secondary ") 3D Практикум
+                                    p(class="font-Montserrat font-medium text-sm text-secondary italic") Экспертный с отработкой
                     article(class="rounded-lg px-6 py-8 flex flex-col gap-8 w-80 shadow-md")
-                        p(class="font-Helvetica font-semibold text-2xl bg-clip-text bg-gradient-orange text-transparent") Профессиональный
+                        p(class="font-Montserrat font-semibold text-2xl bg-clip-text bg-gradient-orange text-transparent") Профессиональный
                         div(class="flex flex-col gap-4")
                             div(class="flex items-center gap-2")
                                 svg(width="24", height="24", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-green-400")
                                     path(d="M21.5 13L14.1666 20L10.5 16.5", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                     path(d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                                p(class="font-Helvetica font-medium text-lg text-black ") Теория
+                                p(class="font-Montserrat font-medium text-lg text-black ") Теория
                             div(class="flex items-center gap-2")
                                 svg(width="24", height="24", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-green-400")
                                     path(d="M21.5 13L14.1666 20L10.5 16.5", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                     path(d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                                p(class="font-Helvetica font-medium text-lg text-black ") Тестирование
+                                p(class="font-Montserrat font-medium text-lg text-black ") Тестирование
                             div(class="flex gap-2")
                                 svg(width="24", height="24", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-green-400")
                                     path(d="M21.5 13L14.1666 20L10.5 16.5", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                     path(d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                 div(class="flex flex-col")
-                                    p(class="font-Helvetica font-medium text-lg text-black ") 3D Практикум
-                                    p(class="font-Helvetica font-medium text-sm text-black italic") Терминология
+                                    p(class="font-Montserrat font-medium text-lg text-black ") 3D Практикум
+                                    p(class="font-Montserrat font-medium text-sm text-black italic") Терминология
                             div(class="flex gap-2")
                                 svg(width="24", height="24", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-red-400 mt-[0.125rem]")
                                     path(d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z", stroke="", stroke-width="2", stroke-miterlimit="10")
                                     path(d="M20 12L12 20", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                     path(d="M20 20L12 12", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                 div(class="flex flex-col")
-                                    p(class="font-Helvetica font-medium text-lg text-secondary ") 3D Практикум
-                                    p(class="font-Helvetica font-medium text-sm text-secondary italic") Универсальный
+                                    p(class="font-Montserrat font-medium text-lg text-secondary ") 3D Практикум
+                                    p(class="font-Montserrat font-medium text-sm text-secondary italic") Универсальный
                             div(class="flex gap-2")
                                 svg(width="24", height="24", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-red-400 mt-[0.125rem]")
                                     path(d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z", stroke="", stroke-width="2", stroke-miterlimit="10")
                                     path(d="M20 12L12 20", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                     path(d="M20 20L12 12", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                 div(class="flex flex-col")
-                                    p(class="font-Helvetica font-medium text-lg text-secondary ") 3D Практикум
-                                    p(class="font-Helvetica font-medium text-sm text-secondary italic") Экспертный с отработкой
+                                    p(class="font-Montserrat font-medium text-lg text-secondary ") 3D Практикум
+                                    p(class="font-Montserrat font-medium text-sm text-secondary italic") Экспертный с отработкой
                     article(class="rounded-lg px-6 py-8 flex flex-col gap-8 w-80 shadow-md")
-                        p(class="font-Helvetica font-semibold text-2xl bg-clip-text bg-gradient-orange text-transparent") Экспертный
+                        p(class="font-Montserrat font-semibold text-2xl bg-clip-text bg-gradient-orange text-transparent") Экспертный
                         div(class="flex flex-col gap-4")
                             div(class="flex items-center gap-2")
                                 svg(width="24", height="24", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-green-400")
                                     path(d="M21.5 13L14.1666 20L10.5 16.5", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                     path(d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                                p(class="font-Helvetica font-medium text-lg text-black ") Теория
+                                p(class="font-Montserrat font-medium text-lg text-black ") Теория
                             div(class="flex items-center gap-2")
                                 svg(width="24", height="24", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-green-400")
                                     path(d="M21.5 13L14.1666 20L10.5 16.5", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                     path(d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                                p(class="font-Helvetica font-medium text-lg text-black ") Тестирование
+                                p(class="font-Montserrat font-medium text-lg text-black ") Тестирование
                             div(class="flex gap-2")
                                 svg(width="24", height="24", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-green-400")
                                     path(d="M21.5 13L14.1666 20L10.5 16.5", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                     path(d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                 div(class="flex flex-col")
-                                    p(class="font-Helvetica font-medium text-lg text-black ") 3D Практикум
-                                    p(class="font-Helvetica font-medium text-sm text-black italic") Терминология
+                                    p(class="font-Montserrat font-medium text-lg text-black ") 3D Практикум
+                                    p(class="font-Montserrat font-medium text-sm text-black italic") Терминология
                             div(class="flex gap-2")
                                 svg(width="24", height="24", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-green-400")
                                     path(d="M21.5 13L14.1666 20L10.5 16.5", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                     path(d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                 div(class="flex flex-col")
-                                    p(class="font-Helvetica font-medium text-lg text-black ") 3D Практикум
-                                    p(class="font-Helvetica font-medium text-sm text-black italic") Универсальный
+                                    p(class="font-Montserrat font-medium text-lg text-black ") 3D Практикум
+                                    p(class="font-Montserrat font-medium text-sm text-black italic") Универсальный
                             div(class="flex gap-2")
                                 svg(width="24", height="24", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-green-400")
                                     path(d="M21.5 13L14.1666 20L10.5 16.5", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                     path(d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                 div(class="flex flex-col")
-                                    p(class="font-Helvetica font-medium text-lg text-black ") 3D Практикум
-                                    p(class="font-Helvetica font-medium text-sm text-black italic") Экспертный с отработкой
+                                    p(class="font-Montserrat font-medium text-lg text-black ") 3D Практикум
+                                    p(class="font-Montserrat font-medium text-sm text-black italic") Экспертный с отработкой
             div(class="container mx-auto flex flex-col gap-8")
-                h2(class="font-Helvetica font-semibold text-4xl text-black text-center") Авторы программы
-                div(class="grid grid-cols-auto-auto-auto gap-32 justify-center")
-                    article(class="flex flex-col items-center gap-4")
-                        img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
-                        div(class="flex flex-col gap-1")
-                            p(class="font-Helvetica font-medium text-black text-lg") Mildred Powers
-                            p(class="font-Helvetica font-medium text-secondary text-base") Руководитель
-                    article(class="flex flex-col items-center gap-4")
-                        img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
-                        div(class="flex flex-col gap-1")
-                            p(class="font-Helvetica font-medium text-black text-lg") Nora Diaz
-                            p(class="font-Helvetica font-medium text-secondary text-base") Руководитель
-                    article(class="flex flex-col items-center gap-4")
-                        img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
-                        div(class="flex flex-col gap-1")
-                            p(class="font-Helvetica font-medium text-black text-lg") Lola Colon
-                            p(class="font-Helvetica font-medium text-secondary text-base") Руководитель
-            div(class="container mx-auto flex flex-col gap-8")
-                h2(class="font-Helvetica font-semibold text-4xl text-black text-center") Программы
+                h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Программы
                 div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
                     div(class="slider-container pb-1")
                         article(class="flex flex-col gap-2 group relative")
                             img(class="w-full aspect-16-9 rounded-lg", alt="картинка программы", src=`${path}/img/stub.jpg`)
-                            p(class="font-Helvetica font-semibold text-lg text-black group-hover:text-primaryHover") Содержание искусственных сооружений
+                            p(class="font-Montserrat font-semibold text-lg text-black group-hover:text-primaryHover") Содержание искусственных сооружений
                             a(href="kartochka-programmy.html", class=" absolute inset-0 left-0 top-0")
                         article(class="flex flex-col gap-2 group relative")
                             img(class="w-full aspect-16-9 rounded-lg", alt="картинка программы", src=`${path}/img/stub.jpg`)
-                            p(class="font-Helvetica font-semibold text-lg text-black group-hover:text-primaryHover") Содержание искусственных сооружений
+                            p(class="font-Montserrat font-semibold text-lg text-black group-hover:text-primaryHover") Содержание искусственных сооружений
                             a(href="kartochka-programmy.html", class=" absolute inset-0 left-0 top-0")
                         article(class="flex flex-col gap-2 group relative")
                             img(class="w-full aspect-16-9 rounded-lg", alt="картинка программы", src=`${path}/img/stub.jpg`)
-                            p(class="font-Helvetica font-semibold text-lg text-black group-hover:text-primaryHover") Содержание искусственных сооружений
+                            p(class="font-Montserrat font-semibold text-lg text-black group-hover:text-primaryHover") Содержание искусственных сооружений
                             a(href="kartochka-programmy.html", class=" absolute inset-0 left-0 top-0")
                         article(class="flex flex-col gap-2 group relative")
                             img(class="w-full aspect-16-9 rounded-lg", alt="картинка программы", src=`${path}/img/stub.jpg`)
-                            p(class="font-Helvetica font-semibold text-lg text-black group-hover:text-primaryHover") Содержание искусственных сооружений
+                            p(class="font-Montserrat font-semibold text-lg text-black group-hover:text-primaryHover") Содержание искусственных сооружений
                             a(href="kartochka-programmy.html", class=" absolute inset-0 left-0 top-0")
                     button(class="slider-nav", type="button")
                         svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")

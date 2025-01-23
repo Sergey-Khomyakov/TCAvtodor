@@ -18,32 +18,34 @@ block content
     - var authorization = true;
     +header(authorization)
     main(class="")
-        div(class="flex flex-col gap-32 mb-32")
-            div(class="container mx-auto flex flex-col gap-8 pt-10")
-                h1(class="font-Helvetica font-semibold text-4xl text-black") Контакты
-                div(class="grid grid-cols-1fr-1fr gap-8")
-                    div(class="flex flex-col gap-6")
-                        h2(class="font-Helvetica font-semibold text-3xl text-black")
-                            | Учебный центр ООО "Автодор-Инжиниринг"
-                        div(class="flex gap-4")
-                            p(class="font-Helvetica font-semibold text-base text-secondary") Адрес:
-                            p(class="font-Helvetica font-semibold text-base text-black ") 123022, г.Москва, Звенигородское шоссе, 18/20 к1, БЦ "Звенигородский".
-                        div(class="flex gap-4")
-                            p(class="font-Helvetica font-semibold text-base text-secondary") Email:
-                            address 
-                                a(href="mailto:educentr@avtodor-eng.ru", class="font-Helvetica font-normal text-black hover:text-primary text-base") educentr@avtodor-eng.ru
-                        div(class="flex gap-4")
-                            -
-                                var items = [
-                                    {
-                                        type: "pdf",
-                                        link: "#",
-                                        name: `Реквизиты ООО "Автодор-Инжиниринг"`,
-                                    },
-                                ]
-                            +cardDocs(items)
-                    div(style="position:relative;overflow:hidden;", class="rounded-md")
-                        a(href="https://yandex.ru/maps/org/zvenigorodskiy/153191857064/?utm_medium=mapframe&utm_source=maps", style="color:#eee;font-size:12px;position:absolute;top:0px;") Звенигородский
-                        a(href="https://yandex.ru/maps/213/moscow/category/business_center/184107509/?utm_medium=mapframe&utm_source=maps", style="color:#eee;font-size:12px;position:absolute;top:14px;") Бизнес-центр в Москве
-                        iframe(src="https://yandex.ru/map-widget/v1/?ll=37.557476%2C55.764106&mode=search&oid=153191857064&ol=biz&sctx=ZAAAAAgCEAAaKAoSCQiPNo5Y4FhAEUsgJXZt2U5AEhIJAAAAAICNb0ARy%2FYhb7k8U0AiBgABAgMEBSgKOABA2q0HSAFqAnJ1nQHNzMw9oAEAqAEAvQEGswLzwgEMqPfI17oEhvXVr4EBggJxMTIzMDIyLCDQsy7QnNC%2B0YHQutCy0LAsINCX0LLQtdC90LjQs9C%2B0YDQvtC00YHQutC%2B0LUg0YjQvtGB0YHQtSwgMTgvMjAg0LoxLCDQkdCmICLQl9Cy0LXQvdC40LPQvtGA0L7QtNGB0LrQuNC5Ii6KAgCSAgMyMTOaAgxkZXNrdG9wLW1hcHOwAgE%3D&sll=37.556896%2C55.764106&sspn=0.004333%2C0.001424&text=123022%2C%20%D0%B3.%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%97%D0%B2%D0%B5%D0%BD%D0%B8%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%2C%2018%2F20%20%D0%BA1%2C%20%D0%91%D0%A6%20%22%D0%97%D0%B2%D0%B5%D0%BD%D0%B8%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B8%D0%B9%22.&z=18.83", width="100%", height="auto", frameborder="1", allowfullscreen="true", style="position:relative;", class="aspect-16-9")
+        div(class="flex flex-col gap-14 mb-32")
+            div(class="container mx-auto flex flex-col gap-14 pt-10")
+                h1(class="font-Montserrat font-semibold text-4xl text-black") Контакты
+            div(class="container mx-auto flex flex-col gap-14")
+                div(class="grid grid-cols-2 gap-8")
+                    div(class="flex flex-col gap-2")
+                        p(class="font-Montserrat font-semibold text-xl text-black") 123022, г.Москва, Звенигородское шоссе, 18/20 к1, БЦ "Звенигородский".
+                        p(class="font-Montserrat font-normal text-base text-secondary mt-auto") Адрес фактический
+                    div(class="flex flex-col gap-2")
+                        p(class="font-Montserrat font-semibold text-xl text-black") 127006, г.Москва, Страстной бульвар, д.9
+                        p(class="font-Montserrat font-normal text-base text-secondary mt-auto") Адрес юридический
+                    div(class="flex flex-col gap-2")
+                        address 
+                            a(href="mailto:educentr@avtodor-eng.ru", class="font-Montserrat font-semibold text-xl text-black hover:text-primary not-italic") educentr@avtodor-eng.ru
+                        p(class="font-Montserrat font-normal text-base text-secondary mt-auto") Email
+                    div(class="flex flex-col gap-2")
+                        -
+                            var items = [
+                                {
+                                    type: "pdf",
+                                    link: "#",
+                                    name: `ООО "Автодор-Инжиниринг"`,
+                                },
+                            ]
+                        +cardDocs(items)
+                        p(class="font-Montserrat font-normal text-base text-secondary mt-auto") Реквизиты
+                div(style="position:relative;overflow:hidden;", class="rounded-lg w-full")
+                    a(href="https://yandex.ru/maps/org/zvenigorodskiy/153191857064/?utm_medium=mapframe&utm_source=maps", style="color:#eee;font-size:12px;position:absolute;top:0px;") Звенигородский
+                    a(href="https://yandex.ru/maps/213/moscow/category/business_center/184107509/?utm_medium=mapframe&utm_source=maps", style="color:#eee;font-size:12px;position:absolute;top:14px;") Бизнес-центр в Москве
+                    iframe(src="https://yandex.ru/map-widget/v1/?ll=37.555546%2C55.764549&oid=153191857064&ol=biz&sctx=ZAAAAAgCEAAaKAoSCQiPNo5Y4FhAEUsgJXZt2U5AEhIJAAAAAICNb0ARy%2FYhb7k8U0AiBgABAgMEBSgKOABA2q0HSAFqAnJ1nQHNzMw9oAEAqAEAvQEGswLzwgEMqPfI17oEhvXVr4EBggJxMTIzMDIyLCDQsy7QnNC%2B0YHQutCy0LAsINCX0LLQtdC90LjQs9C%2B0YDQvtC00YHQutC%2B0LUg0YjQvtGB0YHQtSwgMTgvMjAg0LoxLCDQkdCmICLQl9Cy0LXQvdC40LPQvtGA0L7QtNGB0LrQuNC5Ii6KAgCSAgMyMTOaAgxkZXNrdG9wLW1hcHOwAgE%3D&sll=37.555546%2C55.764549&z=18.83", width="100%", height="auto", frameborder="1", allowfullscreen="true", style="position:relative;", class="aspect-16-9")
     include ../../../../../pug/layout/_footer.pug

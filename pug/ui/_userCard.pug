@@ -3,9 +3,9 @@ mixin userCard(items)
         article(class="grid grid-cols-auto-1fr gap-4")
             img(class="w-full aspect-1-1 max-w-56 object-cover rounded-lg", alt="фото автора", src=item.img)
             div(class="flex flex-col gap-4 pt-1")
-                p(class="font-Helvetica font-medium text-black text-2xl") #{item.name}
+                p(class="font-Montserrat font-medium text-black text-2xl") #{item.name}
                 div(class="flex flex-col gap-1")
                     ul(class="list-disc pl-4")
                         each ach in item.achievements
                             li(class=" marker:text-primary")
-                                p(class="font-Helvetica font-medium text-secondary text-lg") #{ach.name}
+                                p(class="font-Montserrat font-medium text-secondary text-lg") #{ach.name}

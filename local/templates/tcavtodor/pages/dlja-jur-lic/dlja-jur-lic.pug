@@ -1,6 +1,8 @@
 extends ../../../../../pug/layout/_layout.pug
 include ../../../../../pug/layout/_head.pug
 include ../../../../../pug/layout/_header.pug
+include ../../../../../pug/ui/_stages.pug
+
 
 block scripts
     - var path = "./local/templates/tcavtodor"
@@ -19,96 +21,126 @@ block content
     main(class="")
         div(class="flex flex-col gap-32 mb-32")
             div(class="container mx-auto flex flex-col gap-8 pt-10")
-                h1(class="font-Helvetica font-semibold text-4xl text-black") Для юридических лиц (корпоративных клиентов)
+                h1(class="font-Montserrat font-semibold text-4xl text-black") Для юридических лиц (корпоративных клиентов)
                 div(class="grid grid-cols-1fr-1fr gap-8")
                     img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
                     div(class="flex flex-col gap-6")
-                        h2(class="font-Helvetica font-semibold text-3xl text-black")
-                            | Условия сотрудничества
-            div(class="container mx-auto flex flex-col gap-10")
-                h2(class="font-Helvetica font-semibold text-4xl text-black text-center") Программы лояльности
-                div(class="flex flex-col gap-8")
-                    div(class="grid grid-cols-1fr-1fr gap-8")
-                        img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
-                        div(class="flex flex-col gap-4")
-                            p(class="font-Helvetica font-semibold text-2xl text-black") Акция 1
-                            p(class="font-Helvetica font-medium text-lg text-black") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga necessitatibus, molestiae blanditiis minima labore dicta a dolore. Inventore soluta officiis dolores accusantium.
-                            div(class="flex flex-col")
-                                p(class="font-Helvetica font-medium text-lg text-black") Условия акции:
-                                ul(class="list-disc pl-4")
-                                    li(class=" marker:text-primary")
-                                        p(class="font-Helvetica font-medium text-lg text-black") Широкие карьерные перспективы
-                                    li(class=" marker:text-primary")
-                                        p(class="font-Helvetica font-medium text-lg text-black") Поддержка со стороны государства
-                                    li(class=" marker:text-primary")
-                                        p(class="font-Helvetica font-medium text-lg text-black") Соответствие федеральным стандартам
-                                    li(class=" marker:text-primary")
-                                        p(class="font-Helvetica font-medium text-lg text-black") Внесение в Реестр
-                            div(class="flex items-center gap-4 p-4 rounded-lg bg-lightGray mt-auto justify-between")
-                                p(class="font-Helvetica font-medium text-lg text-black") Акция действует
-                                div(dedlineTimer="2025-01-25", class="flex items-center gap-2")
-                                    p(dedlineTimerDays="", class="font-Helvetica font-medium text-black text-lg") 00
-                                    p(dedlineTimerDaysText="", class="font-Helvetica font-medium text-black text-lg") дня
-                                    div(class="flex items-center")
-                                        p(dedlineTimerHours="", class="font-Helvetica font-medium text-black text-lg") 00
-                                        p(class="font-Helvetica font-medium text-black text-lg") :
-                                        p(dedlineTimerMinutes="", class="font-Helvetica font-medium text-black text-lg") 00
-                                        p(class="font-Helvetica font-medium text-black text-lg") :
-                                        p(dedlineTimerSeconds="", class="font-Helvetica font-medium text-black text-lg") 00
-                    div(class="grid grid-cols-1fr-1fr gap-8")
-                        img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
-                        div(class="flex flex-col gap-4")
-                            p(class="font-Helvetica font-semibold text-2xl text-black") Акция 2
-                            p(class="font-Helvetica font-medium text-lg text-black") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga necessitatibus, molestiae blanditiis minima labore dicta a dolore. Inventore soluta officiis dolores accusantium.
-                            div(class="flex flex-col")
-                                p(class="font-Helvetica font-medium text-lg text-black") Условия акции:
-                                ul(class="list-disc pl-4")
-                                    li(class=" marker:text-primary")
-                                        p(class="font-Helvetica font-medium text-lg text-black") Широкие карьерные перспективы
-                                    li(class=" marker:text-primary")
-                                        p(class="font-Helvetica font-medium text-lg text-black") Поддержка со стороны государства
-                                    li(class=" marker:text-primary")
-                                        p(class="font-Helvetica font-medium text-lg text-black") Соответствие федеральным стандартам
-                                    li(class=" marker:text-primary")
-                                        p(class="font-Helvetica font-medium text-lg text-black") Внесение в Реестр
-                            div(class="flex items-center gap-4 p-4 rounded-lg bg-lightGray mt-auto justify-between")
-                                p(class="font-Helvetica font-medium text-lg text-black") Акция действует
-                                div(dedlineTimer="2025-02-02", class="flex items-center gap-2")
-                                    p(dedlineTimerDays="", class="font-Helvetica font-medium text-black text-lg") 00
-                                    p(dedlineTimerDaysText="", class="font-Helvetica font-medium text-black text-lg") дня
-                                    div(class="flex items-center")
-                                        p(dedlineTimerHours="", class="font-Helvetica font-medium text-black text-lg") 00
-                                        p(class="font-Helvetica font-medium text-black text-lg") :
-                                        p(dedlineTimerMinutes="", class="font-Helvetica font-medium text-black text-lg") 00
-                                        p(class="font-Helvetica font-medium text-black text-lg") :
-                                        p(dedlineTimerSeconds="", class="font-Helvetica font-medium text-black text-lg") 00
-                    div(class="grid grid-cols-1fr-1fr gap-8")
-                        img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
-                        div(class="flex flex-col gap-4")
-                            p(class="font-Helvetica font-semibold text-2xl text-black") Акция 3
-                            p(class="font-Helvetica font-medium text-lg text-black") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga necessitatibus, molestiae blanditiis minima labore dicta a dolore. Inventore soluta officiis dolores accusantium.
-                            div(class="flex flex-col")
-                                p(class="font-Helvetica font-medium text-lg text-black") Условия акции:
-                                ul(class="list-disc pl-4")
-                                    li(class=" marker:text-primary")
-                                        p(class="font-Helvetica font-medium text-lg text-black") Широкие карьерные перспективы
-                                    li(class=" marker:text-primary")
-                                        p(class="font-Helvetica font-medium text-lg text-black") Поддержка со стороны государства
-                                    li(class=" marker:text-primary")
-                                        p(class="font-Helvetica font-medium text-lg text-black") Соответствие федеральным стандартам
-                                    li(class=" marker:text-primary")
-                                        p(class="font-Helvetica font-medium text-lg text-black") Внесение в Реестр
-                            div(class="flex items-center gap-4 p-4 rounded-lg bg-lightGray mt-auto justify-between")
-                                p(class="font-Helvetica font-medium text-lg text-black") Акция действует
-                                div(dedlineTimer="2025-02-20", class="flex items-center gap-2")
-                                    p(dedlineTimerDays="", class="font-Helvetica font-medium text-black text-lg") 00
-                                    p(dedlineTimerDaysText="", class="font-Helvetica font-medium text-black text-lg") дня
-                                    div(class="flex items-center")
-                                        p(dedlineTimerHours="", class="font-Helvetica font-medium text-black text-lg") 00
-                                        p(class="font-Helvetica font-medium text-black text-lg") :
-                                        p(dedlineTimerMinutes="", class="font-Helvetica font-medium text-black text-lg") 00
-                                        p(class="font-Helvetica font-medium text-black text-lg") :
-                                        p(dedlineTimerSeconds="", class="font-Helvetica font-medium text-black text-lg") 00
+                        p(class="font-Montserrat font-medium text-lg text-black") Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor.
+            div(class="container mx-auto flex flex-col gap-8")
+                h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Этапы обучения
+                div(class="flex flex-col gap-0 max-w-full w-max mx-auto")
+                    -
+                        var items = [
+                            {
+                                title: "Заявка",
+                                description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor.",
+                            },
+                            {
+                                title: "Консультация",
+                                description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor.",
+                            },
+                            {
+                                title: "Заключение договора",
+                                description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor.",
+                            },
+                            {
+                                title: "Оплата",
+                                description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor.",
+                            },
+                            {
+                                title: "Обучение",
+                                description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor.",
+                            },
+                            {
+                                title: "Получение удостоверения",
+                                description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor.",
+                            },
+                        ]
+                    +stages(items)
             div(class="container mx-auto flex justify-center")
                 button(dialog-btn="bid", type="button", class="bg-gradient-orange text-white rounded-lg p-4 px-6 text-xl w-max mx-auto") Оставить заявку
+            div(class="container mx-auto flex flex-col gap-14")
+                h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Программы лояльности
+                div(class="flex flex-col gap-12")
+                    div(class="grid grid-cols-1fr-1fr gap-8")
+                        img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
+                        div(class="flex flex-col gap-4")
+                            p(class="font-Montserrat font-semibold text-2xl text-black") Акция 1
+                            p(class="font-Montserrat font-medium text-lg text-black") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga necessitatibus, molestiae blanditiis minima labore dicta a dolore. Inventore soluta officiis dolores accusantium.
+                            div(class="flex flex-col")
+                                p(class="font-Montserrat font-medium text-lg text-black") Условия акции:
+                                ul(class="list-disc pl-4")
+                                    li(class=" marker:text-primary")
+                                        p(class="font-Montserrat font-medium text-lg text-black") Широкие карьерные перспективы
+                                    li(class=" marker:text-primary")
+                                        p(class="font-Montserrat font-medium text-lg text-black") Поддержка со стороны государства
+                                    li(class=" marker:text-primary")
+                                        p(class="font-Montserrat font-medium text-lg text-black") Соответствие федеральным стандартам
+                                    li(class=" marker:text-primary")
+                                        p(class="font-Montserrat font-medium text-lg text-black") Внесение в Реестр
+                            div(class="flex items-center gap-4 p-4 rounded-lg bg-lightGray mt-auto justify-between")
+                                p(class="font-Montserrat font-medium text-lg text-black") Акция действует
+                                div(dedlineTimer="2025-01-25", class="flex items-center gap-2")
+                                    p(dedlineTimerDays="", class="font-Montserrat font-medium text-black text-lg") 00
+                                    p(dedlineTimerDaysText="", class="font-Montserrat font-medium text-black text-lg") дня
+                                    div(class="flex items-center")
+                                        p(dedlineTimerHours="", class="font-Montserrat font-medium text-black text-lg") 00
+                                        p(class="font-Montserrat font-medium text-black text-lg") :
+                                        p(dedlineTimerMinutes="", class="font-Montserrat font-medium text-black text-lg") 00
+                                        p(class="font-Montserrat font-medium text-black text-lg") :
+                                        p(dedlineTimerSeconds="", class="font-Montserrat font-medium text-black text-lg") 00
+                    div(class="grid grid-cols-1fr-1fr gap-8")
+                        img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
+                        div(class="flex flex-col gap-4")
+                            p(class="font-Montserrat font-semibold text-2xl text-black") Акция 2
+                            p(class="font-Montserrat font-medium text-lg text-black") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga necessitatibus, molestiae blanditiis minima labore dicta a dolore. Inventore soluta officiis dolores accusantium.
+                            div(class="flex flex-col")
+                                p(class="font-Montserrat font-medium text-lg text-black") Условия акции:
+                                ul(class="list-disc pl-4")
+                                    li(class=" marker:text-primary")
+                                        p(class="font-Montserrat font-medium text-lg text-black") Широкие карьерные перспективы
+                                    li(class=" marker:text-primary")
+                                        p(class="font-Montserrat font-medium text-lg text-black") Поддержка со стороны государства
+                                    li(class=" marker:text-primary")
+                                        p(class="font-Montserrat font-medium text-lg text-black") Соответствие федеральным стандартам
+                                    li(class=" marker:text-primary")
+                                        p(class="font-Montserrat font-medium text-lg text-black") Внесение в Реестр
+                            div(class="flex items-center gap-4 p-4 rounded-lg bg-lightGray mt-auto justify-between")
+                                p(class="font-Montserrat font-medium text-lg text-black") Акция действует
+                                div(dedlineTimer="2025-02-02", class="flex items-center gap-2")
+                                    p(dedlineTimerDays="", class="font-Montserrat font-medium text-black text-lg") 00
+                                    p(dedlineTimerDaysText="", class="font-Montserrat font-medium text-black text-lg") дня
+                                    div(class="flex items-center")
+                                        p(dedlineTimerHours="", class="font-Montserrat font-medium text-black text-lg") 00
+                                        p(class="font-Montserrat font-medium text-black text-lg") :
+                                        p(dedlineTimerMinutes="", class="font-Montserrat font-medium text-black text-lg") 00
+                                        p(class="font-Montserrat font-medium text-black text-lg") :
+                                        p(dedlineTimerSeconds="", class="font-Montserrat font-medium text-black text-lg") 00
+                    div(class="grid grid-cols-1fr-1fr gap-8")
+                        img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
+                        div(class="flex flex-col gap-4")
+                            p(class="font-Montserrat font-semibold text-2xl text-black") Акция 3
+                            p(class="font-Montserrat font-medium text-lg text-black") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga necessitatibus, molestiae blanditiis minima labore dicta a dolore. Inventore soluta officiis dolores accusantium.
+                            div(class="flex flex-col")
+                                p(class="font-Montserrat font-medium text-lg text-black") Условия акции:
+                                ul(class="list-disc pl-4")
+                                    li(class=" marker:text-primary")
+                                        p(class="font-Montserrat font-medium text-lg text-black") Широкие карьерные перспективы
+                                    li(class=" marker:text-primary")
+                                        p(class="font-Montserrat font-medium text-lg text-black") Поддержка со стороны государства
+                                    li(class=" marker:text-primary")
+                                        p(class="font-Montserrat font-medium text-lg text-black") Соответствие федеральным стандартам
+                                    li(class=" marker:text-primary")
+                                        p(class="font-Montserrat font-medium text-lg text-black") Внесение в Реестр
+                            div(class="flex items-center gap-4 p-4 rounded-lg bg-lightGray mt-auto justify-between")
+                                p(class="font-Montserrat font-medium text-lg text-black") Акция действует
+                                div(dedlineTimer="2025-02-20", class="flex items-center gap-2")
+                                    p(dedlineTimerDays="", class="font-Montserrat font-medium text-black text-lg") 00
+                                    p(dedlineTimerDaysText="", class="font-Montserrat font-medium text-black text-lg") дня
+                                    div(class="flex items-center")
+                                        p(dedlineTimerHours="", class="font-Montserrat font-medium text-black text-lg") 00
+                                        p(class="font-Montserrat font-medium text-black text-lg") :
+                                        p(dedlineTimerMinutes="", class="font-Montserrat font-medium text-black text-lg") 00
+                                        p(class="font-Montserrat font-medium text-black text-lg") :
+                                        p(dedlineTimerSeconds="", class="font-Montserrat font-medium text-black text-lg") 00
     include ../../../../../pug/layout/_footer.pug

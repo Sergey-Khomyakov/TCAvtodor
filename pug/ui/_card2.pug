@@ -2,7 +2,7 @@ mixin card2(items)
     each item in items 
         article(class="rounded-lg p-4 shadow-md min-h-32 relative flex flex-col gap-4 overflow-hidden")
             - var teg = "py-2 px-4 rounded-lg w-max"
-            - var tegtext = "font-Helvetica font-medium text-base"
+            - var tegtext = "font-Montserrat font-medium text-base"
             if item.type === "Курс"
                 - teg = teg + " bg-blue-300"
                 - tegtext = tegtext + " text-black"
@@ -15,4 +15,4 @@ mixin card2(items)
             div(class=teg)
                 p(class=tegtext) #{item.type}
             div(class="flex flex-wrap gap-2 items-center")
-                p(class="font-Helvetica font-medium text-black text-lg") #{item.name}
+                p(class="font-Montserrat font-medium text-black text-lg") #{item.name}
