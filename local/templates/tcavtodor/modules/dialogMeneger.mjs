@@ -51,6 +51,11 @@ const renderDialogForm = (btn, dialog) => {
         const contentTitle = Object.assign(document.createElement("p"), {className: "font-Helvetica font-semibold text-xl text-black", textContent: "Вход в личный кабинет"});
         const contentForm = Object.assign(document.createElement("form"), {className: "flex flex-col gap-4", method: "dialog", action: "POST"});
 
+        if(dialogBody.parentElement.classList.contains('!max-w-96')){
+            dialogBody.parentElement.classList.add('max-w-96');
+            dialogBody.parentElement.classList.remove('max-w-[55rem]', 'aspect-16-9');
+        }
+
         contentBox.appendChild(contentTitle);
         contentBox.appendChild(contentForm);
         dialogBody.appendChild(contentBox);
@@ -128,6 +133,11 @@ const renderDialogForm = (btn, dialog) => {
             },
         ];
 
+        if(dialogBody.parentElement.classList.contains('!max-w-96')){
+            dialogBody.parentElement.classList.add('max-w-96');
+            dialogBody.parentElement.classList.remove('max-w-[55rem]', 'aspect-16-9');
+        }
+
         const contentBox = Object.assign(document.createElement("div"), {className: "flex flex-col gap-6"});
         const contentTitle = Object.assign(document.createElement("p"), {className: "font-Helvetica font-semibold text-xl text-black text-center", textContent: "Регистрация"});
         const contentForm = Object.assign(document.createElement("form"), {className: "flex flex-col gap-4", method: "dialog", action: "POST"});
@@ -191,9 +201,14 @@ const renderDialogForm = (btn, dialog) => {
                 isRequest: false
             },
         ];
+
+        if(dialogBody.parentElement.classList.contains('!max-w-96')){
+            dialogBody.parentElement.classList.add('max-w-96');
+            dialogBody.parentElement.classList.remove('max-w-[55rem]', 'aspect-16-9');
+        }
+
         const contentBox = Object.assign(document.createElement("div"), {className: "flex flex-col gap-6"});
         const contentForm = Object.assign(document.createElement("form"), {className: "flex flex-col gap-4", method: "dialog", action: "POST"});
-
         contentBox.appendChild(contentForm);
         dialogBody.appendChild(contentBox);
             
@@ -258,7 +273,12 @@ const renderDialogForm = (btn, dialog) => {
 
         contentBox.appendChild(contentForm);
         dialogBody.appendChild(contentBox);
-            
+        
+        if(dialogBody.parentElement.classList.contains('!max-w-96')){
+            dialogBody.parentElement.classList.add('max-w-96');
+            dialogBody.parentElement.classList.remove('max-w-[55rem]', 'aspect-16-9');
+        }
+
         renderInputs(inputArr, dialog, dialogBody);
         
         const btnLogin = Object.assign(document.createElement("button"), {type:"submit", className: "bg-gradient-orange text-white px-4 py-2 w-full rounded-lg mt-8", textContent: "Оставить заявку"});
@@ -278,8 +298,12 @@ const renderDialogForm = (btn, dialog) => {
         form.appendChild(btnLogin);
     }else if(type === "authorInfo"){
         const authorId = btn.getAttribute('author-id');
-
         if(!authorId) return;
+
+        if(dialogBody.parentElement.classList.contains('max-w-96')){
+            dialogBody.parentElement.classList.remove('max-w-96');
+            dialogBody.parentElement.classList.add('max-w-[55rem]', 'aspect-16-9');
+        }
 
         const authorInfo = author.find(item => item.id === Number(authorId));
 
@@ -294,10 +318,13 @@ const renderDialogForm = (btn, dialog) => {
         const logo = dialog.querySelector('[dialoglogo]');
         policy.classList.add('hidden');
         logo.classList.add('hidden');
-
     }else{
         const policy = dialog.querySelector('[dialogPolicy]');
         policy.classList.add('hidden');
+        if(dialogBody.parentElement.classList.contains('!max-w-96')){
+            dialogBody.parentElement.classList.add('max-w-96');
+            dialogBody.parentElement.classList.remove('max-w-[55rem]', 'aspect-16-9');
+        }
     }
 }
 

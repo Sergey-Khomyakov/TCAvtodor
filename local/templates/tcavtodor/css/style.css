@@ -1265,6 +1265,14 @@ body {
   max-width: 36rem;
 }
 
+.max-w-\[55rem\] {
+  max-width: 55rem;
+}
+
+.\!max-w-96 {
+  max-width: 24rem !important;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -3859,10 +3867,6 @@ body {
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
 }
 
-.hover\:border:hover {
-  border-width: 1px;
-}
-
 .hover\:border-primary:hover {
   --tw-border-opacity: 1;
   border-color: rgb(253 126 20 / var(--tw-border-opacity, 1));
@@ -4077,10 +4081,6 @@ body {
 
 .group:hover .group-hover\:stroke-primaryHover {
   stroke: #EE5006;
-}
-
-.group:hover .group-hover\:stroke-primary {
-  stroke: #fd7e14;
 }
 
 .group:hover .group-hover\:text-primary {

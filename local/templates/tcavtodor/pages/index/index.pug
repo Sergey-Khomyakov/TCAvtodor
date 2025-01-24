@@ -183,7 +183,7 @@ block content
                             a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
             div(class="container mx-auto flex flex-col gap-8")
                 h2(class="font-Montserrat font-semibold  @xs/body:text-2xl @6xl/body:text-4xl text-black") Наши популярные программы
-                div(class="swiffy-slider slider-indicators-round slider-indicators-outside slider-nav-round slider-nav-noloop slider-custom-1 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark")
+                div(class="swiffy-slider slider-nav-outside slider-nav-visible slider-indicators-round slider-indicators-outside slider-nav-round slider-nav-noloop slider-custom-1 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark")
                     div(class="slider-container pb-1")
                         -
                             var items = [
@@ -218,11 +218,50 @@ block content
                                     prise: "40 000",
                                     time: "72",
                                     src: `${path}/img/stub.jpg`,
-                                }
+                                },
+                                                                {
+                                    title: "Текущие осмотры искусственных сооружений",
+                                    link: "kartochka-programmy.html",
+                                    category: "Курс",
+                                    prise: "40 000",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                },
+                                {
+                                    title: "Текущие осмотры искусственных сооружений",
+                                    link: "kartochka-programmy.html",
+                                    category: "Курс",
+                                    prise: "40 000",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                },
+                                {
+                                    title: "Текущие осмотры искусственных сооружений",
+                                    link: "kartochka-programmy.html",
+                                    category: "Курс",
+                                    prise: "40 000",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                },
+                                {
+                                    title: "Текущие осмотры искусственных сооружений",
+                                    link: "kartochka-programmy.html",
+                                    category: "Курс",
+                                    prise: "40 000",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                },
                             ]
                         +productCard(items)
                     div(class="slider-indicators")
                         button.active
+                        button
+                    button(class="slider-nav", type="button")
+                        svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                            path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                    button(class="slider-nav slider-nav-next", type="button")
+                        svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                            path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                 button(dialog-btn="consultation", type="button", class="bg-gradient-orange text-white rounded-lg p-4 px-6 text-xl w-max mx-auto") Получить консультацию
             div(class="container mx-auto flex flex-col gap-8")
                 h2(class="font-Montserrat font-semibold  @xs/body:text-2xl @6xl/body:text-4xl text-black text-center text-pr") Этапы обучения
@@ -333,6 +372,10 @@ block content
                 h2(class="font-Montserrat font-semibold @xs/body:text-2xl @6xl/body:text-4xl text-black text-center") Наши партнеры
                 div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                     div(class="slider-container pb-1")
+                        img(src=`${path}/img/logo/250.png` class="max-h-32 object-contain", alt="Партнер")
+                        img(src=`${path}/img/logo/RUT_rus.svg` class="max-h-32 object-contain", alt="Партнер")
+                        img(src=`${path}/img/logo/250.png` class="max-h-32 object-contain", alt="Партнер")
+                        img(src=`${path}/img/logo/RUT_rus.svg` class="max-h-32 object-contain", alt="Партнер")
                         img(src=`${path}/img/logo/250.png` class="max-h-32 object-contain", alt="Партнер")
                         img(src=`${path}/img/logo/RUT_rus.svg` class="max-h-32 object-contain", alt="Партнер")
                         img(src=`${path}/img/logo/250.png` class="max-h-32 object-contain", alt="Партнер")
