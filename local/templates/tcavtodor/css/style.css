@@ -1229,6 +1229,10 @@ body {
   min-width: 13rem;
 }
 
+.\!max-w-96 {
+  max-width: 24rem !important;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1253,6 +1257,10 @@ body {
   max-width: 24rem;
 }
 
+.max-w-\[55rem\] {
+  max-width: 55rem;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -1263,14 +1271,6 @@ body {
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-\[55rem\] {
-  max-width: 55rem;
-}
-
-.\!max-w-96 {
-  max-width: 24rem !important;
 }
 
 .flex-shrink {
