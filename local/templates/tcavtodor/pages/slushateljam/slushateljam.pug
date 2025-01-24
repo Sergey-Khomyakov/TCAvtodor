@@ -4,6 +4,8 @@ include ../../../../../pug/layout/_header.pug
 include ../../../../../pug/ui/_cardDocs.pug
 include ../../../../../pug/ui/_stages.pug
 include ../../../../../pug/ui/_reviewCard.pug
+include ../../../../../pug/ui/_productCard.pug
+
 
 block scripts
     - var path = "./local/templates/tcavtodor"
@@ -21,7 +23,7 @@ block head
 block content
     - var authorization = true;
     +header(authorization)
-    main(class="")
+    main(class="@container/body")
         div(class="flex flex-col gap-32 mb-32")
             div(class="container mx-auto flex flex-col gap-8 pt-10")
                 h1(class="font-Montserrat font-semibold text-4xl text-black") Слушателям
@@ -57,31 +59,47 @@ block content
                 button(dialog-btn="consultation", type="button", class="bg-gradient-orange text-white rounded-lg p-4 px-6 text-xl w-max mx-auto") Получить консультацию
             div(class="container mx-auto flex flex-col gap-8")
                 h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Этапы обучения
-                div(class="flex flex-col gap-0 max-w-full w-max mx-auto")
-                    -
-                        var items = [
-                            {
-                                title: "Оформление заявки",
-                                description: "Государственная компания создается и действует в целях выполнения функций заказчика при проектировании.",
-                            },
-                            {
-                                title: "Оплата обучения",
-                                description: "Государственная компания создается и действует в целях выполнения функций заказчика при проектировании.",
-                            },
-                            {
-                                title: "Изучение учебных материалов",
-                                description: "Государственная компания создается и действует в целях выполнения функций заказчика при проектировании.",
-                            },
-                            {
-                                title: "Прикрепление документов",
-                                description: "Государственная компания создается и действует в целях выполнения функций заказчика при проектировании.",
-                            },
-                            {
-                                title: "Получение удостоверения",
-                                description: "Государственная компания создается и действует в целях выполнения функций заказчика при проектировании.",
-                            },
-                        ]
-                    +stages(items)
+                div(class="flex flex-col gap-4 justify-center items-center")
+                    article(class="flex gap-8 items-center relative w-full max-w-2xl")
+                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class=" shrink-0")
+                            g(class="layer", id="svg_3")
+                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
+                                text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 1
+                        div(class="flex flex-col gap-2")
+                            p(class="font-Montserrat font-medium text-lg text-black text-balance") Выбор программы
+                            p(class="font-Montserrat font-medium text-base text-secondary text-balance") Текст
+                    article(class="flex gap-8 items-center relative w-full max-w-2xl")
+                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class=" shrink-0")
+                            g(class="layer", id="svg_3")
+                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
+                                text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 2
+                        div(class="flex flex-col gap-2")
+                            p(class="font-Montserrat font-medium text-lg text-black text-balance") Оплата обучения 
+                            p(class="font-Montserrat font-medium text-base text-secondary text-balance") Текст
+                    article(class="flex gap-8 items-center relative w-full max-w-2xl")
+                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class=" shrink-0")
+                            g(class="layer", id="svg_3")
+                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
+                                text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 3
+                        div(class="flex flex-col gap-2")
+                            p(class="font-Montserrat font-medium text-lg text-black text-balance") Изучение учебных материалов
+                            p(class="font-Montserrat font-medium text-base text-secondary text-balance") Текст
+                    article(class="flex gap-8 items-center relative w-full max-w-2xl")
+                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class=" shrink-0")
+                            g(class="layer", id="svg_3")
+                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
+                                text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 4
+                        div(class="flex flex-col gap-2")
+                            p(class="font-Montserrat font-medium text-lg text-black text-balance") Прикрепление документов
+                            p(class="font-Montserrat font-medium text-base text-secondary text-balance") Текст
+                    article(class="flex gap-8 items-center relative w-full max-w-2xl")
+                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class=" shrink-0")
+                            g(class="layer", id="svg_3")
+                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
+                                text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 5
+                        div(class="flex flex-col gap-2")
+                            p(class="font-Montserrat font-medium text-lg text-black text-balance") Получение удостоверения
+                            p(class="font-Montserrat font-medium text-base text-secondary text-balance") Текст
             div(class="container mx-auto grid grid-cols-1fr-1fr gap-8")
                 img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
                 div(class="flex flex-col gap-6")
@@ -110,24 +128,46 @@ block content
                     a(href="#", class="bg-gradient-orange text-white rounded-lg p-4 px-6 text-xl w-max h-max mt-auto ml-auto") Выбрать программу
             div(class="container mx-auto flex flex-col gap-8")
                 h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Популярные программы
-                div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                div(class="swiffy-slider slider-nav-outside slider-nav-visible slider-indicators-round slider-indicators-outside slider-nav-round slider-nav-noloop slider-custom-1 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark")
                     div(class="slider-container pb-1")
-                        article(class="flex flex-col gap-2 group relative")
-                            img(class="w-full aspect-16-9 rounded-lg", alt="картинка программы", src=`${path}/img/stub.jpg`)
-                            p(class="font-Montserrat font-semibold text-lg text-black group-hover:text-primaryHover") Содержание искусственных сооружений
-                            a(href="kartochka-programmy.html", class=" absolute inset-0 left-0 top-0")
-                        article(class="flex flex-col gap-2 group relative")
-                            img(class="w-full aspect-16-9 rounded-lg", alt="картинка программы", src=`${path}/img/stub.jpg`)
-                            p(class="font-Montserrat font-semibold text-lg text-black group-hover:text-primaryHover") Содержание искусственных сооружений
-                            a(href="kartochka-programmy.html", class=" absolute inset-0 left-0 top-0")
-                        article(class="flex flex-col gap-2 group relative")
-                            img(class="w-full aspect-16-9 rounded-lg", alt="картинка программы", src=`${path}/img/stub.jpg`)
-                            p(class="font-Montserrat font-semibold text-lg text-black group-hover:text-primaryHover") Содержание искусственных сооружений
-                            a(href="kartochka-programmy.html", class=" absolute inset-0 left-0 top-0")
-                        article(class="flex flex-col gap-2 group relative")
-                            img(class="w-full aspect-16-9 rounded-lg", alt="картинка программы", src=`${path}/img/stub.jpg`)
-                            p(class="font-Montserrat font-semibold text-lg text-black group-hover:text-primaryHover") Содержание искусственных сооружений
-                            a(href="kartochka-programmy.html", class=" absolute inset-0 left-0 top-0")
+                        -
+                            var items = [
+                                {
+                                    title: "Текущие осмотры искусственных сооружений",
+                                    link: "kartochka-programmy.html",
+                                    category: "Курс",
+                                    prise: "40 000",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                },
+                                {
+                                    title: "Текущие осмотры искусственных сооружений",
+                                    link: "kartochka-programmy.html",
+                                    category: "Курс",
+                                    prise: "40 000",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                },
+                                {
+                                    title: "Текущие осмотры искусственных сооружений",
+                                    link: "kartochka-programmy.html",
+                                    category: "Курс",
+                                    prise: "40 000",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                },
+                                {
+                                    title: "Текущие осмотры искусственных сооружений",
+                                    link: "kartochka-programmy.html",
+                                    category: "Курс",
+                                    prise: "40 000",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                }
+                            ]
+                        +productCard(items)
+                    div(class="slider-indicators")
+                        button.active
                     button(class="slider-nav", type="button")
                         svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
                             path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")

@@ -4,6 +4,8 @@ include ../../../../../pug/layout/_header.pug
 include ../../../../../pug/ui/_breadcrumbs.pug
 include ../../../../../pug/ui/_card2.pug
 include ../../../../../pug/ui/_cardDocs.pug
+include ../../../../../pug/ui/_productCard.pug
+
 
 block scripts
     - var path = "./local/templates/tcavtodor"
@@ -21,7 +23,7 @@ block head
 block content
     - var authorization = true;
     +header(authorization)
-    main(class="")
+    main(class="@container/body")
         div(class="flex flex-col gap-32 mb-32")
             div(class="container mx-auto flex flex-col gap-8 pt-10")
                 -
@@ -40,7 +42,7 @@ block content
                         },
                         {
                             link: "#",
-                            name: "Программа"
+                            name: "Текущие осмотры искусственных сооружений"
                         },
                     ]
                 +breadcrumbs(items)
@@ -126,7 +128,16 @@ block content
                                 li(class=" marker:text-primary")
                                     p(class="font-Montserrat font-medium text-lg text-black") 3D Практикум
                     div(tabContent="3", class="hidden grid-cols-1fr-1fr gap-8")
-
+                        div(class="flex flex-col gap-4")
+                            p(class="font-Montserrat font-semibold text-black text-lg") Разработчик программы:
+                            div(class="flex flex-col")
+                                a(href="#", class="font-Montserrat font-medium text-black text-lg hover:text-primaryHover") Иванов И.И.
+                        div(class="flex flex-col gap-4")
+                            p(class="font-Montserrat font-semibold text-black text-lg") Авторы программы:
+                            div(class="flex flex-col")
+                                a(href="#", class="font-Montserrat font-medium text-black text-lg hover:text-primaryHover") Иванов И.И.
+                                a(href="#", class="font-Montserrat font-medium text-black text-lg hover:text-primaryHover") Иванов И.И.
+                                a(href="#", class="font-Montserrat font-medium text-black text-lg hover:text-primaryHover") Иванов И.И.
                     div(tabContent="4", class="hidden grid-cols-1fr-1fr gap-8")
                         div(class="flex flex-col gap-2")
                             ul(class="list-disc pl-4")
@@ -251,24 +262,46 @@ block content
                                     p(class="font-Montserrat font-medium text-sm text-black italic") Экспертный с отработкой
             div(class="container mx-auto flex flex-col gap-8")
                 h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Программы
-                div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                div(class="swiffy-slider slider-nav-outside slider-nav-visible slider-indicators-round slider-indicators-outside slider-nav-round slider-nav-noloop slider-custom-1 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark")
                     div(class="slider-container pb-1")
-                        article(class="flex flex-col gap-2 group relative")
-                            img(class="w-full aspect-16-9 rounded-lg", alt="картинка программы", src=`${path}/img/stub.jpg`)
-                            p(class="font-Montserrat font-semibold text-lg text-black group-hover:text-primaryHover") Содержание искусственных сооружений
-                            a(href="kartochka-programmy.html", class=" absolute inset-0 left-0 top-0")
-                        article(class="flex flex-col gap-2 group relative")
-                            img(class="w-full aspect-16-9 rounded-lg", alt="картинка программы", src=`${path}/img/stub.jpg`)
-                            p(class="font-Montserrat font-semibold text-lg text-black group-hover:text-primaryHover") Содержание искусственных сооружений
-                            a(href="kartochka-programmy.html", class=" absolute inset-0 left-0 top-0")
-                        article(class="flex flex-col gap-2 group relative")
-                            img(class="w-full aspect-16-9 rounded-lg", alt="картинка программы", src=`${path}/img/stub.jpg`)
-                            p(class="font-Montserrat font-semibold text-lg text-black group-hover:text-primaryHover") Содержание искусственных сооружений
-                            a(href="kartochka-programmy.html", class=" absolute inset-0 left-0 top-0")
-                        article(class="flex flex-col gap-2 group relative")
-                            img(class="w-full aspect-16-9 rounded-lg", alt="картинка программы", src=`${path}/img/stub.jpg`)
-                            p(class="font-Montserrat font-semibold text-lg text-black group-hover:text-primaryHover") Содержание искусственных сооружений
-                            a(href="kartochka-programmy.html", class=" absolute inset-0 left-0 top-0")
+                        -
+                            var items = [
+                                {
+                                    title: "Текущие осмотры искусственных сооружений",
+                                    link: "kartochka-programmy.html",
+                                    category: "Курс",
+                                    prise: "40 000",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                },
+                                {
+                                    title: "Текущие осмотры искусственных сооружений",
+                                    link: "kartochka-programmy.html",
+                                    category: "Курс",
+                                    prise: "40 000",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                },
+                                {
+                                    title: "Текущие осмотры искусственных сооружений",
+                                    link: "kartochka-programmy.html",
+                                    category: "Курс",
+                                    prise: "40 000",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                },
+                                {
+                                    title: "Текущие осмотры искусственных сооружений",
+                                    link: "kartochka-programmy.html",
+                                    category: "Курс",
+                                    prise: "40 000",
+                                    time: "72",
+                                    src: `${path}/img/stub.jpg`,
+                                }
+                            ]
+                        +productCard(items)
+                    div(class="slider-indicators")
+                        button.active
                     button(class="slider-nav", type="button")
                         svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
                             path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")

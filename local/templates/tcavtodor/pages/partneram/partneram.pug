@@ -7,6 +7,11 @@ include ../../../../../pug/ui/_cardDocs.pug
 block scripts
     - var path = "./local/templates/tcavtodor"
     script(src=`${path}/libs/jquery/jquery-3.7.1.min.js`)
+    script(src=`${path}/libs/gsap/gsap.min.js`)
+    script(src=`${path}/libs/gsap/ScrollTrigger.min.js`)
+    script(src=`${path}/libs/gsap/lenis.min.js`)
+    script(src=`${path}/libs/gsap/imagesloaded.pkgd.min.js`)
+    script(src=`${path}/libs/jquery/jquery-3.7.1.min.js`)
     script(src=`${path}/pages/partneram/js/index.js`, type="module")
 
 
@@ -25,8 +30,8 @@ block content
                 div(class="grid grid-cols-1fr-1fr gap-8")
                     img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
                     div(class="flex flex-col gap-6")
-                        h2(class="font-Montserrat font-semibold text-3xl text-black")
-                            | Текст
+                        p(class="font-Montserrat font-medium text-lg text-black") Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odio fugit, ut minus aspernatur modi ab aliquid repellat animi aperiam ipsa pariatur illo, laboriosam quod rem eveniet et facilis culpa.
+
             div(class="container mx-auto flex flex-col gap-8")
                 h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Как строиться дистрибьютерская сетка
                 div(class="w-full flex flex-col items-center aspect-16-9 relative justify-center overflow-hidden")
@@ -94,38 +99,60 @@ block content
                         br
                         |Округ
             div(class="container mx-auto flex flex-col gap-8")
-                h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Выгоды для партнеров работы с УЦ
-            div(class="container mx-auto flex flex-col gap-8")
                 h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Этапы сотрудничества
-                div(class="flex flex-col gap-0 max-w-full w-max mx-auto")
-                    -
-                        var items = [
-                            {
-                                title: "Отправляете заявку на партнерство",
-                                description: null,
-                            },
-                            {
-                                title: "Заключаем договор",
-                                description: null,
-                            },
-                            {
-                                title: "Отправляем учебные программы для слушателей",
-                                description: null,
-                            },
-                            {
-                                title: "Размещаем информацию о партнёрстве на сейте УЦ",
-                                description: null,
-                            },
-                            {
-                                title: "Обучаем продукту",
-                                description: null,
-                            },
-                            {
-                                title: "Обеспечиваем маркетинговую поддержку продаж",
-                                description: null,
-                            },
-                        ]
-                    +stages(items)
+                div(class="flex flex-col gap-4 justify-center items-center")
+                    article(class="flex gap-8 items-center relative w-full max-w-2xl")
+                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class="shrink-0")
+                            g(class="layer", id="svg_3")
+                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
+                                text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 1
+                        div(class="flex flex-col gap-2")
+                            p(class="font-Montserrat font-medium text-lg text-black text-balance") Отправляете заявку на партнерство
+                    article(class="flex gap-8 items-center relative w-full max-w-2xl")
+                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class="shrink-0")
+                            g(class="layer", id="svg_3")
+                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
+                                text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 2
+                        div(class="flex flex-col gap-2")
+                            p(class="font-Montserrat font-medium text-lg text-black text-balance") Заключаем договор
+                    article(class="flex gap-8 items-center relative w-full max-w-2xl")
+                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class="shrink-0")
+                            g(class="layer", id="svg_3")
+                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
+                                text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 3
+                        div(class="flex flex-col gap-2")
+                            p(class="font-Montserrat font-medium text-lg text-black text-balance") Предоставляем доступ к обучающей платформе
+                    article(class="flex gap-8 items-center relative w-full max-w-2xl")
+                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class="shrink-0")
+                            g(class="layer", id="svg_3")
+                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
+                                text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 4
+                        div(class="flex flex-col gap-2")
+                            p(class="font-Montserrat font-medium text-lg text-black text-balance") Взаиморасчет
+                    article(class="flex gap-8 items-center relative w-full max-w-2xl")
+                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class="shrink-0")
+                            g(class="layer", id="svg_3")
+                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
+                                text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 5
+                        div(class="flex flex-col gap-2")
+                            p(class="font-Montserrat font-medium text-lg text-black text-balance") Выдача Удостоверения о повышении квалификации Представителем
+            div(class="container mx-auto flex flex-col gap-8")
+                h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Выгоды для партнеров работы с УЦ
+                div(class="grid grid-cols-1fr-1fr gap-8")
+                    div(class="flex flex-col gap-4 pt-4  ")
+                        div(class="flex gap-4 items-center")
+                            svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-primary")
+                                path(d="M27 9.00061L13 23L6 16.0006", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            p(class="font-Montserrat font-medium text-lg text-black") Размещаем информацию о партнёрстве на сайте УЦ
+                        div(class="flex gap-4 items-center")
+                            svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-primary")
+                                path(d="M27 9.00061L13 23L6 16.0006", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            p(class="font-Montserrat font-medium text-lg text-black") Обучаем продукту
+                        div(class="flex gap-4 items-center")
+                            svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-primary")
+                                path(d="M27 9.00061L13 23L6 16.0006", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            p(class="font-Montserrat font-medium text-lg text-black") Обеспечиваем маркетинговую поддержку продаж
+                    img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
             div(class="container mx-auto grid grid-cols-1fr-1fr gap-8")
                 img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
                 div(class="flex flex-col gap-6")

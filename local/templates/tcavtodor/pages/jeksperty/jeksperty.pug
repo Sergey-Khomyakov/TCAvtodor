@@ -6,11 +6,13 @@ include ../../../../../pug/ui/_userCard.pug
 block scripts
     - var path = "./local/templates/tcavtodor"
     script(src=`${path}/libs/jquery/jquery-3.7.1.min.js`)
+    script(src=`${path}/libs/swiffy-slider-1.6.0/swiffy-slider.min.js`)
     script(src=`${path}/pages/jeksperty/js/index.js`, type="module")
 
 
 block head
     - var path = "./local/templates/tcavtodor"
+    link(rel="stylesheet", href=`${path}/libs/swiffy-slider-1.6.0/swiffy-slider.min.css`)
     link(rel="stylesheet", href=`${path}/css/style.css`)
     +head('Эксперты - avtodor', '') 
 
@@ -25,6 +27,667 @@ block content
                     img(class="w-full aspect-16-9 object-cover rounded-lg", alt="лого", src=`${path}/img/other/teacher.png`)
                     div(class="flex flex-col gap-4")
                         p(class="font-Montserrat font-medium text-lg text-black") Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor.
+            div(class="container mx-auto flex flex-col gap-20")
+                h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Состав разработчиков направления
+                div(tabBlock="", class="flex flex-col gap-8")
+                    div(tabNav="", class="flex flex-wrap gap-4 items-center")
+                        label(for="tab1", class=" cursor-pointer")
+                            input(tab="1", id="tab1", type="radio", name="drone", class="hidden peer", checked) 
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") Содержание искусственных сооружений
+                        label(for="tab2", class=" cursor-pointer")
+                            input(tab="2",id="tab2", type="radio", name="drone", class="hidden peer") 
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") Содержание автомобильных дорог
+                        label(for="tab3", class=" cursor-pointer")
+                            input(tab="3", id="tab3", type="radio", name="drone", class="hidden peer") 
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") Строительство автомобильных дорог и ИССО
+                        label(for="tab4", class=" cursor-pointer")
+                            input(tab="4", id="tab4", type="radio", name="drone", class="hidden peer") 
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") Иммерсивные технологии
+                        label(for="tab5", class=" cursor-pointer")
+                            input(tab="5", id="tab5", type="radio", name="drone", class="hidden peer") 
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") Изыскание и проектирование
+                        label(for="tab6", class=" cursor-pointer")
+                            input(tab="6", id="tab6", type="radio", name="drone", class="hidden peer") 
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") Строительный, геодезический и лабораторный контроль
+                        label(for="tab7", class=" cursor-pointer")
+                            input(tab="7", id="tab7", type="radio", name="drone", class="hidden peer") 
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") Экология в дорожном строительстве
+                        label(for="tab8", class=" cursor-pointer")
+                            input(tab="8", id="tab8", type="radio", name="drone", class="hidden peer") 
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") Программное обеспечение общего пользования
+                    div(tabContent="1", class="grid grid-cols-full gap-8")
+                        p(class="font-Montserrat font-semibold text-3xl text-black text-center") Разработчики
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                            div(class="slider-container pb-1")
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                            button(class="slider-nav", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            button(class="slider-nav slider-nav-next", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                        p(class="font-Montserrat font-semibold text-3xl text-black text-center") Авторы
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                            div(class="slider-container pb-1")
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                            button(class="slider-nav", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            button(class="slider-nav slider-nav-next", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                    div(tabContent="2", class="hidden grid-cols-full gap-8")
+                        p(class="font-Montserrat font-semibold text-3xl text-black text-center") Разработчики
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                            div(class="slider-container pb-1")
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                            button(class="slider-nav", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            button(class="slider-nav slider-nav-next", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                        p(class="font-Montserrat font-semibold text-3xl text-black text-center") Авторы
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                            div(class="slider-container pb-1")
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                            button(class="slider-nav", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            button(class="slider-nav slider-nav-next", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                    div(tabContent="3", class="hidden grid-cols-full gap-8")
+                        p(class="font-Montserrat font-semibold text-3xl text-black text-center") Разработчики
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                            div(class="slider-container pb-1")
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                            button(class="slider-nav", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            button(class="slider-nav slider-nav-next", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                        p(class="font-Montserrat font-semibold text-3xl text-black text-center") Авторы
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                            div(class="slider-container pb-1")
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                            button(class="slider-nav", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            button(class="slider-nav slider-nav-next", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                    div(tabContent="4", class="hidden grid-cols-full gap-8")
+                        p(class="font-Montserrat font-semibold text-3xl text-black text-center") Разработчики
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                            div(class="slider-container pb-1")
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                            button(class="slider-nav", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            button(class="slider-nav slider-nav-next", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                        p(class="font-Montserrat font-semibold text-3xl text-black text-center") Авторы
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                            div(class="slider-container pb-1")
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                            button(class="slider-nav", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            button(class="slider-nav slider-nav-next", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                    div(tabContent="5", class="hidden grid-cols-full gap-8")
+                        p(class="font-Montserrat font-semibold text-3xl text-black text-center") Разработчики
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                            div(class="slider-container pb-1")
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                            button(class="slider-nav", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            button(class="slider-nav slider-nav-next", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                        p(class="font-Montserrat font-semibold text-3xl text-black text-center") Авторы
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                            div(class="slider-container pb-1")
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                            button(class="slider-nav", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            button(class="slider-nav slider-nav-next", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                    div(tabContent="6", class="hidden grid-cols-full gap-8")
+                        p(class="font-Montserrat font-semibold text-3xl text-black text-center") Разработчики
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                            div(class="slider-container pb-1")
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                            button(class="slider-nav", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            button(class="slider-nav slider-nav-next", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                        p(class="font-Montserrat font-semibold text-3xl text-black text-center") Авторы
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                            div(class="slider-container pb-1")
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                            button(class="slider-nav", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            button(class="slider-nav slider-nav-next", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                    div(tabContent="7", class="hidden grid-cols-full gap-8")
+                        p(class="font-Montserrat font-semibold text-3xl text-black text-center") Разработчики
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                            div(class="slider-container pb-1")
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                            button(class="slider-nav", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            button(class="slider-nav slider-nav-next", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                        p(class="font-Montserrat font-semibold text-3xl text-black text-center") Авторы
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                            div(class="slider-container pb-1")
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                            button(class="slider-nav", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            button(class="slider-nav slider-nav-next", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                    div(tabContent="8", class="hidden grid-cols-full gap-8")
+                        p(class="font-Montserrat font-semibold text-3xl text-black text-center") Разработчики
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                            div(class="slider-container pb-1")
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                            button(class="slider-nav", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            button(class="slider-nav slider-nav-next", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                        p(class="font-Montserrat font-semibold text-3xl text-black text-center") Авторы
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                            div(class="slider-container pb-1")
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                                article(class="flex flex-col items-center gap-4 p-2")
+                                    img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
+                                    div(class="flex flex-col gap-1")
+                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        ul(class="list-disc pl-4")
+                                            li(class=" marker:text-primary")
+                                                p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
+                                    a(dialog-btn="authorInfo", author-id="1", href="#", class="border border-primary text-primary rounded-lg p-2 px-4 text-xl w-full h-max text-center") Об Авторе
+                            button(class="slider-nav", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            button(class="slider-nav slider-nav-next", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+
             div(class="container mx-auto flex flex-col gap-20")
                 h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Команда Учебного центра
                 div(class="grid grid-cols-2 gap-14")

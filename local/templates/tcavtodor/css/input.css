@@ -123,6 +123,18 @@
         --swiffy-slider-item-gap: 2rem;
     }
 
+    .slider-custom-1 .slider-nav {
+        filter: unset;
+    }
+
+    .slider-custom-1 .slider-nav::after {
+        content: unset;
+    }
+
+    .slider-custom-1 .slider-nav::before {
+        content: unset;
+    }
+
     .slider-custom-2 .slider-nav {
         filter: unset;
     }
