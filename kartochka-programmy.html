@@ -166,7 +166,7 @@
         </div>
       </dialog>
       <main class="@container/body">
-        <div class="flex flex-col gap-32 mb-32">
+        <div class="flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32 @xs/body:px-4 @8xl/body:px-0">
           <div class="container mx-auto flex flex-col gap-8 pt-10">
             <div class="flex flex-wrap gap-2">
               <div class="flex gap-2 items-center"><a class="font-Montserrat font-normal text-base text-primary hover:text-primaryHover" href="index.html">Главная</a>
@@ -181,10 +181,10 @@
               <div class="flex gap-2 items-center"><a class="font-Montserrat  font-normal text-base text-secondary">Текущие осмотры искусственных сооружений</a>
               </div>
             </div>
-            <h1 class="font-Montserrat font-semibold text-4xl text-black">Текущие осмотры искусственных сооружений</h1>
-            <div class="grid grid-cols-1fr-1fr gap-16"><img class="w-full aspect-16-9 object-cover rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg">
-              <div class="grid grid-cols-1fr-auto gap-8" tariffsBlock="">
-                <div class="flex flex-col gap-4 min-w-48" tariffsBtns=""></div>
+            <h1 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black">Текущие осмотры искусственных сооружений</h1>
+            <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr @xs/body:gap-4 @6xl/body:gap-16"><img class="w-full aspect-16-9 object-cover rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg">
+              <div class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-auto @xs/body:gap-4 @6xl/body:gap-8" tariffsBlock="">
+                <div class="flex flex-wrap @xs/body:flex-row @6xl/body:flex-col gap-4 min-w-48" tariffsBtns=""></div>
                 <div class="flex flex-col gap-4">
                   <div class="bg-lightGray rounded-lg p-6 flex flex-col gap-4 h-full" tariffsBody="">
                     <div class="flex flex-col gap-2" tariffsOptions=""></div>
@@ -212,118 +212,104 @@
               <div class="flex flex-wrap gap-4 items-center" tabNav="">
                 <label class=" cursor-pointer" for="tab1">
                   <input class="hidden peer" tab="1" id="tab1" type="radio" name="drone" checked>
-                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1">О программе</p>
+                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1">О программе</p>
                 </label>
                 <label class=" cursor-pointer" for="tab2">
                   <input class="hidden peer" tab="2" id="tab2" type="radio" name="drone">
-                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1">Структура программы</p>
-                </label>
-                <label class=" cursor-pointer" for="tab3">
-                  <input class="hidden peer" tab="3" id="tab3" type="radio" name="drone">
-                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1">Авторы</p>
+                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1">Структура программы</p>
                 </label>
                 <label class=" cursor-pointer" for="tab4">
                   <input class="hidden peer" tab="4" id="tab4" type="radio" name="drone">
-                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1">Условия для слушателей</p>
+                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1">Условия для слушателей</p>
                 </label>
               </div>
-              <div class="grid grid-cols-1fr-1fr gap-8" tabContent="1">
+              <div class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr @xs/body:gap-4 @6xl/body:gap-8" tabContent="1">
                 <div class="flex flex-col gap-2">
-                  <p class="font-Montserrat font-semibold text-black text-lg">
+                  <p class="font-Montserrat font-semibold text-black @xs/body:text-base @6xl/body:text-lg">
                      Доступность: <span class="font-medium ">36 ак.часов.</span></p>
-                  <p class="font-Montserrat font-semibold text-black text-lg">
+                  <p class="font-Montserrat font-semibold text-black @xs/body:text-base @6xl/body:text-lg">
                      Период доступа: <span class="font-medium ">1 мес.</span></p>
-                  <p class="font-Montserrat font-semibold text-black text-lg">
+                  <p class="font-Montserrat font-semibold text-black @xs/body:text-base @6xl/body:text-lg">
                      Подтверждающий документ: <br><span class="font-medium ">Удостоверение повышения квалификации.</span></p>
                 </div>
                 <div class="flex flex-col gap-4">
-                  <p class="font-Montserrat font-semibold text-black text-lg">Курс</p>
+                  <p class="font-Montserrat font-semibold text-black @xs/body:text-base @6xl/body:text-lg">Курс</p>
                   <ul class="list-decimal pl-4">
                     <li class=" marker:text-primary">
-                      <p class="font-Montserrat font-medium text-lg text-black">Общие сведения об искусственных сооружениях</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Общие сведения об искусственных сооружениях</p>
                     </li>
                     <li class=" marker:text-primary">
-                      <p class="font-Montserrat font-medium text-lg text-black">Комплексный подход к организации контроля состояния искусственных сооружений на всех этапах жизненного цикла</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Комплексный подход к организации контроля состояния искусственных сооружений на всех этапах жизненного цикла</p>
                     </li>
                     <li class=" marker:text-primary">
-                      <p class="font-Montserrat font-medium text-lg text-black">Визуальный осмотр искусственных сооружений</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Визуальный осмотр искусственных сооружений</p>
                     </li>
                     <li class=" marker:text-primary">
-                      <p class="font-Montserrat font-medium text-lg text-black">Организация работ по надзору и оценке технического состояния</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Организация работ по надзору и оценке технического состояния</p>
                     </li>
                     <li class=" marker:text-primary">
-                      <p class="font-Montserrat font-medium text-lg text-black">Оценка состояния и отчетная продукция</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Оценка состояния и отчетная продукция</p>
                     </li>
                     <li class=" marker:text-primary">
-                      <p class="font-Montserrat font-medium text-lg text-black">Просмотр результатов и внесение текущих осмотров в Web-модуль АИС.</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Просмотр результатов и внесение текущих осмотров в Web-модуль АИС.</p>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="hidden grid-cols-1fr-1fr gap-8" tabContent="2">
+              <div class="hidden @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr @xs/body:gap-4 @6xl/body:gap-8" tabContent="2">
                 <div class="flex flex-col gap-2">
-                  <p class="font-Montserrat font-medium text-black text-lg">
+                  <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg">
                      6 Курсов</p>
-                  <p class="font-Montserrat font-medium text-black text-lg">
+                  <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg">
                      20 тем.</p>
                 </div>
                 <div class="flex flex-col gap-2">
                   <ul class="list-disc pl-4">
                     <li class=" marker:text-primary">
-                      <p class="font-Montserrat font-medium text-lg text-black">Теоретическая часть</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Теоретическая часть</p>
                     </li>
                     <li class=" marker:text-primary">
-                      <p class="font-Montserrat font-medium text-lg text-black">Тестирование</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Тестирование</p>
                     </li>
                     <li class=" marker:text-primary">
-                      <p class="font-Montserrat font-medium text-lg text-black">Практические задания</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Практические задания</p>
                     </li>
                     <li class=" marker:text-primary">
-                      <p class="font-Montserrat font-medium text-lg text-black">Видео-уроки</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Видео-уроки</p>
                     </li>
                     <li class=" marker:text-primary">
-                      <p class="font-Montserrat font-medium text-lg text-black">Презентационные материалы</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Презентационные материалы</p>
                     </li>
                     <li class=" marker:text-primary">
-                      <p class="font-Montserrat font-medium text-lg text-black">3D Практикум</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">3D Практикум</p>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="hidden grid-cols-1fr-1fr gap-8" tabContent="3">
-                <div class="flex flex-col gap-4">
-                  <p class="font-Montserrat font-semibold text-black text-lg">Разработчик программы:</p>
-                  <div class="flex flex-col"><a class="font-Montserrat font-medium text-black text-lg hover:text-primaryHover" href="#">Иванов И.И.</a></div>
-                </div>
-                <div class="flex flex-col gap-4">
-                  <p class="font-Montserrat font-semibold text-black text-lg">Авторы программы:</p>
-                  <div class="flex flex-col"><a class="font-Montserrat font-medium text-black text-lg hover:text-primaryHover" href="#">Иванов И.И.</a><a class="font-Montserrat font-medium text-black text-lg hover:text-primaryHover" href="#">Иванов И.И.</a><a class="font-Montserrat font-medium text-black text-lg hover:text-primaryHover" href="#">Иванов И.И.</a></div>
-                </div>
-              </div>
-              <div class="hidden grid-cols-1fr-1fr gap-8" tabContent="4">
+              <div class="hidden @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr @xs/body:gap-4 @6xl/body:gap-8" tabContent="4">
                 <div class="flex flex-col gap-2">
                   <ul class="list-disc pl-4">
                     <li class=" marker:text-primary">
-                      <p class="font-Montserrat font-medium text-lg text-black">Лица, имеющие высшее образование</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Лица, имеющие высшее образование</p>
                     </li>
                     <li class=" marker:text-primary">
-                      <p class="font-Montserrat font-medium text-lg text-black">Лица, получающие высшее образование</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Лица, получающие высшее образование</p>
                     </li>
                     <li class=" marker:text-primary">
-                      <p class="font-Montserrat font-medium text-lg text-black">Лица, получившие среднее специальное образование</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Лица, получившие среднее специальное образование</p>
                     </li>
                   </ul>
                 </div>
                 <div class="flex flex-col gap-4">
-                  <p class="font-Montserrat font-medium text-black text-lg">Получение Удостоверения о повышении квалификации при предоставлении списка документов.</p>
-                  <p class="font-Montserrat font-medium text-black text-lg">Получение Сертификата о прохождении Программы без предоставления документов об обучении.</p>
+                  <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg">Получение Удостоверения о повышении квалификации при предоставлении списка документов.</p>
+                  <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg">Получение Сертификата о прохождении Программы без предоставления документов об обучении.</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="container mx-auto flex flex-col gap-8">
-            <h2 class="font-Montserrat font-semibold text-4xl text-black text-center">Выберите тариф обучения</h2>
-            <div class="grid grid-cols-auto-auto-auto gap-4 justify-center">
+            <h2 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center">Выберите тариф обучения</h2>
+            <div class="grid @xs/body:justify-items-center @xs/body:grid-cols-full @6xl/body:justify-items-start @6xl/body:grid-cols-auto-auto-auto gap-4 justify-center">
               <article class="rounded-lg px-6 py-8 flex flex-col gap-8 w-80 shadow-md">
                 <p class="font-Montserrat font-semibold text-2xl bg-clip-text bg-gradient-orange text-transparent">Базовый</p>
                 <div class="flex flex-col gap-4">
@@ -332,14 +318,14 @@
                       <path d="M21.5 13L14.1666 20L10.5 16.5" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                       <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
-                    <p class="font-Montserrat font-medium text-lg text-black ">Теория</p>
+                    <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black ">Теория</p>
                   </div>
                   <div class="flex items-center gap-2">
                     <svg class="stroke-green-400" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21.5 13L14.1666 20L10.5 16.5" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                       <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
-                    <p class="font-Montserrat font-medium text-lg text-black ">Тестирование</p>
+                    <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black ">Тестирование</p>
                   </div>
                   <div class="flex gap-2">
                     <svg class="stroke-red-400 mt-[0.125rem]" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -348,7 +334,7 @@
                       <path d="M20 20L12 12" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                     <div class="flex flex-col">
-                      <p class="font-Montserrat font-medium text-lg text-secondary ">3D Практикум</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-secondary ">3D Практикум</p>
                       <p class="font-Montserrat font-medium text-sm text-secondary italic">Терминология</p>
                     </div>
                   </div>
@@ -359,7 +345,7 @@
                       <path d="M20 20L12 12" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                     <div class="flex flex-col">
-                      <p class="font-Montserrat font-medium text-lg text-secondary ">3D Практикум</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-secondary ">3D Практикум</p>
                       <p class="font-Montserrat font-medium text-sm text-secondary italic">Универсальный</p>
                     </div>
                   </div>
@@ -370,7 +356,7 @@
                       <path d="M20 20L12 12" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                     <div class="flex flex-col">
-                      <p class="font-Montserrat font-medium text-lg text-secondary ">3D Практикум</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-secondary ">3D Практикум</p>
                       <p class="font-Montserrat font-medium text-sm text-secondary italic">Экспертный с отработкой</p>
                     </div>
                   </div>
@@ -384,14 +370,14 @@
                       <path d="M21.5 13L14.1666 20L10.5 16.5" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                       <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
-                    <p class="font-Montserrat font-medium text-lg text-black ">Теория</p>
+                    <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black ">Теория</p>
                   </div>
                   <div class="flex items-center gap-2">
                     <svg class="stroke-green-400" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21.5 13L14.1666 20L10.5 16.5" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                       <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
-                    <p class="font-Montserrat font-medium text-lg text-black ">Тестирование</p>
+                    <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black ">Тестирование</p>
                   </div>
                   <div class="flex gap-2">
                     <svg class="stroke-green-400" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -399,7 +385,7 @@
                       <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                     <div class="flex flex-col">
-                      <p class="font-Montserrat font-medium text-lg text-black ">3D Практикум</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black ">3D Практикум</p>
                       <p class="font-Montserrat font-medium text-sm text-black italic">Терминология</p>
                     </div>
                   </div>
@@ -410,7 +396,7 @@
                       <path d="M20 20L12 12" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                     <div class="flex flex-col">
-                      <p class="font-Montserrat font-medium text-lg text-secondary ">3D Практикум</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-secondary ">3D Практикум</p>
                       <p class="font-Montserrat font-medium text-sm text-secondary italic">Универсальный</p>
                     </div>
                   </div>
@@ -421,7 +407,7 @@
                       <path d="M20 20L12 12" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                     <div class="flex flex-col">
-                      <p class="font-Montserrat font-medium text-lg text-secondary ">3D Практикум</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-secondary ">3D Практикум</p>
                       <p class="font-Montserrat font-medium text-sm text-secondary italic">Экспертный с отработкой</p>
                     </div>
                   </div>
@@ -435,14 +421,14 @@
                       <path d="M21.5 13L14.1666 20L10.5 16.5" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                       <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
-                    <p class="font-Montserrat font-medium text-lg text-black ">Теория</p>
+                    <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black ">Теория</p>
                   </div>
                   <div class="flex items-center gap-2">
                     <svg class="stroke-green-400" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21.5 13L14.1666 20L10.5 16.5" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                       <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
-                    <p class="font-Montserrat font-medium text-lg text-black ">Тестирование</p>
+                    <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black ">Тестирование</p>
                   </div>
                   <div class="flex gap-2">
                     <svg class="stroke-green-400" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -450,7 +436,7 @@
                       <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                     <div class="flex flex-col">
-                      <p class="font-Montserrat font-medium text-lg text-black ">3D Практикум</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black ">3D Практикум</p>
                       <p class="font-Montserrat font-medium text-sm text-black italic">Терминология</p>
                     </div>
                   </div>
@@ -460,7 +446,7 @@
                       <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                     <div class="flex flex-col">
-                      <p class="font-Montserrat font-medium text-lg text-black ">3D Практикум</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black ">3D Практикум</p>
                       <p class="font-Montserrat font-medium text-sm text-black italic">Универсальный</p>
                     </div>
                   </div>
@@ -470,7 +456,7 @@
                       <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                     <div class="flex flex-col">
-                      <p class="font-Montserrat font-medium text-lg text-black ">3D Практикум</p>
+                      <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black ">3D Практикум</p>
                       <p class="font-Montserrat font-medium text-sm text-black italic">Экспертный с отработкой</p>
                     </div>
                   </div>
@@ -478,8 +464,153 @@
               </article>
             </div>
           </div>
+          <div class="container mx-auto flex flex-col gap-20">
+            <h2 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center">Авторы программы</h2>
+            <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
+              <div class="slider-container pb-1">
+                <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
+                  <div class="flex flex-col gap-1">
+                    <p class="font-Montserrat font-medium text-black @xl/body:text-base @6xl/body:text-lg text-center">Иванов И.И.</p>
+                    <ul class="list-disc pl-4">
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Представитель компании</p>
+                      </li>
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Консультант по криптовалюте</p>
+                      </li>
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Зарабатывает в интернете более 6 лет</p>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
+                  <div class="flex flex-col gap-1">
+                    <p class="font-Montserrat font-medium text-black @xl/body:text-base @6xl/body:text-lg text-center">Иванов И.И.</p>
+                    <ul class="list-disc pl-4">
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Представитель компании</p>
+                      </li>
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Консультант по криптовалюте</p>
+                      </li>
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Зарабатывает в интернете более 6 лет</p>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
+                  <div class="flex flex-col gap-1">
+                    <p class="font-Montserrat font-medium text-black @xl/body:text-base @6xl/body:text-lg text-center">Иванов И.И.</p>
+                    <ul class="list-disc pl-4">
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Представитель компании</p>
+                      </li>
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Консультант по криптовалюте</p>
+                      </li>
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Зарабатывает в интернете более 6 лет</p>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
+                  <div class="flex flex-col gap-1">
+                    <p class="font-Montserrat font-medium text-black @xl/body:text-base @6xl/body:text-lg text-center">Иванов И.И.</p>
+                    <ul class="list-disc pl-4">
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Представитель компании</p>
+                      </li>
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Консультант по криптовалюте</p>
+                      </li>
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Зарабатывает в интернете более 6 лет</p>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
+                  <div class="flex flex-col gap-1">
+                    <p class="font-Montserrat font-medium text-black @xl/body:text-base @6xl/body:text-lg text-center">Иванов И.И.</p>
+                    <ul class="list-disc pl-4">
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Представитель компании</p>
+                      </li>
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Консультант по криптовалюте</p>
+                      </li>
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Зарабатывает в интернете более 6 лет</p>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
+                  <div class="flex flex-col gap-1">
+                    <p class="font-Montserrat font-medium text-black @xl/body:text-base @6xl/body:text-lg text-center">Иванов И.И.</p>
+                    <ul class="list-disc pl-4">
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Представитель компании</p>
+                      </li>
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Консультант по криптовалюте</p>
+                      </li>
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Зарабатывает в интернете более 6 лет</p>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
+                  <div class="flex flex-col gap-1">
+                    <p class="font-Montserrat font-medium text-black @xl/body:text-base @6xl/body:text-lg text-center">Иванов И.И.</p>
+                    <ul class="list-disc pl-4">
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Представитель компании</p>
+                      </li>
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Консультант по криптовалюте</p>
+                      </li>
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Зарабатывает в интернете более 6 лет</p>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
+                  <div class="flex flex-col gap-1">
+                    <p class="font-Montserrat font-medium text-black @xl/body:text-base @6xl/body:text-lg text-center">Иванов И.И.</p>
+                    <ul class="list-disc pl-4">
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Представитель компании</p>
+                      </li>
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Консультант по криптовалюте</p>
+                      </li>
+                      <li class=" marker:text-primary">
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Зарабатывает в интернете более 6 лет</p>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+              <button class="slider-nav" type="button">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 26L10 16L20 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <button class="slider-nav slider-nav-next" type="button">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 6L22 16L12 26" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
           <div class="container mx-auto flex flex-col gap-8">
-            <h2 class="font-Montserrat font-semibold text-4xl text-black text-center">Программы</h2>
+            <h2 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center">Программы</h2>
             <div class="swiffy-slider slider-nav-outside slider-nav-visible slider-indicators-round slider-indicators-outside slider-nav-round slider-nav-noloop slider-custom-1 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark">
               <div class="slider-container pb-1">
                 <article class="flex flex-col gap-4 w-full"><img class="w-full @xs:aspect-16-9 @4xl:aspect-1-1 rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка продукта"/>

@@ -165,60 +165,60 @@
           </template>
         </div>
       </dialog>
-      <main>
-        <div class="flex flex-col gap-32 mb-32">
+      <main class="@container/body ">
+        <div class="flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32 @xs/body:px-4 @8xl/body:px-0">
           <div class="container mx-auto flex flex-col gap-8 pt-10">
-            <h1 class="font-Montserrat font-semibold text-4xl text-black">Наша команда</h1>
-            <div class="grid grid-cols-1fr-1fr gap-8"><img class="w-full aspect-16-9 object-cover rounded-lg" alt="лого" src="./local/templates/tcavtodor/img/other/teacher.png">
+            <h1 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black">Наша команда</h1>
+            <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr gap-8"><img class="w-full aspect-16-9 object-cover rounded-lg" alt="лого" src="./local/templates/tcavtodor/img/other/teacher.png">
               <div class="flex flex-col gap-4">
-                <p class="font-Montserrat font-medium text-lg text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor.</p>
+                <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor.</p>
               </div>
             </div>
           </div>
           <div class="container mx-auto flex flex-col gap-20">
-            <h2 class="font-Montserrat font-semibold text-4xl text-black text-center">Состав разработчиков направления</h2>
+            <h2 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center">Состав разработчиков направления</h2>
             <div class="flex flex-col gap-8" tabBlock="">
               <div class="flex flex-wrap gap-4 items-center" tabNav="">
                 <label class=" cursor-pointer" for="tab1">
                   <input class="hidden peer" tab="1" id="tab1" type="radio" name="drone" checked>
-                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1">Содержание искусственных сооружений</p>
+                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1">Содержание искусственных сооружений</p>
                 </label>
                 <label class=" cursor-pointer" for="tab2">
                   <input class="hidden peer" tab="2" id="tab2" type="radio" name="drone">
-                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1">Содержание автомобильных дорог</p>
+                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1">Содержание автомобильных дорог</p>
                 </label>
                 <label class=" cursor-pointer" for="tab3">
                   <input class="hidden peer" tab="3" id="tab3" type="radio" name="drone">
-                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1">Строительство автомобильных дорог и ИССО</p>
+                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1">Строительство автомобильных дорог и ИССО</p>
                 </label>
                 <label class=" cursor-pointer" for="tab4">
                   <input class="hidden peer" tab="4" id="tab4" type="radio" name="drone">
-                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1">Иммерсивные технологии</p>
+                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1">Иммерсивные технологии</p>
                 </label>
                 <label class=" cursor-pointer" for="tab5">
                   <input class="hidden peer" tab="5" id="tab5" type="radio" name="drone">
-                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1">Изыскание и проектирование</p>
+                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1">Изыскание и проектирование</p>
                 </label>
                 <label class=" cursor-pointer" for="tab6">
                   <input class="hidden peer" tab="6" id="tab6" type="radio" name="drone">
-                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1">Строительный, геодезический и лабораторный контроль</p>
+                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1">Строительный, геодезический и лабораторный контроль</p>
                 </label>
                 <label class=" cursor-pointer" for="tab7">
                   <input class="hidden peer" tab="7" id="tab7" type="radio" name="drone">
-                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1">Экология в дорожном строительстве</p>
+                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1">Экология в дорожном строительстве</p>
                 </label>
                 <label class=" cursor-pointer" for="tab8">
                   <input class="hidden peer" tab="8" id="tab8" type="radio" name="drone">
-                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1">Программное обеспечение общего пользования</p>
+                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1">Программное обеспечение общего пользования</p>
                 </label>
               </div>
               <div class="grid grid-cols-full gap-8" tabContent="1">
                 <p class="font-Montserrat font-semibold text-3xl text-black text-center">Разработчики</p>
-                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible">
+                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
                   <div class="slider-container pb-1">
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -228,7 +228,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -238,7 +238,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -248,7 +248,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -269,11 +269,11 @@
                   </button>
                 </div>
                 <p class="font-Montserrat font-semibold text-3xl text-black text-center">Авторы</p>
-                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible">
+                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
                   <div class="slider-container pb-1">
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -283,7 +283,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -293,7 +293,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -303,7 +303,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -326,11 +326,11 @@
               </div>
               <div class="hidden grid-cols-full gap-8" tabContent="2">
                 <p class="font-Montserrat font-semibold text-3xl text-black text-center">Разработчики</p>
-                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible">
+                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
                   <div class="slider-container pb-1">
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -340,7 +340,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -361,11 +361,11 @@
                   </button>
                 </div>
                 <p class="font-Montserrat font-semibold text-3xl text-black text-center">Авторы</p>
-                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible">
+                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
                   <div class="slider-container pb-1">
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -375,7 +375,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -385,7 +385,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -395,7 +395,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -418,11 +418,11 @@
               </div>
               <div class="hidden grid-cols-full gap-8" tabContent="3">
                 <p class="font-Montserrat font-semibold text-3xl text-black text-center">Разработчики</p>
-                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible">
+                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
                   <div class="slider-container pb-1">
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -432,7 +432,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -442,7 +442,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -452,7 +452,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -473,11 +473,11 @@
                   </button>
                 </div>
                 <p class="font-Montserrat font-semibold text-3xl text-black text-center">Авторы</p>
-                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible">
+                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
                   <div class="slider-container pb-1">
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -487,7 +487,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -510,11 +510,11 @@
               </div>
               <div class="hidden grid-cols-full gap-8" tabContent="4">
                 <p class="font-Montserrat font-semibold text-3xl text-black text-center">Разработчики</p>
-                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible">
+                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
                   <div class="slider-container pb-1">
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -524,7 +524,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -534,7 +534,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -544,7 +544,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -565,11 +565,11 @@
                   </button>
                 </div>
                 <p class="font-Montserrat font-semibold text-3xl text-black text-center">Авторы</p>
-                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible">
+                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
                   <div class="slider-container pb-1">
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -579,7 +579,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -589,7 +589,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -599,7 +599,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -622,11 +622,11 @@
               </div>
               <div class="hidden grid-cols-full gap-8" tabContent="5">
                 <p class="font-Montserrat font-semibold text-3xl text-black text-center">Разработчики</p>
-                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible">
+                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
                   <div class="slider-container pb-1">
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -636,7 +636,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -646,7 +646,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -656,7 +656,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -677,11 +677,11 @@
                   </button>
                 </div>
                 <p class="font-Montserrat font-semibold text-3xl text-black text-center">Авторы</p>
-                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible">
+                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
                   <div class="slider-container pb-1">
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -691,7 +691,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -701,7 +701,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -711,7 +711,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -734,11 +734,11 @@
               </div>
               <div class="hidden grid-cols-full gap-8" tabContent="6">
                 <p class="font-Montserrat font-semibold text-3xl text-black text-center">Разработчики</p>
-                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible">
+                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
                   <div class="slider-container pb-1">
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -748,7 +748,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -758,7 +758,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -768,7 +768,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -789,11 +789,11 @@
                   </button>
                 </div>
                 <p class="font-Montserrat font-semibold text-3xl text-black text-center">Авторы</p>
-                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible">
+                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
                   <div class="slider-container pb-1">
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -803,7 +803,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -813,7 +813,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -823,7 +823,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -846,11 +846,11 @@
               </div>
               <div class="hidden grid-cols-full gap-8" tabContent="7">
                 <p class="font-Montserrat font-semibold text-3xl text-black text-center">Разработчики</p>
-                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible">
+                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
                   <div class="slider-container pb-1">
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -860,7 +860,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -870,7 +870,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -880,7 +880,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -901,11 +901,11 @@
                   </button>
                 </div>
                 <p class="font-Montserrat font-semibold text-3xl text-black text-center">Авторы</p>
-                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible">
+                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
                   <div class="slider-container pb-1">
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -915,7 +915,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -925,7 +925,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -935,7 +935,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -958,11 +958,11 @@
               </div>
               <div class="hidden grid-cols-full gap-8" tabContent="8">
                 <p class="font-Montserrat font-semibold text-3xl text-black text-center">Разработчики</p>
-                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible">
+                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
                   <div class="slider-container pb-1">
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -972,7 +972,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -982,7 +982,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -992,7 +992,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -1013,11 +1013,11 @@
                   </button>
                 </div>
                 <p class="font-Montserrat font-semibold text-3xl text-black text-center">Авторы</p>
-                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible">
+                <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
                   <div class="slider-container pb-1">
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -1027,7 +1027,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -1037,7 +1037,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -1047,7 +1047,7 @@
                     </article>
                     <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png">
                       <div class="flex flex-col gap-1">
-                        <p class="font-Montserrat font-medium text-black text-lg text-center">Mildred Powers</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center">Mildred Powers</p>
                         <ul class="list-disc pl-4">
                           <li class=" marker:text-primary">
                             <p class="font-Montserrat font-medium text-secondary text-sm">Руководитель отдела торговли и аналитики</p>
@@ -1071,152 +1071,148 @@
             </div>
           </div>
           <div class="container mx-auto flex flex-col gap-20">
-            <h2 class="font-Montserrat font-semibold text-4xl text-black text-center">Команда Учебного центра</h2>
-            <div class="grid grid-cols-2 gap-14">
-              <article class="grid grid-cols-auto-1fr gap-4"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-lg" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
-                <div class="flex flex-col gap-4 pt-1">
-                  <p class="font-Montserrat font-medium text-black text-2xl">Иванов И.И.</p>
+            <h2 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center">Команда Учебного центра</h2>
+            <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
+              <div class="slider-container pb-1">
+                <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
                   <div class="flex flex-col gap-1">
+                    <p class="font-Montserrat font-medium text-black @xl/body:text-base @6xl/body:text-lg text-center">Иванов И.И.</p>
                     <ul class="list-disc pl-4">
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Представитель компании</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Представитель компании</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Консультант по криптовалюте</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Консультант по криптовалюте</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Зарабатывает в интернете более 6 лет</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Зарабатывает в интернете более 6 лет</p>
                       </li>
                     </ul>
                   </div>
-                </div>
-              </article>
-              <article class="grid grid-cols-auto-1fr gap-4"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-lg" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
-                <div class="flex flex-col gap-4 pt-1">
-                  <p class="font-Montserrat font-medium text-black text-2xl">Иванов И.И.</p>
+                </article>
+                <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
                   <div class="flex flex-col gap-1">
+                    <p class="font-Montserrat font-medium text-black @xl/body:text-base @6xl/body:text-lg text-center">Иванов И.И.</p>
                     <ul class="list-disc pl-4">
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Представитель компании</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Представитель компании</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Консультант по криптовалюте</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Консультант по криптовалюте</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Зарабатывает в интернете более 6 лет</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Зарабатывает в интернете более 6 лет</p>
                       </li>
                     </ul>
                   </div>
-                </div>
-              </article>
-              <article class="grid grid-cols-auto-1fr gap-4"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-lg" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
-                <div class="flex flex-col gap-4 pt-1">
-                  <p class="font-Montserrat font-medium text-black text-2xl">Иванов И.И.</p>
+                </article>
+                <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
                   <div class="flex flex-col gap-1">
+                    <p class="font-Montserrat font-medium text-black @xl/body:text-base @6xl/body:text-lg text-center">Иванов И.И.</p>
                     <ul class="list-disc pl-4">
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Представитель компании</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Представитель компании</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Консультант по криптовалюте</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Консультант по криптовалюте</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Зарабатывает в интернете более 6 лет</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Зарабатывает в интернете более 6 лет</p>
                       </li>
                     </ul>
                   </div>
-                </div>
-              </article>
-              <article class="grid grid-cols-auto-1fr gap-4"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-lg" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
-                <div class="flex flex-col gap-4 pt-1">
-                  <p class="font-Montserrat font-medium text-black text-2xl">Иванов И.И.</p>
+                </article>
+                <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
                   <div class="flex flex-col gap-1">
+                    <p class="font-Montserrat font-medium text-black @xl/body:text-base @6xl/body:text-lg text-center">Иванов И.И.</p>
                     <ul class="list-disc pl-4">
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Представитель компании</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Представитель компании</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Консультант по криптовалюте</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Консультант по криптовалюте</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Зарабатывает в интернете более 6 лет</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Зарабатывает в интернете более 6 лет</p>
                       </li>
                     </ul>
                   </div>
-                </div>
-              </article>
-              <article class="grid grid-cols-auto-1fr gap-4"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-lg" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
-                <div class="flex flex-col gap-4 pt-1">
-                  <p class="font-Montserrat font-medium text-black text-2xl">Иванов И.И.</p>
+                </article>
+                <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
                   <div class="flex flex-col gap-1">
+                    <p class="font-Montserrat font-medium text-black @xl/body:text-base @6xl/body:text-lg text-center">Иванов И.И.</p>
                     <ul class="list-disc pl-4">
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Представитель компании</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Представитель компании</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Консультант по криптовалюте</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Консультант по криптовалюте</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Зарабатывает в интернете более 6 лет</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Зарабатывает в интернете более 6 лет</p>
                       </li>
                     </ul>
                   </div>
-                </div>
-              </article>
-              <article class="grid grid-cols-auto-1fr gap-4"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-lg" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
-                <div class="flex flex-col gap-4 pt-1">
-                  <p class="font-Montserrat font-medium text-black text-2xl">Иванов И.И.</p>
+                </article>
+                <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
                   <div class="flex flex-col gap-1">
+                    <p class="font-Montserrat font-medium text-black @xl/body:text-base @6xl/body:text-lg text-center">Иванов И.И.</p>
                     <ul class="list-disc pl-4">
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Представитель компании</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Представитель компании</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Консультант по криптовалюте</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Консультант по криптовалюте</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Зарабатывает в интернете более 6 лет</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Зарабатывает в интернете более 6 лет</p>
                       </li>
                     </ul>
                   </div>
-                </div>
-              </article>
-              <article class="grid grid-cols-auto-1fr gap-4"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-lg" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
-                <div class="flex flex-col gap-4 pt-1">
-                  <p class="font-Montserrat font-medium text-black text-2xl">Иванов И.И.</p>
+                </article>
+                <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
                   <div class="flex flex-col gap-1">
+                    <p class="font-Montserrat font-medium text-black @xl/body:text-base @6xl/body:text-lg text-center">Иванов И.И.</p>
                     <ul class="list-disc pl-4">
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Представитель компании</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Представитель компании</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Консультант по криптовалюте</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Консультант по криптовалюте</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Зарабатывает в интернете более 6 лет</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Зарабатывает в интернете более 6 лет</p>
                       </li>
                     </ul>
                   </div>
-                </div>
-              </article>
-              <article class="grid grid-cols-auto-1fr gap-4"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-lg" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
-                <div class="flex flex-col gap-4 pt-1">
-                  <p class="font-Montserrat font-medium text-black text-2xl">Иванов И.И.</p>
+                </article>
+                <article class="flex flex-col items-center gap-4 p-2"><img class="w-full aspect-1-1 max-w-56 object-cover rounded-full" alt="фото автора" src="./local/templates/tcavtodor/img/people/profile.png"/>
                   <div class="flex flex-col gap-1">
+                    <p class="font-Montserrat font-medium text-black @xl/body:text-base @6xl/body:text-lg text-center">Иванов И.И.</p>
                     <ul class="list-disc pl-4">
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Представитель компании</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Представитель компании</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Консультант по криптовалюте</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Консультант по криптовалюте</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-secondary text-lg">Зарабатывает в интернете более 6 лет</p>
+                        <p class="font-Montserrat font-medium text-secondary text-sm">Зарабатывает в интернете более 6 лет</p>
                       </li>
                     </ul>
                   </div>
-                </div>
-              </article>
+                </article>
+              </div>
+              <button class="slider-nav" type="button">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 26L10 16L20 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <button class="slider-nav slider-nav-next" type="button">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 6L22 16L12 26" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
             </div>
           </div>
           <div class="container mx-auto">

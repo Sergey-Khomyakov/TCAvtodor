@@ -164,19 +164,19 @@
           </template>
         </div>
       </dialog>
-      <main>
-        <div class="flex flex-col gap-32 mb-32">
+      <main class="@container/body ">
+        <div class="flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32 @xs/body:px-4 @8xl/body:px-0">
           <div class="container mx-auto flex flex-col gap-8 pt-10">
-            <h1 class="font-Montserrat font-semibold text-4xl text-black">Для юридических лиц (корпоративных клиентов)</h1>
-            <div class="grid grid-cols-1fr-1fr gap-8"><img class="rounded-lg w-full h-full aspect-16-9 object-cover" alt="Картинка" src="./local/templates/tcavtodor/img/stub.jpg">
+            <h1 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black">Для юридических лиц (корпоративных клиентов)</h1>
+            <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr gap-8"><img class="rounded-lg w-full h-full aspect-16-9 object-cover" alt="Картинка" src="./local/templates/tcavtodor/img/stub.jpg">
               <div class="flex flex-col gap-6">
-                <p class="font-Montserrat font-medium text-lg text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor.</p>
+                <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor.</p>
               </div>
             </div>
           </div>
           <div class="container mx-auto">
-            <div class="grid grid-cols-3 gap-8 max-w-full w-full mx-auto">
-              <div class="relative w-full h-full flex flex-col gap-4 p-4 rounded-lg shadow-md bg-lightGray aspect-1-1 after:contents-[''] after:absolute after:top-1/2 after:left-full after:w-8 after:h-0 after:border-b-2 after:border-dotted after:border-primary">
+            <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-2 @6xl/body:grid-cols-3 gap-8 max-w-full w-full mx-auto">
+              <article class="relative w-full flex flex-col gap-4 p-4 rounded-lg shadow-md bg-lightGray aspect-1-1 @xs/body:order-1 @6xl/body:order-none @6xl/body:after:contents-[''] @6xl/body:after:absolute @6xl/body:after:top-1/2 @6xl/body:after:left-full @6xl/body:after:w-8 @6xl/body:after:h-0 @6xl/body:after:border-b-2 @6xl/body:after:border-dotted @6xl/body:after:border-primary">
                 <div class="flex items-center gap-4"><img class="absolute -left-2 top-3 object-cover w-16" alt="иконка" src="./local/templates/tcavtodor/img/other/plashka.svg">
                   <p class="font-Montserrat font-medium text-white text-xl z-[5] pr-8">1</p>
                   <div class="rounded-full p-2 w-max aspect-1-1 border-2 border-primary">
@@ -187,13 +187,13 @@
                       <path d="M11 9V8C11 6.67392 11.5268 5.40215 12.4645 4.46447C13.4021 3.52678 14.6739 3 16 3C17.3261 3 18.5979 3.52678 19.5355 4.46447C20.4732 5.40215 21 6.67392 21 8V9H11Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                   </div>
-                  <p class="font-Montserrat font-semibold text-black text-lg">Заявка</p>
+                  <p class="font-Montserrat font-semibold text-black @xs/body:text-base @6xl/body:text-lg h-9 line-clamp-1">Заявка</p>
                 </div>
                 <div class="flex flex-col gap-2">
-                  <p class="font-Montserrat font-medium text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint, ab aliquid numquam qui voluptatum tenetur necessitatibus nobis itaque iusto accusamus modi aperiam voluptas consequuntur vero veritatis? Minima, unde debitis.</p>
+                  <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint, ab aliquid numquam qui voluptatum tenetur necessitatibus nobis itaque iusto accusamus modi aperiam voluptas consequuntur vero veritatis? Minima, unde debitis.</p>
                 </div>
-              </div>
-              <div class="relative w-full h-full flex flex-col gap-4 p-4 rounded-lg shadow-md bg-lightGray aspect-1-1 after:contents-[''] after:absolute after:top-1/2 after:left-full after:w-8 after:h-0 after:border-b-2 after:border-dotted after:border-primary">
+              </article>
+              <article class="relative w-full flex flex-col gap-4 p-4 rounded-lg shadow-md bg-lightGray aspect-1-1 @xs/body:order-2 @6xl/body:order-none @6xl/body:after:contents-[''] @6xl/body:after:absolute @6xl/body:after:top-1/2 @6xl/body:after:left-full @6xl/body:after:w-8 @6xl/body:after:h-0 @6xl/body:after:border-b-2 @6xl/body:after:border-dotted @6xl/body:after:border-primary">
                 <div class="flex items-center gap-4"><img class="absolute -left-2 top-3 object-cover w-16" alt="иконка" src="./local/templates/tcavtodor/img/other/plashka.svg">
                   <p class="font-Montserrat font-medium text-white text-xl z-[5] pr-8">2</p>
                   <div class="rounded-full p-2 w-max aspect-1-1 border-2 border-primary">
@@ -204,13 +204,13 @@
                       <path d="M11 9V8C11 6.67392 11.5268 5.40215 12.4645 4.46447C13.4021 3.52678 14.6739 3 16 3C17.3261 3 18.5979 3.52678 19.5355 4.46447C20.4732 5.40215 21 6.67392 21 8V9H11Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                   </div>
-                  <p class="font-Montserrat font-semibold text-black text-lg">Консультация</p>
+                  <p class="font-Montserrat font-semibold text-black @xs/body:text-base @6xl/body:text-lg h-9 line-clamp-1">Консультация</p>
                 </div>
                 <div class="flex flex-col gap-2">
-                  <p class="font-Montserrat font-medium text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint, ab aliquid numquam qui voluptatum tenetur necessitatibus nobis itaque iusto accusamus modi aperiam voluptas consequuntur vero veritatis? Minima, unde debitis.</p>
+                  <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint, ab aliquid numquam qui voluptatum tenetur necessitatibus nobis itaque iusto accusamus modi aperiam voluptas consequuntur vero veritatis? Minima, unde debitis.</p>
                 </div>
-              </div>
-              <div class="relative w-full h-full flex flex-col gap-4 p-4 rounded-lg shadow-md bg-lightGray aspect-1-1 after:contents-[''] after:absolute after:-bottom-8 after:right-1/2 after:w-0 after:h-8 after:border-r-2 after:border-dotted after:border-primary">
+              </article>
+              <article class="relative w-full flex flex-col gap-4 p-4 rounded-lg shadow-md bg-lightGray aspect-1-1 @xs/body:order-3 @6xl/body:order-none @6xl/body:after:contents-[''] @6xl/body:after:absolute @6xl/body:after:-bottom-8 @6xl/body:after:right-1/2 @6xl/body:after:w-0 @6xl/body:after:h-8 @6xl/body:after:border-r-2 @6xl/body:after:border-dotted @6xl/body:after:border-primary">
                 <div class="flex items-center gap-4"><img class="absolute -left-2 top-3 object-cover w-16" alt="иконка" src="./local/templates/tcavtodor/img/other/plashka.svg">
                   <p class="font-Montserrat font-medium text-white text-xl z-[5] pr-8">3</p>
                   <div class="rounded-full p-2 w-max aspect-1-1 border-2 border-primary">
@@ -221,15 +221,15 @@
                       <path d="M11 9V8C11 6.67392 11.5268 5.40215 12.4645 4.46447C13.4021 3.52678 14.6739 3 16 3C17.3261 3 18.5979 3.52678 19.5355 4.46447C20.4732 5.40215 21 6.67392 21 8V9H11Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                   </div>
-                  <p class="font-Montserrat font-semibold text-black text-lg">Заключение договора</p>
+                  <p class="font-Montserrat font-semibold text-black @xs/body:text-base @6xl/body:text-lg h-9 line-clamp-1">Заключение договора</p>
                 </div>
                 <div class="flex flex-col gap-2">
-                  <p class="font-Montserrat font-medium text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint, ab aliquid numquam qui voluptatum tenetur necessitatibus nobis itaque iusto accusamus modi aperiam voluptas consequuntur vero veritatis? Minima, unde debitis.</p>
+                  <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint, ab aliquid numquam qui voluptatum tenetur necessitatibus nobis itaque iusto accusamus modi aperiam voluptas consequuntur vero veritatis? Minima, unde debitis.</p>
                 </div>
-              </div>
-              <div class="relative w-full h-full flex flex-col gap-4 p-4 rounded-lg shadow-md bg-lightGray aspect-1-1">
-                <div class="flex items-center gap-4 flex-row-reverse justify-between"><img class="absolute -right-2 top-3 object-cover w-16 rotate-180" alt="иконка" src="./local/templates/tcavtodor/img/other/plashka.svg">
-                  <p class="font-Montserrat font-medium text-white text-xl z-[5] pl-8">6</p>
+              </article>
+              <article class="relative w-full flex flex-col gap-4 p-4 rounded-lg shadow-md bg-lightGray aspect-1-1 @xs/body:order-6 @6xl/body:order-none">
+                <div class="flex items-center gap-4 @6xl/body:flex-row-reverse @6xl/body:justify-between"><img class="absolute @xs/body:-left-2 @6xl/body:!left-none @6xl/body:-right-2 top-3 object-cover w-16 @6xl/body:rotate-180" alt="иконка" src="./local/templates/tcavtodor/img/other/plashka.svg">
+                  <p class="font-Montserrat font-medium text-white text-xl z-[5] @xs/body:pr-8 @6xl/body:pr-0 @6xl/body:pl-8">6</p>
                   <div class="flex items-center gap-4 ">
                     <div class="rounded-full p-2 w-max aspect-1-1 border-2 border-primary">
                       <svg class="stroke-primary" width="16" height="16" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -239,16 +239,16 @@
                         <path d="M11 9V8C11 6.67392 11.5268 5.40215 12.4645 4.46447C13.4021 3.52678 14.6739 3 16 3C17.3261 3 18.5979 3.52678 19.5355 4.46447C20.4732 5.40215 21 6.67392 21 8V9H11Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                       </svg>
                     </div>
-                    <p class="font-Montserrat font-semibold text-black text-lg">Получение удостоверения</p>
+                    <p class="font-Montserrat font-semibold text-black @xs/body:text-base @6xl/body:text-lg h-9 line-clamp-1">Получение удостоверения</p>
                   </div>
                 </div>
                 <div class="flex flex-col gap-2">
-                  <p class="font-Montserrat font-medium text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint, ab aliquid numquam qui voluptatum tenetur necessitatibus nobis itaque iusto accusamus modi aperiam voluptas consequuntur vero veritatis? Minima, unde debitis.</p>
+                  <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint, ab aliquid numquam qui voluptatum tenetur necessitatibus nobis itaque iusto accusamus modi aperiam voluptas consequuntur vero veritatis? Minima, unde debitis.</p>
                 </div>
-              </div>
-              <div class="relative w-full h-full flex flex-col gap-4 p-4 rounded-lg shadow-md bg-lightGray aspect-1-1 after:contents-[''] after:absolute after:top-1/2 after:right-full after:w-8 after:h-0 after:border-b-2 after:border-dotted after:border-primary">
-                <div class="flex items-center gap-4 flex-row-reverse justify-between"><img class="absolute -right-2 top-3 object-cover w-16 rotate-180" alt="иконка" src="./local/templates/tcavtodor/img/other/plashka.svg">
-                  <p class="font-Montserrat font-medium text-white text-xl z-[5] pl-8">5</p>
+              </article>
+              <article class="relative w-full flex flex-col gap-4 p-4 rounded-lg shadow-md bg-lightGray aspect-1-1 @xs/body:order-5 @6xl/body:order-none @6xl/body:after:contents-[''] @6xl/body:after:absolute @6xl/body:after:top-1/2 @6xl/body:after:right-full @6xl/body:after:w-8 @6xl/body:after:h-0 @6xl/body:after:border-b-2 @6xl/body:after:border-dotted @6xl/body:after:border-primary">
+                <div class="flex items-center gap-4 @6xl/body:flex-row-reverse @6xl/body:justify-between"><img class="absolute @xs/body:-left-2 @6xl/body:!left-none @6xl/body:-right-2 top-3 object-cover w-16 @6xl/body:rotate-180" alt="иконка" src="./local/templates/tcavtodor/img/other/plashka.svg">
+                  <p class="font-Montserrat font-medium text-white text-xl z-[5] @xs/body:pr-8 @6xl/body:pr-0 @6xl/body:pl-8">5</p>
                   <div class="flex items-center gap-4 ">
                     <div class="rounded-full p-2 w-max aspect-1-1 border-2 border-primary">
                       <svg class="stroke-primary" width="16" height="16" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -258,16 +258,16 @@
                         <path d="M11 9V8C11 6.67392 11.5268 5.40215 12.4645 4.46447C13.4021 3.52678 14.6739 3 16 3C17.3261 3 18.5979 3.52678 19.5355 4.46447C20.4732 5.40215 21 6.67392 21 8V9H11Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                       </svg>
                     </div>
-                    <p class="font-Montserrat font-semibold text-black text-lg">Обучение</p>
+                    <p class="font-Montserrat font-semibold text-black @xs/body:text-base @6xl/body:text-lg h-9 line-clamp-1">Обучение</p>
                   </div>
                 </div>
                 <div class="flex flex-col gap-2">
-                  <p class="font-Montserrat font-medium text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint, ab aliquid numquam qui voluptatum tenetur necessitatibus nobis itaque iusto accusamus modi aperiam voluptas consequuntur vero veritatis? Minima, unde debitis.</p>
+                  <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint, ab aliquid numquam qui voluptatum tenetur necessitatibus nobis itaque iusto accusamus modi aperiam voluptas consequuntur vero veritatis? Minima, unde debitis.</p>
                 </div>
-              </div>
-              <div class="relative w-full h-full flex flex-col gap-4 p-4 rounded-lg shadow-md bg-lightGray aspect-1-1 after:contents-[''] after:absolute after:top-1/2 after:right-full after:w-8 after:h-0 after:border-b-2 after:border-dotted after:border-primary">
-                <div class="flex items-center gap-4 flex-row-reverse justify-between"><img class="absolute -right-2 top-3 object-cover w-16 rotate-180" alt="иконка" src="./local/templates/tcavtodor/img/other/plashka.svg">
-                  <p class="font-Montserrat font-medium text-white text-xl z-[5] pl-8">4</p>
+              </article>
+              <article class="relative w-full flex flex-col gap-4 p-4 rounded-lg shadow-md bg-lightGray aspect-1-1 @xs/body:order-4 @6xl/body:order-none @6xl/body:after:contents-[''] @6xl/body:after:absolute @6xl/body:after:top-1/2 @6xl/body:after:right-full @6xl/body:after:w-8 @6xl/body:after:h-0 @6xl/body:after:border-b-2 @6xl/body:after:border-dotted @6xl/body:after:border-primary">
+                <div class="flex items-center gap-4 @6xl/body:flex-row-reverse @6xl/body:justify-between"><img class="absolute @xs/body:-left-2 @6xl/body:!left-none @6xl/body:-right-2 top-3 object-cover w-16 @6xl/body:rotate-180" alt="иконка" src="./local/templates/tcavtodor/img/other/plashka.svg">
+                  <p class="font-Montserrat font-medium text-white text-xl z-[5] @xs/body:pr-8 @6xl/body:pr-0 @6xl/body:pl-8">4</p>
                   <div class="flex items-center gap-4 ">
                     <div class="rounded-full p-2 w-max aspect-1-1 border-2 border-primary">
                       <svg class="stroke-primary" width="16" height="16" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -277,132 +277,132 @@
                         <path d="M11 9V8C11 6.67392 11.5268 5.40215 12.4645 4.46447C13.4021 3.52678 14.6739 3 16 3C17.3261 3 18.5979 3.52678 19.5355 4.46447C20.4732 5.40215 21 6.67392 21 8V9H11Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                       </svg>
                     </div>
-                    <p class="font-Montserrat font-semibold text-black text-lg">Оплата</p>
+                    <p class="font-Montserrat font-semibold text-black @xs/body:text-base @6xl/body:text-lg h-9 line-clamp-1">Оплата</p>
                   </div>
                 </div>
                 <div class="flex flex-col gap-2">
-                  <p class="font-Montserrat font-medium text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint, ab aliquid numquam qui voluptatum tenetur necessitatibus nobis itaque iusto accusamus modi aperiam voluptas consequuntur vero veritatis? Minima, unde debitis.</p>
+                  <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint, ab aliquid numquam qui voluptatum tenetur necessitatibus nobis itaque iusto accusamus modi aperiam voluptas consequuntur vero veritatis? Minima, unde debitis.</p>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
           <div class="container mx-auto flex justify-center">
             <button class="bg-gradient-orange text-white rounded-lg p-4 px-6 text-xl w-max mx-auto" dialog-btn="bid" type="button">Оставить заявку</button>
           </div>
           <div class="container mx-auto flex flex-col gap-14">
-            <h2 class="font-Montserrat font-semibold text-4xl text-black text-center">Программы лояльности</h2>
+            <h2 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center">Программы лояльности</h2>
             <div class="flex flex-col gap-16">
-              <div class="grid grid-cols-1fr-1fr gap-8"><img class="rounded-lg w-full h-full aspect-16-9 object-cover" alt="Картинка" src="./local/templates/tcavtodor/img/stub.jpg">
+              <article class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr @xs/body:gap-4 @6xl/body:gap-8"><img class="rounded-lg w-full h-full aspect-16-9 object-cover" alt="Картинка" src="./local/templates/tcavtodor/img/stub.jpg">
                 <div class="flex flex-col gap-4">
-                  <p class="font-Montserrat font-semibold text-2xl text-black">Акция 1</p>
-                  <p class="font-Montserrat font-medium text-lg text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga necessitatibus, molestiae blanditiis minima labore dicta a dolore. Inventore soluta officiis dolores accusantium.</p>
+                  <p class="font-Montserrat font-semibold @xs/body:text-lg @6xl/body:text-2xl text-black">Акция 1</p>
+                  <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga necessitatibus, molestiae blanditiis minima labore dicta a dolore. Inventore soluta officiis dolores accusantium.</p>
                   <div class="flex flex-col">
-                    <p class="font-Montserrat font-medium text-lg text-black">Условия акции:</p>
+                    <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Условия акции:</p>
                     <ul class="list-disc pl-4">
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-lg text-black">Широкие карьерные перспективы</p>
+                        <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Широкие карьерные перспективы</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-lg text-black">Поддержка со стороны государства</p>
+                        <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Поддержка со стороны государства</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-lg text-black">Соответствие федеральным стандартам</p>
+                        <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Соответствие федеральным стандартам</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-lg text-black">Внесение в Реестр</p>
+                        <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Внесение в Реестр</p>
                       </li>
                     </ul>
                   </div>
                   <div class="flex items-center gap-4 p-4 rounded-lg bg-lightGray mt-auto justify-between">
-                    <p class="font-Montserrat font-medium text-lg text-black">Акция действует</p>
+                    <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Акция действует</p>
                     <div class="flex items-center gap-2" dedlineTimer="2025-01-25">
-                      <p class="font-Montserrat font-medium text-black text-lg" dedlineTimerDays="">00</p>
-                      <p class="font-Montserrat font-medium text-black text-lg" dedlineTimerDaysText="">дня</p>
+                      <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg" dedlineTimerDays="">00</p>
+                      <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg" dedlineTimerDaysText="">дня</p>
                       <div class="flex items-center">
-                        <p class="font-Montserrat font-medium text-black text-lg" dedlineTimerHours="">00</p>
-                        <p class="font-Montserrat font-medium text-black text-lg">:</p>
-                        <p class="font-Montserrat font-medium text-black text-lg" dedlineTimerMinutes="">00</p>
-                        <p class="font-Montserrat font-medium text-black text-lg">:</p>
-                        <p class="font-Montserrat font-medium text-black text-lg" dedlineTimerSeconds="">00</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg" dedlineTimerHours="">00</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg">:</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg" dedlineTimerMinutes="">00</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg">:</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg" dedlineTimerSeconds="">00</p>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="grid grid-cols-1fr-1fr gap-8"><img class="rounded-lg w-full h-full aspect-16-9 object-cover" alt="Картинка" src="./local/templates/tcavtodor/img/stub.jpg">
+              </article>
+              <article class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr @xs/body:gap-4 @6xl/body:gap-8"><img class="rounded-lg w-full h-full aspect-16-9 object-cover" alt="Картинка" src="./local/templates/tcavtodor/img/stub.jpg">
                 <div class="flex flex-col gap-4">
-                  <p class="font-Montserrat font-semibold text-2xl text-black">Акция 2</p>
-                  <p class="font-Montserrat font-medium text-lg text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga necessitatibus, molestiae blanditiis minima labore dicta a dolore. Inventore soluta officiis dolores accusantium.</p>
+                  <p class="font-Montserrat font-semibold @xs/body:text-lg @6xl/body:text-2xl text-black">Акция 2</p>
+                  <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga necessitatibus, molestiae blanditiis minima labore dicta a dolore. Inventore soluta officiis dolores accusantium.</p>
                   <div class="flex flex-col">
-                    <p class="font-Montserrat font-medium text-lg text-black">Условия акции:</p>
+                    <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Условия акции:</p>
                     <ul class="list-disc pl-4">
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-lg text-black">Широкие карьерные перспективы</p>
+                        <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Широкие карьерные перспективы</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-lg text-black">Поддержка со стороны государства</p>
+                        <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Поддержка со стороны государства</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-lg text-black">Соответствие федеральным стандартам</p>
+                        <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Соответствие федеральным стандартам</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-lg text-black">Внесение в Реестр</p>
+                        <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Внесение в Реестр</p>
                       </li>
                     </ul>
                   </div>
                   <div class="flex items-center gap-4 p-4 rounded-lg bg-lightGray mt-auto justify-between">
-                    <p class="font-Montserrat font-medium text-lg text-black">Акция действует</p>
+                    <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Акция действует</p>
                     <div class="flex items-center gap-2" dedlineTimer="2025-02-02">
-                      <p class="font-Montserrat font-medium text-black text-lg" dedlineTimerDays="">00</p>
-                      <p class="font-Montserrat font-medium text-black text-lg" dedlineTimerDaysText="">дня</p>
+                      <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg" dedlineTimerDays="">00</p>
+                      <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg" dedlineTimerDaysText="">дня</p>
                       <div class="flex items-center">
-                        <p class="font-Montserrat font-medium text-black text-lg" dedlineTimerHours="">00</p>
-                        <p class="font-Montserrat font-medium text-black text-lg">:</p>
-                        <p class="font-Montserrat font-medium text-black text-lg" dedlineTimerMinutes="">00</p>
-                        <p class="font-Montserrat font-medium text-black text-lg">:</p>
-                        <p class="font-Montserrat font-medium text-black text-lg" dedlineTimerSeconds="">00</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg" dedlineTimerHours="">00</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg">:</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg" dedlineTimerMinutes="">00</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg">:</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg" dedlineTimerSeconds="">00</p>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="grid grid-cols-1fr-1fr gap-8"><img class="rounded-lg w-full h-full aspect-16-9 object-cover" alt="Картинка" src="./local/templates/tcavtodor/img/stub.jpg">
+              </article>
+              <article class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr @xs/body:gap-4 @6xl/body:gap-8"><img class="rounded-lg w-full h-full aspect-16-9 object-cover" alt="Картинка" src="./local/templates/tcavtodor/img/stub.jpg">
                 <div class="flex flex-col gap-4">
-                  <p class="font-Montserrat font-semibold text-2xl text-black">Акция 3</p>
-                  <p class="font-Montserrat font-medium text-lg text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga necessitatibus, molestiae blanditiis minima labore dicta a dolore. Inventore soluta officiis dolores accusantium.</p>
+                  <p class="font-Montserrat font-semibold @xs/body:text-lg @6xl/body:text-2xl text-black">Акция 3</p>
+                  <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga necessitatibus, molestiae blanditiis minima labore dicta a dolore. Inventore soluta officiis dolores accusantium.</p>
                   <div class="flex flex-col">
-                    <p class="font-Montserrat font-medium text-lg text-black">Условия акции:</p>
+                    <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Условия акции:</p>
                     <ul class="list-disc pl-4">
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-lg text-black">Широкие карьерные перспективы</p>
+                        <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Широкие карьерные перспективы</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-lg text-black">Поддержка со стороны государства</p>
+                        <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Поддержка со стороны государства</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-lg text-black">Соответствие федеральным стандартам</p>
+                        <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Соответствие федеральным стандартам</p>
                       </li>
                       <li class=" marker:text-primary">
-                        <p class="font-Montserrat font-medium text-lg text-black">Внесение в Реестр</p>
+                        <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Внесение в Реестр</p>
                       </li>
                     </ul>
                   </div>
                   <div class="flex items-center gap-4 p-4 rounded-lg bg-lightGray mt-auto justify-between">
-                    <p class="font-Montserrat font-medium text-lg text-black">Акция действует</p>
+                    <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Акция действует</p>
                     <div class="flex items-center gap-2" dedlineTimer="2025-02-20">
-                      <p class="font-Montserrat font-medium text-black text-lg" dedlineTimerDays="">00</p>
-                      <p class="font-Montserrat font-medium text-black text-lg" dedlineTimerDaysText="">дня</p>
+                      <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg" dedlineTimerDays="">00</p>
+                      <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg" dedlineTimerDaysText="">дня</p>
                       <div class="flex items-center">
-                        <p class="font-Montserrat font-medium text-black text-lg" dedlineTimerHours="">00</p>
-                        <p class="font-Montserrat font-medium text-black text-lg">:</p>
-                        <p class="font-Montserrat font-medium text-black text-lg" dedlineTimerMinutes="">00</p>
-                        <p class="font-Montserrat font-medium text-black text-lg">:</p>
-                        <p class="font-Montserrat font-medium text-black text-lg" dedlineTimerSeconds="">00</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg" dedlineTimerHours="">00</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg">:</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg" dedlineTimerMinutes="">00</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg">:</p>
+                        <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg" dedlineTimerSeconds="">00</p>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
           <div class="container mx-auto">

@@ -23,10 +23,10 @@ block head
 block content
     - var authorization = true;
     +header(authorization)
-    main(class="@container/body")
-        div(class="flex flex-col gap-32 mb-32")
+    main(class="@container/body ")
+        div(class="flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32 @xs/body:px-4 @8xl/body:px-0")
             div(class="container mx-auto flex flex-col gap-8 pt-10")
-                h1(class="font-Montserrat font-semibold text-4xl text-black") 3D Практикум
+                h1(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black") 3D Практикум
                 div(class="rounded-lg overflow-hidden w-full aspect-16-9")
                     video.video-js(controls="", preload="auto", width="auto", data-setup="{}", class="w-full h-full")
                         source(src=`${path}/video/avtodor-eng-video.mp4`, type="video/mp4")
@@ -37,7 +37,7 @@ block content
                                 | supports 
                                 | HTML5 video
             div(class="container mx-auto flex flex-col gap-8")
-                div(class="grid grid-cols-4 gap-24")
+                div(class="grid @xs/body:grid-cols-full @xs/body:justify-items-center @lg/body:grid-cols-2 @6xl/body:grid-cols-4 gap-24")
                     article(class="flex flex-col items-center gap-4 w-64")
                         svg(width="64", height="64", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class=" stroke-black")
                             path(d="M16 10V16", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
@@ -68,12 +68,12 @@ block content
                             path(d="M27.5 13.8667V20.6818C27.5004 20.8975 27.4307 21.1075 27.3013 21.2802C26.4592 22.4007 22.9066 26.5 16 26.5C9.09339 26.5 5.54077 22.4007 4.69869 21.2802C4.56932 21.1075 4.49959 20.8975 4.5 20.6818V13.8667", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                         p(class="font-Montserrat font-medium text-black text-xl text-center text-balance") Доступ со всех ПК
             div(class="container mx-auto flex flex-col gap-8")
-                h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Демоверсия
+                h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Демоверсия
                 div(class="relative")
                     img(src=`${path}/img/stub.jpg`, alt="картинка", class="rounded-lg w-full aspect-16-9 object-cover")
                     a(href="#", class="absolute top-0 left-0 inset-0")
             div(class="container mx-auto flex flex-col gap-8")
-                h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Программы 3D Практикума
+                h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Программы 3D Практикума
                 div(class="swiffy-slider slider-nav-outside slider-nav-visible slider-indicators-round slider-indicators-outside slider-nav-round slider-nav-noloop slider-custom-1 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark")
                     div(class="slider-container pb-1")
                         -

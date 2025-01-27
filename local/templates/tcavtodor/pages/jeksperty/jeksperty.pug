@@ -19,50 +19,50 @@ block head
 block content
     - var authorization = true;
     +header(authorization)
-    main(class="")
-        div(class="flex flex-col gap-32 mb-32")
+    main(class="@container/body ")
+        div(class="flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32 @xs/body:px-4 @8xl/body:px-0")
             div(class="container mx-auto flex flex-col gap-8 pt-10")
-                h1(class="font-Montserrat font-semibold text-4xl text-black") Наша команда
-                div(class="grid grid-cols-1fr-1fr gap-8")
+                h1(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black") Наша команда
+                div(class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr gap-8")
                     img(class="w-full aspect-16-9 object-cover rounded-lg", alt="лого", src=`${path}/img/other/teacher.png`)
                     div(class="flex flex-col gap-4")
-                        p(class="font-Montserrat font-medium text-lg text-black") Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor.
+                        p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black") Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor.
             div(class="container mx-auto flex flex-col gap-20")
-                h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Состав разработчиков направления
+                h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Состав разработчиков направления
                 div(tabBlock="", class="flex flex-col gap-8")
                     div(tabNav="", class="flex flex-wrap gap-4 items-center")
                         label(for="tab1", class=" cursor-pointer")
                             input(tab="1", id="tab1", type="radio", name="drone", class="hidden peer", checked) 
-                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") Содержание искусственных сооружений
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1") Содержание искусственных сооружений
                         label(for="tab2", class=" cursor-pointer")
                             input(tab="2",id="tab2", type="radio", name="drone", class="hidden peer") 
-                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") Содержание автомобильных дорог
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1") Содержание автомобильных дорог
                         label(for="tab3", class=" cursor-pointer")
                             input(tab="3", id="tab3", type="radio", name="drone", class="hidden peer") 
-                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") Строительство автомобильных дорог и ИССО
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1") Строительство автомобильных дорог и ИССО
                         label(for="tab4", class=" cursor-pointer")
                             input(tab="4", id="tab4", type="radio", name="drone", class="hidden peer") 
-                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") Иммерсивные технологии
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1") Иммерсивные технологии
                         label(for="tab5", class=" cursor-pointer")
                             input(tab="5", id="tab5", type="radio", name="drone", class="hidden peer") 
-                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") Изыскание и проектирование
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1") Изыскание и проектирование
                         label(for="tab6", class=" cursor-pointer")
                             input(tab="6", id="tab6", type="radio", name="drone", class="hidden peer") 
-                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") Строительный, геодезический и лабораторный контроль
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1") Строительный, геодезический и лабораторный контроль
                         label(for="tab7", class=" cursor-pointer")
                             input(tab="7", id="tab7", type="radio", name="drone", class="hidden peer") 
-                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") Экология в дорожном строительстве
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1") Экология в дорожном строительстве
                         label(for="tab8", class=" cursor-pointer")
                             input(tab="8", id="tab8", type="radio", name="drone", class="hidden peer") 
-                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover text-xl pb-1") Программное обеспечение общего пользования
+                            p(class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1") Программное обеспечение общего пользования
                     div(tabContent="1", class="grid grid-cols-full gap-8")
                         p(class="font-Montserrat font-semibold text-3xl text-black text-center") Разработчики
-                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                             div(class="slider-container pb-1")
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -70,7 +70,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -78,7 +78,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -86,7 +86,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -98,12 +98,12 @@ block content
                                 svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
                                     path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                         p(class="font-Montserrat font-semibold text-3xl text-black text-center") Авторы
-                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                             div(class="slider-container pb-1")
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -111,7 +111,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -119,7 +119,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -127,7 +127,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -140,12 +140,12 @@ block content
                                     path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                     div(tabContent="2", class="hidden grid-cols-full gap-8")
                         p(class="font-Montserrat font-semibold text-3xl text-black text-center") Разработчики
-                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                             div(class="slider-container pb-1")
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -153,7 +153,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -165,12 +165,12 @@ block content
                                 svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
                                     path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                         p(class="font-Montserrat font-semibold text-3xl text-black text-center") Авторы
-                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                             div(class="slider-container pb-1")
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -178,7 +178,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -186,7 +186,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -194,7 +194,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -207,12 +207,12 @@ block content
                                     path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                     div(tabContent="3", class="hidden grid-cols-full gap-8")
                         p(class="font-Montserrat font-semibold text-3xl text-black text-center") Разработчики
-                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                             div(class="slider-container pb-1")
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -220,7 +220,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -228,7 +228,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -236,7 +236,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -248,12 +248,12 @@ block content
                                 svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
                                     path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                         p(class="font-Montserrat font-semibold text-3xl text-black text-center") Авторы
-                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                             div(class="slider-container pb-1")
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -261,7 +261,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -274,12 +274,12 @@ block content
                                     path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                     div(tabContent="4", class="hidden grid-cols-full gap-8")
                         p(class="font-Montserrat font-semibold text-3xl text-black text-center") Разработчики
-                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                             div(class="slider-container pb-1")
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -287,7 +287,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -295,7 +295,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -303,7 +303,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -315,12 +315,12 @@ block content
                                 svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
                                     path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                         p(class="font-Montserrat font-semibold text-3xl text-black text-center") Авторы
-                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                             div(class="slider-container pb-1")
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -328,7 +328,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -336,7 +336,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -344,7 +344,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -357,12 +357,12 @@ block content
                                     path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                     div(tabContent="5", class="hidden grid-cols-full gap-8")
                         p(class="font-Montserrat font-semibold text-3xl text-black text-center") Разработчики
-                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                             div(class="slider-container pb-1")
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -370,7 +370,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -378,7 +378,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -386,7 +386,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -398,12 +398,12 @@ block content
                                 svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
                                     path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                         p(class="font-Montserrat font-semibold text-3xl text-black text-center") Авторы
-                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                             div(class="slider-container pb-1")
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -411,7 +411,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -419,7 +419,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -427,7 +427,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -440,12 +440,12 @@ block content
                                     path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                     div(tabContent="6", class="hidden grid-cols-full gap-8")
                         p(class="font-Montserrat font-semibold text-3xl text-black text-center") Разработчики
-                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                             div(class="slider-container pb-1")
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -453,7 +453,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -461,7 +461,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -469,7 +469,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -481,12 +481,12 @@ block content
                                 svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
                                     path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                         p(class="font-Montserrat font-semibold text-3xl text-black text-center") Авторы
-                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                             div(class="slider-container pb-1")
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -494,7 +494,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -502,7 +502,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -510,7 +510,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -523,12 +523,12 @@ block content
                                     path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                     div(tabContent="7", class="hidden grid-cols-full gap-8")
                         p(class="font-Montserrat font-semibold text-3xl text-black text-center") Разработчики
-                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                             div(class="slider-container pb-1")
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -536,7 +536,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -544,7 +544,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -552,7 +552,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -564,12 +564,12 @@ block content
                                 svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
                                     path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                         p(class="font-Montserrat font-semibold text-3xl text-black text-center") Авторы
-                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                             div(class="slider-container pb-1")
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -577,7 +577,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -585,7 +585,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -593,7 +593,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -606,12 +606,12 @@ block content
                                     path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                     div(tabContent="8", class="hidden grid-cols-full gap-8")
                         p(class="font-Montserrat font-semibold text-3xl text-black text-center") Разработчики
-                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                             div(class="slider-container pb-1")
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -619,7 +619,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -627,7 +627,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -635,7 +635,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -647,12 +647,12 @@ block content
                                 svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
                                     path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                         p(class="font-Montserrat font-semibold text-3xl text-black text-center") Авторы
-                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-item-show4 slider-indicators-dark slider-nav-visible")
+                        div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                             div(class="slider-container pb-1")
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -660,7 +660,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -668,7 +668,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -676,7 +676,7 @@ block content
                                 article(class="flex flex-col items-center gap-4 p-2")
                                     img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=`${path}/img/people/profile.png`)
                                     div(class="flex flex-col gap-1")
-                                        p(class="font-Montserrat font-medium text-black text-lg text-center") Mildred Powers
+                                        p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-center") Mildred Powers
                                         ul(class="list-disc pl-4")
                                             li(class=" marker:text-primary")
                                                 p(class="font-Montserrat font-medium text-secondary text-sm") Руководитель отдела торговли и аналитики
@@ -689,132 +689,139 @@ block content
                                     path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
 
             div(class="container mx-auto flex flex-col gap-20")
-                h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Команда Учебного центра
-                div(class="grid grid-cols-2 gap-14")
-                    -
-                        var items = [
-                            {
-                                name: "Иванов И.И.",
-                                img: `${path}/img/people/profile.png`,
-                                achievements: [
-                                    {
-                                        name: "Представитель компании"
-                                    },
-                                    {
-                                        name: "Консультант по криптовалюте"
-                                    },
-                                    {
-                                        name: "Зарабатывает в интернете более 6 лет"
-                                    }
-                                ],
-                            },
-                            {
-                                name: "Иванов И.И.",
-                                img: `${path}/img/people/profile.png`,
-                                achievements: [
-                                    {
-                                        name: "Представитель компании"
-                                    },
-                                    {
-                                        name: "Консультант по криптовалюте"
-                                    },
-                                    {
-                                        name: "Зарабатывает в интернете более 6 лет"
-                                    }
-                                ],
-                            },
-                            {
-                                name: "Иванов И.И.",
-                                img: `${path}/img/people/profile.png`,
-                                achievements: [
-                                    {
-                                        name: "Представитель компании"
-                                    },
-                                    {
-                                        name: "Консультант по криптовалюте"
-                                    },
-                                    {
-                                        name: "Зарабатывает в интернете более 6 лет"
-                                    }
-                                ],
-                            },
-                            {
-                                name: "Иванов И.И.",
-                                img: `${path}/img/people/profile.png`,
-                                achievements: [
-                                    {
-                                        name: "Представитель компании"
-                                    },
-                                    {
-                                        name: "Консультант по криптовалюте"
-                                    },
-                                    {
-                                        name: "Зарабатывает в интернете более 6 лет"
-                                    }
-                                ],
-                            },
-                            {
-                                name: "Иванов И.И.",
-                                img: `${path}/img/people/profile.png`,
-                                achievements: [
-                                    {
-                                        name: "Представитель компании"
-                                    },
-                                    {
-                                        name: "Консультант по криптовалюте"
-                                    },
-                                    {
-                                        name: "Зарабатывает в интернете более 6 лет"
-                                    }
-                                ],
-                            },
-                            {
-                                name: "Иванов И.И.",
-                                img: `${path}/img/people/profile.png`,
-                                achievements: [
-                                    {
-                                        name: "Представитель компании"
-                                    },
-                                    {
-                                        name: "Консультант по криптовалюте"
-                                    },
-                                    {
-                                        name: "Зарабатывает в интернете более 6 лет"
-                                    }
-                                ],
-                            },
-                            {
-                                name: "Иванов И.И.",
-                                img: `${path}/img/people/profile.png`,
-                                achievements: [
-                                    {
-                                        name: "Представитель компании"
-                                    },
-                                    {
-                                        name: "Консультант по криптовалюте"
-                                    },
-                                    {
-                                        name: "Зарабатывает в интернете более 6 лет"
-                                    }
-                                ],
-                            },
-                            {
-                                name: "Иванов И.И.",
-                                img: `${path}/img/people/profile.png`,
-                                achievements: [
-                                    {
-                                        name: "Представитель компании"
-                                    },
-                                    {
-                                        name: "Консультант по криптовалюте"
-                                    },
-                                    {
-                                        name: "Зарабатывает в интернете более 6 лет"
-                                    }
-                                ],
-                            },
-                        ]
-                    +userCard(items)
+                h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Команда Учебного центра
+                div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
+                    div(class="slider-container pb-1")
+                        -
+                            var items = [
+                                {
+                                    name: "Иванов И.И.",
+                                    img: `${path}/img/people/profile.png`,
+                                    achievements: [
+                                        {
+                                            name: "Представитель компании"
+                                        },
+                                        {
+                                            name: "Консультант по криптовалюте"
+                                        },
+                                        {
+                                            name: "Зарабатывает в интернете более 6 лет"
+                                        }
+                                    ],
+                                },
+                                {
+                                    name: "Иванов И.И.",
+                                    img: `${path}/img/people/profile.png`,
+                                    achievements: [
+                                        {
+                                            name: "Представитель компании"
+                                        },
+                                        {
+                                            name: "Консультант по криптовалюте"
+                                        },
+                                        {
+                                            name: "Зарабатывает в интернете более 6 лет"
+                                        }
+                                    ],
+                                },
+                                {
+                                    name: "Иванов И.И.",
+                                    img: `${path}/img/people/profile.png`,
+                                    achievements: [
+                                        {
+                                            name: "Представитель компании"
+                                        },
+                                        {
+                                            name: "Консультант по криптовалюте"
+                                        },
+                                        {
+                                            name: "Зарабатывает в интернете более 6 лет"
+                                        }
+                                    ],
+                                },
+                                {
+                                    name: "Иванов И.И.",
+                                    img: `${path}/img/people/profile.png`,
+                                    achievements: [
+                                        {
+                                            name: "Представитель компании"
+                                        },
+                                        {
+                                            name: "Консультант по криптовалюте"
+                                        },
+                                        {
+                                            name: "Зарабатывает в интернете более 6 лет"
+                                        }
+                                    ],
+                                },
+                                {
+                                    name: "Иванов И.И.",
+                                    img: `${path}/img/people/profile.png`,
+                                    achievements: [
+                                        {
+                                            name: "Представитель компании"
+                                        },
+                                        {
+                                            name: "Консультант по криптовалюте"
+                                        },
+                                        {
+                                            name: "Зарабатывает в интернете более 6 лет"
+                                        }
+                                    ],
+                                },
+                                {
+                                    name: "Иванов И.И.",
+                                    img: `${path}/img/people/profile.png`,
+                                    achievements: [
+                                        {
+                                            name: "Представитель компании"
+                                        },
+                                        {
+                                            name: "Консультант по криптовалюте"
+                                        },
+                                        {
+                                            name: "Зарабатывает в интернете более 6 лет"
+                                        }
+                                    ],
+                                },
+                                {
+                                    name: "Иванов И.И.",
+                                    img: `${path}/img/people/profile.png`,
+                                    achievements: [
+                                        {
+                                            name: "Представитель компании"
+                                        },
+                                        {
+                                            name: "Консультант по криптовалюте"
+                                        },
+                                        {
+                                            name: "Зарабатывает в интернете более 6 лет"
+                                        }
+                                    ],
+                                },
+                                {
+                                    name: "Иванов И.И.",
+                                    img: `${path}/img/people/profile.png`,
+                                    achievements: [
+                                        {
+                                            name: "Представитель компании"
+                                        },
+                                        {
+                                            name: "Консультант по криптовалюте"
+                                        },
+                                        {
+                                            name: "Зарабатывает в интернете более 6 лет"
+                                        }
+                                    ],
+                                },
+                            ]
+                        +userCard(items)
+                    button(class="slider-nav", type="button")
+                        svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                            path(d="M20 26L10 16L20 6", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                    button(class="slider-nav slider-nav-next", type="button")
+                        svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                            path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
             div(class="container mx-auto")
                 include ../../../../../pug/Components/_consultationCard.pug
     include ../../../../../pug/layout/_footer.pug

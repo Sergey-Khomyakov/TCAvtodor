@@ -23,83 +23,82 @@ block head
 block content
     - var authorization = true;
     +header(authorization)
-    main(class="")
-        div(class="flex flex-col gap-32 mb-32")
+    main(class="@container/body")
+        div(class="flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32 @xs/body:px-4 @8xl/body:px-0")
             div(class="container mx-auto flex flex-col gap-8 pt-10")
-                h1(class="font-Montserrat font-semibold text-4xl text-black") Стать партнером
-                div(class="grid grid-cols-1fr-1fr gap-8")
+                h1(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black") Стать партнером
+                div(class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8")
                     img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
                     div(class="flex flex-col gap-6")
-                        p(class="font-Montserrat font-medium text-lg text-black") Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odio fugit, ut minus aspernatur modi ab aliquid repellat animi aperiam ipsa pariatur illo, laboriosam quod rem eveniet et facilis culpa.
-
+                        p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black") Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odio fugit, ut minus aspernatur modi ab aliquid repellat animi aperiam ipsa pariatur illo, laboriosam quod rem eveniet et facilis culpa.
             div(class="container mx-auto flex flex-col gap-8")
-                h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Как строиться дистрибьютерская сетка
-                div(class="w-full flex flex-col items-center aspect-16-9 relative justify-center overflow-hidden")
-                    div(class="aspect-1-1 w-max flex flex-col items-center relative justify-center p-4 border border-primary rounded-full")
-                        p(class="font-Montserrat font-semibold text-2xl text-center") 
+                h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Как строиться дистрибьютерская сетка
+                div(class="w-full grid gap-4 @xs/body:grid-cols-full @md/body:grid-cols-2 @4xl/body:grid-cols-full items-center @4xl/body:aspect-16-9 relative justify-items-center overflow-hidden")
+                    div(class="@xs/body:w-full  @md/body:col-span-2 @4xl/body:aspect-1-1 @4xl/body:w-max flex flex-col items-center relative justify-center p-4 @4xl/body:border border-primary rounded-full")
+                        p(class="font-Montserrat font-semibold text-2xl text-center text-black") 
                             | Учебный центр ООО
-                            br
+                            br(class="@xs/body:hidden @4xl/body:block")
                             | "Автодор-Инжиниринг"
-                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-0")
-                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[0.5s]")
-                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[1s]")
-                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[1.5s]")
-                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[2s]")
-                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[2.5s]")
-                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[3s]")
-                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[3.5s]")
-                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[4s]")
-                        div(class=" absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[4.5s]")
-                    p(class=" absolute w-max font-Montserrat font-medium top-0 left-[46.5%] text-center") 
+                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-0")
+                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[0.5s]")
+                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[1s]")
+                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[1.5s]")
+                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[2s]")
+                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[2.5s]")
+                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[3s]")
+                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[3.5s]")
+                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[4s]")
+                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[4.5s]")
+                    p(class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-0 left-[46.5%] text-center @xs/body:text-sm @6xl/body:text-base") 
                         | Приволжский 
-                        br
+                        br(class="@xs/body:hidden @4xl/body:block")
                         | Федеральный 
-                        br
+                        br(class="@xs/body:hidden @4xl/body:block")
                         |Округ
-                    p(class=" absolute w-max font-Montserrat font-medium top-[10%] left-[70%] text-center") 
+                    p(class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[10%] left-[70%] text-center @xs/body:text-sm @6xl/body:text-base") 
                         | Дальневост. 
-                        br
+                        br(class="@xs/body:hidden @4xl/body:block")
                         | Федеральный 
-                        br
+                        br(class="@xs/body:hidden @4xl/body:block")
                         |Округ
-                    p(class=" absolute w-max font-Montserrat font-medium top-[45.5%] left-[80%] text-center") 
+                    p(class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[45.5%] left-[80%] text-center @xs/body:text-sm @6xl/body:text-base") 
                         | Сибирский 
-                        br
+                        br(class="@xs/body:hidden @4xl/body:block")
                         | Федеральный 
-                        br
+                        br(class="@xs/body:hidden @4xl/body:block")
                         |Округ
-                    p(class=" absolute w-max font-Montserrat font-medium top-[81.5%] left-[70%] text-center") 
+                    p(class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[81.5%] left-[70%] text-center @xs/body:text-sm @6xl/body:text-base") 
                         | Уральский 
-                        br
+                        br(class="@xs/body:hidden @4xl/body:block")
                         | Федеральный 
-                        br
+                        br(class="@xs/body:hidden @4xl/body:block")
                         |Округ
-                    p(class=" absolute w-max font-Montserrat font-medium top-[90%] left-[45%] text-center") 
+                    p(class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[90%] left-[45%] text-center @xs/body:text-sm @6xl/body:text-base") 
                         | Северо-Кавказский 
-                        br
+                        br(class="@xs/body:hidden @4xl/body:block")
                         | Федеральный 
-                        br
+                        br(class="@xs/body:hidden @4xl/body:block")
                         |Округ
-                    p(class=" absolute w-max font-Montserrat font-medium top-[82%] left-[23%] text-center") 
+                    p(class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[82%] left-[23%] text-center @xs/body:text-sm @6xl/body:text-base") 
                         | Северо-Западный 
-                        br
+                        br(class="@xs/body:hidden @4xl/body:block")
                         | Федеральный 
-                        br
+                        br(class="@xs/body:hidden @4xl/body:block")
                         |Округ
-                    p(class=" absolute w-max font-Montserrat font-medium top-[46%] left-[15%] text-center") 
+                    p(class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[46%] left-[15%] text-center @xs/body:text-sm @6xl/body:text-base") 
                         | Центральный 
-                        br
+                        br(class="@xs/body:hidden @4xl/body:block")
                         | Федеральный 
-                        br
+                        br(class="@xs/body:hidden @4xl/body:block")
                         |Округ
-                    p(class=" absolute w-max font-Montserrat font-medium top-[10%] left-[24%] text-center") 
+                    p(class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[10%] left-[24%] text-center @xs/body:text-sm @6xl/body:text-base") 
                         | Южный 
-                        br
+                        br(class="@xs/body:hidden @4xl/body:block")
                         | Федеральный 
-                        br
+                        br(class="@xs/body:hidden @4xl/body:block")
                         |Округ
             div(class="container mx-auto flex flex-col gap-8")
-                h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Этапы сотрудничества
+                h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Этапы сотрудничества
                 div(class="flex flex-col gap-4 justify-center items-center")
                     article(class="flex gap-8 items-center relative w-full max-w-2xl")
                         svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class="shrink-0")
@@ -107,53 +106,53 @@ block content
                                 path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
                                 text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 1
                         div(class="flex flex-col gap-2")
-                            p(class="font-Montserrat font-medium text-lg text-black text-balance") Отправляете заявку на партнерство
+                            p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance") Отправляете заявку на партнерство
                     article(class="flex gap-8 items-center relative w-full max-w-2xl")
                         svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class="shrink-0")
                             g(class="layer", id="svg_3")
                                 path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
                                 text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 2
                         div(class="flex flex-col gap-2")
-                            p(class="font-Montserrat font-medium text-lg text-black text-balance") Заключаем договор
+                            p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance") Заключаем договор
                     article(class="flex gap-8 items-center relative w-full max-w-2xl")
                         svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class="shrink-0")
                             g(class="layer", id="svg_3")
                                 path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
                                 text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 3
                         div(class="flex flex-col gap-2")
-                            p(class="font-Montserrat font-medium text-lg text-black text-balance") Предоставляем доступ к обучающей платформе
+                            p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance") Предоставляем доступ к обучающей платформе
                     article(class="flex gap-8 items-center relative w-full max-w-2xl")
                         svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class="shrink-0")
                             g(class="layer", id="svg_3")
                                 path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
                                 text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 4
                         div(class="flex flex-col gap-2")
-                            p(class="font-Montserrat font-medium text-lg text-black text-balance") Взаиморасчет
+                            p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance") Взаиморасчет
                     article(class="flex gap-8 items-center relative w-full max-w-2xl")
                         svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class="shrink-0")
                             g(class="layer", id="svg_3")
                                 path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
                                 text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 5
                         div(class="flex flex-col gap-2")
-                            p(class="font-Montserrat font-medium text-lg text-black text-balance") Выдача Удостоверения о повышении квалификации Представителем
+                            p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance") Выдача Удостоверения о повышении квалификации Представителем
             div(class="container mx-auto flex flex-col gap-8")
-                h2(class="font-Montserrat font-semibold text-4xl text-black text-center") Выгоды для партнеров работы с УЦ
-                div(class="grid grid-cols-1fr-1fr gap-8")
+                h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Выгоды для партнеров работы с УЦ
+                div(class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8")
                     div(class="flex flex-col gap-4 pt-4  ")
                         div(class="flex gap-4 items-center")
-                            svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-primary")
+                            svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-primary shrink-0")
                                 path(d="M27 9.00061L13 23L6 16.0006", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                            p(class="font-Montserrat font-medium text-lg text-black") Размещаем информацию о партнёрстве на сайте УЦ
+                            p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black") Размещаем информацию о партнёрстве на сайте УЦ
                         div(class="flex gap-4 items-center")
-                            svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-primary")
+                            svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-primary shrink-0")
                                 path(d="M27 9.00061L13 23L6 16.0006", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                            p(class="font-Montserrat font-medium text-lg text-black") Обучаем продукту
+                            p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black") Обучаем продукту
                         div(class="flex gap-4 items-center")
-                            svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-primary")
+                            svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class="stroke-primary shrink-0")
                                 path(d="M27 9.00061L13 23L6 16.0006", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-                            p(class="font-Montserrat font-medium text-lg text-black") Обеспечиваем маркетинговую поддержку продаж
+                            p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black") Обеспечиваем маркетинговую поддержку продаж
                     img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
-            div(class="container mx-auto grid grid-cols-1fr-1fr gap-8")
+            div(class="container mx-auto grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8")
                 img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
                 div(class="flex flex-col gap-6")
                     h2(class="font-Montserrat font-semibold text-3xl text-black") Готовы начать сотрудничество?

@@ -166,10 +166,10 @@
           </template>
         </div>
       </dialog>
-      <main class="@container/body">
-        <div class="flex flex-col gap-32 mb-32">
+      <main class="@container/body ">
+        <div class="flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32 @xs/body:px-4 @8xl/body:px-0">
           <div class="container mx-auto flex flex-col gap-8 pt-10">
-            <h1 class="font-Montserrat font-semibold text-4xl text-black">3D Практикум</h1>
+            <h1 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black">3D Практикум</h1>
             <div class="rounded-lg overflow-hidden w-full aspect-16-9">
               <video class="video-js w-full h-full" controls="" preload="auto" width="auto" data-setup="{}">
                 <source src="./local/templates/tcavtodor/video/avtodor-eng-video.mp4" type="video/mp4">
@@ -183,7 +183,7 @@
             </div>
           </div>
           <div class="container mx-auto flex flex-col gap-8">
-            <div class="grid grid-cols-4 gap-24">
+            <div class="grid @xs/body:grid-cols-full @xs/body:justify-items-center @lg/body:grid-cols-2 @6xl/body:grid-cols-4 gap-24">
               <article class="flex flex-col items-center gap-4 w-64">
                 <svg class=" stroke-black" width="64" height="64" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 10V16" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -224,11 +224,11 @@
             </div>
           </div>
           <div class="container mx-auto flex flex-col gap-8">
-            <h2 class="font-Montserrat font-semibold text-4xl text-black text-center">Демоверсия</h2>
+            <h2 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center">Демоверсия</h2>
             <div class="relative"><img class="rounded-lg w-full aspect-16-9 object-cover" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка"><a class="absolute top-0 left-0 inset-0" href="#"></a></div>
           </div>
           <div class="container mx-auto flex flex-col gap-8">
-            <h2 class="font-Montserrat font-semibold text-4xl text-black text-center">Программы 3D Практикума</h2>
+            <h2 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center">Программы 3D Практикума</h2>
             <div class="swiffy-slider slider-nav-outside slider-nav-visible slider-indicators-round slider-indicators-outside slider-nav-round slider-nav-noloop slider-custom-1 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark">
               <div class="slider-container pb-1">
                 <article class="flex flex-col gap-4 w-full"><img class="w-full @xs:aspect-16-9 @4xl:aspect-1-1 rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка продукта"/>

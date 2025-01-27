@@ -165,12 +165,12 @@
           </template>
         </div>
       </dialog>
-      <main class="@container/body">
+      <main class="@container/body  @xs:px-4 @8xl:px-0">
         <div class="flex flex-col gap-32 mb-32">
           <div class="container mx-auto flex flex-col gap-8 pt-10">
-            <h1 class="font-Montserrat font-semibold text-4xl text-black">Карта сайта</h1>
+            <h1 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black">Карта сайта</h1>
             <div class="flex flex-col gap-20">
-              <div class="grid grid-cols-4 gap-8 gap-y-10">
+              <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-2 @6xl/body:grid-cols-4 gap-8 gap-y-10">
                 <div class="flex flex-col gap-2 relative rounded-lg shadow-md p-4 group border border-transparent hover:border-secondary">
                   <svg class=" stroke-black" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9 12.5H4C3.44772 12.5 3 12.9477 3 13.5V18.5C3 19.0523 3.44772 19.5 4 19.5H9C9.55228 19.5 10 19.0523 10 18.5V13.5C10 12.9477 9.55228 12.5 9 12.5Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -299,7 +299,7 @@
               </div>
               <div class="flex flex-col gap-10">
                 <h2 class="font-Montserrat font-semibold text-3xl text-black">Отложили</h2>
-                <div class="grid grid-cols-4 gap-8 gap-y-10">
+                <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-2 @6xl/body:grid-cols-4 gap-8 gap-y-10">
                   <div class="flex flex-col gap-2 relative rounded-lg shadow-md p-4 group border border-transparent hover:border-secondary">
                     <svg class="stroke-black" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M12 14H22" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>

@@ -18,8 +18,8 @@ block head
 block content
     - var authorization = true;
     +header(authorization)
-    main(class="")
-        div(class="flex flex-col gap-32 mb-32")
+    main(class="@container/body ")
+        div(class="flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32 @xs/body:px-4 @8xl/body:px-0")
             div(class="container mx-auto flex flex-col gap-8 pt-10")
                 -
                     var items = [
@@ -33,9 +33,9 @@ block content
                         },
                     ]
                 +breadcrumbs(items)
-                h1(class="font-Montserrat font-semibold text-4xl text-black") Направления обучения
+                h1(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black") Направления обучения
                 div(class="@container/main")
-                    div(class="grid @xs/main:grid-cols-full @md/main:grid-cols-2 @xl:grid-cols-3 gap-6 gap-y-10")
+                    div(class="grid @xs/body:grid-cols-full @lg/body:grid-cols-2 @6xl/body:grid-cols-3 gap-6 gap-y-10")
                         -
                             var items = [
                                 {

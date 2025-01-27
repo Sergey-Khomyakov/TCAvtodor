@@ -119,6 +119,10 @@
         z-index: 9999;
     }
 
+    .left-none {
+        left: unset;
+    }
+
     .slider-custom-1 {
         --swiffy-slider-item-gap: 2rem;
     }

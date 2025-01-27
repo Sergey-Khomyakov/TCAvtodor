@@ -166,17 +166,17 @@
         </div>
       </dialog>
       <main class="@container/body">
-        <div class="flex flex-col gap-32 mb-32">
+        <div class="flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32 @xs/body:px-4 @8xl/body:px-0">
           <div class="container mx-auto flex flex-col gap-8 pt-10">
-            <h1 class="font-Montserrat font-semibold text-4xl text-black">Слушателям</h1>
-            <div class="grid grid-cols-1fr-1fr gap-8"><img class="rounded-lg w-full h-full aspect-16-9 object-cover" alt="Картинка" src="./local/templates/tcavtodor/img/stub.jpg">
+            <h1 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black">Слушателям</h1>
+            <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr gap-8"><img class="rounded-lg w-full h-full aspect-16-9 object-cover" alt="Картинка" src="./local/templates/tcavtodor/img/stub.jpg">
               <div class="flex flex-col gap-6">
-                <p class="font-Montserrat font-medium text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odio fugit, ut minus aspernatur modi ab aliquid repellat animi aperiam ipsa pariatur illo, laboriosam quod rem eveniet et facilis culpa.</p>
+                <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odio fugit, ut minus aspernatur modi ab aliquid repellat animi aperiam ipsa pariatur illo, laboriosam quod rem eveniet et facilis culpa.</p>
               </div>
             </div>
           </div>
           <div class="container mx-auto flex flex-col gap-8">
-            <div class="grid grid-cols-auto-auto-auto gap-32 justify-center">
+            <div class="grid @xs/body:grid-cols-full @xs/body:justify-items-center @lg/body:grid-cols-2 @6xl/body:grid-cols-auto-auto-auto @xs/body:gap-8 @6xl/body:gap-32 justify-center">
               <article class="flex flex-col items-center gap-4 w-64">
                 <svg class=" stroke-black" width="64" height="64" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 10V16" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -211,7 +211,7 @@
             <button class="bg-gradient-orange text-white rounded-lg p-4 px-6 text-xl w-max mx-auto" dialog-btn="consultation" type="button">Получить консультацию</button>
           </div>
           <div class="container mx-auto flex flex-col gap-8">
-            <h2 class="font-Montserrat font-semibold text-4xl text-black text-center">Этапы обучения</h2>
+            <h2 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center">Этапы обучения</h2>
             <div class="flex flex-col gap-4 justify-center items-center">
               <article class="flex gap-8 items-center relative w-full max-w-2xl">
                 <svg class=" shrink-0" width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
@@ -221,7 +221,7 @@
                   </g>
                 </svg>
                 <div class="flex flex-col gap-2">
-                  <p class="font-Montserrat font-medium text-lg text-black text-balance">Выбор программы</p>
+                  <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance">Выбор программы</p>
                   <p class="font-Montserrat font-medium text-base text-secondary text-balance">Текст</p>
                 </div>
               </article>
@@ -233,7 +233,7 @@
                   </g>
                 </svg>
                 <div class="flex flex-col gap-2">
-                  <p class="font-Montserrat font-medium text-lg text-black text-balance">Оплата обучения </p>
+                  <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance">Оплата обучения </p>
                   <p class="font-Montserrat font-medium text-base text-secondary text-balance">Текст</p>
                 </div>
               </article>
@@ -245,7 +245,7 @@
                   </g>
                 </svg>
                 <div class="flex flex-col gap-2">
-                  <p class="font-Montserrat font-medium text-lg text-black text-balance">Изучение учебных материалов</p>
+                  <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance">Изучение учебных материалов</p>
                   <p class="font-Montserrat font-medium text-base text-secondary text-balance">Текст</p>
                 </div>
               </article>
@@ -257,7 +257,7 @@
                   </g>
                 </svg>
                 <div class="flex flex-col gap-2">
-                  <p class="font-Montserrat font-medium text-lg text-black text-balance">Прикрепление документов</p>
+                  <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance">Прикрепление документов</p>
                   <p class="font-Montserrat font-medium text-base text-secondary text-balance">Текст</p>
                 </div>
               </article>
@@ -269,39 +269,39 @@
                   </g>
                 </svg>
                 <div class="flex flex-col gap-2">
-                  <p class="font-Montserrat font-medium text-lg text-black text-balance">Получение удостоверения</p>
+                  <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance">Получение удостоверения</p>
                   <p class="font-Montserrat font-medium text-base text-secondary text-balance">Текст</p>
                 </div>
               </article>
             </div>
           </div>
-          <div class="container mx-auto grid grid-cols-1fr-1fr gap-8"><img class="rounded-lg w-full h-full aspect-16-9 object-cover" alt="Картинка" src="./local/templates/tcavtodor/img/stub.jpg">
+          <div class="container mx-auto grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8"><img class="rounded-lg w-full h-full aspect-16-9 object-cover" alt="Картинка" src="./local/templates/tcavtodor/img/stub.jpg">
             <div class="flex flex-col gap-6">
               <h2 class="font-Montserrat font-semibold text-3xl text-black">Готовы к обучению? Выберите свою программу!</h2>
               <div class="flex flex-col gap-4">
                 <p class="font-Montserrat font-medium text-base text-black">Ознакомьтесь с нашими шаблонами договоров, которые помогут вам легко оформить все необходимые соглашения для успешного обучения.
                   <div class="flex gap-4 relative group">
-                    <svg width="30" height="40" viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class=" shrink-0" width="30" height="40" viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0.5 36V4C0.5 2.067 2.067 0.5 4 0.5H17.9C18.7987 0.5 19.663 0.845712 20.3138 1.46552L28.4138 9.1798C29.1074 9.8404 29.5 10.7564 29.5 11.7143V36C29.5 37.933 27.933 39.5 26 39.5H4C2.067 39.5 0.5 37.933 0.5 36Z" fill="white" stroke="#E5E9EB"></path>
                       <path d="M5.77156 24V16.7273H8.77582C9.32033 16.7273 9.79026 16.8338 10.1856 17.0469C10.5833 17.2576 10.8899 17.5523 11.1054 17.9311C11.3208 18.3075 11.4285 18.7455 11.4285 19.245C11.4285 19.7469 11.3184 20.1861 11.0983 20.5625C10.8805 20.9366 10.5691 21.2266 10.1643 21.4325C9.75949 21.6385 9.2789 21.7415 8.72255 21.7415H6.86886V20.3565H8.39585C8.661 20.3565 8.88235 20.3104 9.05991 20.218C9.23984 20.1257 9.37596 19.9967 9.46829 19.831C9.56062 19.6629 9.60679 19.4676 9.60679 19.245C9.60679 19.0201 9.56062 18.826 9.46829 18.6626C9.37596 18.4969 9.23984 18.3691 9.05991 18.2791C8.87999 18.1892 8.65863 18.1442 8.39585 18.1442H7.52937V24H5.77156ZM14.9232 24H12.235V16.7273H14.9197C15.6607 16.7273 16.2987 16.8729 16.8337 17.1641C17.3711 17.4529 17.7854 17.8696 18.0766 18.4141C18.3678 18.9562 18.5134 19.6049 18.5134 20.3601C18.5134 21.1177 18.3678 21.7687 18.0766 22.3132C17.7878 22.8577 17.3747 23.2756 16.8373 23.5668C16.2999 23.8556 15.6618 24 14.9232 24ZM13.9928 22.5014H14.8557C15.2629 22.5014 15.6074 22.4328 15.8891 22.2955C16.1732 22.1558 16.3875 21.9297 16.5319 21.6172C16.6787 21.3023 16.752 20.8833 16.752 20.3601C16.752 19.8369 16.6787 19.4202 16.5319 19.1101C16.3851 18.7976 16.1685 18.5727 15.882 18.4354C15.5979 18.2957 15.2475 18.2259 14.8309 18.2259H13.9928V22.5014ZM19.4797 24V16.7273H24.4442V18.1548H21.2375V19.6463H24.1281V21.0774H21.2375V24H19.4797Z" fill="#F76659"></path>
                     </svg>
-                    <p class="font-Montserrat font-medium text-lg text-black group-hover:text-primaryHover">Шаблон договора</p><a class=" absolute inset-0 left-0 top-0" href="#"></a>
+                    <p class="font-Montserrat font-medium @xl/body:text-base @6xl/body:text-lg text-black group-hover:text-primaryHover">Шаблон договора</p><a class=" absolute inset-0 left-0 top-0" href="#"></a>
                   </div>
                 </p>
                 <p class="font-Montserrat font-medium text-base text-black">Узнайте, какие документы понадобятся для записи на программу. Подготовьте все заранее и начните обучение без задержек!
                   <div class="flex gap-4 relative group">
-                    <svg width="30" height="40" viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class=" shrink-0" width="30" height="40" viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0.5 36V4C0.5 2.067 2.067 0.5 4 0.5H17.9C18.7987 0.5 19.663 0.845712 20.3138 1.46552L28.4138 9.1798C29.1074 9.8404 29.5 10.7564 29.5 11.7143V36C29.5 37.933 27.933 39.5 26 39.5H4C2.067 39.5 0.5 37.933 0.5 36Z" fill="white" stroke="#E5E9EB"></path>
                       <path d="M5.77156 24V16.7273H8.77582C9.32033 16.7273 9.79026 16.8338 10.1856 17.0469C10.5833 17.2576 10.8899 17.5523 11.1054 17.9311C11.3208 18.3075 11.4285 18.7455 11.4285 19.245C11.4285 19.7469 11.3184 20.1861 11.0983 20.5625C10.8805 20.9366 10.5691 21.2266 10.1643 21.4325C9.75949 21.6385 9.2789 21.7415 8.72255 21.7415H6.86886V20.3565H8.39585C8.661 20.3565 8.88235 20.3104 9.05991 20.218C9.23984 20.1257 9.37596 19.9967 9.46829 19.831C9.56062 19.6629 9.60679 19.4676 9.60679 19.245C9.60679 19.0201 9.56062 18.826 9.46829 18.6626C9.37596 18.4969 9.23984 18.3691 9.05991 18.2791C8.87999 18.1892 8.65863 18.1442 8.39585 18.1442H7.52937V24H5.77156ZM14.9232 24H12.235V16.7273H14.9197C15.6607 16.7273 16.2987 16.8729 16.8337 17.1641C17.3711 17.4529 17.7854 17.8696 18.0766 18.4141C18.3678 18.9562 18.5134 19.6049 18.5134 20.3601C18.5134 21.1177 18.3678 21.7687 18.0766 22.3132C17.7878 22.8577 17.3747 23.2756 16.8373 23.5668C16.2999 23.8556 15.6618 24 14.9232 24ZM13.9928 22.5014H14.8557C15.2629 22.5014 15.6074 22.4328 15.8891 22.2955C16.1732 22.1558 16.3875 21.9297 16.5319 21.6172C16.6787 21.3023 16.752 20.8833 16.752 20.3601C16.752 19.8369 16.6787 19.4202 16.5319 19.1101C16.3851 18.7976 16.1685 18.5727 15.882 18.4354C15.5979 18.2957 15.2475 18.2259 14.8309 18.2259H13.9928V22.5014ZM19.4797 24V16.7273H24.4442V18.1548H21.2375V19.6463H24.1281V21.0774H21.2375V24H19.4797Z" fill="#F76659"></path>
                     </svg>
-                    <p class="font-Montserrat font-medium text-lg text-black group-hover:text-primaryHover">Необходимые документы</p><a class=" absolute inset-0 left-0 top-0" href="#"></a>
+                    <p class="font-Montserrat font-medium @xl/body:text-base @6xl/body:text-lg text-black group-hover:text-primaryHover">Необходимые документы</p><a class=" absolute inset-0 left-0 top-0" href="#"></a>
                   </div>
                 </p>
               </div><a class="bg-gradient-orange text-white rounded-lg p-4 px-6 text-xl w-max h-max mt-auto ml-auto" href="#">Выбрать программу</a>
             </div>
           </div>
           <div class="container mx-auto flex flex-col gap-8">
-            <h2 class="font-Montserrat font-semibold text-4xl text-black text-center">Популярные программы</h2>
+            <h2 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center">Популярные программы</h2>
             <div class="swiffy-slider slider-nav-outside slider-nav-visible slider-indicators-round slider-indicators-outside slider-nav-round slider-nav-noloop slider-custom-1 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark">
               <div class="slider-container pb-1">
                 <article class="flex flex-col gap-4 w-full"><img class="w-full @xs:aspect-16-9 @4xl:aspect-1-1 rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка продукта"/>
@@ -538,42 +538,42 @@
           </div>
           <div class="bg-lightGray py-16">
             <div class="container mx-auto flex flex-col gap-8">
-              <h2 class="font-Montserrat font-semibold text-4xl text-black text-center">Отзывы</h2>
-              <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-indicators-outside slider-nav-noloop slider-item-show3 slider-indicators-dark slider-nav-visible">
+              <h2 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center">Отзывы</h2>
+              <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-indicators-outside slider-nav-noloop @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @6xl/body:slider-item-show3 slider-indicators-dark slider-nav-visible">
                 <div class="slider-container pb-1">
                   <article class="flex flex-col gap-4 w-full rounded-lg shadow-md p-4 bg-white">
                     <div class="flex gap-4 items-center"><img class="w-16 h-16 rounded-full border-2 border-primary object-cover" src="./local/templates/tcavtodor/img/people/profile.png" alt="фото сотрудника"/>
-                      <p class="font-Montserrat font-semibold text-lg text-black">Иванов И.И.</p>
+                      <p class="font-Montserrat font-semibold @xl/body:text-base @6xl/body:text-lg text-black">Иванов И.И.</p>
                     </div>
                     <p class="font-Montserrat font-normal text-base text-black">Мы вынуждены отталкиваться от того, что базовый вектор развития говорит о возможностях стандартных подходов. Современные технологии достигли такого уровня, что существующая теория способствует подготовке и реализации инновационных методов управления процессами.</p>
                   </article>
                   <article class="flex flex-col gap-4 w-full rounded-lg shadow-md p-4 bg-white">
                     <div class="flex gap-4 items-center"><img class="w-16 h-16 rounded-full border-2 border-primary object-cover" src="./local/templates/tcavtodor/img/people/profile.png" alt="фото сотрудника"/>
-                      <p class="font-Montserrat font-semibold text-lg text-black">Иванов И.И.</p>
+                      <p class="font-Montserrat font-semibold @xl/body:text-base @6xl/body:text-lg text-black">Иванов И.И.</p>
                     </div>
                     <p class="font-Montserrat font-normal text-base text-black">Мы вынуждены отталкиваться от того, что базовый вектор развития говорит о возможностях стандартных подходов. Современные технологии достигли такого уровня, что существующая теория способствует подготовке и реализации инновационных методов управления процессами.</p>
                   </article>
                   <article class="flex flex-col gap-4 w-full rounded-lg shadow-md p-4 bg-white">
                     <div class="flex gap-4 items-center"><img class="w-16 h-16 rounded-full border-2 border-primary object-cover" src="./local/templates/tcavtodor/img/people/profile.png" alt="фото сотрудника"/>
-                      <p class="font-Montserrat font-semibold text-lg text-black">Иванов И.И.</p>
+                      <p class="font-Montserrat font-semibold @xl/body:text-base @6xl/body:text-lg text-black">Иванов И.И.</p>
                     </div>
                     <p class="font-Montserrat font-normal text-base text-black">Мы вынуждены отталкиваться от того, что базовый вектор развития говорит о возможностях стандартных подходов. Современные технологии достигли такого уровня, что существующая теория способствует подготовке и реализации инновационных методов управления процессами.</p>
                   </article>
                   <article class="flex flex-col gap-4 w-full rounded-lg shadow-md p-4 bg-white">
                     <div class="flex gap-4 items-center"><img class="w-16 h-16 rounded-full border-2 border-primary object-cover" src="./local/templates/tcavtodor/img/people/profile.png" alt="фото сотрудника"/>
-                      <p class="font-Montserrat font-semibold text-lg text-black">Иванов И.И.</p>
+                      <p class="font-Montserrat font-semibold @xl/body:text-base @6xl/body:text-lg text-black">Иванов И.И.</p>
                     </div>
                     <p class="font-Montserrat font-normal text-base text-black">Мы вынуждены отталкиваться от того, что базовый вектор развития говорит о возможностях стандартных подходов. Современные технологии достигли такого уровня, что существующая теория способствует подготовке и реализации инновационных методов управления процессами.</p>
                   </article>
                   <article class="flex flex-col gap-4 w-full rounded-lg shadow-md p-4 bg-white">
                     <div class="flex gap-4 items-center"><img class="w-16 h-16 rounded-full border-2 border-primary object-cover" src="./local/templates/tcavtodor/img/people/profile.png" alt="фото сотрудника"/>
-                      <p class="font-Montserrat font-semibold text-lg text-black">Иванов И.И.</p>
+                      <p class="font-Montserrat font-semibold @xl/body:text-base @6xl/body:text-lg text-black">Иванов И.И.</p>
                     </div>
                     <p class="font-Montserrat font-normal text-base text-black">Мы вынуждены отталкиваться от того, что базовый вектор развития говорит о возможностях стандартных подходов. Современные технологии достигли такого уровня, что существующая теория способствует подготовке и реализации инновационных методов управления процессами.</p>
                   </article>
                   <article class="flex flex-col gap-4 w-full rounded-lg shadow-md p-4 bg-white">
                     <div class="flex gap-4 items-center"><img class="w-16 h-16 rounded-full border-2 border-primary object-cover" src="./local/templates/tcavtodor/img/people/profile.png" alt="фото сотрудника"/>
-                      <p class="font-Montserrat font-semibold text-lg text-black">Иванов И.И.</p>
+                      <p class="font-Montserrat font-semibold @xl/body:text-base @6xl/body:text-lg text-black">Иванов И.И.</p>
                     </div>
                     <p class="font-Montserrat font-normal text-base text-black">Мы вынуждены отталкиваться от того, что базовый вектор развития говорит о возможностях стандартных подходов. Современные технологии достигли такого уровня, что существующая теория способствует подготовке и реализации инновационных методов управления процессами.</p>
                   </article>

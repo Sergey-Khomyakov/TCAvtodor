@@ -1,11 +1,10 @@
 mixin userCard(items)
     each item in items 
-        article(class="grid grid-cols-auto-1fr gap-4")
-            img(class="w-full aspect-1-1 max-w-56 object-cover rounded-lg", alt="фото автора", src=item.img)
-            div(class="flex flex-col gap-4 pt-1")
-                p(class="font-Montserrat font-medium text-black text-2xl") #{item.name}
+            article(class="flex flex-col items-center gap-4 p-2")
+                img(class="w-full aspect-1-1 max-w-56 object-cover rounded-full", alt="фото автора", src=item.img)
                 div(class="flex flex-col gap-1")
+                    p(class="font-Montserrat font-medium text-black @xl/body:text-base @6xl/body:text-lg text-center") #{item.name}
                     ul(class="list-disc pl-4")
                         each ach in item.achievements
                             li(class=" marker:text-primary")
-                                p(class="font-Montserrat font-medium text-secondary text-lg") #{ach.name}
+                                p(class="font-Montserrat font-medium text-secondary text-sm") #{ach.name}
