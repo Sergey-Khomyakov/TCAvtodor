@@ -856,46 +856,6 @@ body {
   z-index: 5;
 }
 
-.col-span-1 {
-  grid-column: span 1 / span 1;
-}
-
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-
-.col-span-5 {
-  grid-column: span 5 / span 5;
-}
-
-.col-start-1 {
-  grid-column-start: 1;
-}
-
-.col-start-3 {
-  grid-column-start: 3;
-}
-
-.col-end-2 {
-  grid-column-end: 2;
-}
-
-.col-end-3 {
-  grid-column-end: 3;
-}
-
-.col-end-4 {
-  grid-column-end: 4;
-}
-
-.row-start-3 {
-  grid-row-start: 3;
-}
-
-.row-end-4 {
-  grid-row-end: 4;
-}
-
 .float-start {
   float: inline-start;
 }
@@ -1728,24 +1688,12 @@ body {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
 .grid-cols-auto-1fr {
   grid-template-columns: auto 1fr;
 }
 
 .grid-cols-full {
   grid-template-columns: 100%;
-}
-
-.grid-rows-5 {
-  grid-template-rows: repeat(5, minmax(0, 1fr));
-}
-
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -4212,13 +4160,13 @@ body {
     height: 16rem;
   }
 
+  .\@xs\/body\:w-full {
+    width: 100%;
+  }
+
   .\@xs\/body\:w-max {
     width: -moz-max-content;
     width: max-content;
-  }
-
-  .\@xs\/body\:w-full {
-    width: 100%;
   }
 
   .\@xs\/body\:grid-cols-full {
@@ -4579,10 +4527,6 @@ body {
 }
 
 @container body (min-width: 72rem) {
-  .\@6xl\/body\:absolute {
-    position: absolute;
-  }
-
   .\@6xl\/body\:-right-2 {
     right: -0.5rem;
   }
@@ -4601,10 +4545,6 @@ body {
 
   .\@6xl\/body\:mb-32 {
     margin-bottom: 8rem;
-  }
-
-  .\@6xl\/body\:block {
-    display: block;
   }
 
   .\@6xl\/body\:flex {

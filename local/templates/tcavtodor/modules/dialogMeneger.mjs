@@ -24,6 +24,15 @@ export const dialogMeneger = () => {
         document.querySelector('body').classList.remove('overflow-hidden', 'pr-[17px]');
     })
 
+    document.addEventListener('keyup', function (event) {
+        // ✅ [CURRENT]
+        if ( event.key === "Escape" ) {
+            dialog.close();
+            const dialogBody = dialog.querySelector('[dialogBody]');
+            dialogBody.innerHTML = '';
+            document.querySelector('body').classList.remove('overflow-hidden', 'pr-[17px]');
+        }
+      })
  };
 
 const renderDialogForm = (btn, dialog) => {
