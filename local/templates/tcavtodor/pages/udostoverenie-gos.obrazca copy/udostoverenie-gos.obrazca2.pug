@@ -1,0 +1,68 @@
+extends ../../../../../pug/layout/_layout.pug
+include ../../../../../pug/layout/_head.pug
+include ../../../../../pug/layout/_header.pug
+include ../../../../../pug/ui/_accordion.pug
+
+block scripts
+    - var path = "./local/templates/tcavtodor"
+    script(src=`${path}/libs/jquery/jquery-3.7.1.min.js`)
+    script(src=`${path}/libs/imask/imask.js`)
+    script(src=`${path}/pages/udostoverenie-gos.obrazca/js/index.js`, type="module")
+
+
+block head
+    - var path = "./local/templates/tcavtodor"
+    link(rel="stylesheet", href=`${path}/css/style.css`)
+    +head('Удостоверение гос.образца - avtodor', '') 
+
+block content
+    - var authorization = true;
+    +header(authorization)
+    main(class="@container/body")
+        div(class="flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32 @xs/body:px-4 @8xl/body:px-0 after:contents-[''] after:absolute after:left-0 after:right-0 after:top-0 after:bg-lightGray after:h-full after:w-[calc=(100%+1rem)] after:container after:-z-10 after:mx-auto")
+            div(class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6")
+                h1(class="font-Montserrat font-semibold text-4xl text-black") Удостоверение гос.образца
+                div(class="grid grid-cols-1fr-1fr gap-8")
+                    img(class="w-full aspect-16-9 object-cover rounded-lg", alt="лого", src=`${path}/img/other/GosDoc.png`)
+                    div(class="flex flex-col gap-4")
+                        p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black") Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odio fugit, ut minus aspernatur modi ab aliquid repellat animi aperiam ipsa pariatur illo, laboriosam quod rem eveniet et facilis culpa.
+            div(class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6")
+                h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Заголовок
+                div(class="flex flex-col gap-4")
+                    -
+                        var items = [
+                            {
+                                title: "Текст",
+                                text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor."
+                            },
+                            {
+                                title: "Текст",
+                                text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor."
+                            },
+                            {
+                                title: "Текст",
+                                text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor."
+                            },
+                            {
+                                title: "Текст",
+                                text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor."
+                            },
+                            {
+                                title: "Текст",
+                                text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor."
+                            },
+                            {
+                                title: "Текст",
+                                text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor."
+                            },
+                        ]
+                    +accordion(items)
+            div(class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6")
+                h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Ваши выгоды
+                div(class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr gap-8")
+                    div(class="flex flex-col gap-6")
+                        p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black") Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor.
+                    img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
+            div(class="container mx-auto @6xl/body:px-6")
+                include ../../../../../pug/Components/_consultationCard.pug
+    include ../../../../../pug/layout/_footer.pug
