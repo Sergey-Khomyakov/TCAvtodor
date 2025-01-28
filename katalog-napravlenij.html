@@ -97,9 +97,9 @@
       </header>
       <dialog class="rounded-lg relative" id="dialog" aria-modal="true">
         <div class="absolute top-1 right-1 cursor-pointer w-max" dialog-btn="close">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25 7L7 25" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M25 25L7 7" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          <svg class="stroke-black" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25 7L7 25" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M25 25L7 7" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         </div>
         <div class="max-w-96 w-full rounded-lg shadow-md bg-white p-8 flex flex-col gap-8"><a class="flex justify-center" dialogLogo="" href="#">
@@ -153,13 +153,13 @@
           <template dialogInputTemplate="">
             <div class="flex flex-col gap-1">
               <p class="font-Montserrat font-semibold text-black text-base"></p>
-              <input class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white h-10 font-Montserrat font-normal text-base leading-[1.5] text-gray-400 w-full hover:border-primary focus:border-primary focus:transition-timing-focus focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none invalid:border-2 invalid:border-red-400 invalid:text-gray-400" type="text" placeholder=""/>
+              <input class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white h-10 font-Montserrat font-normal text-base leading-[1.5] text-gray-400 w-full hover:border-primary focus:border-primary focus:transition-timing-focus focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none" type="text" placeholder=""/>
             </div>
           </template>
           <template dialogTextareaTemplate="">
             <div class="flex flex-col gap-1">
               <p class="font-Montserrat font-semibold text-black text-base"></p>
-              <textarea class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white w-full min-h-[4.75rem] hover:border-primary focus:transition-timing-focus focus:border-primary focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none invalid:border-2 invalid:border-red-400 invalid:text-gray-400" placeholder=""></textarea>
+              <textarea class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white w-full min-h-[4.75rem] hover:border-primary focus:transition-timing-focus focus:border-primary focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none " placeholder=""></textarea>
             </div>
           </template>
         </div>
@@ -271,8 +271,8 @@
             </div>
           </div>
           <div class="container mx-auto">
-            <div class="@container/card rounded-lg shadow-md py-4 px-8 flex flex-col gap-6 bg-lightGray">
-              <p class="font-Montserrat font-semibold @xs/card:text-2xl @6xl/card:text-4xl text-black">Получить консультацию</p>
+            <div class="@container/card rounded-lg shadow-md py-4 px-8 flex flex-col gap-6 bg-primary @xs/body:w-full @6xl/body:w-[85%]   @6xl/body:mx-auto">
+              <p class="font-Montserrat font-semibold @xs/card:text-2xl @6xl/card:text-4xl text-white">Получить консультацию</p>
               <div class="grid @xs/card:grid-cols-full @6xl/card:grid-cols-4 gap-4">
                 <div class="relative">
                   <input class="peer w-full border border-gray-300 rounded-md py-2 px-3 font-montserrat font-semibold text-gray-600 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary transition duration-200 ease-in-out" id="Name" type="text" name="Name" required>
@@ -286,11 +286,11 @@
                   <input class="peer w-full border border-gray-300 rounded-md py-2 px-3 font-montserrat font-semibold text-gray-600 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary transition duration-200 ease-in-out" id="Email" type="text" name="Email" required>
                   <label class=" absolute top-[0.675rem] peer-focus:-top-[0.675rem] peer-valid:-top-[0.675rem] bg-white px-1 block font-Montserrat font-normal text-gray-400 text-base peer-focus:text-sm peer-valid:text-sm leading-[1] left-2 transition-all duration-200 ease-in-out rounded-full" for="Email">Почта</label>
                 </div>
-                <button class=" bg-gradient-orange rounded-lg p-1 text-white" type="button">
+                <button class=" bg-white shadow-lg rounded-lg p-1 text-black" type="button">
                    Получить консультацию</button>
               </div>
-              <p class="font-Montserrat font-normal text-base text-black ml-auto">
-                   Продолжая, вы соглашаетесь с <a class="font-Montserrat font-normal text-primary hover:text-primaryHover text-base" href="#">Политикой конфиденциальности</a></p>
+              <p class="font-Montserrat font-normal text-base text-white ml-auto">
+                   Продолжая, вы соглашаетесь с <a class="font-Montserrat font-normal text-black hover:text-primaryHover text-base" href="#">Политикой конфиденциальности</a></p>
             </div>
           </div>
         </div>
@@ -408,6 +408,7 @@
       </footer>
     </div>
     <script src="./local/templates/tcavtodor/libs/jquery/jquery-3.7.1.min.js"></script>
+    <script src="./local/templates/tcavtodor/libs/imask/imask.js"></script>
     <script src="./local/templates/tcavtodor/pages/katalog-napravlenij/js/index.js" type="module"></script>
   </body>
 </html>

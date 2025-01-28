@@ -16,9 +16,11 @@ mixin productCard(items)
                 div(class="rounded-lg")
                     p(class="font-Montserrat font-semibold text-lg text-black ") #{item.title}
                 div(class="flex flex-wrap gap-2 justify-between items-center")
-                    p(class="font-Montserrat font-normal text-sm text-secondary") 
+                    p(class="font-Montserrat font-normal text-sm text-secondary text-balance") 
                         | Удостоверение
                         br
-                        | профпереподготовки
+                        | повышения
+                        br
+                        | квалификации
                     p(class="font-Montserrat font-medium text-3xl text-primary text-end") #{item.prise} ₽
             a(href=item.link, class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Montserrat font-medium text-base text-center") Подробнее

@@ -96,9 +96,9 @@
       </header>
       <dialog class="rounded-lg relative" id="dialog" aria-modal="true">
         <div class="absolute top-1 right-1 cursor-pointer w-max" dialog-btn="close">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25 7L7 25" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M25 25L7 7" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          <svg class="stroke-black" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25 7L7 25" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M25 25L7 7" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         </div>
         <div class="max-w-96 w-full rounded-lg shadow-md bg-white p-8 flex flex-col gap-8"><a class="flex justify-center" dialogLogo="" href="#">
@@ -152,36 +152,36 @@
           <template dialogInputTemplate="">
             <div class="flex flex-col gap-1">
               <p class="font-Montserrat font-semibold text-black text-base"></p>
-              <input class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white h-10 font-Montserrat font-normal text-base leading-[1.5] text-gray-400 w-full hover:border-primary focus:border-primary focus:transition-timing-focus focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none invalid:border-2 invalid:border-red-400 invalid:text-gray-400" type="text" placeholder=""/>
+              <input class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white h-10 font-Montserrat font-normal text-base leading-[1.5] text-gray-400 w-full hover:border-primary focus:border-primary focus:transition-timing-focus focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none" type="text" placeholder=""/>
             </div>
           </template>
           <template dialogTextareaTemplate="">
             <div class="flex flex-col gap-1">
               <p class="font-Montserrat font-semibold text-black text-base"></p>
-              <textarea class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white w-full min-h-[4.75rem] hover:border-primary focus:transition-timing-focus focus:border-primary focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none invalid:border-2 invalid:border-red-400 invalid:text-gray-400" placeholder=""></textarea>
+              <textarea class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white w-full min-h-[4.75rem] hover:border-primary focus:transition-timing-focus focus:border-primary focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none " placeholder=""></textarea>
             </div>
           </template>
         </div>
       </dialog>
-      <main class="@container/body overflow-hidden">
+      <main class="@container/body overflow-hidden ">
         <div class="@xs/body:px-4 @8xl:px-0 flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32">
           <div class="container mx-auto flex flex-col gap-8 pt-10">
             <div class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8">
               <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr @6xl/body:grid-cols-full gap-4">
                 <div class="flex flex-col gap-4">
-                  <h1 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-5xl text-black text-center text-balance">Из опыта в знания</h1>
-                  <p class="font-Montserrat font-medium text-base text-black text-center">Учебный центр ООО "Автодор-Инжиниринг"</p>
+                  <h1 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-5xl text-black @xs/body:text-center @6xl/body:text-start text-balance">Из опыта в знания</h1>
+                  <p class="font-Montserrat font-medium text-base text-black @xs/body:text-center @6xl/body:text-start">Учебный центр ООО "Автодор-Инжиниринг"</p>
                 </div>
                 <div class="swiffy-slider slider-indicators-round slider-nav-round slider-nav-noloop w-full h-full rounded-lg overflow-hidden" id="slider1">
                   <div class="slider-container">
                     <div class="w-full flex flex-col shadow-md @xs/body:h-[16rem] @6xl/body:h-[23.5rem] relative">
-                      <p class="font-Montserrat font-medium text-base text-black p-4 bg-white/80 w-full absolute top-0 left-0">4 000 партнёров уже предложили практику и сделали офер лучшим студентам</p><img class="w-full h-full object-cover" src="./local/templates/tcavtodor/img/other/755644626481422.jpeg"><a class=" absolute left-0 top-0 inset-0" href="news.html"></a>
+                      <p class="font-Montserrat font-medium text-base text-black p-4 bg-white/80 absolute top-4 left-4 w-1/2 rounded-lg">4 000 партнёров уже предложили практику и сделали офер лучшим студентам</p><img class="w-full h-full object-cover" src="./local/templates/tcavtodor/img/other/755644626481422.jpeg"><a class=" absolute left-0 top-0 inset-0" href="news.html"></a>
                     </div>
                     <div class="w-full flex flex-col shadow-md @xs/body:h-[16rem] @6xl/body:h-[23.5rem] relative">
-                      <p class="font-Montserrat font-medium text-base text-black p-4 bg-white/80 w-full absolute top-0 left-0">Формат «живого» общения с экспертами, чтобы обсудить вопросы и сложные темы</p><img class="w-full h-full object-cover" src="./local/templates/tcavtodor/img/other/original-20g.jpg"><a class=" absolute left-0 top-0 inset-0" href="news.html"></a>
+                      <p class="font-Montserrat font-medium text-base text-black p-4 bg-white/80 absolute top-4 left-4 w-1/2 rounded-lg">Формат «живого» общения с экспертами, чтобы обсудить вопросы и сложные темы</p><img class="w-full h-full object-cover" src="./local/templates/tcavtodor/img/other/original-20g.jpg"><a class=" absolute left-0 top-0 inset-0" href="news.html"></a>
                     </div>
                     <div class="w-full flex flex-col shadow-md @xs/body:h-[16rem] @6xl/body:h-[23.5rem] relative">
-                      <p class="font-Montserrat font-medium text-base text-black p-4 bg-white/80 w-full absolute top-0 left-0">4 000 партнёров уже предложили практику и сделали офер лучшим студентам</p><img class="w-full h-full object-cover" src="./local/templates/tcavtodor/img/other/Rectangle 76634.png"><a class=" absolute left-0 top-0 inset-0" href="news.html"></a>
+                      <p class="font-Montserrat font-medium text-base text-black p-4 bg-white/80 absolute top-4 left-4 w-1/2 rounded-lg">4 000 партнёров уже предложили практику и сделали офер лучшим студентам</p><img class="w-full h-full object-cover" src="./local/templates/tcavtodor/img/other/Rectangle 76634.png"><a class=" absolute left-0 top-0 inset-0" href="news.html"></a>
                     </div>
                   </div>
                   <div class="slider-indicators flex">
@@ -269,93 +269,93 @@
             </div>
             <div class="@xs/body:pb-2 @5xl/body:pb-0 @xs/body:overflow-x-scroll @5xl/body:overflow-x-auto">
               <div class="flex @xs/body:w-max @5xl/body:w-auto @5xl/body:grid @5xl/body:grid-cols-3 gap-4 pb-4">
-                <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
-                  <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-balance">Содержание искусственных сооружений</p>
-                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
-                    <p class="font-Montserrat font-medium text-sm text-primary">7 программ</p>
-                    <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <article class="border border-transparent hover:border-secondary bg-primary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
+                  <p class="font-Montserrat font-medium text-white @xs/body:text-base @6xl/body:text-lg text-balance">Содержание искусственных сооружений</p>
+                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg shadow-md">
+                    <p class="font-Montserrat font-medium text-sm text-black">7 программ</p>
+                    <svg class="stroke-black" width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 16H27" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 7L27 16L18 25" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                   </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
                 </article>
-                <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
-                  <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-balance">Строительство автомобильных дорог и ИССО </p>
-                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
-                    <p class="font-Montserrat font-medium text-sm text-primary">7 программ</p>
-                    <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <article class="border border-transparent hover:border-secondary bg-primary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
+                  <p class="font-Montserrat font-medium text-white @xs/body:text-base @6xl/body:text-lg text-balance">Строительство автомобильных дорог и ИССО </p>
+                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg shadow-md">
+                    <p class="font-Montserrat font-medium text-sm text-black">7 программ</p>
+                    <svg class="stroke-black" width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 16H27" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 7L27 16L18 25" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                   </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
                 </article>
-                <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
-                  <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-balance">Экология</p>
-                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
-                    <p class="font-Montserrat font-medium text-sm text-primary">7 программ</p>
-                    <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <article class="border border-transparent hover:border-secondary bg-primary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
+                  <p class="font-Montserrat font-medium text-white @xs/body:text-base @6xl/body:text-lg text-balance">Экология</p>
+                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg shadow-md">
+                    <p class="font-Montserrat font-medium text-sm text-black">7 программ</p>
+                    <svg class="stroke-black" width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 16H27" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 7L27 16L18 25" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                   </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
                 </article>
-                <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
-                  <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-balance">Содержание автомобильных дорог</p>
-                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
-                    <p class="font-Montserrat font-medium text-sm text-primary">7 программ</p>
-                    <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <article class="border border-transparent hover:border-secondary bg-primary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
+                  <p class="font-Montserrat font-medium text-white @xs/body:text-base @6xl/body:text-lg text-balance">Содержание автомобильных дорог</p>
+                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg shadow-md">
+                    <p class="font-Montserrat font-medium text-sm text-black">7 программ</p>
+                    <svg class="stroke-black" width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 16H27" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 7L27 16L18 25" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                   </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
                 </article>
-                <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
-                  <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-balance">Изыскания и проектирование</p>
-                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
-                    <p class="font-Montserrat font-medium text-sm text-primary">7 программ</p>
-                    <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <article class="border border-transparent hover:border-secondary bg-primary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
+                  <p class="font-Montserrat font-medium text-white @xs/body:text-base @6xl/body:text-lg text-balance">Изыскания и проектирование</p>
+                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg shadow-md">
+                    <p class="font-Montserrat font-medium text-sm text-black">7 программ</p>
+                    <svg class="stroke-black" width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 16H27" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 7L27 16L18 25" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                   </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
                 </article>
-                <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
-                  <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-balance">Иммерсивные технологии</p>
-                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
-                    <p class="font-Montserrat font-medium text-sm text-primary">7 программ</p>
-                    <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <article class="border border-transparent hover:border-secondary bg-primary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
+                  <p class="font-Montserrat font-medium text-white @xs/body:text-base @6xl/body:text-lg text-balance">Иммерсивные технологии</p>
+                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg shadow-md">
+                    <p class="font-Montserrat font-medium text-sm text-black">7 программ</p>
+                    <svg class="stroke-black" width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 16H27" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 7L27 16L18 25" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                   </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
                 </article>
-                <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
-                  <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-balance">Строительные материлаы и оборудование</p>
-                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
-                    <p class="font-Montserrat font-medium text-sm text-primary">7 программ</p>
-                    <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <article class="border border-transparent hover:border-secondary bg-primary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
+                  <p class="font-Montserrat font-medium text-white @xs/body:text-base @6xl/body:text-lg text-balance">Строительные материлаы и оборудование</p>
+                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg shadow-md">
+                    <p class="font-Montserrat font-medium text-sm text-black">7 программ</p>
+                    <svg class="stroke-black" width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 16H27" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 7L27 16L18 25" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                   </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
                 </article>
-                <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
-                  <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-balance">Строительный, геодезический и лабораторный контроль</p>
-                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
-                    <p class="font-Montserrat font-medium text-sm text-primary">7 программ</p>
-                    <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <article class="border border-transparent hover:border-secondary bg-primary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
+                  <p class="font-Montserrat font-medium text-white @xs/body:text-base @6xl/body:text-lg text-balance">Строительный, геодезический и лабораторный контроль</p>
+                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg shadow-md">
+                    <p class="font-Montserrat font-medium text-sm text-black">7 программ</p>
+                    <svg class="stroke-black" width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 16H27" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 7L27 16L18 25" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                   </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
                 </article>
-                <article class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
-                  <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg text-balance">Программное обеспечение общего пользования</p>
-                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg border border-primary">
-                    <p class="font-Montserrat font-medium text-sm text-primary">7 программ</p>
-                    <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5 16H27" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M18 7L27 16L18 25" stroke="#fd7e14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <article class="border border-transparent hover:border-secondary bg-primary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
+                  <p class="font-Montserrat font-medium text-white @xs/body:text-base @6xl/body:text-lg text-balance">Программное обеспечение общего пользования</p>
+                  <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg shadow-md">
+                    <p class="font-Montserrat font-medium text-sm text-black">7 программ</p>
+                    <svg class="stroke-black" width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 16H27" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 7L27 16L18 25" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                   </div><a class="absolute top-0 left-0 inset-0" href="kartochka-napravlenija.html"></a>
                 </article>
@@ -369,7 +369,7 @@
                 <article class="flex flex-col gap-4 w-full"><img class="w-full @xs:aspect-16-9 @4xl:aspect-1-1 rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка продукта"/>
                   <div class="flex flex-col gap-2">
                     <div class="flex items-center justify-between gap-4 w-full">
-                      <p class="font-Montserrat font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Курс</p>
+                      <p class="font-Montserrat font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Программа</p>
                       <div class="flex gap-2 items-center ">
                         <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M16 10V16" stroke="#6c707d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -384,8 +384,8 @@
                       <p class="font-Montserrat font-semibold text-lg text-black ">Текущие осмотры искусственных сооружений</p>
                     </div>
                     <div class="flex flex-wrap gap-2 justify-between items-center">
-                      <p class="font-Montserrat font-normal text-sm text-secondary">
-                         Удостоверение<br/>профпереподготовки</p>
+                      <p class="font-Montserrat font-normal text-sm text-secondary text-balance">
+                         Удостоверение<br/>повышения<br/>квалификации</p>
                       <p class="font-Montserrat font-medium text-3xl text-primary text-end">40 000 ₽</p>
                     </div>
                   </div><a class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Montserrat font-medium text-base text-center" href="kartochka-programmy.html">Подробнее</a>
@@ -393,7 +393,7 @@
                 <article class="flex flex-col gap-4 w-full"><img class="w-full @xs:aspect-16-9 @4xl:aspect-1-1 rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка продукта"/>
                   <div class="flex flex-col gap-2">
                     <div class="flex items-center justify-between gap-4 w-full">
-                      <p class="font-Montserrat font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Курс</p>
+                      <p class="font-Montserrat font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Программа</p>
                       <div class="flex gap-2 items-center ">
                         <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M16 10V16" stroke="#6c707d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -408,8 +408,8 @@
                       <p class="font-Montserrat font-semibold text-lg text-black ">Текущие осмотры искусственных сооружений</p>
                     </div>
                     <div class="flex flex-wrap gap-2 justify-between items-center">
-                      <p class="font-Montserrat font-normal text-sm text-secondary">
-                         Удостоверение<br/>профпереподготовки</p>
+                      <p class="font-Montserrat font-normal text-sm text-secondary text-balance">
+                         Удостоверение<br/>повышения<br/>квалификации</p>
                       <p class="font-Montserrat font-medium text-3xl text-primary text-end">40 000 ₽</p>
                     </div>
                   </div><a class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Montserrat font-medium text-base text-center" href="kartochka-programmy.html">Подробнее</a>
@@ -417,7 +417,7 @@
                 <article class="flex flex-col gap-4 w-full"><img class="w-full @xs:aspect-16-9 @4xl:aspect-1-1 rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка продукта"/>
                   <div class="flex flex-col gap-2">
                     <div class="flex items-center justify-between gap-4 w-full">
-                      <p class="font-Montserrat font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Курс</p>
+                      <p class="font-Montserrat font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Программа</p>
                       <div class="flex gap-2 items-center ">
                         <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M16 10V16" stroke="#6c707d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -432,8 +432,8 @@
                       <p class="font-Montserrat font-semibold text-lg text-black ">Текущие осмотры искусственных сооружений</p>
                     </div>
                     <div class="flex flex-wrap gap-2 justify-between items-center">
-                      <p class="font-Montserrat font-normal text-sm text-secondary">
-                         Удостоверение<br/>профпереподготовки</p>
+                      <p class="font-Montserrat font-normal text-sm text-secondary text-balance">
+                         Удостоверение<br/>повышения<br/>квалификации</p>
                       <p class="font-Montserrat font-medium text-3xl text-primary text-end">40 000 ₽</p>
                     </div>
                   </div><a class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Montserrat font-medium text-base text-center" href="kartochka-programmy.html">Подробнее</a>
@@ -441,7 +441,7 @@
                 <article class="flex flex-col gap-4 w-full"><img class="w-full @xs:aspect-16-9 @4xl:aspect-1-1 rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка продукта"/>
                   <div class="flex flex-col gap-2">
                     <div class="flex items-center justify-between gap-4 w-full">
-                      <p class="font-Montserrat font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Курс</p>
+                      <p class="font-Montserrat font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Программа</p>
                       <div class="flex gap-2 items-center ">
                         <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M16 10V16" stroke="#6c707d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -456,8 +456,8 @@
                       <p class="font-Montserrat font-semibold text-lg text-black ">Текущие осмотры искусственных сооружений</p>
                     </div>
                     <div class="flex flex-wrap gap-2 justify-between items-center">
-                      <p class="font-Montserrat font-normal text-sm text-secondary">
-                         Удостоверение<br/>профпереподготовки</p>
+                      <p class="font-Montserrat font-normal text-sm text-secondary text-balance">
+                         Удостоверение<br/>повышения<br/>квалификации</p>
                       <p class="font-Montserrat font-medium text-3xl text-primary text-end">40 000 ₽</p>
                     </div>
                   </div><a class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Montserrat font-medium text-base text-center" href="kartochka-programmy.html">Подробнее</a>
@@ -465,7 +465,7 @@
                 <article class="flex flex-col gap-4 w-full"><img class="w-full @xs:aspect-16-9 @4xl:aspect-1-1 rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка продукта"/>
                   <div class="flex flex-col gap-2">
                     <div class="flex items-center justify-between gap-4 w-full">
-                      <p class="font-Montserrat font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Курс</p>
+                      <p class="font-Montserrat font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Программа</p>
                       <div class="flex gap-2 items-center ">
                         <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M16 10V16" stroke="#6c707d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -480,8 +480,8 @@
                       <p class="font-Montserrat font-semibold text-lg text-black ">Текущие осмотры искусственных сооружений</p>
                     </div>
                     <div class="flex flex-wrap gap-2 justify-between items-center">
-                      <p class="font-Montserrat font-normal text-sm text-secondary">
-                         Удостоверение<br/>профпереподготовки</p>
+                      <p class="font-Montserrat font-normal text-sm text-secondary text-balance">
+                         Удостоверение<br/>повышения<br/>квалификации</p>
                       <p class="font-Montserrat font-medium text-3xl text-primary text-end">40 000 ₽</p>
                     </div>
                   </div><a class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Montserrat font-medium text-base text-center" href="kartochka-programmy.html">Подробнее</a>
@@ -489,7 +489,7 @@
                 <article class="flex flex-col gap-4 w-full"><img class="w-full @xs:aspect-16-9 @4xl:aspect-1-1 rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка продукта"/>
                   <div class="flex flex-col gap-2">
                     <div class="flex items-center justify-between gap-4 w-full">
-                      <p class="font-Montserrat font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Курс</p>
+                      <p class="font-Montserrat font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Программа</p>
                       <div class="flex gap-2 items-center ">
                         <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M16 10V16" stroke="#6c707d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -504,8 +504,8 @@
                       <p class="font-Montserrat font-semibold text-lg text-black ">Текущие осмотры искусственных сооружений</p>
                     </div>
                     <div class="flex flex-wrap gap-2 justify-between items-center">
-                      <p class="font-Montserrat font-normal text-sm text-secondary">
-                         Удостоверение<br/>профпереподготовки</p>
+                      <p class="font-Montserrat font-normal text-sm text-secondary text-balance">
+                         Удостоверение<br/>повышения<br/>квалификации</p>
                       <p class="font-Montserrat font-medium text-3xl text-primary text-end">40 000 ₽</p>
                     </div>
                   </div><a class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Montserrat font-medium text-base text-center" href="kartochka-programmy.html">Подробнее</a>
@@ -513,7 +513,7 @@
                 <article class="flex flex-col gap-4 w-full"><img class="w-full @xs:aspect-16-9 @4xl:aspect-1-1 rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка продукта"/>
                   <div class="flex flex-col gap-2">
                     <div class="flex items-center justify-between gap-4 w-full">
-                      <p class="font-Montserrat font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Курс</p>
+                      <p class="font-Montserrat font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Программа</p>
                       <div class="flex gap-2 items-center ">
                         <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M16 10V16" stroke="#6c707d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -528,8 +528,8 @@
                       <p class="font-Montserrat font-semibold text-lg text-black ">Текущие осмотры искусственных сооружений</p>
                     </div>
                     <div class="flex flex-wrap gap-2 justify-between items-center">
-                      <p class="font-Montserrat font-normal text-sm text-secondary">
-                         Удостоверение<br/>профпереподготовки</p>
+                      <p class="font-Montserrat font-normal text-sm text-secondary text-balance">
+                         Удостоверение<br/>повышения<br/>квалификации</p>
                       <p class="font-Montserrat font-medium text-3xl text-primary text-end">40 000 ₽</p>
                     </div>
                   </div><a class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Montserrat font-medium text-base text-center" href="kartochka-programmy.html">Подробнее</a>
@@ -537,7 +537,7 @@
                 <article class="flex flex-col gap-4 w-full"><img class="w-full @xs:aspect-16-9 @4xl:aspect-1-1 rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg" alt="картинка продукта"/>
                   <div class="flex flex-col gap-2">
                     <div class="flex items-center justify-between gap-4 w-full">
-                      <p class="font-Montserrat font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Курс</p>
+                      <p class="font-Montserrat font-medium text-base text-secondary bg-lightGray px-2 py-1 rounded-[6rem]">Программа</p>
                       <div class="flex gap-2 items-center ">
                         <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M16 10V16" stroke="#6c707d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -552,8 +552,8 @@
                       <p class="font-Montserrat font-semibold text-lg text-black ">Текущие осмотры искусственных сооружений</p>
                     </div>
                     <div class="flex flex-wrap gap-2 justify-between items-center">
-                      <p class="font-Montserrat font-normal text-sm text-secondary">
-                         Удостоверение<br/>профпереподготовки</p>
+                      <p class="font-Montserrat font-normal text-sm text-secondary text-balance">
+                         Удостоверение<br/>повышения<br/>квалификации</p>
                       <p class="font-Montserrat font-medium text-3xl text-primary text-end">40 000 ₽</p>
                     </div>
                   </div><a class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Montserrat font-medium text-base text-center" href="kartochka-programmy.html">Подробнее</a>
@@ -574,51 +574,51 @@
                 </svg>
               </button>
             </div>
-            <button class="bg-gradient-orange text-white rounded-lg p-4 px-6 text-xl w-max mx-auto" dialog-btn="consultation" type="button">Получить консультацию</button>
+            <button class="bg-gradient-orange text-white rounded-lg py-4 px-20 text-xl w-max mx-auto" dialog-btn="consultation" type="button">Получить консультацию</button>
           </div>
           <div class="container mx-auto flex flex-col gap-8">
             <h2 class="font-Montserrat font-semibold  @xs/body:text-2xl @6xl/body:text-4xl text-black text-center text-pr">Этапы обучения</h2>
             <div class="flex @xs/body:flex-col @4xl/body:flex-row gap-3 justify-center @6xl/body:zoom-150">
               <article class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative">
-                <svg width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                <svg class=" drop-shadow-lg" width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
                   <g class="layer" id="svg_3">
-                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="none" id="svg_1" stroke="#000000"></path>
+                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="white" id="svg_1" stroke="#000000"></path>
                     <text class="font-Montserrat font-medium" fill="#fd7e14" font-size="45.22" id="svg_2" text-anchor="middle" transform="matrix(1.19755 0 0 1 -0.460285 0)" x="65.5" xml:space="preserve" y="75.59">1</text>
                   </g>
                 </svg>
                 <p class="font-Montserrat font-medium text-sm text-black w-36 text-balance pl-2">Выбираете программу</p>
               </article>
               <article class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative">
-                <svg width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                <svg class=" drop-shadow-lg" width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
                   <g class="layer" id="svg_3">
-                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="none" id="svg_1" stroke="#000000"></path>
+                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="white" id="svg_1" stroke="#000000"></path>
                     <text class="font-Montserrat font-medium" fill="#fd7e14" font-size="45.22" id="svg_2" text-anchor="middle" transform="matrix(1.19755 0 0 1 -0.460285 0)" x="65.5" xml:space="preserve" y="75.59">2</text>
                   </g>
                 </svg>
                 <p class="font-Montserrat font-medium text-sm text-black w-36 text-balance pl-2">Подписываете договор и вносите оплату</p>
               </article>
               <article class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative">
-                <svg width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                <svg class=" drop-shadow-lg" width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
                   <g class="layer" id="svg_3">
-                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="none" id="svg_1" stroke="#000000"></path>
+                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="white" id="svg_1" stroke="#000000"></path>
                     <text class="font-Montserrat font-medium" fill="#fd7e14" font-size="45.22" id="svg_2" text-anchor="middle" transform="matrix(1.19755 0 0 1 -0.460285 0)" x="65.5" xml:space="preserve" y="75.59">3</text>
                   </g>
                 </svg>
                 <p class="font-Montserrat font-medium text-sm text-black w-36 text-balance pl-2">Проходите обучение</p>
               </article>
               <article class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative">
-                <svg width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                <svg class=" drop-shadow-lg" width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
                   <g class="layer" id="svg_3">
-                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="none" id="svg_1" stroke="#000000"></path>
+                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="white" id="svg_1" stroke="#000000"></path>
                     <text class="font-Montserrat font-medium" fill="#fd7e14" font-size="45.22" id="svg_2" text-anchor="middle" transform="matrix(1.19755 0 0 1 -0.460285 0)" x="65.5" xml:space="preserve" y="75.59">4</text>
                   </g>
                 </svg>
                 <p class="font-Montserrat font-medium text-sm text-black w-36 text-balance pl-2">Прикрепляете необходимых документов в ЛК</p>
               </article>
               <article class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative">
-                <svg width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                <svg class=" drop-shadow-lg" width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
                   <g class="layer" id="svg_3">
-                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="none" id="svg_1" stroke="#000000"></path>
+                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="white" id="svg_1" stroke="#000000"></path>
                     <text class="font-Montserrat font-medium" fill="#fd7e14" font-size="45.22" id="svg_2" text-anchor="middle" transform="matrix(1.19755 0 0 1 -0.460285 0)" x="65.5" xml:space="preserve" y="75.59">5</text>
                   </g>
                 </svg>
@@ -658,8 +658,8 @@
             </div>
           </div>
           <div class="container mx-auto">
-            <div class="@container/card rounded-lg shadow-md py-4 px-8 flex flex-col gap-6 bg-lightGray">
-              <p class="font-Montserrat font-semibold @xs/card:text-2xl @6xl/card:text-4xl text-black">Получить консультацию</p>
+            <div class="@container/card rounded-lg shadow-md py-4 px-8 flex flex-col gap-6 bg-primary @xs/body:w-full @6xl/body:w-[90%] @6xl/body:mx-auto">
+              <p class="font-Montserrat font-semibold @xs/card:text-2xl @6xl/card:text-4xl text-white">Получить консультацию</p>
               <div class="grid @xs/card:grid-cols-full @6xl/card:grid-cols-4 gap-4">
                 <div class="relative">
                   <input class="peer w-full border border-gray-300 rounded-md py-2 px-3 font-montserrat font-semibold text-gray-600 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary transition duration-200 ease-in-out" id="Name" type="text" name="Name" required>
@@ -673,11 +673,11 @@
                   <input class="peer w-full border border-gray-300 rounded-md py-2 px-3 font-montserrat font-semibold text-gray-600 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary transition duration-200 ease-in-out" id="Email" type="text" name="Email" required>
                   <label class=" absolute top-[0.675rem] peer-focus:-top-[0.675rem] peer-valid:-top-[0.675rem] bg-white px-1 block font-Montserrat font-normal text-gray-400 text-base peer-focus:text-sm peer-valid:text-sm leading-[1] left-2 transition-all duration-200 ease-in-out rounded-full" for="Email">Почта</label>
                 </div>
-                <button class=" bg-gradient-orange rounded-lg p-1 text-white" type="button">
+                <button class=" bg-white shadow-lg rounded-lg p-1 text-black" type="button">
                    Получить консультацию</button>
               </div>
-              <p class="font-Montserrat font-normal text-base text-black ml-auto">
-                   Продолжая, вы соглашаетесь с <a class="font-Montserrat font-normal text-primary hover:text-primaryHover text-base" href="#">Политикой конфиденциальности</a></p>
+              <p class="font-Montserrat font-normal text-base text-white ml-auto">
+                   Продолжая, вы соглашаетесь с <a class="font-Montserrat font-normal text-black hover:text-primaryHover text-base" href="#">Политикой конфиденциальности</a></p>
             </div>
           </div>
           <div class="bg-lightGray py-16">
@@ -871,6 +871,7 @@
     </div>
     <script src="./local/templates/tcavtodor/libs/jquery/jquery-3.7.1.min.js"></script>
     <script src="./local/templates/tcavtodor/libs/swiffy-slider-1.6.0/swiffy-slider.min.js"></script>
+    <script src="./local/templates/tcavtodor/libs/imask/imask.js"></script>
     <script src="./local/templates/tcavtodor/pages/index/js/index.js" type="module"></script>
   </body>
 </html>

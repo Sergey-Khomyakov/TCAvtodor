@@ -97,9 +97,9 @@
       </header>
       <dialog class="rounded-lg relative" id="dialog" aria-modal="true">
         <div class="absolute top-1 right-1 cursor-pointer w-max" dialog-btn="close">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25 7L7 25" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M25 25L7 7" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          <svg class="stroke-black" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25 7L7 25" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M25 25L7 7" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         </div>
         <div class="max-w-96 w-full rounded-lg shadow-md bg-white p-8 flex flex-col gap-8"><a class="flex justify-center" dialogLogo="" href="#">
@@ -153,13 +153,13 @@
           <template dialogInputTemplate="">
             <div class="flex flex-col gap-1">
               <p class="font-Montserrat font-semibold text-black text-base"></p>
-              <input class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white h-10 font-Montserrat font-normal text-base leading-[1.5] text-gray-400 w-full hover:border-primary focus:border-primary focus:transition-timing-focus focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none invalid:border-2 invalid:border-red-400 invalid:text-gray-400" type="text" placeholder=""/>
+              <input class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white h-10 font-Montserrat font-normal text-base leading-[1.5] text-gray-400 w-full hover:border-primary focus:border-primary focus:transition-timing-focus focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none" type="text" placeholder=""/>
             </div>
           </template>
           <template dialogTextareaTemplate="">
             <div class="flex flex-col gap-1">
               <p class="font-Montserrat font-semibold text-black text-base"></p>
-              <textarea class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white w-full min-h-[4.75rem] hover:border-primary focus:transition-timing-focus focus:border-primary focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none invalid:border-2 invalid:border-red-400 invalid:text-gray-400" placeholder=""></textarea>
+              <textarea class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white w-full min-h-[4.75rem] hover:border-primary focus:transition-timing-focus focus:border-primary focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none " placeholder=""></textarea>
             </div>
           </template>
         </div>
@@ -175,99 +175,55 @@
             </div>
           </div>
           <div class="container mx-auto flex flex-col gap-8">
-            <h2 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center">Как строиться дистрибьютерская сетка</h2>
-            <div class="w-full grid gap-4 @xs/body:grid-cols-full @md/body:grid-cols-2 @4xl/body:grid-cols-full items-center @4xl/body:aspect-16-9 relative justify-items-center overflow-hidden">
-              <div class="@xs/body:w-full  @md/body:col-span-2 @4xl/body:aspect-1-1 @4xl/body:w-max flex flex-col items-center relative justify-center p-4 @4xl/body:border border-primary rounded-full">
-                <p class="font-Montserrat font-semibold text-2xl text-center text-black">
-                   Учебный центр ООО<br class="@xs/body:hidden @4xl/body:block">"Автодор-Инжиниринг"</p>
-                <div class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-0"></div>
-                <div class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[0.5s]"></div>
-                <div class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[1s]"></div>
-                <div class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[1.5s]"></div>
-                <div class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[2s]"></div>
-                <div class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[2.5s]"></div>
-                <div class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[3s]"></div>
-                <div class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[3.5s]"></div>
-                <div class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[4s]"></div>
-                <div class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[4.5s]"></div>
-              </div>
-              <p class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-0 left-[46.5%] text-center @xs/body:text-sm @6xl/body:text-base">
-                 Приволжский <br class="@xs/body:hidden @4xl/body:block">Федеральный <br class="@xs/body:hidden @4xl/body:block">Округ</p>
-              <p class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[10%] left-[70%] text-center @xs/body:text-sm @6xl/body:text-base">
-                 Дальневост. <br class="@xs/body:hidden @4xl/body:block">Федеральный <br class="@xs/body:hidden @4xl/body:block">Округ</p>
-              <p class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[45.5%] left-[80%] text-center @xs/body:text-sm @6xl/body:text-base">
-                 Сибирский <br class="@xs/body:hidden @4xl/body:block">Федеральный <br class="@xs/body:hidden @4xl/body:block">Округ</p>
-              <p class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[81.5%] left-[70%] text-center @xs/body:text-sm @6xl/body:text-base">
-                 Уральский <br class="@xs/body:hidden @4xl/body:block">Федеральный <br class="@xs/body:hidden @4xl/body:block">Округ</p>
-              <p class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[90%] left-[45%] text-center @xs/body:text-sm @6xl/body:text-base">
-                 Северо-Кавказский <br class="@xs/body:hidden @4xl/body:block">Федеральный <br class="@xs/body:hidden @4xl/body:block">Округ</p>
-              <p class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[82%] left-[23%] text-center @xs/body:text-sm @6xl/body:text-base">
-                 Северо-Западный <br class="@xs/body:hidden @4xl/body:block">Федеральный <br class="@xs/body:hidden @4xl/body:block">Округ</p>
-              <p class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[46%] left-[15%] text-center @xs/body:text-sm @6xl/body:text-base">
-                 Центральный <br class="@xs/body:hidden @4xl/body:block">Федеральный <br class="@xs/body:hidden @4xl/body:block">Округ</p>
-              <p class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[10%] left-[24%] text-center @xs/body:text-sm @6xl/body:text-base">
-                 Южный <br class="@xs/body:hidden @4xl/body:block">Федеральный <br class="@xs/body:hidden @4xl/body:block">Округ</p>
-            </div>
-          </div>
-          <div class="container mx-auto flex flex-col gap-8">
             <h2 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center">Этапы сотрудничества</h2>
-            <div class="flex flex-col gap-4 justify-center items-center">
-              <article class="flex gap-8 items-center relative w-full max-w-2xl">
-                <svg class="shrink-0" width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+            <div class="flex @xs/body:flex-col @4xl/body:flex-row gap-3 justify-center @6xl/body:zoom-150">
+              <article class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative">
+                <svg class=" drop-shadow-lg" width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
                   <g class="layer" id="svg_3">
-                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="none" id="svg_1" stroke="#000000"></path>
+                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="white" id="svg_1" stroke="#000000"></path>
                     <text class="font-Montserrat font-medium" fill="#fd7e14" font-size="45.22" id="svg_2" text-anchor="middle" transform="matrix(1.19755 0 0 1 -0.460285 0)" x="65.5" xml:space="preserve" y="75.59">1</text>
                   </g>
                 </svg>
-                <div class="flex flex-col gap-2">
-                  <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance">Отправляете заявку на партнерство</p>
-                </div>
+                <p class="font-Montserrat font-medium text-sm text-black w-36 text-balance pl-2">Отправить заявку на партнерство</p>
               </article>
-              <article class="flex gap-8 items-center relative w-full max-w-2xl">
-                <svg class="shrink-0" width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+              <article class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative">
+                <svg class=" drop-shadow-lg" width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
                   <g class="layer" id="svg_3">
-                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="none" id="svg_1" stroke="#000000"></path>
+                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="white" id="svg_1" stroke="#000000"></path>
                     <text class="font-Montserrat font-medium" fill="#fd7e14" font-size="45.22" id="svg_2" text-anchor="middle" transform="matrix(1.19755 0 0 1 -0.460285 0)" x="65.5" xml:space="preserve" y="75.59">2</text>
                   </g>
                 </svg>
-                <div class="flex flex-col gap-2">
-                  <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance">Заключаем договор</p>
-                </div>
+                <p class="font-Montserrat font-medium text-sm text-black w-36 text-balance pl-2">Заключить договор</p>
               </article>
-              <article class="flex gap-8 items-center relative w-full max-w-2xl">
-                <svg class="shrink-0" width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+              <article class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative">
+                <svg class=" drop-shadow-lg" width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
                   <g class="layer" id="svg_3">
-                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="none" id="svg_1" stroke="#000000"></path>
+                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="white" id="svg_1" stroke="#000000"></path>
                     <text class="font-Montserrat font-medium" fill="#fd7e14" font-size="45.22" id="svg_2" text-anchor="middle" transform="matrix(1.19755 0 0 1 -0.460285 0)" x="65.5" xml:space="preserve" y="75.59">3</text>
                   </g>
                 </svg>
-                <div class="flex flex-col gap-2">
-                  <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance">Предоставляем доступ к обучающей платформе</p>
-                </div>
+                <p class="font-Montserrat font-medium text-sm text-black w-36 text-balance pl-2">Предоставляем доступ к обучающей платформе</p>
               </article>
-              <article class="flex gap-8 items-center relative w-full max-w-2xl">
-                <svg class="shrink-0" width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+              <article class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative">
+                <svg class=" drop-shadow-lg" width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
                   <g class="layer" id="svg_3">
-                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="none" id="svg_1" stroke="#000000"></path>
+                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="white" id="svg_1" stroke="#000000"></path>
                     <text class="font-Montserrat font-medium" fill="#fd7e14" font-size="45.22" id="svg_2" text-anchor="middle" transform="matrix(1.19755 0 0 1 -0.460285 0)" x="65.5" xml:space="preserve" y="75.59">4</text>
                   </g>
                 </svg>
-                <div class="flex flex-col gap-2">
-                  <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance">Взаиморасчет</p>
-                </div>
+                <p class="font-Montserrat font-medium text-sm text-black w-36 text-balance pl-2">Взаиморасчет</p>
               </article>
-              <article class="flex gap-8 items-center relative w-full max-w-2xl">
-                <svg class="shrink-0" width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+              <article class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative">
+                <svg class=" drop-shadow-lg" width="150" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
                   <g class="layer" id="svg_3">
-                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="none" id="svg_1" stroke="#000000"></path>
+                    <path d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z" fill="white" id="svg_1" stroke="#000000"></path>
                     <text class="font-Montserrat font-medium" fill="#fd7e14" font-size="45.22" id="svg_2" text-anchor="middle" transform="matrix(1.19755 0 0 1 -0.460285 0)" x="65.5" xml:space="preserve" y="75.59">5</text>
                   </g>
                 </svg>
-                <div class="flex flex-col gap-2">
-                  <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance">Выдача Удостоверения о повышении квалификации Представителем</p>
-                </div>
+                <p class="font-Montserrat font-medium text-sm text-black w-36 text-balance pl-2">Выдача Удостоверение о повышении квалификации Представителем</p>
               </article>
             </div>
+            <button class="bg-gradient-orange text-white rounded-lg p-4 px-8 text-xl w-max mx-auto" dialog-btn="bid" type="button">Оставить заявку</button>
           </div>
           <div class="container mx-auto flex flex-col gap-8">
             <h2 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center">Выгоды для партнеров работы с УЦ</h2>
@@ -436,11 +392,8 @@
       </footer>
     </div>
     <script src="./local/templates/tcavtodor/libs/jquery/jquery-3.7.1.min.js"></script>
-    <script src="./local/templates/tcavtodor/libs/gsap/gsap.min.js"></script>
-    <script src="./local/templates/tcavtodor/libs/gsap/ScrollTrigger.min.js"></script>
-    <script src="./local/templates/tcavtodor/libs/gsap/lenis.min.js"></script>
-    <script src="./local/templates/tcavtodor/libs/gsap/imagesloaded.pkgd.min.js"></script>
     <script src="./local/templates/tcavtodor/libs/jquery/jquery-3.7.1.min.js"></script>
+    <script src="./local/templates/tcavtodor/libs/imask/imask.js"></script>
     <script src="./local/templates/tcavtodor/pages/partneram/js/index.js" type="module"></script>
   </body>
 </html>

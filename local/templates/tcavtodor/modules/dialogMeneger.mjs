@@ -13,11 +13,22 @@ export const dialogMeneger = () => {
             if(!btnType) return;
             renderDialogForm(btn, dialog)
             dialog.showModal();
+            const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+            const body = document.body;
+            body.style.position = 'relative';
+            body.style.top = `-${scrollY}`;
             document.querySelector('body').classList.add('overflow-hidden', 'pr-[17px]');
         })
     })
 
     close.addEventListener('click', () => {
+        //
+            const body = document.body;
+            const scrollY = body.style.top;
+            body.style.position = '';
+            body.style.top = '';
+            window.scrollTo(0, parseInt(scrollY || '0') * -1); 
+        //
         dialog.close();
         const dialogBody = dialog.querySelector('[dialogBody]');
         dialogBody.innerHTML = '';
@@ -33,6 +44,11 @@ export const dialogMeneger = () => {
             document.querySelector('body').classList.remove('overflow-hidden', 'pr-[17px]');
         }
       })
+
+    // fix scroll
+    window.addEventListener('scroll', () => {
+        document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+    });
  };
 
 const renderDialogForm = (btn, dialog) => {
@@ -185,6 +201,15 @@ const renderDialogForm = (btn, dialog) => {
 
         form.appendChild(rowSaveInfo);
         form.appendChild(btnRegistr);
+
+        // init phone mask
+        const inputs = document.querySelectorAll('[type="tel"]');
+        const maskOptions = {
+            mask: '+{7} (000) 000-00-00'
+        };
+        inputs.forEach(element => {
+            IMask(element, maskOptions);
+        });
         
     }else if(type === "consultation"){
         const inputArr = [
@@ -238,7 +263,14 @@ const renderDialogForm = (btn, dialog) => {
         });
 
         form.appendChild(btnLogin);
-
+        // init phone mask
+        const inputs = document.querySelectorAll('[type="tel"]');
+        const maskOptions = {
+            mask: '+{7} (000) 000-00-00'
+        };
+        inputs.forEach(element => {
+            IMask(element, maskOptions);
+        });
     }else if(type ==="bid"){
         const inputArr = [
             {
@@ -305,6 +337,14 @@ const renderDialogForm = (btn, dialog) => {
         });
 
         form.appendChild(btnLogin);
+        // init phone mask
+        const inputs = document.querySelectorAll('[type="tel"]');
+        const maskOptions = {
+            mask: '+{7} (000) 000-00-00'
+        };
+        inputs.forEach(element => {
+            IMask(element, maskOptions);
+        });
     }else if(type === "authorInfo"){
         const authorId = btn.getAttribute('author-id');
         if(!authorId) return;
@@ -414,7 +454,9 @@ const renderInputs = (inputs, dialog, body) => {
                 text.appendChild(requestInfo);
                 input.setAttribute('required', 'true');
             }
-            input.type = item.type;
+            if(item.type === "phone"){
+                input.type = "tel";
+            }
             input.placeholder = item.placeholder;
             input.setAttribute('inputName', item.inputName)
     

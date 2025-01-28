@@ -98,9 +98,9 @@
       </header>
       <dialog class="rounded-lg relative" id="dialog" aria-modal="true">
         <div class="absolute top-1 right-1 cursor-pointer w-max" dialog-btn="close">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25 7L7 25" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M25 25L7 7" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          <svg class="stroke-black" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25 7L7 25" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M25 25L7 7" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         </div>
         <div class="max-w-96 w-full rounded-lg shadow-md bg-white p-8 flex flex-col gap-8"><a class="flex justify-center" dialogLogo="" href="#">
@@ -154,13 +154,13 @@
           <template dialogInputTemplate="">
             <div class="flex flex-col gap-1">
               <p class="font-Montserrat font-semibold text-black text-base"></p>
-              <input class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white h-10 font-Montserrat font-normal text-base leading-[1.5] text-gray-400 w-full hover:border-primary focus:border-primary focus:transition-timing-focus focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none invalid:border-2 invalid:border-red-400 invalid:text-gray-400" type="text" placeholder=""/>
+              <input class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white h-10 font-Montserrat font-normal text-base leading-[1.5] text-gray-400 w-full hover:border-primary focus:border-primary focus:transition-timing-focus focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none" type="text" placeholder=""/>
             </div>
           </template>
           <template dialogTextareaTemplate="">
             <div class="flex flex-col gap-1">
               <p class="font-Montserrat font-semibold text-black text-base"></p>
-              <textarea class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white w-full min-h-[4.75rem] hover:border-primary focus:transition-timing-focus focus:border-primary focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none invalid:border-2 invalid:border-red-400 invalid:text-gray-400" placeholder=""></textarea>
+              <textarea class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white w-full min-h-[4.75rem] hover:border-primary focus:transition-timing-focus focus:border-primary focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none " placeholder=""></textarea>
             </div>
           </template>
         </div>
@@ -178,16 +178,16 @@
           <div class="container mx-auto flex flex-col gap-8">
             <div class="grid @xs/body:grid-cols-full @xs/body:justify-items-center @lg/body:grid-cols-2 @6xl/body:grid-cols-auto-auto-auto @xs/body:gap-8 @6xl/body:gap-32 justify-center">
               <article class="flex flex-col items-center gap-4 w-64">
-                <svg class=" stroke-black" width="64" height="64" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class=" stroke-black" width="80" height="80" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 10V16" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                   <path d="M21.1962 19L16 16" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                   <path d="M23.021 12.4646H28.021V7.4646" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                   <path d="M23.7782 23.7782C22.2398 25.3166 20.2798 26.3642 18.146 26.7886C16.0122 27.2131 13.8005 26.9952 11.7905 26.1627C9.78049 25.3301 8.06253 23.9202 6.85383 22.1113C5.64514 20.3023 5 18.1756 5 16C5 13.8244 5.64514 11.6977 6.85383 9.88873C8.06253 8.07979 9.78049 6.66989 11.7905 5.83733C13.8005 5.00477 16.0122 4.78693 18.146 5.21137C20.2798 5.6358 22.2398 6.68345 23.7782 8.22183L28.0208 12.4645" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
-                <p class="font-Montserrat font-medium text-black text-xl text-center text-balance">Доступ к материалам 24/7</p>
+                <p class="font-Montserrat font-medium text-black text-2xl text-center text-balance">Доступ к материалам 24/7</p>
               </article>
               <article class="flex flex-col items-center gap-4 w-64">
-                <svg class=" stroke-black" width="64" height="64" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class=" stroke-black" width="80" height="80" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 22.5C18.7614 22.5 21 20.2614 21 17.5C21 14.7386 18.7614 12.5 16 12.5C13.2386 12.5 11 14.7386 11 17.5C11 20.2614 13.2386 22.5 16 22.5Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                   <path d="M24.5 14.5C25.6645 14.499 26.8131 14.7696 27.8547 15.2903C28.8963 15.811 29.8021 16.5674 30.5001 17.4995" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                   <path d="M1.49963 17.4997C2.19769 16.5676 3.10351 15.8111 4.14513 15.2904C5.18675 14.7697 6.33546 14.499 7.49999 14.5" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -195,15 +195,15 @@
                   <path d="M7.49999 14.5C6.74103 14.4999 5.99779 14.2838 5.35703 13.8771C4.71627 13.4703 4.20445 12.8897 3.88134 12.2029C3.55823 11.5162 3.43716 10.7517 3.53227 9.99874C3.62737 9.24577 3.93474 8.5354 4.41846 7.95057C4.90218 7.36575 5.5423 6.93061 6.26407 6.69597C6.98584 6.46133 7.75947 6.43687 8.49462 6.62544C9.22978 6.81402 9.89611 7.20786 10.4158 7.76096C10.9355 8.31406 11.2871 9.0036 11.4296 9.74905" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                   <path d="M20.5703 9.74907C20.7127 9.00349 21.0643 8.31382 21.584 7.7606C22.1038 7.20738 22.7702 6.81344 23.5054 6.62479C24.2406 6.43614 25.0144 6.46056 25.7362 6.69521C26.4581 6.92985 27.0983 7.36504 27.5821 7.94994C28.0659 8.53484 28.3733 9.24531 28.4684 9.99838C28.5635 10.7515 28.4424 11.516 28.1192 12.2029C27.796 12.8897 27.2841 13.4704 26.6432 13.8771C26.0024 14.2839 25.259 14.4999 24.4999 14.4999" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
-                <p class="font-Montserrat font-medium text-black text-xl text-center text-balance">Практикующие эксперты</p>
+                <p class="font-Montserrat font-medium text-black text-2xl text-center text-balance">Практикующие эксперты</p>
               </article>
               <article class="flex flex-col items-center gap-4 w-64">
-                <svg class=" stroke-black" width="64" height="64" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class=" stroke-black" width="80" height="80" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 12L16 4L31 12L16 20L1 12Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                   <path d="M23.5 30V16L16 12" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                   <path d="M27.5 13.8667V20.6818C27.5004 20.8975 27.4307 21.1075 27.3013 21.2802C26.4592 22.4007 22.9066 26.5 16 26.5C9.09339 26.5 5.54077 22.4007 4.69869 21.2802C4.56932 21.1075 4.49959 20.8975 4.5 20.6818V13.8667" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
-                <p class="font-Montserrat font-medium text-black text-xl text-center text-balance">Диплом Гос.образца</p>
+                <p class="font-Montserrat font-medium text-black text-2xl text-center text-balance">Диплом Гос.образца</p>
               </article>
             </div>
           </div>
@@ -322,8 +322,8 @@
                       <p class="font-Montserrat font-semibold text-lg text-black ">Текущие осмотры искусственных сооружений</p>
                     </div>
                     <div class="flex flex-wrap gap-2 justify-between items-center">
-                      <p class="font-Montserrat font-normal text-sm text-secondary">
-                         Удостоверение<br/>профпереподготовки</p>
+                      <p class="font-Montserrat font-normal text-sm text-secondary text-balance">
+                         Удостоверение<br/>повышения<br/>квалификации</p>
                       <p class="font-Montserrat font-medium text-3xl text-primary text-end">40 000 ₽</p>
                     </div>
                   </div><a class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Montserrat font-medium text-base text-center" href="kartochka-programmy.html">Подробнее</a>
@@ -346,8 +346,8 @@
                       <p class="font-Montserrat font-semibold text-lg text-black ">Текущие осмотры искусственных сооружений</p>
                     </div>
                     <div class="flex flex-wrap gap-2 justify-between items-center">
-                      <p class="font-Montserrat font-normal text-sm text-secondary">
-                         Удостоверение<br/>профпереподготовки</p>
+                      <p class="font-Montserrat font-normal text-sm text-secondary text-balance">
+                         Удостоверение<br/>повышения<br/>квалификации</p>
                       <p class="font-Montserrat font-medium text-3xl text-primary text-end">40 000 ₽</p>
                     </div>
                   </div><a class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Montserrat font-medium text-base text-center" href="kartochka-programmy.html">Подробнее</a>
@@ -370,8 +370,8 @@
                       <p class="font-Montserrat font-semibold text-lg text-black ">Текущие осмотры искусственных сооружений</p>
                     </div>
                     <div class="flex flex-wrap gap-2 justify-between items-center">
-                      <p class="font-Montserrat font-normal text-sm text-secondary">
-                         Удостоверение<br/>профпереподготовки</p>
+                      <p class="font-Montserrat font-normal text-sm text-secondary text-balance">
+                         Удостоверение<br/>повышения<br/>квалификации</p>
                       <p class="font-Montserrat font-medium text-3xl text-primary text-end">40 000 ₽</p>
                     </div>
                   </div><a class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Montserrat font-medium text-base text-center" href="kartochka-programmy.html">Подробнее</a>
@@ -394,8 +394,8 @@
                       <p class="font-Montserrat font-semibold text-lg text-black ">Текущие осмотры искусственных сооружений</p>
                     </div>
                     <div class="flex flex-wrap gap-2 justify-between items-center">
-                      <p class="font-Montserrat font-normal text-sm text-secondary">
-                         Удостоверение<br/>профпереподготовки</p>
+                      <p class="font-Montserrat font-normal text-sm text-secondary text-balance">
+                         Удостоверение<br/>повышения<br/>квалификации</p>
                       <p class="font-Montserrat font-medium text-3xl text-primary text-end">40 000 ₽</p>
                     </div>
                   </div><a class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Montserrat font-medium text-base text-center" href="kartochka-programmy.html">Подробнее</a>
@@ -418,8 +418,8 @@
                       <p class="font-Montserrat font-semibold text-lg text-black ">Текущие осмотры искусственных сооружений</p>
                     </div>
                     <div class="flex flex-wrap gap-2 justify-between items-center">
-                      <p class="font-Montserrat font-normal text-sm text-secondary">
-                         Удостоверение<br/>профпереподготовки</p>
+                      <p class="font-Montserrat font-normal text-sm text-secondary text-balance">
+                         Удостоверение<br/>повышения<br/>квалификации</p>
                       <p class="font-Montserrat font-medium text-3xl text-primary text-end">40 000 ₽</p>
                     </div>
                   </div><a class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Montserrat font-medium text-base text-center" href="kartochka-programmy.html">Подробнее</a>
@@ -442,8 +442,8 @@
                       <p class="font-Montserrat font-semibold text-lg text-black ">Текущие осмотры искусственных сооружений</p>
                     </div>
                     <div class="flex flex-wrap gap-2 justify-between items-center">
-                      <p class="font-Montserrat font-normal text-sm text-secondary">
-                         Удостоверение<br/>профпереподготовки</p>
+                      <p class="font-Montserrat font-normal text-sm text-secondary text-balance">
+                         Удостоверение<br/>повышения<br/>квалификации</p>
                       <p class="font-Montserrat font-medium text-3xl text-primary text-end">40 000 ₽</p>
                     </div>
                   </div><a class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Montserrat font-medium text-base text-center" href="kartochka-programmy.html">Подробнее</a>
@@ -466,8 +466,8 @@
                       <p class="font-Montserrat font-semibold text-lg text-black ">Текущие осмотры искусственных сооружений</p>
                     </div>
                     <div class="flex flex-wrap gap-2 justify-between items-center">
-                      <p class="font-Montserrat font-normal text-sm text-secondary">
-                         Удостоверение<br/>профпереподготовки</p>
+                      <p class="font-Montserrat font-normal text-sm text-secondary text-balance">
+                         Удостоверение<br/>повышения<br/>квалификации</p>
                       <p class="font-Montserrat font-medium text-3xl text-primary text-end">40 000 ₽</p>
                     </div>
                   </div><a class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Montserrat font-medium text-base text-center" href="kartochka-programmy.html">Подробнее</a>
@@ -490,8 +490,8 @@
                       <p class="font-Montserrat font-semibold text-lg text-black ">Текущие осмотры искусственных сооружений</p>
                     </div>
                     <div class="flex flex-wrap gap-2 justify-between items-center">
-                      <p class="font-Montserrat font-normal text-sm text-secondary">
-                         Удостоверение<br/>профпереподготовки</p>
+                      <p class="font-Montserrat font-normal text-sm text-secondary text-balance">
+                         Удостоверение<br/>повышения<br/>квалификации</p>
                       <p class="font-Montserrat font-medium text-3xl text-primary text-end">40 000 ₽</p>
                     </div>
                   </div><a class="w-full p-4 rounded-lg bg-gradient-orange text-white font-Montserrat font-medium text-base text-center" href="kartochka-programmy.html">Подробнее</a>
@@ -514,8 +514,8 @@
             </div>
           </div>
           <div class="container mx-auto">
-            <div class="@container/card rounded-lg shadow-md py-4 px-8 flex flex-col gap-6 bg-lightGray">
-              <p class="font-Montserrat font-semibold @xs/card:text-2xl @6xl/card:text-4xl text-black">Получить консультацию</p>
+            <div class="@container/card rounded-lg shadow-md py-4 px-8 flex flex-col gap-6 bg-primary @xs/body:w-full @6xl/body:w-[85%]   @6xl/body:mx-auto">
+              <p class="font-Montserrat font-semibold @xs/card:text-2xl @6xl/card:text-4xl text-white">Получить консультацию</p>
               <div class="grid @xs/card:grid-cols-full @6xl/card:grid-cols-4 gap-4">
                 <div class="relative">
                   <input class="peer w-full border border-gray-300 rounded-md py-2 px-3 font-montserrat font-semibold text-gray-600 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary transition duration-200 ease-in-out" id="Name" type="text" name="Name" required>
@@ -529,11 +529,11 @@
                   <input class="peer w-full border border-gray-300 rounded-md py-2 px-3 font-montserrat font-semibold text-gray-600 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary transition duration-200 ease-in-out" id="Email" type="text" name="Email" required>
                   <label class=" absolute top-[0.675rem] peer-focus:-top-[0.675rem] peer-valid:-top-[0.675rem] bg-white px-1 block font-Montserrat font-normal text-gray-400 text-base peer-focus:text-sm peer-valid:text-sm leading-[1] left-2 transition-all duration-200 ease-in-out rounded-full" for="Email">Почта</label>
                 </div>
-                <button class=" bg-gradient-orange rounded-lg p-1 text-white" type="button">
+                <button class=" bg-white shadow-lg rounded-lg p-1 text-black" type="button">
                    Получить консультацию</button>
               </div>
-              <p class="font-Montserrat font-normal text-base text-black ml-auto">
-                   Продолжая, вы соглашаетесь с <a class="font-Montserrat font-normal text-primary hover:text-primaryHover text-base" href="#">Политикой конфиденциальности</a></p>
+              <p class="font-Montserrat font-normal text-base text-white ml-auto">
+                   Продолжая, вы соглашаетесь с <a class="font-Montserrat font-normal text-black hover:text-primaryHover text-base" href="#">Политикой конфиденциальности</a></p>
             </div>
           </div>
           <div class="bg-lightGray py-16">
@@ -711,6 +711,7 @@
     </div>
     <script src="./local/templates/tcavtodor/libs/jquery/jquery-3.7.1.min.js"></script>
     <script src="./local/templates/tcavtodor/libs/swiffy-slider-1.6.0/swiffy-slider.min.js"></script>
+    <script src="./local/templates/tcavtodor/libs/imask/imask.js"></script>
     <script src="./local/templates/tcavtodor/pages/slushateljam/js/index.js" type="module"></script>
   </body>
 </html>

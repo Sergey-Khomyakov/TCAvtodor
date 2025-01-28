@@ -7,11 +7,8 @@ include ../../../../../pug/ui/_cardDocs.pug
 block scripts
     - var path = "./local/templates/tcavtodor"
     script(src=`${path}/libs/jquery/jquery-3.7.1.min.js`)
-    script(src=`${path}/libs/gsap/gsap.min.js`)
-    script(src=`${path}/libs/gsap/ScrollTrigger.min.js`)
-    script(src=`${path}/libs/gsap/lenis.min.js`)
-    script(src=`${path}/libs/gsap/imagesloaded.pkgd.min.js`)
     script(src=`${path}/libs/jquery/jquery-3.7.1.min.js`)
+    script(src=`${path}/libs/imask/imask.js`)
     script(src=`${path}/pages/partneram/js/index.js`, type="module")
 
 
@@ -32,109 +29,39 @@ block content
                     div(class="flex flex-col gap-6")
                         p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black") Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odio fugit, ut minus aspernatur modi ab aliquid repellat animi aperiam ipsa pariatur illo, laboriosam quod rem eveniet et facilis culpa.
             div(class="container mx-auto flex flex-col gap-8")
-                h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Как строиться дистрибьютерская сетка
-                div(class="w-full grid gap-4 @xs/body:grid-cols-full @md/body:grid-cols-2 @4xl/body:grid-cols-full items-center @4xl/body:aspect-16-9 relative justify-items-center overflow-hidden")
-                    div(class="@xs/body:w-full  @md/body:col-span-2 @4xl/body:aspect-1-1 @4xl/body:w-max flex flex-col items-center relative justify-center p-4 @4xl/body:border border-primary rounded-full")
-                        p(class="font-Montserrat font-semibold text-2xl text-center text-black") 
-                            | Учебный центр ООО
-                            br(class="@xs/body:hidden @4xl/body:block")
-                            | "Автодор-Инжиниринг"
-                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-0")
-                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[0.5s]")
-                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[1s]")
-                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[1.5s]")
-                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[2s]")
-                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[2.5s]")
-                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[3s]")
-                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[3.5s]")
-                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[4s]")
-                        div(class=" @xs/body:hidden @4xl/body:block absolute w-full h-full left-0 top-0 rounded-full border border-primary animate-custome-pulse animation-delay-[4.5s]")
-                    p(class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-0 left-[46.5%] text-center @xs/body:text-sm @6xl/body:text-base") 
-                        | Приволжский 
-                        br(class="@xs/body:hidden @4xl/body:block")
-                        | Федеральный 
-                        br(class="@xs/body:hidden @4xl/body:block")
-                        |Округ
-                    p(class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[10%] left-[70%] text-center @xs/body:text-sm @6xl/body:text-base") 
-                        | Дальневост. 
-                        br(class="@xs/body:hidden @4xl/body:block")
-                        | Федеральный 
-                        br(class="@xs/body:hidden @4xl/body:block")
-                        |Округ
-                    p(class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[45.5%] left-[80%] text-center @xs/body:text-sm @6xl/body:text-base") 
-                        | Сибирский 
-                        br(class="@xs/body:hidden @4xl/body:block")
-                        | Федеральный 
-                        br(class="@xs/body:hidden @4xl/body:block")
-                        |Округ
-                    p(class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[81.5%] left-[70%] text-center @xs/body:text-sm @6xl/body:text-base") 
-                        | Уральский 
-                        br(class="@xs/body:hidden @4xl/body:block")
-                        | Федеральный 
-                        br(class="@xs/body:hidden @4xl/body:block")
-                        |Округ
-                    p(class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[90%] left-[45%] text-center @xs/body:text-sm @6xl/body:text-base") 
-                        | Северо-Кавказский 
-                        br(class="@xs/body:hidden @4xl/body:block")
-                        | Федеральный 
-                        br(class="@xs/body:hidden @4xl/body:block")
-                        |Округ
-                    p(class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[82%] left-[23%] text-center @xs/body:text-sm @6xl/body:text-base") 
-                        | Северо-Западный 
-                        br(class="@xs/body:hidden @4xl/body:block")
-                        | Федеральный 
-                        br(class="@xs/body:hidden @4xl/body:block")
-                        |Округ
-                    p(class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[46%] left-[15%] text-center @xs/body:text-sm @6xl/body:text-base") 
-                        | Центральный 
-                        br(class="@xs/body:hidden @4xl/body:block")
-                        | Федеральный 
-                        br(class="@xs/body:hidden @4xl/body:block")
-                        |Округ
-                    p(class=" @xs/body:w-full @4xl/body:w-auto @xs/body:border @xs/body:rounded-lg @xs/body:border-black @4xl/body:border-none @xs/body:p-4 @4xl/body:p-0 @4xl/body:absolute w-max font-Montserrat font-medium top-[10%] left-[24%] text-center @xs/body:text-sm @6xl/body:text-base") 
-                        | Южный 
-                        br(class="@xs/body:hidden @4xl/body:block")
-                        | Федеральный 
-                        br(class="@xs/body:hidden @4xl/body:block")
-                        |Округ
-            div(class="container mx-auto flex flex-col gap-8")
                 h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Этапы сотрудничества
-                div(class="flex flex-col gap-4 justify-center items-center")
-                    article(class="flex gap-8 items-center relative w-full max-w-2xl")
-                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class="shrink-0")
+                div(class="flex @xs/body:flex-col @4xl/body:flex-row gap-3 justify-center @6xl/body:zoom-150")
+                    article(class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative")
+                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class=" drop-shadow-lg")
                             g(class="layer", id="svg_3")
-                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
+                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="white", id="svg_1", stroke="#000000")
                                 text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 1
-                        div(class="flex flex-col gap-2")
-                            p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance") Отправляете заявку на партнерство
-                    article(class="flex gap-8 items-center relative w-full max-w-2xl")
-                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class="shrink-0")
+                        p(class="font-Montserrat font-medium text-sm text-black w-36 text-balance pl-2") Отправить заявку на партнерство
+                    article(class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative")
+                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class=" drop-shadow-lg")
                             g(class="layer", id="svg_3")
-                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
+                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="white", id="svg_1", stroke="#000000")
                                 text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 2
-                        div(class="flex flex-col gap-2")
-                            p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance") Заключаем договор
-                    article(class="flex gap-8 items-center relative w-full max-w-2xl")
-                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class="shrink-0")
+                        p(class="font-Montserrat font-medium text-sm text-black w-36 text-balance pl-2") Заключить договор
+                    article(class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative")
+                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class=" drop-shadow-lg")
                             g(class="layer", id="svg_3")
-                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
+                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="white", id="svg_1", stroke="#000000")
                                 text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 3
-                        div(class="flex flex-col gap-2")
-                            p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance") Предоставляем доступ к обучающей платформе
-                    article(class="flex gap-8 items-center relative w-full max-w-2xl")
-                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class="shrink-0")
+                        p(class="font-Montserrat font-medium text-sm text-black w-36 text-balance pl-2") Предоставляем доступ к обучающей платформе
+                    article(class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative")
+                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class=" drop-shadow-lg")
                             g(class="layer", id="svg_3")
-                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
+                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="white", id="svg_1", stroke="#000000")
                                 text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 4
-                        div(class="flex flex-col gap-2")
-                            p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance") Взаиморасчет
-                    article(class="flex gap-8 items-center relative w-full max-w-2xl")
-                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class="shrink-0")
+                        p(class="font-Montserrat font-medium text-sm text-black w-36 text-balance pl-2") Взаиморасчет
+                    article(class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative")
+                        svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class=" drop-shadow-lg")
                             g(class="layer", id="svg_3")
-                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
+                                path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="white", id="svg_1", stroke="#000000")
                                 text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 5
-                        div(class="flex flex-col gap-2")
-                            p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance") Выдача Удостоверения о повышении квалификации Представителем
+                        p(class="font-Montserrat font-medium text-sm text-black w-36 text-balance pl-2") Выдача Удостоверение о повышении квалификации Представителем
+                button(dialog-btn="bid", type="button", class="bg-gradient-orange text-white rounded-lg p-4 px-8 text-xl w-max mx-auto") Оставить заявку
             div(class="container mx-auto flex flex-col gap-8")
                 h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Выгоды для партнеров работы с УЦ
                 div(class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8")

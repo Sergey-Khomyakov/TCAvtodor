@@ -6,6 +6,7 @@ include ../../../../../pug/ui/_cardDocs.pug
 block scripts
     - var path = "./local/templates/tcavtodor"
     script(src=`${path}/libs/jquery/jquery-3.7.1.min.js`)
+    script(src=`${path}/libs/imask/imask.js`)
     script(src=`${path}/pages/ob-uchebnom-centre/js/index.js`, type="module")
 
 
@@ -53,7 +54,7 @@ block content
                                     p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black") Продвижение образовательных услуг Учебного центра в информационном онлайн пространстве, а также на профильных форумах и конференциях дорожной отрасли
                     img(src=`${path}/img/stub.jpg`, class="rounded-lg w-full h-full aspect-16-9 object-cover")
             div(class="container mx-auto flex flex-col")
-                div(class="rounded-lg grid grid-cols-2 gap-8")
+                div(class="rounded-lg grid @xl/body:grid-cols-full @6xl/body:grid-cols-2 gap-8 bg-lightGray p-4")
                     -
                         var items = [
                             {

@@ -97,17 +97,17 @@ const getOption = (option) => {
 }
 
 const renderTariffInfo = (tariffsBody, item) => {
-    const tariffsOptions = tariffsBody.querySelector('[tariffsOptions]');
+    //const tariffsOptions = tariffsBody.querySelector('[tariffsOptions]');
     const tariffsPrise = tariffsBody.querySelector('[tariffsPrise]');
     const tariffsPriseDefoult = tariffsBody.querySelector('[tariffsPriseDefoult]');
 
     // remove old tariffs info
-    tariffsOptions.innerHTML = "";
+    //tariffsOptions.innerHTML = "";
 
-    item.options.forEach(option => {
-        const optionElement = getOption(option);
-        tariffsOptions.appendChild(optionElement);
-    });
+    // item.options.forEach(option => {
+    //     const optionElement = getOption(option);
+    //     tariffsOptions.appendChild(optionElement);
+    // });
 
     if(item.discounts > 0){
         tariffsPrise.textContent = (item.price - item.discounts) + " ₽"

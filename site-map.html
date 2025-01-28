@@ -98,9 +98,9 @@
       </header>
       <dialog class="rounded-lg relative" id="dialog" aria-modal="true">
         <div class="absolute top-1 right-1 cursor-pointer w-max" dialog-btn="close">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25 7L7 25" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M25 25L7 7" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          <svg class="stroke-black" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25 7L7 25" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M25 25L7 7" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         </div>
         <div class="max-w-96 w-full rounded-lg shadow-md bg-white p-8 flex flex-col gap-8"><a class="flex justify-center" dialogLogo="" href="#">
@@ -154,13 +154,13 @@
           <template dialogInputTemplate="">
             <div class="flex flex-col gap-1">
               <p class="font-Montserrat font-semibold text-black text-base"></p>
-              <input class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white h-10 font-Montserrat font-normal text-base leading-[1.5] text-gray-400 w-full hover:border-primary focus:border-primary focus:transition-timing-focus focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none invalid:border-2 invalid:border-red-400 invalid:text-gray-400" type="text" placeholder=""/>
+              <input class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white h-10 font-Montserrat font-normal text-base leading-[1.5] text-gray-400 w-full hover:border-primary focus:border-primary focus:transition-timing-focus focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none" type="text" placeholder=""/>
             </div>
           </template>
           <template dialogTextareaTemplate="">
             <div class="flex flex-col gap-1">
               <p class="font-Montserrat font-semibold text-black text-base"></p>
-              <textarea class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white w-full min-h-[4.75rem] hover:border-primary focus:transition-timing-focus focus:border-primary focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none invalid:border-2 invalid:border-red-400 invalid:text-gray-400" placeholder=""></textarea>
+              <textarea class="transition transition-timing-productive duration-300 border border-gray-400 rounded-lg py-2 px-3 shadow-custom-1 bg-white w-full min-h-[4.75rem] hover:border-primary focus:transition-timing-focus focus:border-primary focus:shadow-custom-8 disabled:bg-[#f6f6f7] disabled:text-gray-400 disabled:border-gray-400 disabled:shadow-none " placeholder=""></textarea>
             </div>
           </template>
         </div>
@@ -429,6 +429,7 @@
     </div>
     <script src="./local/templates/tcavtodor/libs/jquery/jquery-3.7.1.min.js"></script>
     <script src="./local/templates/tcavtodor/libs/swiffy-slider-1.6.0/swiffy-slider.min.js"></script>
+    <script src="./local/templates/tcavtodor/libs/imask/imask.js"></script>
     <script src="./local/templates/tcavtodor/pages/slushateljam/js/index.js" type="module"></script>
   </body>
 </html>
