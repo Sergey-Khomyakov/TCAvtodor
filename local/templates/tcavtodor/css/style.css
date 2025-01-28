@@ -4075,6 +4075,10 @@ body {
     height: 16rem;
   }
 
+  .\@xs\/body\:w-\[70rem\] {
+    width: 70rem;
+  }
+
   .\@xs\/body\:w-full {
     width: 100%;
   }
@@ -4082,22 +4086,6 @@ body {
   .\@xs\/body\:w-max {
     width: -moz-max-content;
     width: max-content;
-  }
-
-  .\@xs\/body\:w-\[20rem\] {
-    width: 20rem;
-  }
-
-  .\@xs\/body\:w-\[48rem\] {
-    width: 48rem;
-  }
-
-  .\@xs\/body\:w-\[80rem\] {
-    width: 80rem;
-  }
-
-  .\@xs\/body\:w-\[70rem\] {
-    width: 70rem;
   }
 
   .\@xs\/body\:grid-cols-full {
