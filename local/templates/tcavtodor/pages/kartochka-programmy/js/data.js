@@ -1,4 +1,4 @@
-export const tariffs = [
+const tariffs = [
     {
         id: 1,
         name: "base",
@@ -60,5 +60,3 @@ export const tariffs = [
         ]
     },
 ]
-
-export default { tariffs };

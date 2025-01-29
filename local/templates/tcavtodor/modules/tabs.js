@@ -1,4 +1,4 @@
-export const tabs = () => { 
+document.addEventListener('DOMContentLoaded', function(){
     const tabs = document.querySelectorAll('[tab]');
 
     if(tabs.length === 0) return;
@@ -19,5 +19,4 @@ export const tabs = () => {
             tabContent.classList.add('grid');
         })
     });
- };
-export default tabs;
+ });

@@ -1,6 +1,8 @@
-export const dedlineTimer = () => { 
+
+document.addEventListener('DOMContentLoaded', function(){
+
     setInterval(updateClock, 1000)
- };
+ });
 
 const updateClock = () => {
     const deadline = document.querySelectorAll('[dedlineTimer]'); // Получаем все элементы с атрибутом dedlineTimer
@@ -56,5 +58,3 @@ const declensionNum = (number, titles) => {
     }
     return `${titles[2]}`; // Для остальных случаев (0, 5-9)
 }
-
-export default dedlineTimer;

@@ -12,7 +12,11 @@ block scripts
     script(src=`${path}/libs/jquery/jquery-3.7.1.min.js`)
     script(src=`${path}/libs/swiffy-slider-1.6.0/swiffy-slider.min.js`)
     script(src=`${path}/libs/imask/imask.js`)
-    script(src=`${path}/pages/kartochka-programmy/js/index.js`, type="module")
+    script(src=`${path}/modules/dialogMeneger.js`)
+    script(src=`${path}/pages/kartochka-programmy/js/data.js`)
+    script(src=`${path}/modules/dialogMeneger.js`)
+    script(src=`${path}/modules/tabs.js`)
+    script(src=`${path}/pages/kartochka-programmy/js/index.js`)
 
 
 block head
@@ -25,8 +29,8 @@ block content
     - var authorization = true;
     +header(authorization)
     main(class="@container/body")
-        div(class="flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32 @xs/body:px-4 @8xl/body:px-0 after:contents-[''] after:absolute after:left-0 after:right-0 after:top-0 after:bg-lightGray after:h-full after:w-[calc=(100%+1rem)] after:container after:-z-10 after:mx-auto")
-            div(class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6")
+        div(class="flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32 @xs/body:px-4 @8xl/body:px-0")
+            div(class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6 bg-lightGray rounded-b-lg py-8")
                 -
                     var items = [
                         {
@@ -53,14 +57,14 @@ block content
                     div(tariffsBlock="", class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr @xs/body:gap-4 @6xl/body:gap-8")
                         div(tariffsBtns="", class="flex flex-wrap @xs/body:flex-row @6xl/body:flex-col gap-4 min-w-48")
                         div(class="flex flex-col gap-4 items-center")
-                            div(tariffsBody="", class="bg-lightGray rounded-lg p-6 flex flex-col gap-4 w-full")
+                            div(tariffsBody="", class="bg-white rounded-lg p-6 flex flex-col gap-4 w-full")
                                 div(class="flex flex-col gap-4 mt-auto")
                                     div(class="flex flex-col justify-between gap-2")
                                         div(class="relative flex gap-2 items-start justify-end w-full")
                                             p(tariffsPrise="", class="font-Montserrat font-semibold text-black text-2xl text-end") 0
                                             p(tariffsPriseDefoult="", class="font-Montserrat font-semibold text-black text-sm text-end align-super relative after:content-[''] after:absolute after:top-1/2 after:left-0 after:right-0 after:w-full after:bg-red-600 after:h-[.125rem] after:-rotate-12") 0
                                     button(type="button", class="rounded-lg bg-gradient-orange text-white font-Montserrat font-normal text-base text-center p-2 w-full") Оформить
-                            a(href="#", class="font-Montserrat font-medium text-sm text-secondary hover:text-primaryHover flex gap-1 items-center group" ) 
+                            a(href="#", class="font-Montserrat font-medium text-sm text-secondary hover:text-primaryHover flex gap-1 items-center group bg-white p-2 rounded-lg" ) 
                                 | Для юр.лиц спец.предложения 
                                 svg(width="18", height="18", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg" class="stroke-secondary group-hover:stroke-primaryHover")
                                     path(d="M8 24L24 8", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
@@ -136,7 +140,7 @@ block content
                         div(class="flex flex-col gap-4")
                             p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg") Получение Удостоверения о повышении квалификации при предоставлении списка документов.
                             p(class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg") Получение Сертификата о прохождении Программы без предоставления документов об обучении.
-            div(class="container mx-auto flex flex-col gap-8 @6xl/body:px-6")
+            div(class="container mx-auto flex flex-col gap-8 @6xl/body:px-6 bg-lightGray rounded-lg py-8  ")
                 h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Выберите тариф обучения
                 div(class="@xs/body:overflow-x-scroll @6xl/body:overflow-auto")
                     table(class="@xs/body:w-[70rem] @6xl/body:w-full")
@@ -472,7 +476,6 @@ block content
                     button(class="slider-nav slider-nav-next", type="button")
                         svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
                             path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-
-            div(class="container mx-auto")
+            div(class="container mx-auto bg-lightGray rounded-lg py-8")
                 include ../../../../../pug/Components/_consultationCard.pug
     include ../../../../../pug/layout/_footer.pug

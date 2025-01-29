@@ -1,4 +1,4 @@
-export const accordion = () => { 
+document.addEventListener('DOMContentLoaded', function(){
     $('div[accordion]').on('click', function(){
         let $parent = $(this);
         let $body = $parent.find('div[accordion__body]');
@@ -27,5 +27,4 @@ export const accordion = () => {
             icon.removeClass('rotate-180');
         }
     })
- };
-export default accordion;
+ });

@@ -1,6 +1,5 @@
 
-import { author } from '../pages/kartochka-napravlenija/js/data.mjs';
-export const dialogMeneger = () => { 
+document.addEventListener('DOMContentLoaded', function(){
     const btns = document.querySelectorAll('[dialog-btn]:not([dialog-btn="close"])');
     const dialog = document.querySelector('#dialog');
     const close = document.querySelector('[dialog-btn="close"]');
@@ -49,7 +48,7 @@ export const dialogMeneger = () => {
     window.addEventListener('scroll', () => {
         document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
     });
- };
+  });
 
 const renderDialogForm = (btn, dialog) => {
     const dialogBody = dialog.querySelector('[dialogBody]');
@@ -464,5 +463,3 @@ const renderInputs = (inputs, dialog, body) => {
         }
     })
 }
-
-export default dialogMeneger;
