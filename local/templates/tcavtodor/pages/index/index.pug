@@ -22,15 +22,15 @@ block head
 block content
     - var authorization = false;
     +header(authorization)
-    main(class="@container/body overflow-hidden ")
+    main(class="@container/body overflow-hidden relative")
         div(class="@xs/body:px-4 @8xl:px-0 flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32")
-            div(class="container mx-auto flex flex-col gap-8 pt-10")
+            div(class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6 bg-lightGray rounded-b-lg py-8")
                 div(class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8")
                     div(class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr @6xl/body:grid-cols-full gap-4")
                         div(class="flex flex-col gap-4")
                             h1(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-5xl text-black @xs/body:text-center @6xl/body:text-start text-balance") Из опыта в знания
                             p(class="font-Montserrat font-medium text-base text-black @xs/body:text-center @6xl/body:text-start") Учебный центр ООО "Автодор-Инжиниринг"
-                        div#slider1(class="swiffy-slider slider-indicators-round slider-nav-round slider-nav-noloop w-full h-full rounded-lg overflow-hidden")
+                        div#slider1(class="swiffy-slider slider-indicators-round slider-nav-visible slider-nav-round slider-custom-2 slider-nav-noloop w-full h-full rounded-lg overflow-hidden")
                             div(class="slider-container")
                                 div(class="w-full flex flex-col shadow-md @xs/body:h-[16rem] @6xl/body:h-[23.5rem] relative")
                                     p(class="font-Montserrat font-medium text-base text-black p-4 bg-white/80 absolute top-4 left-4 w-1/2 rounded-lg") 4 000 партнёров уже предложили практику и сделали офер лучшим студентам
@@ -48,8 +48,14 @@ block content
                                 button.active
                                 button
                                 button
+                            button(class="slider-nav", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M20 26L10 16L20 6", stroke="white", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            button(class="slider-nav slider-nav-next", type="button")
+                                svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M12 6L22 16L12 26", stroke="white", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                     div(class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-2 @5xl/body:grid-cols-3 gap-4")
-                        div(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden")
+                        div(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden bg-white")
                             svg(width="128", height="128", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4")
                                 path(d="M4 8V18", stroke="#fd7e14", stroke-width="1", stroke-linecap="round", stroke-linejoin="round")
                                 path(d="M6.77899 26.9999C7.77833 25.4648 9.1451 24.2035 10.7553 23.3304C12.3655 22.4573 14.1683 22 16 22C17.8317 22 19.6344 22.4573 21.2446 23.3304C22.8549 24.2035 24.2216 25.4648 25.221 26.9999", stroke="#fd7e14", stroke-width="1", stroke-linecap="round", stroke-linejoin="round")
@@ -58,7 +64,7 @@ block content
                             div(class="flex flex-wrap gap-2 items-center")
                                 p(class="font-Montserrat font-medium text-black text-xl") Слушателям
                             a(class="absolute top-0 left-0 inset-0", href="slushateljam.html", target="_blank")
-                        div(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden")
+                        div(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden bg-white")
                             svg(width="128", height="128", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4")
                                 path(d="M16 22.5C18.7614 22.5 21 20.2614 21 17.5C21 14.7386 18.7614 12.5 16 12.5C13.2386 12.5 11 14.7386 11 17.5C11 20.2614 13.2386 22.5 16 22.5Z", stroke="#fd7e14", stroke-width="1", stroke-linecap="round", stroke-linejoin="round")
                                 path(d="M24.5 14.5C25.6645 14.499 26.8131 14.7696 27.8547 15.2903C28.8963 15.811 29.8021 16.5674 30.5001 17.4995", stroke="#fd7e14", stroke-width="1", stroke-linecap="round", stroke-linejoin="round")
@@ -69,7 +75,7 @@ block content
                             div(class="flex flex-wrap gap-2 items-center")
                                 p(class="font-Montserrat font-medium text-black text-xl") Для юр.лиц.
                             a(class="absolute top-0 left-0 inset-0", href="dlja-jur-lic.html", target="_blank")
-                        div(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden")
+                        div(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden bg-white")
                             svg(width="128", height="128", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4")
                                 path(d="M27.001 9H5.00098C4.44869 9 4.00098 9.44772 4.00098 10V26C4.00098 26.5523 4.44869 27 5.00098 27H27.001C27.5533 27 28.001 26.5523 28.001 26V10C28.001 9.44772 27.5533 9 27.001 9Z", stroke="#fd7e14", stroke-width="1", stroke-linecap="round", stroke-linejoin="round")
                                 path(d="M21 9V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H13C12.4696 5 11.9609 5.21071 11.5858 5.58579C11.2107 5.96086 11 6.46957 11 7V9", stroke="#fd7e14", stroke-width="1", stroke-linecap="round", stroke-linejoin="round")
@@ -79,7 +85,7 @@ block content
                                 p(class="font-Montserrat font-medium text-black text-xl") Страть Партнером 
                             a(class="absolute top-0 left-0 inset-0", href="partneram.html", target="_blank")
                         div(class="contents @6xl/body:grid grid-cols-2 gap-4 @6xl/body:col-span-3")
-                            div(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer overflow-hidden")
+                            div(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer overflow-hidden bg-white")
                                 div(class="flex flex-wrap gap-2 items-center")
                                     p(class="font-Montserrat font-medium text-black text-xl") 3D Практикум
                                 svg(width="128", height="128", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg" class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4")
@@ -87,7 +93,7 @@ block content
                                     path(d="M27.8621 9.32827L16.1186 16L4.1385 9.32715", stroke="#fd7e14", stroke-width="1", stroke-linecap="round", stroke-linejoin="round")
                                     path(d="M16.1186 16L16.0013 29.3527", stroke="#fd7e14", stroke-width="1", stroke-linecap="round", stroke-linejoin="round")
                                 a(class="absolute top-0 left-0 inset-0", href="3d-praktikum.html", target="_blank")
-                            div(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer overflow-hidden")
+                            div(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer overflow-hidden bg-white")
                                 svg(width="128", height="128", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4")
                                     path(d="M3.00024 12H29.0002L16.0002 4L3.00024 12Z", stroke="#fd7e14", stroke-width="1", stroke-linecap="round", stroke-linejoin="round")
                                     path(d="M7.00031 12V22", stroke="#fd7e14", stroke-width="1", stroke-linecap="round", stroke-linejoin="round")
@@ -99,7 +105,7 @@ block content
                                 div(class="flex flex-wrap gap-2 items-center")
                                     p(class="font-Montserrat font-medium text-black text-xl") Удостоверение гос.образца
                                 a(class="absolute top-0 left-0 inset-0", href="udostoverenie-gos.obrazca.html", target="_blank")
-                        div(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative @6xl/body:col-span-3 cursor-pointer overflow-hidden")
+                        div(class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative @6xl/body:col-span-3 cursor-pointer overflow-hidden bg-white")
                             svg(width="128", height="128", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg", class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4")
                                 path(d="M19 14H24", stroke="#fd7e14", stroke-width="1", stroke-linecap="round", stroke-linejoin="round")
                                 path(d="M19 18H24", stroke="#fd7e14", stroke-width="1", stroke-linecap="round", stroke-linejoin="round")
@@ -110,7 +116,7 @@ block content
                                 p(class="font-Montserrat font-medium text-black text-xl") Наши эксперты
                             a(class="absolute top-0 left-0 inset-0", href="jeksperty.html", target="_blank")
                 div(class="@xs/body:pb-2 @5xl/body:pb-0 @xs/body:overflow-x-scroll @5xl/body:overflow-x-auto")
-                    div(class="flex @xs/body:w-max @5xl/body:w-auto @5xl/body:grid @5xl/body:grid-cols-3 gap-4 pb-4")
+                    div(class="flex @xs/body:w-max @5xl/body:w-auto @5xl/body:grid @5xl/body:grid-cols-3 @5xl/body:auto-rows-fr gap-4 pb-4")
                         article(class="border border-transparent hover:border-secondary bg-primary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center")
                             p(class="font-Montserrat font-medium text-white @xs/body:text-base @6xl/body:text-lg text-balance") Содержание искусственных сооружений
                             div(class="w-max flex items-center gap-2 p-2 bg-white rounded-lg shadow-md")
@@ -183,7 +189,7 @@ block content
                                     path(d="M5 16H27", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                                     path(d="M18 7L27 16L18 25", stroke="", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                             a(class="absolute top-0 left-0 inset-0", href="kartochka-napravlenija.html")
-            div(class="container mx-auto flex flex-col gap-8")
+            div(class="container mx-auto flex flex-col gap-8 @6xl/body:px-6")
                 h2(class="font-Montserrat font-semibold  @xs/body:text-2xl @6xl/body:text-4xl text-black") Наши популярные программы
                 div(class="swiffy-slider slider-nav-outside slider-nav-visible slider-indicators-round slider-indicators-outside slider-nav-round slider-nav-noloop slider-custom-1 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark")
                     div(class="slider-container pb-1")
@@ -265,7 +271,8 @@ block content
                         svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
                             path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
                 button(dialog-btn="consultation", type="button", class="bg-gradient-orange text-white rounded-lg py-4 px-20 text-xl w-max mx-auto") Получить консультацию
-            div(class="container mx-auto flex flex-col gap-8")
+
+            div(class="container mx-auto  flex flex-col gap-8 @6xl/body:px-6")
                 h2(class="font-Montserrat font-semibold  @xs/body:text-2xl @6xl/body:text-4xl text-black text-center text-pr") Этапы обучения
                 div(class="flex @xs/body:flex-col @4xl/body:flex-row gap-3 justify-center @6xl/body:zoom-150")
                     article(class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative")
@@ -298,8 +305,8 @@ block content
                                 path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="white", id="svg_1", stroke="#000000")
                                 text(fill="#fd7e14", font-size="45.22", id="svg_2", text-anchor="middle", transform="matrix(1.19755 0 0 1 -0.460285 0)", x="65.5", xml:space="preserve", y="75.59", class="font-Montserrat font-medium") 5
                         p(class="font-Montserrat font-medium text-sm text-black w-36 text-balance pl-2") Получаете удостоверение гос. образца
-            div(class="bg-lightGray py-16")
-                div(class="container mx-auto flex flex-col gap-8")
+            div(class="container mx-auto py-16 @6xl/body:px-6")
+                div(class="flex flex-col gap-8")
                     div(class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8")
                         div(class="flex flex-col gap-6")
                             h2(class="font-Montserrat font-semibold @xs/body:text-2xl @6xl/body:text-4xl text-black") Удостоверение гос.образца
@@ -313,16 +320,16 @@ block content
                                 li(class=" marker:text-primary")
                                     p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black") Внесение в Реестр
                         img(src=`${path}/img/other/GosDoc.png`, class="rounded-lg w-full h-full aspect-16-9 object-cover")
-            div(class="container mx-auto flex flex-col gap-8")
+            div(class="container mx-auto  flex flex-col gap-8 @6xl/body:px-6")
                 div(class="grid  @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8")
                     img(src=`${path}/img/other/teacher.png`, class="@xs/body:order-2 @6xl/body:-order-none rounded-lg w-full h-full aspect-16-9 object-cover")
                     div(class="@xs/body:contents @6xl/body:flex flex-col gap-6")
                         h2(class="@xs/body:order-1 @6xl/body:-order-none font-Montserrat font-semibold  @xs/body:text-2xl @6xl/body:text-4xl text-black") Об учебном центре
                         p(class="@xs/body:order-3 @6xl/body:-order-none font-Montserrat font-normal text-base text-black") Учебный центр Государственной компании «Автодор» на базе ООО «Автодор-Инжиниринг» приглашает пройти обучение с повышением квалификации по учебным программам, сформированным на основе уникального практического опыта проектирования, строительства и эксплуатации высокоскоростных автомагистралей.
                         a(href="ob-uchebnom-centre.html", class="@xs/body:order-4 @6xl/body:-order-none mt-auto ml-auto w-max p-4 rounded-lg bg-gradient-orange text-white font-Montserrat font-medium text-base text-center") Узнать больше
-            div(class="container mx-auto")
+            div(class="container mx-auto  @6xl/body:px-6")
                 include ../../../../../pug/Components/_consultationCard.pug
-            div(class="bg-lightGray py-16")
+            div(class="container mx-auto py-16 @6xl/body:px-6")
                 div(class="container mx-auto flex flex-col gap-8")
                     h2(class="font-Montserrat font-semibold @xs/body:text-2xl @6xl/body:text-4xl text-black text-center") Отзывы
                     div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-indicators-outside slider-nav-noloop @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @6xl/body:slider-item-show3 slider-indicators-dark slider-nav-visible")
@@ -370,7 +377,7 @@ block content
                         div(class="slider-indicators")
                             button.active
                             button
-            div(class="container mx-auto flex flex-col gap-8")
+            div(class="container mx-auto  flex flex-col gap-8 @6xl/body:px-6")
                 h2(class="font-Montserrat font-semibold @xs/body:text-2xl @6xl/body:text-4xl text-black text-center") Наши партнеры
                 div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                     div(class="slider-container pb-1")

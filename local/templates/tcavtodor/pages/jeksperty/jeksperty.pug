@@ -24,13 +24,13 @@ block content
     +header(authorization)
     main(class="@container/body ")
         div(class="flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32 @xs/body:px-4 @8xl/body:px-0")
-            div(class="container mx-auto flex flex-col gap-8 pt-10")
+            div(class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6 bg-lightGray rounded-b-lg py-8")
                 h1(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black") Наша команда
                 div(class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr gap-8")
                     img(class="w-full aspect-16-9 object-cover rounded-lg", alt="лого", src=`${path}/img/other/teacher.png`)
-                    div(class="flex flex-col gap-4")
+                    div(class="flex flex-col gap-6 p-4 rounded-lg bg-white")
                         p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black") Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor.
-            div(class="container mx-auto flex flex-col gap-20")
+            div(class="container mx-auto flex flex-col gap-20 @6xl/body:px-6")
                 h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Состав разработчиков направления
                 div(tabBlock="", class="flex flex-col gap-8")
                     div(tabNav="", class="flex flex-wrap gap-4 items-center")
@@ -691,7 +691,7 @@ block content
                                 svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
                                     path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
 
-            div(class="container mx-auto flex flex-col gap-20")
+            div(class="container mx-auto flex flex-col gap-20 @6xl/body:p-6 rounded-lg bg-lightGray")
                 h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Команда Учебного центра
                 div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xl/body:slider-item-show1 @2xl/body:slider-item-show-2 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                     div(class="slider-container pb-1")
@@ -825,6 +825,6 @@ block content
                     button(class="slider-nav slider-nav-next", type="button")
                         svg(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
                             path(d="M12 6L22 16L12 26", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
-            div(class="container mx-auto")
+            div(class="container mx-auto @6xl/body:px-6")
                 include ../../../../../pug/Components/_consultationCard.pug
     include ../../../../../pug/layout/_footer.pug

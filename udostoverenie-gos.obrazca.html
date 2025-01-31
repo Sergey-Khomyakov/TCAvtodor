@@ -166,15 +166,15 @@
       </dialog>
       <main class="@container/body">
         <div class="flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32 @xs/body:px-4 @8xl/body:px-0">
-          <div class="container mx-auto flex flex-col gap-8 pt-10">
+          <div class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6 bg-lightGray rounded-b-lg py-8">
             <h1 class="font-Montserrat font-semibold text-4xl text-black">Удостоверение гос.образца</h1>
             <div class="grid grid-cols-1fr-1fr gap-8"><img class="w-full aspect-16-9 object-cover rounded-lg" alt="лого" src="./local/templates/tcavtodor/img/other/GosDoc.png">
-              <div class="flex flex-col gap-4">
+              <div class="flex flex-col gap-4 p-4 rounded-lg bg-white">
                 <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odio fugit, ut minus aspernatur modi ab aliquid repellat animi aperiam ipsa pariatur illo, laboriosam quod rem eveniet et facilis culpa.</p>
               </div>
             </div>
           </div>
-          <div class="container mx-auto flex flex-col gap-8 pt-10">
+          <div class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6">
             <h2 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center">Заголовок</h2>
             <div class="flex flex-col gap-4">
               <div class="flex flex-col rounded-lg shadow-md transition-all shadow-custom-1 border overflow-hidden bg-white" accordion="">
@@ -257,7 +257,7 @@
               </div>
             </div>
           </div>
-          <div class="container mx-auto flex flex-col gap-8 pt-10">
+          <div class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6">
             <h2 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center">Ваши выгоды</h2>
             <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr gap-8">
               <div class="flex flex-col gap-6">
@@ -265,7 +265,7 @@
               </div><img class="rounded-lg w-full h-full aspect-16-9 object-cover" alt="Картинка" src="./local/templates/tcavtodor/img/stub.jpg">
             </div>
           </div>
-          <div class="container mx-auto">
+          <div class="container mx-auto @6xl/body:px-6">
             <div class="@container/card rounded-lg shadow-md py-4 px-8 flex flex-col gap-6 bg-primary @xs/body:w-full @6xl/body:w-[90%] @6xl/body:mx-auto">
               <p class="font-Montserrat font-semibold @xs/card:text-2xl @6xl/card:text-4xl text-white">Получить консультацию</p>
               <div class="grid @xs/card:grid-cols-full @6xl/card:grid-cols-4 gap-4">
@@ -405,6 +405,7 @@
     <script src="./local/templates/tcavtodor/libs/jquery/jquery-3.7.1.min.js"></script>
     <script src="./local/templates/tcavtodor/libs/imask/imask.js"></script>
     <script src="./local/templates/tcavtodor/modules/dialogMeneger.js"></script>
+    <script src="./local/templates/tcavtodor/modules/accordion.js"></script>
     <script src="./local/templates/tcavtodor/pages/udostoverenie-gos.obrazca/js/index.js"></script>
   </body>
 </html>

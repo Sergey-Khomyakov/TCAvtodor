@@ -167,16 +167,25 @@
       </dialog>
       <main class="@container/body">
         <div class="flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32 @xs/body:px-4 @8xl/body:px-0">
-          <div class="container mx-auto flex flex-col gap-8 pt-10">
+          <div class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6 bg-lightGray rounded-b-lg py-8">
             <h1 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black">Слушателям</h1>
             <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr gap-8"><img class="rounded-lg w-full h-full aspect-16-9 object-cover" alt="Картинка" src="./local/templates/tcavtodor/img/stub.jpg">
-              <div class="flex flex-col gap-6">
+              <div class="flex flex-col gap-6 p-4 rounded-lg bg-white">
                 <p class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odio fugit, ut minus aspernatur modi ab aliquid repellat animi aperiam ipsa pariatur illo, laboriosam quod rem eveniet et facilis culpa.</p>
               </div>
             </div>
           </div>
-          <div class="container mx-auto flex flex-col gap-8">
-            <div class="grid @xs/body:grid-cols-full @xs/body:justify-items-center @lg/body:grid-cols-2 @6xl/body:grid-cols-auto-auto-auto @xs/body:gap-8 @6xl/body:gap-32 justify-center">
+          <div class="container mx-auto flex flex-col gap-8 @6xl/body:px-6">
+            <div class="grid @xs/body:grid-cols-full @xs/body:justify-items-center @lg/body:grid-cols-2 @6xl/body:grid-cols-4 @xs/body:gap-8 @6xl/body:gap-32 justify-center">
+              <article class="flex flex-col items-center gap-4 w-64">
+                <svg class=" stroke-black" width="80" height="80" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 10V16" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M21.1962 19L16 16" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M23.021 12.4646H28.021V7.4646" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M23.7782 23.7782C22.2398 25.3166 20.2798 26.3642 18.146 26.7886C16.0122 27.2131 13.8005 26.9952 11.7905 26.1627C9.78049 25.3301 8.06253 23.9202 6.85383 22.1113C5.64514 20.3023 5 18.1756 5 16C5 13.8244 5.64514 11.6977 6.85383 9.88873C8.06253 8.07979 9.78049 6.66989 11.7905 5.83733C13.8005 5.00477 16.0122 4.78693 18.146 5.21137C20.2798 5.6358 22.2398 6.68345 23.7782 8.22183L28.0208 12.4645" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <p class="font-Montserrat font-medium text-black text-2xl text-center text-balance">Дистанционная форма обучения</p>
+              </article>
               <article class="flex flex-col items-center gap-4 w-64">
                 <svg class=" stroke-black" width="80" height="80" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 10V16" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -207,10 +216,10 @@
               </article>
             </div>
           </div>
-          <div class="container mx-auto flex justify-center">
-            <button class="bg-gradient-orange text-white rounded-lg p-4 px-6 text-xl w-max mx-auto" dialog-btn="consultation" type="button">Получить консультацию</button>
+          <div class="container mx-auto flex justify-center @6xl/body:px-6">
+            <button class="bg-gradient-orange text-white rounded-lg py-4 px-20 text-xl w-max mx-auto" dialog-btn="consultation" type="button">Получить консультацию</button>
           </div>
-          <div class="container mx-auto flex flex-col gap-8">
+          <div class="container mx-auto flex flex-col gap-8 @6xl/body:px-6">
             <h2 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center">Этапы обучения</h2>
             <div class="flex flex-col gap-4 justify-center items-center">
               <article class="flex gap-8 items-center relative w-full max-w-2xl">
@@ -275,7 +284,7 @@
               </article>
             </div>
           </div>
-          <div class="container mx-auto grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8"><img class="rounded-lg w-full h-full aspect-16-9 object-cover" alt="Картинка" src="./local/templates/tcavtodor/img/stub.jpg">
+          <div class="container mx-auto grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8 @6xl/body:px-6"><img class="rounded-lg w-full h-full aspect-16-9 object-cover" alt="Картинка" src="./local/templates/tcavtodor/img/stub.jpg">
             <div class="flex flex-col gap-6">
               <h2 class="font-Montserrat font-semibold text-3xl text-black">Готовы к обучению? Выберите свою программу!</h2>
               <div class="flex flex-col gap-4">
@@ -300,7 +309,7 @@
               </div><a class="bg-gradient-orange text-white rounded-lg p-4 px-6 text-xl w-max h-max mt-auto ml-auto" href="#">Выбрать программу</a>
             </div>
           </div>
-          <div class="container mx-auto flex flex-col gap-8">
+          <div class="container mx-auto flex flex-col gap-8 @6xl/body:px-6">
             <h2 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center">Популярные программы</h2>
             <div class="swiffy-slider slider-nav-outside slider-nav-visible slider-indicators-round slider-indicators-outside slider-nav-round slider-nav-noloop slider-custom-1 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark">
               <div class="slider-container pb-1">
@@ -537,7 +546,7 @@
               </button>
             </div>
           </div>
-          <div class="container mx-auto">
+          <div class="container mx-auto @6xl/body:px-6">
             <div class="@container/card rounded-lg shadow-md py-4 px-8 flex flex-col gap-6 bg-primary @xs/body:w-full @6xl/body:w-[90%] @6xl/body:mx-auto">
               <p class="font-Montserrat font-semibold @xs/card:text-2xl @6xl/card:text-4xl text-white">Получить консультацию</p>
               <div class="grid @xs/card:grid-cols-full @6xl/card:grid-cols-4 gap-4">
@@ -560,7 +569,7 @@
                    Продолжая, вы соглашаетесь с <a class="font-Montserrat font-normal text-black hover:text-primaryHover text-base" href="#">Политикой конфиденциальности</a></p>
             </div>
           </div>
-          <div class="bg-lightGray py-16">
+          <div class="py-16 @6xl/body:px-6">
             <div class="container mx-auto flex flex-col gap-8">
               <h2 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center">Отзывы</h2>
               <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-indicators-outside slider-nav-noloop @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @6xl/body:slider-item-show3 slider-indicators-dark slider-nav-visible">

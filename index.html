@@ -163,16 +163,16 @@
           </template>
         </div>
       </dialog>
-      <main class="@container/body overflow-hidden ">
+      <main class="@container/body overflow-hidden relative">
         <div class="@xs/body:px-4 @8xl:px-0 flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32">
-          <div class="container mx-auto flex flex-col gap-8 pt-10">
+          <div class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6 bg-lightGray rounded-b-lg py-8">
             <div class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8">
               <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr @6xl/body:grid-cols-full gap-4">
                 <div class="flex flex-col gap-4">
                   <h1 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-5xl text-black @xs/body:text-center @6xl/body:text-start text-balance">Из опыта в знания</h1>
                   <p class="font-Montserrat font-medium text-base text-black @xs/body:text-center @6xl/body:text-start">Учебный центр ООО "Автодор-Инжиниринг"</p>
                 </div>
-                <div class="swiffy-slider slider-indicators-round slider-nav-round slider-nav-noloop w-full h-full rounded-lg overflow-hidden" id="slider1">
+                <div class="swiffy-slider slider-indicators-round slider-nav-visible slider-nav-round slider-custom-2 slider-nav-noloop w-full h-full rounded-lg overflow-hidden" id="slider1">
                   <div class="slider-container">
                     <div class="w-full flex flex-col shadow-md @xs/body:h-[16rem] @6xl/body:h-[23.5rem] relative">
                       <p class="font-Montserrat font-medium text-base text-black p-4 bg-white/80 absolute top-4 left-4 w-1/2 rounded-lg">4 000 партнёров уже предложили практику и сделали офер лучшим студентам</p><img class="w-full h-full object-cover" src="./local/templates/tcavtodor/img/other/755644626481422.jpeg"><a class=" absolute left-0 top-0 inset-0" href="news.html"></a>
@@ -189,10 +189,20 @@
                     <button></button>
                     <button></button>
                   </div>
+                  <button class="slider-nav" type="button">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20 26L10 16L20 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </button>
+                  <button class="slider-nav slider-nav-next" type="button">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 6L22 16L12 26" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </button>
                 </div>
               </div>
               <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-2 @5xl/body:grid-cols-3 gap-4">
-                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden">
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden bg-white">
                   <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 8V18" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
                     <path d="M6.77899 26.9999C7.77833 25.4648 9.1451 24.2035 10.7553 23.3304C12.3655 22.4573 14.1683 22 16 22C17.8317 22 19.6344 22.4573 21.2446 23.3304C22.8549 24.2035 24.2216 25.4648 25.221 26.9999" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -203,7 +213,7 @@
                     <p class="font-Montserrat font-medium text-black text-xl">Слушателям</p>
                   </div><a class="absolute top-0 left-0 inset-0" href="slushateljam.html" target="_blank"></a>
                 </div>
-                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden">
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden bg-white">
                   <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 22.5C18.7614 22.5 21 20.2614 21 17.5C21 14.7386 18.7614 12.5 16 12.5C13.2386 12.5 11 14.7386 11 17.5C11 20.2614 13.2386 22.5 16 22.5Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
                     <path d="M24.5 14.5C25.6645 14.499 26.8131 14.7696 27.8547 15.2903C28.8963 15.811 29.8021 16.5674 30.5001 17.4995" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -216,7 +226,7 @@
                     <p class="font-Montserrat font-medium text-black text-xl">Для юр.лиц.</p>
                   </div><a class="absolute top-0 left-0 inset-0" href="dlja-jur-lic.html" target="_blank"></a>
                 </div>
-                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden">
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden bg-white">
                   <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M27.001 9H5.00098C4.44869 9 4.00098 9.44772 4.00098 10V26C4.00098 26.5523 4.44869 27 5.00098 27H27.001C27.5533 27 28.001 26.5523 28.001 26V10C28.001 9.44772 27.5533 9 27.001 9Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
                     <path d="M21 9V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H13C12.4696 5 11.9609 5.21071 11.5858 5.58579C11.2107 5.96086 11 6.46957 11 7V9" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -228,7 +238,7 @@
                   </div><a class="absolute top-0 left-0 inset-0" href="partneram.html" target="_blank"></a>
                 </div>
                 <div class="contents @6xl/body:grid grid-cols-2 gap-4 @6xl/body:col-span-3">
-                  <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer overflow-hidden">
+                  <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer overflow-hidden bg-white">
                     <div class="flex flex-wrap gap-2 items-center">
                       <p class="font-Montserrat font-medium text-black text-xl">3D Практикум</p>
                     </div>
@@ -238,7 +248,7 @@
                       <path d="M16.1186 16L16.0013 29.3527" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg><a class="absolute top-0 left-0 inset-0" href="3d-praktikum.html" target="_blank"></a>
                   </div>
-                  <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer overflow-hidden">
+                  <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer overflow-hidden bg-white">
                     <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3.00024 12H29.0002L16.0002 4L3.00024 12Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
                       <path d="M7.00031 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -253,7 +263,7 @@
                     </div><a class="absolute top-0 left-0 inset-0" href="udostoverenie-gos.obrazca.html" target="_blank"></a>
                   </div>
                 </div>
-                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative @6xl/body:col-span-3 cursor-pointer overflow-hidden">
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative @6xl/body:col-span-3 cursor-pointer overflow-hidden bg-white">
                   <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19 14H24" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
                     <path d="M19 18H24" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -268,7 +278,7 @@
               </div>
             </div>
             <div class="@xs/body:pb-2 @5xl/body:pb-0 @xs/body:overflow-x-scroll @5xl/body:overflow-x-auto">
-              <div class="flex @xs/body:w-max @5xl/body:w-auto @5xl/body:grid @5xl/body:grid-cols-3 gap-4 pb-4">
+              <div class="flex @xs/body:w-max @5xl/body:w-auto @5xl/body:grid @5xl/body:grid-cols-3 @5xl/body:auto-rows-fr gap-4 pb-4">
                 <article class="border border-transparent hover:border-secondary bg-primary rounded-lg p-4 shadow-md w-full h-full relative cursor-pointer grid grid-cols-1fr-auto gap-4 overflow-hidden items-center">
                   <p class="font-Montserrat font-medium text-white @xs/body:text-base @6xl/body:text-lg text-balance">Содержание искусственных сооружений</p>
                   <div class="w-max flex items-center gap-2 p-2 bg-white rounded-lg shadow-md">
@@ -362,7 +372,7 @@
               </div>
             </div>
           </div>
-          <div class="container mx-auto flex flex-col gap-8">
+          <div class="container mx-auto flex flex-col gap-8 @6xl/body:px-6">
             <h2 class="font-Montserrat font-semibold  @xs/body:text-2xl @6xl/body:text-4xl text-black">Наши популярные программы</h2>
             <div class="swiffy-slider slider-nav-outside slider-nav-visible slider-indicators-round slider-indicators-outside slider-nav-round slider-nav-noloop slider-custom-1 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark">
               <div class="slider-container pb-1">
@@ -600,7 +610,7 @@
             </div>
             <button class="bg-gradient-orange text-white rounded-lg py-4 px-20 text-xl w-max mx-auto" dialog-btn="consultation" type="button">Получить консультацию</button>
           </div>
-          <div class="container mx-auto flex flex-col gap-8">
+          <div class="container mx-auto  flex flex-col gap-8 @6xl/body:px-6">
             <h2 class="font-Montserrat font-semibold  @xs/body:text-2xl @6xl/body:text-4xl text-black text-center text-pr">Этапы обучения</h2>
             <div class="flex @xs/body:flex-col @4xl/body:flex-row gap-3 justify-center @6xl/body:zoom-150">
               <article class="flex @4xl/body:flex-col gap-4 @xs/body:justify-center @4xl/body:justify-normal @xs/body:items-center @4xl/body:items-start relative">
@@ -650,8 +660,8 @@
               </article>
             </div>
           </div>
-          <div class="bg-lightGray py-16">
-            <div class="container mx-auto flex flex-col gap-8">
+          <div class="container mx-auto py-16 @6xl/body:px-6">
+            <div class="flex flex-col gap-8">
               <div class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8">
                 <div class="flex flex-col gap-6">
                   <h2 class="font-Montserrat font-semibold @xs/body:text-2xl @6xl/body:text-4xl text-black">Удостоверение гос.образца</h2>
@@ -673,7 +683,7 @@
               </div>
             </div>
           </div>
-          <div class="container mx-auto flex flex-col gap-8">
+          <div class="container mx-auto  flex flex-col gap-8 @6xl/body:px-6">
             <div class="grid  @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8"><img class="@xs/body:order-2 @6xl/body:-order-none rounded-lg w-full h-full aspect-16-9 object-cover" src="./local/templates/tcavtodor/img/other/teacher.png">
               <div class="@xs/body:contents @6xl/body:flex flex-col gap-6">
                 <h2 class="@xs/body:order-1 @6xl/body:-order-none font-Montserrat font-semibold  @xs/body:text-2xl @6xl/body:text-4xl text-black">Об учебном центре</h2>
@@ -681,7 +691,7 @@
               </div>
             </div>
           </div>
-          <div class="container mx-auto">
+          <div class="container mx-auto  @6xl/body:px-6">
             <div class="@container/card rounded-lg shadow-md py-4 px-8 flex flex-col gap-6 bg-primary @xs/body:w-full @6xl/body:w-[90%] @6xl/body:mx-auto">
               <p class="font-Montserrat font-semibold @xs/card:text-2xl @6xl/card:text-4xl text-white">Получить консультацию</p>
               <div class="grid @xs/card:grid-cols-full @6xl/card:grid-cols-4 gap-4">
@@ -704,7 +714,7 @@
                    Продолжая, вы соглашаетесь с <a class="font-Montserrat font-normal text-black hover:text-primaryHover text-base" href="#">Политикой конфиденциальности</a></p>
             </div>
           </div>
-          <div class="bg-lightGray py-16">
+          <div class="container mx-auto py-16 @6xl/body:px-6">
             <div class="container mx-auto flex flex-col gap-8">
               <h2 class="font-Montserrat font-semibold @xs/body:text-2xl @6xl/body:text-4xl text-black text-center">Отзывы</h2>
               <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-indicators-outside slider-nav-noloop @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @6xl/body:slider-item-show3 slider-indicators-dark slider-nav-visible">
@@ -763,7 +773,7 @@
               </div>
             </div>
           </div>
-          <div class="container mx-auto flex flex-col gap-8">
+          <div class="container mx-auto  flex flex-col gap-8 @6xl/body:px-6">
             <h2 class="font-Montserrat font-semibold @xs/body:text-2xl @6xl/body:text-4xl text-black text-center">Наши партнеры</h2>
             <div class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible">
               <div class="slider-container pb-1"><img class="max-h-32 object-contain" src="./local/templates/tcavtodor/img/logo/250.png" alt="Партнер"><img class="max-h-32 object-contain" src="./local/templates/tcavtodor/img/logo/RUT_rus.svg" alt="Партнер"><img class="max-h-32 object-contain" src="./local/templates/tcavtodor/img/logo/250.png" alt="Партнер"><img class="max-h-32 object-contain" src="./local/templates/tcavtodor/img/logo/RUT_rus.svg" alt="Партнер"><img class="max-h-32 object-contain" src="./local/templates/tcavtodor/img/logo/250.png" alt="Партнер"><img class="max-h-32 object-contain" src="./local/templates/tcavtodor/img/logo/RUT_rus.svg" alt="Партнер"><img class="max-h-32 object-contain" src="./local/templates/tcavtodor/img/logo/250.png" alt="Партнер"><img class="max-h-32 object-contain" src="./local/templates/tcavtodor/img/logo/RUT_rus.svg" alt="Партнер"></div>

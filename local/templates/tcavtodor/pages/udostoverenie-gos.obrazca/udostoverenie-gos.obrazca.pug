@@ -22,13 +22,13 @@ block content
     +header(authorization)
     main(class="@container/body")
         div(class="flex flex-col @xs/body:gap-16 @6xl/body:gap-32 @xs/body:mb-16 @6xl/body:mb-32 @xs/body:px-4 @8xl/body:px-0")
-            div(class="container mx-auto flex flex-col gap-8 pt-10")
+            div(class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6 bg-lightGray rounded-b-lg py-8")
                 h1(class="font-Montserrat font-semibold text-4xl text-black") Удостоверение гос.образца
                 div(class="grid grid-cols-1fr-1fr gap-8")
                     img(class="w-full aspect-16-9 object-cover rounded-lg", alt="лого", src=`${path}/img/other/GosDoc.png`)
-                    div(class="flex flex-col gap-4")
+                    div(class="flex flex-col gap-4 p-4 rounded-lg bg-white")
                         p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black") Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odio fugit, ut minus aspernatur modi ab aliquid repellat animi aperiam ipsa pariatur illo, laboriosam quod rem eveniet et facilis culpa.
-            div(class="container mx-auto flex flex-col gap-8 pt-10")
+            div(class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6")
                 h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Заголовок
                 div(class="flex flex-col gap-4")
                     -
@@ -59,12 +59,12 @@ block content
                             },
                         ]
                     +accordion(items)
-            div(class="container mx-auto flex flex-col gap-8 pt-10")
+            div(class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6")
                 h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Ваши выгоды
                 div(class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr gap-8")
                     div(class="flex flex-col gap-6")
                         p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black") Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor.
                     img(class="rounded-lg w-full h-full aspect-16-9 object-cover", alt="Картинка", src=`${path}/img/stub.jpg`)
-            div(class="container mx-auto")
+            div(class="container mx-auto @6xl/body:px-6")
                 include ../../../../../pug/Components/_consultationCard.pug
     include ../../../../../pug/layout/_footer.pug
