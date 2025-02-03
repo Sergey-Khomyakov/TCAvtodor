@@ -1,7 +1,7 @@
 mixin reviewCard(items)
     - var path = "./local/templates/tcavtodor"
     each item, index in items
-        article(class="flex flex-col gap-4 w-full rounded-lg shadow-md p-4 bg-white")
+        article(class="flex flex-col gap-4 w-full rounded-lg shadow-md p-4 bg-white h-max")
             div(class="flex gap-4 items-center")
                 img(src=item.img, class="w-16 h-16 rounded-full border-2 border-primary object-cover", alt="фото сотрудника")
                 p(class="font-Montserrat font-semibold @xl/body:text-base @6xl/body:text-lg text-black") #{item.name}
