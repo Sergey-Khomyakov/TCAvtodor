@@ -83,11 +83,13 @@
                   <path d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg><a class="inset-0 absolute top-0 left-0" href="#"></a>
               </div>
-              <div class="@xs/header:hidden rounded-lg relative w-max h-full p-2 @5xl/header:flex items-center gap-2 border border-black group hover:border-primary" dialog-btn="registration">
-                <p class="font-Montserrat font-medium text-black group-hover:text-primary">Регистрация</p><a class="inset-0 absolute top-0 left-0" href="#"></a>
-              </div>
-              <div class="rounded-lg relative w-max h-full p-2 flex items-center gap-2 border border-black group hover:border-primary" dialog-btn="login">
-                <p class="font-Montserrat font-medium text-black group-hover:text-primary">Вход</p><a class="inset-0 absolute top-0 left-0" href="#"></a>
+              <div class="flex items-center gap-4">
+                <div class="rounded-full relative overflow-hidden border-2 border-primary"><img class="w-10 h-10 object-cover" src="./local/templates/tcavtodor/img/people/profile.png" alt="Картинка пользователя"/><a class="absolute inset-0 top-0 left-0" href="#"></a></div><a href="#">
+                  <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.7515 10.75L27.0001 16L21.7515 21.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M13 16H26.9963" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M13 27H6C5.73478 27 5.48043 26.8946 5.29289 26.7071C5.10536 26.5196 5 26.2652 5 26V6C5 5.73478 5.10536 5.48043 5.29289 5.29289C5.48043 5.10536 5.73478 5 6 5H13" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg></a>
               </div>
             </div>
           </div>
@@ -162,7 +164,605 @@
           </template>
         </div>
       </dialog>
-      <main></main>
+      <main class="@container/body overflow-hidden relative">
+        <div class="flex flex-col gap-32 mb-32">
+          <div class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6 @6xl/body:bg-lightGray rounded-b-lg py-8">
+            <div class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8">
+              <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr @6xl/body:grid-cols-full gap-4">
+                <div class="flex flex-col gap-4">
+                  <h1 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-5xl text-black @xs/body:text-center @6xl/body:text-start text-balance">Из опыта в знания</h1>
+                  <p class="font-Montserrat font-medium text-base text-black @xs/body:text-center @6xl/body:text-start">Учебный центр ООО "Автодор-Инжиниринг"</p>
+                </div><img class="w-auto aspect-16-9" src="./local/templates/tcavtodor/img/stub.jpg">
+              </div>
+              <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-2 @5xl/body:grid-cols-3 gap-4">
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden bg-white">
+                  <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 8V18" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6.77899 26.9999C7.77833 25.4648 9.1451 24.2035 10.7553 23.3304C12.3655 22.4573 14.1683 22 16 22C17.8317 22 19.6344 22.4573 21.2446 23.3304C22.8549 24.2035 24.2216 25.4648 25.221 26.9999" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M28 8L16 12L4 8L16 4L28 8Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M21.1671 10.2776C22.083 11.2798 22.6878 12.5267 22.9076 13.8665C23.1275 15.2062 22.953 16.581 22.4053 17.8234C21.8577 19.0657 20.9606 20.122 19.8234 20.8636C18.6861 21.6052 17.3577 22 16 22C14.6423 22 13.3139 21.6052 12.1766 20.8636C11.0394 20.122 10.1423 19.0657 9.59467 17.8234C9.04705 16.581 8.87254 15.2062 9.09239 13.8665C9.31224 12.5267 9.91696 11.2798 10.8329 10.2776" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Слушателям</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="slushateljam.html" target="_blank"></a>
+                </div>
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden bg-white">
+                  <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 22.5C18.7614 22.5 21 20.2614 21 17.5C21 14.7386 18.7614 12.5 16 12.5C13.2386 12.5 11 14.7386 11 17.5C11 20.2614 13.2386 22.5 16 22.5Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M24.5 14.5C25.6645 14.499 26.8131 14.7696 27.8547 15.2903C28.8963 15.811 29.8021 16.5674 30.5001 17.4995" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M1.49963 17.4997C2.19769 16.5676 3.10351 15.8111 4.14513 15.2904C5.18675 14.7697 6.33546 14.499 7.49999 14.5" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M8.80432 26.9999C9.46122 25.6506 10.4842 24.5133 11.7566 23.7176C13.0289 22.9219 14.4994 22.5 16 22.5C17.5007 22.5 18.9711 22.9219 20.2434 23.7176C21.5158 24.5132 22.5388 25.6506 23.1957 26.9998" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M7.49999 14.5C6.74103 14.4999 5.99779 14.2838 5.35703 13.8771C4.71627 13.4703 4.20445 12.8897 3.88134 12.2029C3.55823 11.5162 3.43716 10.7517 3.53227 9.99874C3.62737 9.24577 3.93474 8.5354 4.41846 7.95057C4.90218 7.36575 5.5423 6.93061 6.26407 6.69597C6.98584 6.46133 7.75947 6.43687 8.49462 6.62544C9.22978 6.81402 9.89611 7.20786 10.4158 7.76096C10.9355 8.31406 11.2871 9.0036 11.4296 9.74905" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M20.5703 9.74907C20.7127 9.00349 21.0643 8.31382 21.584 7.7606C22.1038 7.20738 22.7702 6.81344 23.5054 6.62479C24.2406 6.43614 25.0144 6.46056 25.7362 6.69521C26.4581 6.92985 27.0983 7.36504 27.5821 7.94994C28.0659 8.53484 28.3733 9.24531 28.4684 9.99838C28.5635 10.7515 28.4424 11.516 28.1192 12.2029C27.796 12.8897 27.2841 13.4704 26.6432 13.8771C26.0024 14.2839 25.259 14.4999 24.4999 14.4999" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Для юр.лиц.</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="dlja-jur-lic.html" target="_blank"></a>
+                </div>
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden bg-white">
+                  <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.001 9H5.00098C4.44869 9 4.00098 9.44772 4.00098 10V26C4.00098 26.5523 4.44869 27 5.00098 27H27.001C27.5533 27 28.001 26.5523 28.001 26V10C28.001 9.44772 27.5533 9 27.001 9Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M21 9V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H13C12.4696 5 11.9609 5.21071 11.5858 5.58579C11.2107 5.96086 11 6.46957 11 7V9" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M28.001 15.7887C24.3539 17.8988 20.2136 19.0067 16 19.0001C11.7872 19.0067 7.64755 17.8991 4.00085 15.7898" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M14.5 15H17.5" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Страть Партнером </p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="partneram.html" target="_blank"></a>
+                </div>
+                <div class="contents @6xl/body:grid grid-cols-2 gap-4 @6xl/body:col-span-3">
+                  <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer overflow-hidden bg-white">
+                    <div class="flex flex-wrap gap-2 items-center">
+                      <p class="font-Montserrat font-medium text-black text-xl">3D Практикум</p>
+                    </div>
+                    <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M28 22.1653V9.83496C28 9.65752 27.9528 9.48328 27.8632 9.33012C27.7736 9.17695 27.6449 9.05038 27.4903 8.96339L16.4903 2.77589C16.3406 2.69169 16.1717 2.64746 16 2.64746C15.8283 2.64746 15.6594 2.69169 15.5097 2.77589L4.50974 8.96339C4.35509 9.05038 4.22637 9.17695 4.13679 9.33012C4.04721 9.48328 4 9.65752 4 9.83496V22.1653C4 22.3427 4.04721 22.5169 4.13679 22.6701C4.22637 22.8233 4.35509 22.9499 4.50974 23.0368L15.5097 29.2243C15.6594 29.3085 15.8283 29.3528 16 29.3528C16.1717 29.3528 16.3406 29.3085 16.4903 29.2243L27.4903 23.0368C27.6449 22.9499 27.7736 22.8233 27.8632 22.6701C27.9528 22.5169 28 22.3427 28 22.1653Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M27.8621 9.32827L16.1186 16L4.1385 9.32715" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M16.1186 16L16.0013 29.3527" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg><a class="absolute top-0 left-0 inset-0" href="3d-praktikum.html" target="_blank"></a>
+                  </div>
+                  <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer overflow-hidden bg-white">
+                    <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.00024 12H29.0002L16.0002 4L3.00024 12Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M7.00031 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M13.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M19.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M25.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M4.00031 22H28.0003" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M2.00031 26H30.0003" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <div class="flex flex-wrap gap-2 items-center">
+                      <p class="font-Montserrat font-medium text-black text-xl">Удостоверение гос.образца</p>
+                    </div><a class="absolute top-0 left-0 inset-0" href="udostoverenie-gos.obrazca.html" target="_blank"></a>
+                  </div>
+                </div>
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative @6xl/body:col-span-3 cursor-pointer overflow-hidden bg-white">
+                  <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 14H24" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M19 18H24" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M11.5126 18C13.1694 18 14.5126 16.6569 14.5126 15C14.5126 13.3431 13.1694 12 11.5126 12C9.85572 12 8.51257 13.3431 8.51257 15C8.51257 16.6569 9.85572 18 11.5126 18Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M7.63855 20.9999C7.86049 20.1413 8.36141 19.3807 9.0626 18.8377C9.76379 18.2947 10.6255 18 11.5124 18C12.3992 18 13.261 18.2946 13.9622 18.8375C14.6634 19.3805 15.1644 20.141 15.3864 20.9997" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M27 6H5C4.44772 6 4 6.44772 4 7V25C4 25.5523 4.44772 26 5 26H27C27.5523 26 28 25.5523 28 25V7C28 6.44772 27.5523 6 27 6Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Наши эксперты</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="jeksperty.html" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6 @6xl/body:bg-lightGray rounded-b-lg py-8">
+            <div class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8">
+              <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr @6xl/body:grid-cols-full gap-4">
+                <div class="flex flex-col gap-4">
+                  <h1 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-5xl text-black @xs/body:text-center @6xl/body:text-start text-balance">Из опыта в знания</h1>
+                  <p class="font-Montserrat font-medium text-base text-black @xs/body:text-center @6xl/body:text-start">Учебный центр ООО "Автодор-Инжиниринг"</p>
+                </div><img class="w-auto aspect-16-9" src="./local/templates/tcavtodor/img/stub.jpg">
+              </div>
+              <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-2 @5xl/body:grid-cols-3 gap-4">
+                <div class="border-2 border-primary hover:border-primaryHover rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden bg-white">
+                  <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 8V18" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6.77899 26.9999C7.77833 25.4648 9.1451 24.2035 10.7553 23.3304C12.3655 22.4573 14.1683 22 16 22C17.8317 22 19.6344 22.4573 21.2446 23.3304C22.8549 24.2035 24.2216 25.4648 25.221 26.9999" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M28 8L16 12L4 8L16 4L28 8Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M21.1671 10.2776C22.083 11.2798 22.6878 12.5267 22.9076 13.8665C23.1275 15.2062 22.953 16.581 22.4053 17.8234C21.8577 19.0657 20.9606 20.122 19.8234 20.8636C18.6861 21.6052 17.3577 22 16 22C14.6423 22 13.3139 21.6052 12.1766 20.8636C11.0394 20.122 10.1423 19.0657 9.59467 17.8234C9.04705 16.581 8.87254 15.2062 9.09239 13.8665C9.31224 12.5267 9.91696 11.2798 10.8329 10.2776" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Слушателям</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="slushateljam.html" target="_blank"></a>
+                </div>
+                <div class="border-2 border-primary hover:border-primaryHover rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden bg-white">
+                  <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 22.5C18.7614 22.5 21 20.2614 21 17.5C21 14.7386 18.7614 12.5 16 12.5C13.2386 12.5 11 14.7386 11 17.5C11 20.2614 13.2386 22.5 16 22.5Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M24.5 14.5C25.6645 14.499 26.8131 14.7696 27.8547 15.2903C28.8963 15.811 29.8021 16.5674 30.5001 17.4995" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M1.49963 17.4997C2.19769 16.5676 3.10351 15.8111 4.14513 15.2904C5.18675 14.7697 6.33546 14.499 7.49999 14.5" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M8.80432 26.9999C9.46122 25.6506 10.4842 24.5133 11.7566 23.7176C13.0289 22.9219 14.4994 22.5 16 22.5C17.5007 22.5 18.9711 22.9219 20.2434 23.7176C21.5158 24.5132 22.5388 25.6506 23.1957 26.9998" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M7.49999 14.5C6.74103 14.4999 5.99779 14.2838 5.35703 13.8771C4.71627 13.4703 4.20445 12.8897 3.88134 12.2029C3.55823 11.5162 3.43716 10.7517 3.53227 9.99874C3.62737 9.24577 3.93474 8.5354 4.41846 7.95057C4.90218 7.36575 5.5423 6.93061 6.26407 6.69597C6.98584 6.46133 7.75947 6.43687 8.49462 6.62544C9.22978 6.81402 9.89611 7.20786 10.4158 7.76096C10.9355 8.31406 11.2871 9.0036 11.4296 9.74905" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M20.5703 9.74907C20.7127 9.00349 21.0643 8.31382 21.584 7.7606C22.1038 7.20738 22.7702 6.81344 23.5054 6.62479C24.2406 6.43614 25.0144 6.46056 25.7362 6.69521C26.4581 6.92985 27.0983 7.36504 27.5821 7.94994C28.0659 8.53484 28.3733 9.24531 28.4684 9.99838C28.5635 10.7515 28.4424 11.516 28.1192 12.2029C27.796 12.8897 27.2841 13.4704 26.6432 13.8771C26.0024 14.2839 25.259 14.4999 24.4999 14.4999" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Для юр.лиц.</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="dlja-jur-lic.html" target="_blank"></a>
+                </div>
+                <div class="border-2 border-primary hover:border-primaryHover rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden bg-white">
+                  <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.001 9H5.00098C4.44869 9 4.00098 9.44772 4.00098 10V26C4.00098 26.5523 4.44869 27 5.00098 27H27.001C27.5533 27 28.001 26.5523 28.001 26V10C28.001 9.44772 27.5533 9 27.001 9Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M21 9V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H13C12.4696 5 11.9609 5.21071 11.5858 5.58579C11.2107 5.96086 11 6.46957 11 7V9" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M28.001 15.7887C24.3539 17.8988 20.2136 19.0067 16 19.0001C11.7872 19.0067 7.64755 17.8991 4.00085 15.7898" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M14.5 15H17.5" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Страть Партнером </p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="partneram.html" target="_blank"></a>
+                </div>
+                <div class="contents @6xl/body:grid grid-cols-2 gap-4 @6xl/body:col-span-3">
+                  <div class="border-2 border-primary hover:border-primaryHover rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer overflow-hidden bg-white">
+                    <div class="flex flex-wrap gap-2 items-center">
+                      <p class="font-Montserrat font-medium text-black text-xl">3D Практикум</p>
+                    </div>
+                    <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M28 22.1653V9.83496C28 9.65752 27.9528 9.48328 27.8632 9.33012C27.7736 9.17695 27.6449 9.05038 27.4903 8.96339L16.4903 2.77589C16.3406 2.69169 16.1717 2.64746 16 2.64746C15.8283 2.64746 15.6594 2.69169 15.5097 2.77589L4.50974 8.96339C4.35509 9.05038 4.22637 9.17695 4.13679 9.33012C4.04721 9.48328 4 9.65752 4 9.83496V22.1653C4 22.3427 4.04721 22.5169 4.13679 22.6701C4.22637 22.8233 4.35509 22.9499 4.50974 23.0368L15.5097 29.2243C15.6594 29.3085 15.8283 29.3528 16 29.3528C16.1717 29.3528 16.3406 29.3085 16.4903 29.2243L27.4903 23.0368C27.6449 22.9499 27.7736 22.8233 27.8632 22.6701C27.9528 22.5169 28 22.3427 28 22.1653Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M27.8621 9.32827L16.1186 16L4.1385 9.32715" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M16.1186 16L16.0013 29.3527" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg><a class="absolute top-0 left-0 inset-0" href="3d-praktikum.html" target="_blank"></a>
+                  </div>
+                  <div class="border-2 border-primary hover:border-primaryHover rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer overflow-hidden bg-white">
+                    <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.00024 12H29.0002L16.0002 4L3.00024 12Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M7.00031 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M13.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M19.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M25.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M4.00031 22H28.0003" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M2.00031 26H30.0003" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <div class="flex flex-wrap gap-2 items-center">
+                      <p class="font-Montserrat font-medium text-black text-xl">Удостоверение гос.образца</p>
+                    </div><a class="absolute top-0 left-0 inset-0" href="udostoverenie-gos.obrazca.html" target="_blank"></a>
+                  </div>
+                </div>
+                <div class="border-2 border-primary hover:border-primaryHover rounded-lg p-4 shadow-md min-h-32 relative @6xl/body:col-span-3 cursor-pointer overflow-hidden bg-white">
+                  <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 14H24" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M19 18H24" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M11.5126 18C13.1694 18 14.5126 16.6569 14.5126 15C14.5126 13.3431 13.1694 12 11.5126 12C9.85572 12 8.51257 13.3431 8.51257 15C8.51257 16.6569 9.85572 18 11.5126 18Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M7.63855 20.9999C7.86049 20.1413 8.36141 19.3807 9.0626 18.8377C9.76379 18.2947 10.6255 18 11.5124 18C12.3992 18 13.261 18.2946 13.9622 18.8375C14.6634 19.3805 15.1644 20.141 15.3864 20.9997" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M27 6H5C4.44772 6 4 6.44772 4 7V25C4 25.5523 4.44772 26 5 26H27C27.5523 26 28 25.5523 28 25V7C28 6.44772 27.5523 6 27 6Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Наши эксперты</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="jeksperty.html" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6 @6xl/body:bg-lightGray rounded-b-lg py-8">
+            <div class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8">
+              <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr @6xl/body:grid-cols-full gap-4">
+                <div class="flex flex-col gap-4">
+                  <h1 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-5xl text-black @xs/body:text-center @6xl/body:text-start text-balance">Из опыта в знания</h1>
+                  <p class="font-Montserrat font-medium text-base text-black @xs/body:text-center @6xl/body:text-start">Учебный центр ООО "Автодор-Инжиниринг"</p>
+                </div><img class="w-auto aspect-16-9" src="./local/templates/tcavtodor/img/stub.jpg">
+              </div>
+              <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-2 @5xl/body:grid-cols-3 gap-4">
+                <div class="border-2 border-secondary hover:border-primaryHover rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden bg-white">
+                  <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 8V18" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6.77899 26.9999C7.77833 25.4648 9.1451 24.2035 10.7553 23.3304C12.3655 22.4573 14.1683 22 16 22C17.8317 22 19.6344 22.4573 21.2446 23.3304C22.8549 24.2035 24.2216 25.4648 25.221 26.9999" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M28 8L16 12L4 8L16 4L28 8Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M21.1671 10.2776C22.083 11.2798 22.6878 12.5267 22.9076 13.8665C23.1275 15.2062 22.953 16.581 22.4053 17.8234C21.8577 19.0657 20.9606 20.122 19.8234 20.8636C18.6861 21.6052 17.3577 22 16 22C14.6423 22 13.3139 21.6052 12.1766 20.8636C11.0394 20.122 10.1423 19.0657 9.59467 17.8234C9.04705 16.581 8.87254 15.2062 9.09239 13.8665C9.31224 12.5267 9.91696 11.2798 10.8329 10.2776" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Слушателям</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="slushateljam.html" target="_blank"></a>
+                </div>
+                <div class="border-2 border-secondary hover:border-primaryHover rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden bg-white">
+                  <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 22.5C18.7614 22.5 21 20.2614 21 17.5C21 14.7386 18.7614 12.5 16 12.5C13.2386 12.5 11 14.7386 11 17.5C11 20.2614 13.2386 22.5 16 22.5Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M24.5 14.5C25.6645 14.499 26.8131 14.7696 27.8547 15.2903C28.8963 15.811 29.8021 16.5674 30.5001 17.4995" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M1.49963 17.4997C2.19769 16.5676 3.10351 15.8111 4.14513 15.2904C5.18675 14.7697 6.33546 14.499 7.49999 14.5" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M8.80432 26.9999C9.46122 25.6506 10.4842 24.5133 11.7566 23.7176C13.0289 22.9219 14.4994 22.5 16 22.5C17.5007 22.5 18.9711 22.9219 20.2434 23.7176C21.5158 24.5132 22.5388 25.6506 23.1957 26.9998" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M7.49999 14.5C6.74103 14.4999 5.99779 14.2838 5.35703 13.8771C4.71627 13.4703 4.20445 12.8897 3.88134 12.2029C3.55823 11.5162 3.43716 10.7517 3.53227 9.99874C3.62737 9.24577 3.93474 8.5354 4.41846 7.95057C4.90218 7.36575 5.5423 6.93061 6.26407 6.69597C6.98584 6.46133 7.75947 6.43687 8.49462 6.62544C9.22978 6.81402 9.89611 7.20786 10.4158 7.76096C10.9355 8.31406 11.2871 9.0036 11.4296 9.74905" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M20.5703 9.74907C20.7127 9.00349 21.0643 8.31382 21.584 7.7606C22.1038 7.20738 22.7702 6.81344 23.5054 6.62479C24.2406 6.43614 25.0144 6.46056 25.7362 6.69521C26.4581 6.92985 27.0983 7.36504 27.5821 7.94994C28.0659 8.53484 28.3733 9.24531 28.4684 9.99838C28.5635 10.7515 28.4424 11.516 28.1192 12.2029C27.796 12.8897 27.2841 13.4704 26.6432 13.8771C26.0024 14.2839 25.259 14.4999 24.4999 14.4999" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Для юр.лиц.</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="dlja-jur-lic.html" target="_blank"></a>
+                </div>
+                <div class="border-2 border-secondary hover:border-primaryHover rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden bg-white">
+                  <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.001 9H5.00098C4.44869 9 4.00098 9.44772 4.00098 10V26C4.00098 26.5523 4.44869 27 5.00098 27H27.001C27.5533 27 28.001 26.5523 28.001 26V10C28.001 9.44772 27.5533 9 27.001 9Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M21 9V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H13C12.4696 5 11.9609 5.21071 11.5858 5.58579C11.2107 5.96086 11 6.46957 11 7V9" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M28.001 15.7887C24.3539 17.8988 20.2136 19.0067 16 19.0001C11.7872 19.0067 7.64755 17.8991 4.00085 15.7898" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M14.5 15H17.5" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Страть Партнером </p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="partneram.html" target="_blank"></a>
+                </div>
+                <div class="contents @6xl/body:grid grid-cols-2 gap-4 @6xl/body:col-span-3">
+                  <div class="border-2 border-secondary hover:border-primaryHover rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer overflow-hidden bg-white">
+                    <div class="flex flex-wrap gap-2 items-center">
+                      <p class="font-Montserrat font-medium text-black text-xl">3D Практикум</p>
+                    </div>
+                    <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M28 22.1653V9.83496C28 9.65752 27.9528 9.48328 27.8632 9.33012C27.7736 9.17695 27.6449 9.05038 27.4903 8.96339L16.4903 2.77589C16.3406 2.69169 16.1717 2.64746 16 2.64746C15.8283 2.64746 15.6594 2.69169 15.5097 2.77589L4.50974 8.96339C4.35509 9.05038 4.22637 9.17695 4.13679 9.33012C4.04721 9.48328 4 9.65752 4 9.83496V22.1653C4 22.3427 4.04721 22.5169 4.13679 22.6701C4.22637 22.8233 4.35509 22.9499 4.50974 23.0368L15.5097 29.2243C15.6594 29.3085 15.8283 29.3528 16 29.3528C16.1717 29.3528 16.3406 29.3085 16.4903 29.2243L27.4903 23.0368C27.6449 22.9499 27.7736 22.8233 27.8632 22.6701C27.9528 22.5169 28 22.3427 28 22.1653Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M27.8621 9.32827L16.1186 16L4.1385 9.32715" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M16.1186 16L16.0013 29.3527" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg><a class="absolute top-0 left-0 inset-0" href="3d-praktikum.html" target="_blank"></a>
+                  </div>
+                  <div class="border-2 border-secondary hover:border-primaryHover rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer overflow-hidden bg-white">
+                    <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.00024 12H29.0002L16.0002 4L3.00024 12Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M7.00031 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M13.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M19.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M25.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M4.00031 22H28.0003" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M2.00031 26H30.0003" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <div class="flex flex-wrap gap-2 items-center">
+                      <p class="font-Montserrat font-medium text-black text-xl">Удостоверение гос.образца</p>
+                    </div><a class="absolute top-0 left-0 inset-0" href="udostoverenie-gos.obrazca.html" target="_blank"></a>
+                  </div>
+                </div>
+                <div class="border-2 border-secondary hover:border-primaryHover rounded-lg p-4 shadow-md min-h-32 relative @6xl/body:col-span-3 cursor-pointer overflow-hidden bg-white">
+                  <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 14H24" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M19 18H24" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M11.5126 18C13.1694 18 14.5126 16.6569 14.5126 15C14.5126 13.3431 13.1694 12 11.5126 12C9.85572 12 8.51257 13.3431 8.51257 15C8.51257 16.6569 9.85572 18 11.5126 18Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M7.63855 20.9999C7.86049 20.1413 8.36141 19.3807 9.0626 18.8377C9.76379 18.2947 10.6255 18 11.5124 18C12.3992 18 13.261 18.2946 13.9622 18.8375C14.6634 19.3805 15.1644 20.141 15.3864 20.9997" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M27 6H5C4.44772 6 4 6.44772 4 7V25C4 25.5523 4.44772 26 5 26H27C27.5523 26 28 25.5523 28 25V7C28 6.44772 27.5523 6 27 6Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Наши эксперты</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="jeksperty.html" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6 @6xl/body:bg-lightGray rounded-b-lg py-8">
+            <div class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8">
+              <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr @6xl/body:grid-cols-full gap-4">
+                <div class="flex flex-col gap-4">
+                  <h1 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-5xl text-black @xs/body:text-center @6xl/body:text-start text-balance">Из опыта в знания</h1>
+                  <p class="font-Montserrat font-medium text-base text-black @xs/body:text-center @6xl/body:text-start">Учебный центр ООО "Автодор-Инжиниринг"</p>
+                </div><img class="w-auto aspect-16-9" src="./local/templates/tcavtodor/img/stub.jpg">
+              </div>
+              <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-2 @5xl/body:grid-cols-3 gap-4">
+                <div class="border-2 border-black hover:border-primaryHover rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden bg-white">
+                  <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 8V18" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6.77899 26.9999C7.77833 25.4648 9.1451 24.2035 10.7553 23.3304C12.3655 22.4573 14.1683 22 16 22C17.8317 22 19.6344 22.4573 21.2446 23.3304C22.8549 24.2035 24.2216 25.4648 25.221 26.9999" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M28 8L16 12L4 8L16 4L28 8Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M21.1671 10.2776C22.083 11.2798 22.6878 12.5267 22.9076 13.8665C23.1275 15.2062 22.953 16.581 22.4053 17.8234C21.8577 19.0657 20.9606 20.122 19.8234 20.8636C18.6861 21.6052 17.3577 22 16 22C14.6423 22 13.3139 21.6052 12.1766 20.8636C11.0394 20.122 10.1423 19.0657 9.59467 17.8234C9.04705 16.581 8.87254 15.2062 9.09239 13.8665C9.31224 12.5267 9.91696 11.2798 10.8329 10.2776" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Слушателям</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="slushateljam.html" target="_blank"></a>
+                </div>
+                <div class="border-2 border-black hover:border-primaryHover rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden bg-white">
+                  <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 22.5C18.7614 22.5 21 20.2614 21 17.5C21 14.7386 18.7614 12.5 16 12.5C13.2386 12.5 11 14.7386 11 17.5C11 20.2614 13.2386 22.5 16 22.5Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M24.5 14.5C25.6645 14.499 26.8131 14.7696 27.8547 15.2903C28.8963 15.811 29.8021 16.5674 30.5001 17.4995" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M1.49963 17.4997C2.19769 16.5676 3.10351 15.8111 4.14513 15.2904C5.18675 14.7697 6.33546 14.499 7.49999 14.5" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M8.80432 26.9999C9.46122 25.6506 10.4842 24.5133 11.7566 23.7176C13.0289 22.9219 14.4994 22.5 16 22.5C17.5007 22.5 18.9711 22.9219 20.2434 23.7176C21.5158 24.5132 22.5388 25.6506 23.1957 26.9998" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M7.49999 14.5C6.74103 14.4999 5.99779 14.2838 5.35703 13.8771C4.71627 13.4703 4.20445 12.8897 3.88134 12.2029C3.55823 11.5162 3.43716 10.7517 3.53227 9.99874C3.62737 9.24577 3.93474 8.5354 4.41846 7.95057C4.90218 7.36575 5.5423 6.93061 6.26407 6.69597C6.98584 6.46133 7.75947 6.43687 8.49462 6.62544C9.22978 6.81402 9.89611 7.20786 10.4158 7.76096C10.9355 8.31406 11.2871 9.0036 11.4296 9.74905" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M20.5703 9.74907C20.7127 9.00349 21.0643 8.31382 21.584 7.7606C22.1038 7.20738 22.7702 6.81344 23.5054 6.62479C24.2406 6.43614 25.0144 6.46056 25.7362 6.69521C26.4581 6.92985 27.0983 7.36504 27.5821 7.94994C28.0659 8.53484 28.3733 9.24531 28.4684 9.99838C28.5635 10.7515 28.4424 11.516 28.1192 12.2029C27.796 12.8897 27.2841 13.4704 26.6432 13.8771C26.0024 14.2839 25.259 14.4999 24.4999 14.4999" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Для юр.лиц.</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="dlja-jur-lic.html" target="_blank"></a>
+                </div>
+                <div class="border-2 border-black hover:border-primaryHover rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col gap-4 overflow-hidden bg-white">
+                  <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.001 9H5.00098C4.44869 9 4.00098 9.44772 4.00098 10V26C4.00098 26.5523 4.44869 27 5.00098 27H27.001C27.5533 27 28.001 26.5523 28.001 26V10C28.001 9.44772 27.5533 9 27.001 9Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M21 9V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H13C12.4696 5 11.9609 5.21071 11.5858 5.58579C11.2107 5.96086 11 6.46957 11 7V9" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M28.001 15.7887C24.3539 17.8988 20.2136 19.0067 16 19.0001C11.7872 19.0067 7.64755 17.8991 4.00085 15.7898" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M14.5 15H17.5" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Страть Партнером </p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="partneram.html" target="_blank"></a>
+                </div>
+                <div class="contents @6xl/body:grid grid-cols-2 gap-4 @6xl/body:col-span-3">
+                  <div class="border-2 border-black hover:border-primaryHover rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer overflow-hidden bg-white">
+                    <div class="flex flex-wrap gap-2 items-center">
+                      <p class="font-Montserrat font-medium text-black text-xl">3D Практикум</p>
+                    </div>
+                    <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M28 22.1653V9.83496C28 9.65752 27.9528 9.48328 27.8632 9.33012C27.7736 9.17695 27.6449 9.05038 27.4903 8.96339L16.4903 2.77589C16.3406 2.69169 16.1717 2.64746 16 2.64746C15.8283 2.64746 15.6594 2.69169 15.5097 2.77589L4.50974 8.96339C4.35509 9.05038 4.22637 9.17695 4.13679 9.33012C4.04721 9.48328 4 9.65752 4 9.83496V22.1653C4 22.3427 4.04721 22.5169 4.13679 22.6701C4.22637 22.8233 4.35509 22.9499 4.50974 23.0368L15.5097 29.2243C15.6594 29.3085 15.8283 29.3528 16 29.3528C16.1717 29.3528 16.3406 29.3085 16.4903 29.2243L27.4903 23.0368C27.6449 22.9499 27.7736 22.8233 27.8632 22.6701C27.9528 22.5169 28 22.3427 28 22.1653Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M27.8621 9.32827L16.1186 16L4.1385 9.32715" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M16.1186 16L16.0013 29.3527" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg><a class="absolute top-0 left-0 inset-0" href="3d-praktikum.html" target="_blank"></a>
+                  </div>
+                  <div class="border-2 border-black hover:border-primaryHover rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer overflow-hidden bg-white">
+                    <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.00024 12H29.0002L16.0002 4L3.00024 12Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M7.00031 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M13.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M19.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M25.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M4.00031 22H28.0003" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M2.00031 26H30.0003" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <div class="flex flex-wrap gap-2 items-center">
+                      <p class="font-Montserrat font-medium text-black text-xl">Удостоверение гос.образца</p>
+                    </div><a class="absolute top-0 left-0 inset-0" href="udostoverenie-gos.obrazca.html" target="_blank"></a>
+                  </div>
+                </div>
+                <div class="border-2 border-black hover:border-primaryHover rounded-lg p-4 shadow-md min-h-32 relative @6xl/body:col-span-3 cursor-pointer overflow-hidden bg-white">
+                  <svg class=" absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4" width="128" height="128" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 14H24" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M19 18H24" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M11.5126 18C13.1694 18 14.5126 16.6569 14.5126 15C14.5126 13.3431 13.1694 12 11.5126 12C9.85572 12 8.51257 13.3431 8.51257 15C8.51257 16.6569 9.85572 18 11.5126 18Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M7.63855 20.9999C7.86049 20.1413 8.36141 19.3807 9.0626 18.8377C9.76379 18.2947 10.6255 18 11.5124 18C12.3992 18 13.261 18.2946 13.9622 18.8375C14.6634 19.3805 15.1644 20.141 15.3864 20.9997" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M27 6H5C4.44772 6 4 6.44772 4 7V25C4 25.5523 4.44772 26 5 26H27C27.5523 26 28 25.5523 28 25V7C28 6.44772 27.5523 6 27 6Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Наши эксперты</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="jeksperty.html" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6 @6xl/body:bg-lightGray rounded-b-lg py-8">
+            <div class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8">
+              <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr @6xl/body:grid-cols-full gap-4">
+                <div class="flex flex-col gap-4">
+                  <h1 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-5xl text-black @xs/body:text-center @6xl/body:text-start text-balance">Из опыта в знания</h1>
+                  <p class="font-Montserrat font-medium text-base text-black @xs/body:text-center @6xl/body:text-start">Учебный центр ООО "Автодор-Инжиниринг"</p>
+                </div><img class="w-auto aspect-16-9" src="./local/templates/tcavtodor/img/stub.jpg">
+              </div>
+              <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-2 @5xl/body:grid-cols-3 gap-4">
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col justify-between gap-4 overflow-hidden bg-white">
+                  <svg class=" bg-lightGray rounded-lg p-1 shadow-custom-1" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 8V18" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6.77899 26.9999C7.77833 25.4648 9.1451 24.2035 10.7553 23.3304C12.3655 22.4573 14.1683 22 16 22C17.8317 22 19.6344 22.4573 21.2446 23.3304C22.8549 24.2035 24.2216 25.4648 25.221 26.9999" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M28 8L16 12L4 8L16 4L28 8Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M21.1671 10.2776C22.083 11.2798 22.6878 12.5267 22.9076 13.8665C23.1275 15.2062 22.953 16.581 22.4053 17.8234C21.8577 19.0657 20.9606 20.122 19.8234 20.8636C18.6861 21.6052 17.3577 22 16 22C14.6423 22 13.3139 21.6052 12.1766 20.8636C11.0394 20.122 10.1423 19.0657 9.59467 17.8234C9.04705 16.581 8.87254 15.2062 9.09239 13.8665C9.31224 12.5267 9.91696 11.2798 10.8329 10.2776" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Слушателям</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="slushateljam.html" target="_blank"></a>
+                </div>
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col justify-between gap-4 overflow-hidden bg-white">
+                  <svg class=" bg-lightGray rounded-lg p-1 shadow-custom-1" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 22.5C18.7614 22.5 21 20.2614 21 17.5C21 14.7386 18.7614 12.5 16 12.5C13.2386 12.5 11 14.7386 11 17.5C11 20.2614 13.2386 22.5 16 22.5Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M24.5 14.5C25.6645 14.499 26.8131 14.7696 27.8547 15.2903C28.8963 15.811 29.8021 16.5674 30.5001 17.4995" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M1.49963 17.4997C2.19769 16.5676 3.10351 15.8111 4.14513 15.2904C5.18675 14.7697 6.33546 14.499 7.49999 14.5" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M8.80432 26.9999C9.46122 25.6506 10.4842 24.5133 11.7566 23.7176C13.0289 22.9219 14.4994 22.5 16 22.5C17.5007 22.5 18.9711 22.9219 20.2434 23.7176C21.5158 24.5132 22.5388 25.6506 23.1957 26.9998" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M7.49999 14.5C6.74103 14.4999 5.99779 14.2838 5.35703 13.8771C4.71627 13.4703 4.20445 12.8897 3.88134 12.2029C3.55823 11.5162 3.43716 10.7517 3.53227 9.99874C3.62737 9.24577 3.93474 8.5354 4.41846 7.95057C4.90218 7.36575 5.5423 6.93061 6.26407 6.69597C6.98584 6.46133 7.75947 6.43687 8.49462 6.62544C9.22978 6.81402 9.89611 7.20786 10.4158 7.76096C10.9355 8.31406 11.2871 9.0036 11.4296 9.74905" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M20.5703 9.74907C20.7127 9.00349 21.0643 8.31382 21.584 7.7606C22.1038 7.20738 22.7702 6.81344 23.5054 6.62479C24.2406 6.43614 25.0144 6.46056 25.7362 6.69521C26.4581 6.92985 27.0983 7.36504 27.5821 7.94994C28.0659 8.53484 28.3733 9.24531 28.4684 9.99838C28.5635 10.7515 28.4424 11.516 28.1192 12.2029C27.796 12.8897 27.2841 13.4704 26.6432 13.8771C26.0024 14.2839 25.259 14.4999 24.4999 14.4999" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Для юр.лиц.</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="dlja-jur-lic.html" target="_blank"></a>
+                </div>
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col justify-between gap-4 overflow-hidden bg-white">
+                  <svg class=" bg-lightGray rounded-lg p-1 shadow-custom-1" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.001 9H5.00098C4.44869 9 4.00098 9.44772 4.00098 10V26C4.00098 26.5523 4.44869 27 5.00098 27H27.001C27.5533 27 28.001 26.5523 28.001 26V10C28.001 9.44772 27.5533 9 27.001 9Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M21 9V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H13C12.4696 5 11.9609 5.21071 11.5858 5.58579C11.2107 5.96086 11 6.46957 11 7V9" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M28.001 15.7887C24.3539 17.8988 20.2136 19.0067 16 19.0001C11.7872 19.0067 7.64755 17.8991 4.00085 15.7898" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M14.5 15H17.5" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Страть Партнером </p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="partneram.html" target="_blank"></a>
+                </div>
+                <div class="contents @6xl/body:grid grid-cols-2 gap-4 @6xl/body:col-span-3">
+                  <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md flex flex-col justify-between gap-4 min-h-32 relative cursor-pointer overflow-hidden bg-white">
+                    <svg class=" bg-lightGray rounded-lg p-1 shadow-custom-1" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M28 22.1653V9.83496C28 9.65752 27.9528 9.48328 27.8632 9.33012C27.7736 9.17695 27.6449 9.05038 27.4903 8.96339L16.4903 2.77589C16.3406 2.69169 16.1717 2.64746 16 2.64746C15.8283 2.64746 15.6594 2.69169 15.5097 2.77589L4.50974 8.96339C4.35509 9.05038 4.22637 9.17695 4.13679 9.33012C4.04721 9.48328 4 9.65752 4 9.83496V22.1653C4 22.3427 4.04721 22.5169 4.13679 22.6701C4.22637 22.8233 4.35509 22.9499 4.50974 23.0368L15.5097 29.2243C15.6594 29.3085 15.8283 29.3528 16 29.3528C16.1717 29.3528 16.3406 29.3085 16.4903 29.2243L27.4903 23.0368C27.6449 22.9499 27.7736 22.8233 27.8632 22.6701C27.9528 22.5169 28 22.3427 28 22.1653Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M27.8621 9.32827L16.1186 16L4.1385 9.32715" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M16.1186 16L16.0013 29.3527" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <div class="flex flex-wrap gap-2 items-center">
+                      <p class="font-Montserrat font-medium text-black text-xl">3D Практикум</p>
+                    </div><a class="absolute top-0 left-0 inset-0" href="3d-praktikum.html" target="_blank"></a>
+                  </div>
+                  <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md flex flex-col justify-between gap-4 min-h-32 relative cursor-pointer overflow-hidden bg-white">
+                    <svg class=" bg-lightGray rounded-lg p-1 shadow-custom-1" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.00024 12H29.0002L16.0002 4L3.00024 12Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M7.00031 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M13.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M19.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M25.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M4.00031 22H28.0003" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M2.00031 26H30.0003" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <div class="flex flex-wrap gap-2 items-center">
+                      <p class="font-Montserrat font-medium text-black text-xl">Удостоверение гос.образца</p>
+                    </div><a class="absolute top-0 left-0 inset-0" href="udostoverenie-gos.obrazca.html" target="_blank"></a>
+                  </div>
+                </div>
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 flex flex-col justify-between gap-4 relative @6xl/body:col-span-3 cursor-pointer overflow-hidden bg-white">
+                  <svg class=" bg-lightGray rounded-lg p-1 shadow-custom-1" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 14H24" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M19 18H24" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M11.5126 18C13.1694 18 14.5126 16.6569 14.5126 15C14.5126 13.3431 13.1694 12 11.5126 12C9.85572 12 8.51257 13.3431 8.51257 15C8.51257 16.6569 9.85572 18 11.5126 18Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M7.63855 20.9999C7.86049 20.1413 8.36141 19.3807 9.0626 18.8377C9.76379 18.2947 10.6255 18 11.5124 18C12.3992 18 13.261 18.2946 13.9622 18.8375C14.6634 19.3805 15.1644 20.141 15.3864 20.9997" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M27 6H5C4.44772 6 4 6.44772 4 7V25C4 25.5523 4.44772 26 5 26H27C27.5523 26 28 25.5523 28 25V7C28 6.44772 27.5523 6 27 6Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Наши эксперты</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="jeksperty.html" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6 @6xl/body:bg-lightGray rounded-b-lg py-8">
+            <div class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8">
+              <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr @6xl/body:grid-cols-full gap-4">
+                <div class="flex flex-col gap-4">
+                  <h1 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-5xl text-black @xs/body:text-center @6xl/body:text-start text-balance">Из опыта в знания</h1>
+                  <p class="font-Montserrat font-medium text-base text-black @xs/body:text-center @6xl/body:text-start">Учебный центр ООО "Автодор-Инжиниринг"</p>
+                </div><img class="w-auto aspect-16-9" src="./local/templates/tcavtodor/img/stub.jpg">
+              </div>
+              <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-2 @5xl/body:grid-cols-3 gap-4">
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col justify-between gap-4 overflow-hidden bg-white">
+                  <svg class="rounded-lg p-1 shadow-md" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 8V18" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6.77899 26.9999C7.77833 25.4648 9.1451 24.2035 10.7553 23.3304C12.3655 22.4573 14.1683 22 16 22C17.8317 22 19.6344 22.4573 21.2446 23.3304C22.8549 24.2035 24.2216 25.4648 25.221 26.9999" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M28 8L16 12L4 8L16 4L28 8Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M21.1671 10.2776C22.083 11.2798 22.6878 12.5267 22.9076 13.8665C23.1275 15.2062 22.953 16.581 22.4053 17.8234C21.8577 19.0657 20.9606 20.122 19.8234 20.8636C18.6861 21.6052 17.3577 22 16 22C14.6423 22 13.3139 21.6052 12.1766 20.8636C11.0394 20.122 10.1423 19.0657 9.59467 17.8234C9.04705 16.581 8.87254 15.2062 9.09239 13.8665C9.31224 12.5267 9.91696 11.2798 10.8329 10.2776" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Слушателям</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="slushateljam.html" target="_blank"></a>
+                </div>
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col justify-between gap-4 overflow-hidden bg-white">
+                  <svg class="rounded-lg p-1 shadow-md" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 22.5C18.7614 22.5 21 20.2614 21 17.5C21 14.7386 18.7614 12.5 16 12.5C13.2386 12.5 11 14.7386 11 17.5C11 20.2614 13.2386 22.5 16 22.5Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M24.5 14.5C25.6645 14.499 26.8131 14.7696 27.8547 15.2903C28.8963 15.811 29.8021 16.5674 30.5001 17.4995" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M1.49963 17.4997C2.19769 16.5676 3.10351 15.8111 4.14513 15.2904C5.18675 14.7697 6.33546 14.499 7.49999 14.5" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M8.80432 26.9999C9.46122 25.6506 10.4842 24.5133 11.7566 23.7176C13.0289 22.9219 14.4994 22.5 16 22.5C17.5007 22.5 18.9711 22.9219 20.2434 23.7176C21.5158 24.5132 22.5388 25.6506 23.1957 26.9998" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M7.49999 14.5C6.74103 14.4999 5.99779 14.2838 5.35703 13.8771C4.71627 13.4703 4.20445 12.8897 3.88134 12.2029C3.55823 11.5162 3.43716 10.7517 3.53227 9.99874C3.62737 9.24577 3.93474 8.5354 4.41846 7.95057C4.90218 7.36575 5.5423 6.93061 6.26407 6.69597C6.98584 6.46133 7.75947 6.43687 8.49462 6.62544C9.22978 6.81402 9.89611 7.20786 10.4158 7.76096C10.9355 8.31406 11.2871 9.0036 11.4296 9.74905" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M20.5703 9.74907C20.7127 9.00349 21.0643 8.31382 21.584 7.7606C22.1038 7.20738 22.7702 6.81344 23.5054 6.62479C24.2406 6.43614 25.0144 6.46056 25.7362 6.69521C26.4581 6.92985 27.0983 7.36504 27.5821 7.94994C28.0659 8.53484 28.3733 9.24531 28.4684 9.99838C28.5635 10.7515 28.4424 11.516 28.1192 12.2029C27.796 12.8897 27.2841 13.4704 26.6432 13.8771C26.0024 14.2839 25.259 14.4999 24.4999 14.4999" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Для юр.лиц.</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="dlja-jur-lic.html" target="_blank"></a>
+                </div>
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col justify-between gap-4 overflow-hidden bg-white">
+                  <svg class="rounded-lg p-1 shadow-md" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.001 9H5.00098C4.44869 9 4.00098 9.44772 4.00098 10V26C4.00098 26.5523 4.44869 27 5.00098 27H27.001C27.5533 27 28.001 26.5523 28.001 26V10C28.001 9.44772 27.5533 9 27.001 9Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M21 9V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H13C12.4696 5 11.9609 5.21071 11.5858 5.58579C11.2107 5.96086 11 6.46957 11 7V9" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M28.001 15.7887C24.3539 17.8988 20.2136 19.0067 16 19.0001C11.7872 19.0067 7.64755 17.8991 4.00085 15.7898" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M14.5 15H17.5" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Страть Партнером </p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="partneram.html" target="_blank"></a>
+                </div>
+                <div class="contents @6xl/body:grid grid-cols-2 gap-4 @6xl/body:col-span-3">
+                  <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md flex flex-col justify-between gap-4 min-h-32 relative cursor-pointer overflow-hidden bg-white">
+                    <svg class="rounded-lg p-1 shadow-md" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M28 22.1653V9.83496C28 9.65752 27.9528 9.48328 27.8632 9.33012C27.7736 9.17695 27.6449 9.05038 27.4903 8.96339L16.4903 2.77589C16.3406 2.69169 16.1717 2.64746 16 2.64746C15.8283 2.64746 15.6594 2.69169 15.5097 2.77589L4.50974 8.96339C4.35509 9.05038 4.22637 9.17695 4.13679 9.33012C4.04721 9.48328 4 9.65752 4 9.83496V22.1653C4 22.3427 4.04721 22.5169 4.13679 22.6701C4.22637 22.8233 4.35509 22.9499 4.50974 23.0368L15.5097 29.2243C15.6594 29.3085 15.8283 29.3528 16 29.3528C16.1717 29.3528 16.3406 29.3085 16.4903 29.2243L27.4903 23.0368C27.6449 22.9499 27.7736 22.8233 27.8632 22.6701C27.9528 22.5169 28 22.3427 28 22.1653Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M27.8621 9.32827L16.1186 16L4.1385 9.32715" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M16.1186 16L16.0013 29.3527" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <div class="flex flex-wrap gap-2 items-center">
+                      <p class="font-Montserrat font-medium text-black text-xl">3D Практикум</p>
+                    </div><a class="absolute top-0 left-0 inset-0" href="3d-praktikum.html" target="_blank"></a>
+                  </div>
+                  <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md flex flex-col justify-between gap-4 min-h-32 relative cursor-pointer overflow-hidden bg-white">
+                    <svg class="rounded-lg p-1 shadow-md" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.00024 12H29.0002L16.0002 4L3.00024 12Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M7.00031 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M13.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M19.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M25.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M4.00031 22H28.0003" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M2.00031 26H30.0003" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <div class="flex flex-wrap gap-2 items-center">
+                      <p class="font-Montserrat font-medium text-black text-xl">Удостоверение гос.образца</p>
+                    </div><a class="absolute top-0 left-0 inset-0" href="udostoverenie-gos.obrazca.html" target="_blank"></a>
+                  </div>
+                </div>
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 flex flex-col justify-between gap-4 relative @6xl/body:col-span-3 cursor-pointer overflow-hidden bg-white">
+                  <svg class="rounded-lg p-1 shadow-md" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 14H24" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M19 18H24" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M11.5126 18C13.1694 18 14.5126 16.6569 14.5126 15C14.5126 13.3431 13.1694 12 11.5126 12C9.85572 12 8.51257 13.3431 8.51257 15C8.51257 16.6569 9.85572 18 11.5126 18Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M7.63855 20.9999C7.86049 20.1413 8.36141 19.3807 9.0626 18.8377C9.76379 18.2947 10.6255 18 11.5124 18C12.3992 18 13.261 18.2946 13.9622 18.8375C14.6634 19.3805 15.1644 20.141 15.3864 20.9997" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M27 6H5C4.44772 6 4 6.44772 4 7V25C4 25.5523 4.44772 26 5 26H27C27.5523 26 28 25.5523 28 25V7C28 6.44772 27.5523 6 27 6Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Наши эксперты</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="jeksperty.html" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container mx-auto flex flex-col gap-8 pt-10 @6xl/body:px-6 @6xl/body:bg-lightGray rounded-b-lg py-8">
+            <div class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr gap-8">
+              <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr @6xl/body:grid-cols-full gap-4">
+                <div class="flex flex-col gap-4">
+                  <h1 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-5xl text-black @xs/body:text-center @6xl/body:text-start text-balance">Из опыта в знания</h1>
+                  <p class="font-Montserrat font-medium text-base text-black @xs/body:text-center @6xl/body:text-start">Учебный центр ООО "Автодор-Инжиниринг"</p>
+                </div><img class="w-auto aspect-16-9" src="./local/templates/tcavtodor/img/stub.jpg">
+              </div>
+              <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-2 @5xl/body:grid-cols-3 gap-4">
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col justify-between gap-4 overflow-hidden bg-white">
+                  <svg class="rounded-lg p-1" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 8V18" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6.77899 26.9999C7.77833 25.4648 9.1451 24.2035 10.7553 23.3304C12.3655 22.4573 14.1683 22 16 22C17.8317 22 19.6344 22.4573 21.2446 23.3304C22.8549 24.2035 24.2216 25.4648 25.221 26.9999" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M28 8L16 12L4 8L16 4L28 8Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M21.1671 10.2776C22.083 11.2798 22.6878 12.5267 22.9076 13.8665C23.1275 15.2062 22.953 16.581 22.4053 17.8234C21.8577 19.0657 20.9606 20.122 19.8234 20.8636C18.6861 21.6052 17.3577 22 16 22C14.6423 22 13.3139 21.6052 12.1766 20.8636C11.0394 20.122 10.1423 19.0657 9.59467 17.8234C9.04705 16.581 8.87254 15.2062 9.09239 13.8665C9.31224 12.5267 9.91696 11.2798 10.8329 10.2776" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Слушателям</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="slushateljam.html" target="_blank"></a>
+                </div>
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col justify-between gap-4 overflow-hidden bg-white">
+                  <svg class="rounded-lg p-1" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 22.5C18.7614 22.5 21 20.2614 21 17.5C21 14.7386 18.7614 12.5 16 12.5C13.2386 12.5 11 14.7386 11 17.5C11 20.2614 13.2386 22.5 16 22.5Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M24.5 14.5C25.6645 14.499 26.8131 14.7696 27.8547 15.2903C28.8963 15.811 29.8021 16.5674 30.5001 17.4995" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M1.49963 17.4997C2.19769 16.5676 3.10351 15.8111 4.14513 15.2904C5.18675 14.7697 6.33546 14.499 7.49999 14.5" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M8.80432 26.9999C9.46122 25.6506 10.4842 24.5133 11.7566 23.7176C13.0289 22.9219 14.4994 22.5 16 22.5C17.5007 22.5 18.9711 22.9219 20.2434 23.7176C21.5158 24.5132 22.5388 25.6506 23.1957 26.9998" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M7.49999 14.5C6.74103 14.4999 5.99779 14.2838 5.35703 13.8771C4.71627 13.4703 4.20445 12.8897 3.88134 12.2029C3.55823 11.5162 3.43716 10.7517 3.53227 9.99874C3.62737 9.24577 3.93474 8.5354 4.41846 7.95057C4.90218 7.36575 5.5423 6.93061 6.26407 6.69597C6.98584 6.46133 7.75947 6.43687 8.49462 6.62544C9.22978 6.81402 9.89611 7.20786 10.4158 7.76096C10.9355 8.31406 11.2871 9.0036 11.4296 9.74905" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M20.5703 9.74907C20.7127 9.00349 21.0643 8.31382 21.584 7.7606C22.1038 7.20738 22.7702 6.81344 23.5054 6.62479C24.2406 6.43614 25.0144 6.46056 25.7362 6.69521C26.4581 6.92985 27.0983 7.36504 27.5821 7.94994C28.0659 8.53484 28.3733 9.24531 28.4684 9.99838C28.5635 10.7515 28.4424 11.516 28.1192 12.2029C27.796 12.8897 27.2841 13.4704 26.6432 13.8771C26.0024 14.2839 25.259 14.4999 24.4999 14.4999" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Для юр.лиц.</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="dlja-jur-lic.html" target="_blank"></a>
+                </div>
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 relative cursor-pointer flex flex-col justify-between gap-4 overflow-hidden bg-white">
+                  <svg class="rounded-lg p-1" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.001 9H5.00098C4.44869 9 4.00098 9.44772 4.00098 10V26C4.00098 26.5523 4.44869 27 5.00098 27H27.001C27.5533 27 28.001 26.5523 28.001 26V10C28.001 9.44772 27.5533 9 27.001 9Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M21 9V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H13C12.4696 5 11.9609 5.21071 11.5858 5.58579C11.2107 5.96086 11 6.46957 11 7V9" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M28.001 15.7887C24.3539 17.8988 20.2136 19.0067 16 19.0001C11.7872 19.0067 7.64755 17.8991 4.00085 15.7898" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M14.5 15H17.5" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Страть Партнером </p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="partneram.html" target="_blank"></a>
+                </div>
+                <div class="contents @6xl/body:grid grid-cols-2 gap-4 @6xl/body:col-span-3">
+                  <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md flex flex-col justify-between gap-4 min-h-32 relative cursor-pointer overflow-hidden bg-white">
+                    <svg class="rounded-lg p-1" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M28 22.1653V9.83496C28 9.65752 27.9528 9.48328 27.8632 9.33012C27.7736 9.17695 27.6449 9.05038 27.4903 8.96339L16.4903 2.77589C16.3406 2.69169 16.1717 2.64746 16 2.64746C15.8283 2.64746 15.6594 2.69169 15.5097 2.77589L4.50974 8.96339C4.35509 9.05038 4.22637 9.17695 4.13679 9.33012C4.04721 9.48328 4 9.65752 4 9.83496V22.1653C4 22.3427 4.04721 22.5169 4.13679 22.6701C4.22637 22.8233 4.35509 22.9499 4.50974 23.0368L15.5097 29.2243C15.6594 29.3085 15.8283 29.3528 16 29.3528C16.1717 29.3528 16.3406 29.3085 16.4903 29.2243L27.4903 23.0368C27.6449 22.9499 27.7736 22.8233 27.8632 22.6701C27.9528 22.5169 28 22.3427 28 22.1653Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M27.8621 9.32827L16.1186 16L4.1385 9.32715" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M16.1186 16L16.0013 29.3527" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <div class="flex flex-wrap gap-2 items-center">
+                      <p class="font-Montserrat font-medium text-black text-xl">3D Практикум</p>
+                    </div><a class="absolute top-0 left-0 inset-0" href="3d-praktikum.html" target="_blank"></a>
+                  </div>
+                  <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md flex flex-col justify-between gap-4 min-h-32 relative cursor-pointer overflow-hidden bg-white">
+                    <svg class="rounded-lg p-1" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.00024 12H29.0002L16.0002 4L3.00024 12Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M7.00031 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M13.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M19.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M25.0003 12V22" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M4.00031 22H28.0003" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M2.00031 26H30.0003" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <div class="flex flex-wrap gap-2 items-center">
+                      <p class="font-Montserrat font-medium text-black text-xl">Удостоверение гос.образца</p>
+                    </div><a class="absolute top-0 left-0 inset-0" href="udostoverenie-gos.obrazca.html" target="_blank"></a>
+                  </div>
+                </div>
+                <div class="border border-transparent hover:border-secondary rounded-lg p-4 shadow-md min-h-32 flex flex-col justify-between gap-4 relative @6xl/body:col-span-3 cursor-pointer overflow-hidden bg-white">
+                  <svg class="rounded-lg p-1" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 14H24" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M19 18H24" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M11.5126 18C13.1694 18 14.5126 16.6569 14.5126 15C14.5126 13.3431 13.1694 12 11.5126 12C9.85572 12 8.51257 13.3431 8.51257 15C8.51257 16.6569 9.85572 18 11.5126 18Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M7.63855 20.9999C7.86049 20.1413 8.36141 19.3807 9.0626 18.8377C9.76379 18.2947 10.6255 18 11.5124 18C12.3992 18 13.261 18.2946 13.9622 18.8375C14.6634 19.3805 15.1644 20.141 15.3864 20.9997" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M27 6H5C4.44772 6 4 6.44772 4 7V25C4 25.5523 4.44772 26 5 26H27C27.5523 26 28 25.5523 28 25V7C28 6.44772 27.5523 6 27 6Z" stroke="#fd7e14" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <p class="font-Montserrat font-medium text-black text-xl">Наши эксперты</p>
+                  </div><a class="absolute top-0 left-0 inset-0" href="jeksperty.html" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
       <footer class="@container/footer py-16 bg-lightGray">
         <div class="@xs/footer:px-4 @7xl/footer:px-8 @7xl/footer:pl-[4.5rem] min-h-16 w-full relative">
           <div class="grid @xs/footer:grid-cols-full @3xl/footer:grid-cols-auto-auto @7xl/footer:grid-cols-auto-1fr gap-4 @5xl/footer:gap-12 @8xl/footer:gap-32">

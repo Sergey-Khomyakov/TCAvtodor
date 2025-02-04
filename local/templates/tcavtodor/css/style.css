@@ -621,6 +621,10 @@ body {
   z-index: 9999;
 }
 
+.shadow-custom-1 {
+  box-shadow: inset 0px 0px 5px 0px rgb(0 0 0 / 10%);
+}
+
 .slider-custom-1 {
   --swiffy-slider-item-gap: 2rem;
 }
@@ -1162,6 +1166,10 @@ body {
 
 .w-\[weird-and-invalid\] {
   width: weird-and-invalid;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .w-full {
@@ -3707,6 +3715,11 @@ body {
   border-color: rgb(253 126 20 / var(--tw-border-opacity, 1));
 }
 
+.hover\:border-primaryHover:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(238 80 6 / var(--tw-border-opacity, 1));
+}
+
 .hover\:border-secondary:hover {
   --tw-border-opacity: 1;
   border-color: rgb(108 112 125 / var(--tw-border-opacity, 1));
@@ -4033,14 +4046,6 @@ body {
 
   .\@xs\/body\:order-4 {
     order: 4;
-  }
-
-  .\@xs\/body\:order-5 {
-    order: 5;
-  }
-
-  .\@xs\/body\:order-6 {
-    order: 6;
   }
 
   .\@xs\/body\:mb-16 {
@@ -4499,77 +4504,6 @@ body {
   .\@6xl\/body\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .\@6xl\/body\:after\:absolute::after {
-    content: var(--tw-content);
-    position: absolute;
-  }
-
-  .\@6xl\/body\:after\:-bottom-8::after {
-    content: var(--tw-content);
-    bottom: -2rem;
-  }
-
-  .\@6xl\/body\:after\:left-full::after {
-    content: var(--tw-content);
-    left: 100%;
-  }
-
-  .\@6xl\/body\:after\:right-1\/2::after {
-    content: var(--tw-content);
-    right: 50%;
-  }
-
-  .\@6xl\/body\:after\:right-full::after {
-    content: var(--tw-content);
-    right: 100%;
-  }
-
-  .\@6xl\/body\:after\:top-1\/2::after {
-    content: var(--tw-content);
-    top: 50%;
-  }
-
-  .\@6xl\/body\:after\:h-0::after {
-    content: var(--tw-content);
-    height: 0px;
-  }
-
-  .\@6xl\/body\:after\:h-8::after {
-    content: var(--tw-content);
-    height: 2rem;
-  }
-
-  .\@6xl\/body\:after\:w-0::after {
-    content: var(--tw-content);
-    width: 0px;
-  }
-
-  .\@6xl\/body\:after\:w-8::after {
-    content: var(--tw-content);
-    width: 2rem;
-  }
-
-  .\@6xl\/body\:after\:border-b-2::after {
-    content: var(--tw-content);
-    border-bottom-width: 2px;
-  }
-
-  .\@6xl\/body\:after\:border-r-2::after {
-    content: var(--tw-content);
-    border-right-width: 2px;
-  }
-
-  .\@6xl\/body\:after\:border-dotted::after {
-    content: var(--tw-content);
-    border-style: dotted;
-  }
-
-  .\@6xl\/body\:after\:border-primary::after {
-    content: var(--tw-content);
-    --tw-border-opacity: 1;
-    border-color: rgb(253 126 20 / var(--tw-border-opacity, 1));
   }
 }
 
