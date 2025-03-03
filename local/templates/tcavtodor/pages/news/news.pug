@@ -8,6 +8,7 @@ block scripts
     script(src=`${path}/libs/jquery/jquery-3.7.1.min.js`)
     script(src=`${path}/libs/swiffy-slider-1.6.0/swiffy-slider.min.js`)
     script(src=`${path}/libs/imask/imask.js`)
+    script(src=`${path}/modules/burgermenu.js`)
     script(src=`${path}/modules/dialogMeneger.js`)
     script(src=`${path}/pages/news/js/index.js`)
 
@@ -46,7 +47,7 @@ block content
                     div(class="flex flex-col gap-4 p-4 rounded-lg bg-white")
                         p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black") Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dignissimos sit autem deleniti laudantium possimus, quisquam error, ratione assumenda, doloremque aspernatur labore. Sunt quibusdam odio distinctio tenetur beatae, fugit porro?
             div(class="container mx-auto")
-                div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
+                div(class="swiffy-slider slider-nav-touch slider-indicators-round slider-nav-outside slider-custom-2 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark slider-nav-visible")
                     div(class="slider-container pb-1")
                         article(class="flex flex-col gap-2 group relative")
                             img(class="w-full aspect-16-9 rounded-lg", alt="картинка программы", src=`${path}/img/stub.jpg`)

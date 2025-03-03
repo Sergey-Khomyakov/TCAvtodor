@@ -75,9 +75,9 @@ const renderDialogForm = (btn, dialog) => {
         const contentTitle = Object.assign(document.createElement("p"), {className: "font-Helvetica font-semibold text-xl text-black", textContent: "Вход в личный кабинет"});
         const contentForm = Object.assign(document.createElement("form"), {className: "flex flex-col gap-4", method: "dialog", action: "POST"});
 
-        if(dialogBody.parentElement.classList.contains('!max-w-96')){
-            dialogBody.parentElement.classList.add('max-w-96');
-            dialogBody.parentElement.classList.remove('max-w-[55rem]', 'aspect-16-9');
+        if(dialog.classList.contains('!max-w-96')){
+            dialog.classList.add('max-w-96');
+            dialog.classList.remove('max-w-[55rem]');
         }
 
         contentBox.appendChild(contentTitle);
@@ -157,9 +157,9 @@ const renderDialogForm = (btn, dialog) => {
             },
         ];
 
-        if(dialogBody.parentElement.classList.contains('!max-w-96')){
-            dialogBody.parentElement.classList.add('max-w-96');
-            dialogBody.parentElement.classList.remove('max-w-[55rem]', 'aspect-16-9');
+        if(dialog.classList.contains('!max-w-96')){
+            dialog.classList.add('max-w-96');
+            dialog.classList.remove('max-w-[55rem]');
         }
 
         const contentBox = Object.assign(document.createElement("div"), {className: "flex flex-col gap-6"});
@@ -235,9 +235,9 @@ const renderDialogForm = (btn, dialog) => {
             },
         ];
 
-        if(dialogBody.parentElement.classList.contains('!max-w-96')){
-            dialogBody.parentElement.classList.add('max-w-96');
-            dialogBody.parentElement.classList.remove('max-w-[55rem]', 'aspect-16-9');
+        if(dialog.classList.contains('!max-w-96')){
+            dialog.classList.add('max-w-96');
+            dialog.classList.remove('max-w-[55rem]');
         }
 
         const contentBox = Object.assign(document.createElement("div"), {className: "flex flex-col gap-6"});
@@ -314,9 +314,9 @@ const renderDialogForm = (btn, dialog) => {
         contentBox.appendChild(contentForm);
         dialogBody.appendChild(contentBox);
         
-        if(dialogBody.parentElement.classList.contains('!max-w-96')){
-            dialogBody.parentElement.classList.add('max-w-96');
-            dialogBody.parentElement.classList.remove('max-w-[55rem]', 'aspect-16-9');
+        if(dialog.classList.contains('!max-w-96')){
+            dialog.classList.add('max-w-96');
+            dialog.classList.remove('max-w-[55rem]');
         }
 
         renderInputs(inputArr, dialog, dialogBody);
@@ -347,10 +347,10 @@ const renderDialogForm = (btn, dialog) => {
     }else if(type === "authorInfo"){
         const authorId = btn.getAttribute('author-id');
         if(!authorId) return;
-
-        if(dialogBody.parentElement.classList.contains('max-w-96')){
-            dialogBody.parentElement.classList.remove('max-w-96');
-            dialogBody.parentElement.classList.add('max-w-[55rem]', 'aspect-16-9');
+        debugger
+        if(dialog.classList.contains('max-w-96')){
+            dialog.classList.remove('max-w-96');
+            dialog.classList.add('max-w-[55rem]');
         }
 
         const authorInfo = author.find(item => item.id === Number(authorId));
@@ -369,9 +369,9 @@ const renderDialogForm = (btn, dialog) => {
     }else{
         const policy = dialog.querySelector('[dialogPolicy]');
         policy.classList.add('hidden');
-        if(dialogBody.parentElement.classList.contains('!max-w-96')){
-            dialogBody.parentElement.classList.add('max-w-96');
-            dialogBody.parentElement.classList.remove('max-w-[55rem]', 'aspect-16-9');
+        if(dialog.classList.contains('!max-w-96')){
+            dialog.classList.add('max-w-96');
+            dialog.classList.remove('max-w-[55rem]');
         }
     }
 }

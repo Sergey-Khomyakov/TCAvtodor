@@ -605,6 +605,18 @@ body {
   position: relative;
 }
 
+.slider-nav-hidden .slider-container {
+  --swiffy-slider-nav-outside-size: 0;
+}
+
+.slider-nav-hidden .slider-nav {
+  display: none;
+}
+
+.slider-item-show1 {
+  --swiffy-slider-item-count: 1;
+}
+
 .aspect-16-9 {
   aspect-ratio: 16 / 9;
 }
@@ -928,6 +940,13 @@ body {
   -webkit-line-clamp: 2;
 }
 
+.line-clamp-4 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
 .line-clamp-none {
   overflow: visible;
   display: block;
@@ -1154,6 +1173,10 @@ body {
 
 .w-64 {
   width: 16rem;
+}
+
+.w-\[calc\(100\%-1rem\)\] {
+  width: calc(100% - 1rem);
 }
 
 .w-\[this-is\\\\\] {
@@ -2596,6 +2619,10 @@ body {
   background-origin: content-box;
 }
 
+.fill-black {
+  fill: #404040;
+}
+
 .stroke-black {
   stroke: #404040;
 }
@@ -3546,6 +3573,10 @@ body {
   .\@xs\/header\:zoom-75 {
     zoom: 0.75;
   }
+
+  .\@xs\/header\:zoom-90 {
+    zoom: 0.9;
+  }
 }
 
 @container (min-width: 20rem) {
@@ -3569,6 +3600,14 @@ body {
 @container body (min-width: 56rem) {
   .\@4xl\/body\:zoom-75 {
     zoom: 0.75;
+  }
+
+  .\@4xl\/body\:slider-nav-hidden .slider-container {
+    --swiffy-slider-nav-outside-size: 0;
+  }
+
+  .\@4xl\/body\:slider-nav-hidden .slider-nav {
+    display: none;
   }
 
   .\@4xl\/body\:slider-item-show3 {
@@ -4048,6 +4087,11 @@ body {
     order: 4;
   }
 
+  .\@xs\/body\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .\@xs\/body\:mb-16 {
     margin-bottom: 4rem;
   }
@@ -4122,10 +4166,6 @@ body {
     padding-right: 1rem;
   }
 
-  .\@xs\/body\:pb-2 {
-    padding-bottom: 0.5rem;
-  }
-
   .\@xs\/body\:text-center {
     text-align: center;
   }
@@ -4186,8 +4226,36 @@ body {
 }
 
 @container header (min-width: 20rem) {
+  .\@xs\/header\:absolute {
+    position: absolute;
+  }
+
+  .\@xs\/header\:left-0 {
+    left: 0px;
+  }
+
+  .\@xs\/header\:top-full {
+    top: 100%;
+  }
+
   .\@xs\/header\:hidden {
     display: none;
+  }
+
+  .\@xs\/header\:h-screen {
+    height: 100vh;
+  }
+
+  .\@xs\/header\:w-full {
+    width: 100%;
+  }
+
+  .\@xs\/header\:max-w-0 {
+    max-width: 0px;
+  }
+
+  .\@xs\/header\:flex-col {
+    flex-direction: column;
   }
 
   .\@xs\/header\:justify-end {
@@ -4209,6 +4277,14 @@ body {
 }
 
 @container (min-width: 20rem) {
+  .\@xs\:block {
+    display: block;
+  }
+
+  .\@xs\:flex-col {
+    flex-direction: column;
+  }
+
   .\@xs\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -4285,6 +4361,11 @@ body {
 }
 
 @container body (min-width: 56rem) {
+  .\@4xl\/body\:w-max {
+    width: -moz-max-content;
+    width: max-content;
+  }
+
   .\@4xl\/body\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -4304,6 +4385,10 @@ body {
   .\@4xl\/body\:justify-normal {
     justify-content: normal;
   }
+
+  .\@4xl\/body\:justify-between {
+    justify-content: space-between;
+  }
 }
 
 @container body (min-width: 64rem) {
@@ -4321,14 +4406,6 @@ body {
 
   .\@5xl\/body\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .\@5xl\/body\:overflow-x-auto {
-    overflow-x: auto;
-  }
-
-  .\@5xl\/body\:pb-0 {
-    padding-bottom: 0px;
   }
 }
 
@@ -4351,12 +4428,54 @@ body {
 }
 
 @container header (min-width: 64rem) {
+  .\@5xl\/header\:relative {
+    position: relative;
+  }
+
+  .\@5xl\/header\:left-auto {
+    left: auto;
+  }
+
+  .\@5xl\/header\:top-auto {
+    top: auto;
+  }
+
   .\@5xl\/header\:block {
     display: block;
   }
 
   .\@5xl\/header\:flex {
     display: flex;
+  }
+
+  .\@5xl\/header\:hidden {
+    display: none;
+  }
+
+  .\@5xl\/header\:h-full {
+    height: 100%;
+  }
+
+  .\@5xl\/header\:w-full {
+    width: 100%;
+  }
+
+  .\@5xl\/header\:w-max {
+    width: -moz-max-content;
+    width: max-content;
+  }
+
+  .\@5xl\/header\:max-w-max {
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+
+  .\@5xl\/header\:flex-row {
+    flex-direction: row;
+  }
+
+  .\@5xl\/header\:flex-wrap {
+    flex-wrap: wrap;
   }
 
   .\@5xl\/header\:gap-20 {
@@ -4393,6 +4512,10 @@ body {
 
   .\@6xl\/body\:mb-32 {
     margin-bottom: 8rem;
+  }
+
+  .\@6xl\/body\:ml-auto {
+    margin-left: auto;
   }
 
   .\@6xl\/body\:flex {
@@ -4435,6 +4558,10 @@ body {
     grid-template-columns: 100%;
   }
 
+  .\@6xl\/body\:flex-row {
+    flex-direction: row;
+  }
+
   .\@6xl\/body\:flex-col {
     flex-direction: column;
   }
@@ -4475,6 +4602,10 @@ body {
   .\@6xl\/body\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .\@6xl\/body\:pb-1 {
+    padding-bottom: 0.25rem;
   }
 
   .\@6xl\/body\:text-start {

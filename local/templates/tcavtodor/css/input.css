@@ -43,8 +43,24 @@
         zoom: 0.75;
     }
 
+    .zoom-90 {
+        zoom: 0.9;
+    }
+
+    .zoom-100 {
+        zoom: 1;
+    }
+
     .zoom-150 {
         zoom: 1.5;
+    }
+
+    .slider-nav-hidden .slider-container {
+        --swiffy-slider-nav-outside-size: 0;
+    }
+
+    .slider-nav-hidden .slider-nav {
+        display: none;
     }
 
     .slider-item-show4 {

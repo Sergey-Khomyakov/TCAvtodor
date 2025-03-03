@@ -10,11 +10,11 @@ include ../../../../../pug/ui/_productCard.pug
 block scripts
     - var path = "./local/templates/tcavtodor"
     script(src=`${path}/libs/jquery/jquery-3.7.1.min.js`)
+    script(src=`${path}/modules/burgermenu.js`)
 
 
 block head
     - var path = "./local/templates/tcavtodor"
-    link(rel="stylesheet", href=`${path}/libs/swiffy-slider-1.6.0/swiffy-slider.min.css`)
     link(rel="stylesheet", href=`${path}/css/style.css`)
     +head('Карта сайта - avtodor', '') 
 

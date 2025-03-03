@@ -12,6 +12,7 @@ block scripts
     script(src=`${path}/libs/jquery/jquery-3.7.1.min.js`)
     script(src=`${path}/libs/swiffy-slider-1.6.0/swiffy-slider.min.js`)
     script(src=`${path}/libs/imask/imask.js`)
+    script(src=`${path}/modules/burgermenu.js`)
     script(src=`${path}/modules/dialogMeneger.js`)
     script(src=`${path}/pages/slushateljam/js/index.js`)
 
@@ -69,7 +70,7 @@ block content
             div(class="container mx-auto flex flex-col gap-8 @6xl/body:px-6")
                 h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Этапы обучения
                 div(class="flex flex-col gap-4 justify-center items-center")
-                    article(class="flex gap-8 items-center relative w-full max-w-4xl")
+                    article(class="flex @xs:flex-col @6xl/body:flex-row gap-8 items-center relative w-full max-w-4xl")
                         svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class=" shrink-0")
                             g(class="layer", id="svg_3")
                                 path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
@@ -77,7 +78,7 @@ block content
                         div(class="flex flex-col gap-2")
                             p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance") Выбор программы
                             p(class="font-Montserrat font-medium text-base text-secondary text-balance") Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, repellat labore quibusdam necessitatibus consequuntur impedit minus eos aliquam porro dolorum officia harum vitae commodi. Quae praesentium debitis molestias error consectetur.
-                    article(class="flex gap-8 items-center relative w-full max-w-4xl")
+                    article(class="flex @xs:flex-col @6xl/body:flex-row gap-8 items-center relative w-full max-w-4xl")
                         svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class=" shrink-0")
                             g(class="layer", id="svg_3")
                                 path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
@@ -85,7 +86,7 @@ block content
                         div(class="flex flex-col gap-2")
                             p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance") Оплата обучения 
                             p(class="font-Montserrat font-medium text-base text-secondary text-balance") Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, repellat labore quibusdam necessitatibus consequuntur impedit minus eos aliquam porro dolorum officia harum vitae commodi. Quae praesentium debitis molestias error consectetur.
-                    article(class="flex gap-8 items-center relative w-full max-w-4xl")
+                    article(class="flex @xs:flex-col @6xl/body:flex-row gap-8 items-center relative w-full max-w-4xl")
                         svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class=" shrink-0")
                             g(class="layer", id="svg_3")
                                 path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
@@ -93,7 +94,7 @@ block content
                         div(class="flex flex-col gap-2")
                             p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance") Изучение учебных материалов
                             p(class="font-Montserrat font-medium text-base text-secondary text-balance") Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, repellat labore quibusdam necessitatibus consequuntur impedit minus eos aliquam porro dolorum officia harum vitae commodi. Quae praesentium debitis molestias error consectetur.
-                    article(class="flex gap-8 items-center relative w-full max-w-4xl")
+                    article(class="flex @xs:flex-col @6xl/body:flex-row gap-8 items-center relative w-full max-w-4xl")
                         svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class=" shrink-0")
                             g(class="layer", id="svg_3")
                                 path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
@@ -101,7 +102,7 @@ block content
                         div(class="flex flex-col gap-2")
                             p(class="font-Montserrat font-medium @xs/body:text-base @6xl/body:text-lg text-black text-balance") Прикрепление документов
                             p(class="font-Montserrat font-medium text-base text-secondary text-balance") Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, repellat labore quibusdam necessitatibus consequuntur impedit minus eos aliquam porro dolorum officia harum vitae commodi. Quae praesentium debitis molestias error consectetur.
-                    article(class="flex gap-8 items-center relative w-full max-w-4xl")
+                    article(class="flex @xs:flex-col @6xl/body:flex-row gap-8 items-center relative w-full max-w-4xl")
                         svg(width="150", height="125", xmlns="http://www.w3.org/2000/svg", xmlns:svg="http://www.w3.org/2000/svg", class=" shrink-0")
                             g(class="layer", id="svg_3")
                                 path(d="m2.33,1.48l109.12,0l36.37,60.75l-36.37,60.75l-109.12,0l36.37,-60.75l-36.37,-60.75z", fill="none", id="svg_1", stroke="#000000")
@@ -134,10 +135,10 @@ block content
                                     },
                                 ]
                             +cardDocs(items)
-                    a(href="#", class="bg-gradient-orange text-white rounded-lg p-4 px-6 text-xl w-max h-max mt-auto ml-auto") Выбрать программу
+                    a(href="#", class="bg-gradient-orange text-white rounded-lg p-4 px-6 text-xl w-max h-max mt-auto @xs/body:mx-auto @6xl/body:ml-auto") Выбрать программу
             div(class="container mx-auto flex flex-col gap-8 @6xl/body:px-6")
                 h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Популярные программы
-                div(class="swiffy-slider slider-nav-outside slider-nav-visible slider-indicators-round slider-indicators-outside slider-nav-round slider-nav-noloop slider-custom-1 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark")
+                div(class="swiffy-slider slider-nav-touch slider-nav-outside slider-nav-visible slider-indicators-round slider-indicators-outside slider-nav-round slider-nav-noloop slider-custom-1 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark")
                     div(class="slider-container pb-1")
                         -
                             var items = [
@@ -220,7 +221,7 @@ block content
             div(class="py-16 @6xl/body:px-6")
                 div(class="container mx-auto flex flex-col gap-8")
                     h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Отзывы
-                    div(class="swiffy-slider slider-indicators-round slider-nav-outside slider-custom-2 slider-indicators-outside slider-nav-noloop @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @6xl/body:slider-item-show3 slider-indicators-dark slider-nav-visible")
+                    div(class="swiffy-slider slider-nav-touch slider-indicators-round slider-nav-outside slider-custom-2 slider-indicators-outside slider-nav-noloop @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @6xl/body:slider-item-show3 slider-indicators-dark slider-nav-visible")
                         div(class="slider-container pb-1 items-start")
                             -
                                 var items = [

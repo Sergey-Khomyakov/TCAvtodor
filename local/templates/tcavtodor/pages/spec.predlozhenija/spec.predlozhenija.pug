@@ -9,6 +9,7 @@ block scripts
     script(src=`${path}/libs/jquery/jquery-3.7.1.min.js`)
     script(src=`${path}/libs/swiffy-slider-1.6.0/swiffy-slider.min.js`)
     script(src=`${path}/libs/imask/imask.js`)
+    script(src=`${path}/modules/burgermenu.js`)
     script(src=`${path}/modules/dialogMeneger.js`)
     script(src=`${path}/modules/dedlineTimer.js`)
     script(src=`${path}/pages/spec.predlozhenija/js/index.js`)
@@ -118,7 +119,7 @@ block content
                 include ../../../../../pug/Components/_consultationCard.pug
             div(class="container mx-auto flex flex-col gap-8")
                 h2(class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black text-center") Популярные программы
-                div(class="swiffy-slider slider-nav-outside slider-nav-visible slider-indicators-round slider-indicators-outside slider-nav-round slider-nav-noloop slider-custom-1 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark")
+                div(class="swiffy-slider slider-nav-touch slider-nav-outside slider-nav-visible slider-indicators-round slider-indicators-outside slider-nav-round slider-nav-noloop slider-custom-1 @xs/body:slider-item-show1 @3xl/body:slider-item-show2 @4xl/body:slider-item-show3 @6xl/body:slider-item-show4 slider-indicators-dark")
                     div(class="slider-container pb-1")
                         -
                             var items = [
