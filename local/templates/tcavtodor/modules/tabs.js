@@ -10,13 +10,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
             // hidden old content
             const oldTabContent = document.querySelector('[tabContent]:not(.hidden)');
-            oldTabContent.classList.add('hidden');
-            oldTabContent.classList.remove('grid');
+            oldTabContent.classList.add('hidden', 'bg-lightGray');
+            oldTabContent.classList.remove('grid', 'bg-lightGray');
 
             // show new content
             const tabContent = document.querySelector(`[tabContent="${tabId}"]`);
-            tabContent.classList.remove('hidden');
-            tabContent.classList.add('grid');
+            tabContent.classList.remove('hidden', 'bg-lightGray');
+            tabContent.classList.add('grid', 'bg-lightGray');
         })
     });
  });

@@ -947,6 +947,20 @@ body {
   -webkit-line-clamp: 4;
 }
 
+.line-clamp-\[7\] {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+}
+
+.line-clamp-6 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+
 .line-clamp-none {
   overflow: visible;
   display: block;
@@ -1085,6 +1099,14 @@ body {
 .h-max {
   height: -moz-max-content;
   height: max-content;
+}
+
+.h-\[10\.25rem\] {
+  height: 10.25rem;
+}
+
+.h-\[8\.5rem\] {
+  height: 8.5rem;
 }
 
 .max-h-0 {
@@ -2305,6 +2327,16 @@ body {
 .rounded-t {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
+}
+
+.rounded-t-xl {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .rounded-bl {
@@ -4014,6 +4046,11 @@ body {
   border-bottom-color: rgb(253 126 20 / var(--tw-border-opacity, 1));
 }
 
+.peer:checked ~ .peer-checked\:bg-lightGray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity, 1));
+}
+
 .peer:checked ~ .peer-checked\:text-primary {
   --tw-text-opacity: 1;
   color: rgb(253 126 20 / var(--tw-text-opacity, 1));
@@ -4391,50 +4428,6 @@ body {
   }
 }
 
-@container header (min-width: 56rem) {
-  .\@4xl\/header\:relative {
-    position: relative;
-  }
-
-  .\@4xl\/header\:left-auto {
-    left: auto;
-  }
-
-  .\@4xl\/header\:top-auto {
-    top: auto;
-  }
-
-  .\@4xl\/header\:block {
-    display: block;
-  }
-
-  .\@4xl\/header\:h-full {
-    height: 100%;
-  }
-
-  .\@4xl\/header\:w-full {
-    width: 100%;
-  }
-
-  .\@4xl\/header\:w-max {
-    width: -moz-max-content;
-    width: max-content;
-  }
-
-  .\@4xl\/header\:max-w-max {
-    max-width: -moz-max-content;
-    max-width: max-content;
-  }
-
-  .\@4xl\/header\:flex-row {
-    flex-direction: row;
-  }
-
-  .\@4xl\/header\:flex-wrap {
-    flex-wrap: wrap;
-  }
-}
-
 @container body (min-width: 64rem) {
   .\@5xl\/body\:grid {
     display: grid;
@@ -4472,22 +4465,6 @@ body {
 }
 
 @container header (min-width: 64rem) {
-  .\@5xl\/header\:relative {
-    position: relative;
-  }
-
-  .\@5xl\/header\:left-auto {
-    left: auto;
-  }
-
-  .\@5xl\/header\:top-auto {
-    top: auto;
-  }
-
-  .\@5xl\/header\:block {
-    display: block;
-  }
-
   .\@5xl\/header\:flex {
     display: flex;
   }
@@ -4498,28 +4475,6 @@ body {
 
   .\@5xl\/header\:h-full {
     height: 100%;
-  }
-
-  .\@5xl\/header\:w-full {
-    width: 100%;
-  }
-
-  .\@5xl\/header\:w-max {
-    width: -moz-max-content;
-    width: max-content;
-  }
-
-  .\@5xl\/header\:max-w-max {
-    max-width: -moz-max-content;
-    max-width: max-content;
-  }
-
-  .\@5xl\/header\:flex-row {
-    flex-direction: row;
-  }
-
-  .\@5xl\/header\:flex-wrap {
-    flex-wrap: wrap;
   }
 
   .\@5xl\/header\:gap-20 {

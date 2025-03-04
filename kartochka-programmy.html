@@ -187,46 +187,51 @@
             </div>
             <h1 class="font-Montserrat font-semibold @xs/body:text-3xl @6xl/body:text-4xl text-black">Текущие осмотры искусственных сооружений</h1>
             <div class="grid @xs/body:grid-cols-full @2xl/body:grid-cols-1fr-1fr @xs/body:gap-4 @6xl/body:gap-16"><img class="w-full aspect-16-9 object-cover rounded-lg" src="./local/templates/tcavtodor/img/stub.jpg">
-              <div class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr @xs/body:gap-4 @6xl/body:gap-8" tariffsBlock="">
-                <div class="flex flex-wrap @xs/body:flex-row @6xl/body:flex-col gap-4 min-w-48" tariffsBtns=""></div>
-                <div class="flex flex-col gap-4 items-center">
-                  <div class="bg-white rounded-lg p-6 flex flex-col gap-4 w-full" tariffsBody="">
-                    <div class="flex flex-col gap-4 mt-auto">
-                      <div class="flex flex-col justify-between gap-2">
-                        <div class="relative flex gap-2 items-start justify-end w-full">
-                          <p class="font-Montserrat font-semibold text-black text-2xl text-end" tariffsPrise="">0</p>
-                          <p class="font-Montserrat font-semibold text-black text-sm text-end align-super relative after:content-[''] after:absolute after:top-1/2 after:left-0 after:right-0 after:w-full after:bg-red-600 after:h-[.125rem] after:-rotate-12" tariffsPriseDefoult="">0</p>
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-col p-4 rounded-lg bg-white">
+                  <p class="font-Montserrat font-medium text-base text-black h-[8.5rem] line-clamp-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum accusamus nemo obcaecati reprehenderit quia facere cumque soluta et? Reiciendis molestias amet porro maxime voluptatibus doloremque accusamus ab ut recusandae dolor.</p>
+                </div>
+                <div class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr @xs/body:gap-4 @6xl/body:gap-8" tariffsBlock="">
+                  <div class="flex flex-wrap @xs/body:flex-row @6xl/body:flex-col gap-4 min-w-48" tariffsBtns=""></div>
+                  <div class="flex flex-col gap-4 items-center">
+                    <div class="bg-white rounded-lg p-6 flex flex-col gap-4 w-full" tariffsBody="">
+                      <div class="flex flex-col gap-4 mt-auto">
+                        <div class="flex flex-col justify-between gap-2">
+                          <div class="relative flex gap-2 items-start justify-end w-full">
+                            <p class="font-Montserrat font-semibold text-black text-2xl text-end" tariffsPrise="">0</p>
+                            <p class="font-Montserrat font-semibold text-black text-sm text-end align-super relative after:content-[''] after:absolute after:top-1/2 after:left-0 after:right-0 after:w-full after:bg-red-600 after:h-[.125rem] after:-rotate-12" tariffsPriseDefoult="">0</p>
+                          </div>
                         </div>
+                        <button class="rounded-lg bg-gradient-orange text-white font-Montserrat font-normal text-base text-center p-2 w-full" type="button">Оформить</button>
                       </div>
-                      <button class="rounded-lg bg-gradient-orange text-white font-Montserrat font-normal text-base text-center p-2 w-full" type="button">Оформить</button>
-                    </div>
-                  </div><a class="font-Montserrat font-medium text-sm text-secondary hover:text-primaryHover flex gap-1 items-center group bg-white p-2 rounded-lg" href="#">
-                     Для юр.лиц спец.предложения 
-                    <svg class="stroke-secondary group-hover:stroke-primaryHover" width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M8 24L24 8" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M11 8H24V21" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></a>
+                    </div><a class="font-Montserrat font-medium text-sm text-secondary hover:text-primaryHover flex gap-1 items-center group bg-white p-2 rounded-lg" href="#">
+                       Для юр.лиц спец.предложения 
+                      <svg class="stroke-secondary group-hover:stroke-primaryHover" width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 24L24 8" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M11 8H24V21" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="container mx-auto @6xl/body:px-6">
-            <div class="flex flex-col gap-4" tabBlock="">
+            <div class="flex flex-col" tabBlock="">
               <div class="flex flex-wrap gap-4 items-center" tabNav="">
                 <label class=" cursor-pointer" for="tab1">
                   <input class="hidden peer" tab="1" id="tab1" type="radio" name="drone" checked>
-                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1">О программе</p>
+                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary peer-checked:bg-lightGray hover:text-primaryHover @xs/body:text-base @6xl/body:text-xl p-4 rounded-t-lg">О программе</p>
                 </label>
                 <label class=" cursor-pointer" for="tab2">
                   <input class="hidden peer" tab="2" id="tab2" type="radio" name="drone">
-                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1">Структура программы</p>
+                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary peer-checked:bg-lightGray hover:text-primaryHover @xs/body:text-base @6xl/body:text-xl p-4 rounded-t-lg">Структура программы</p>
                 </label>
                 <label class=" cursor-pointer" for="tab4">
                   <input class="hidden peer" tab="4" id="tab4" type="radio" name="drone">
-                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary hover:text-primaryHover border-b border-b-secondary peer-checked:border-b-primary hover:border-b-primaryHover @xs/body:text-base @6xl/body:text-xl pb-1">Условия для слушателей</p>
+                  <p class="font-Montserrat font-medium text-secondary peer-checked:text-primary peer-checked:bg-lightGray hover:text-primaryHover @xs/body:text-base @6xl/body:text-xl p-4 rounded-t-lg">Условия для слушателей</p>
                 </label>
               </div>
-              <div class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr @xs/body:gap-4 @6xl/body:gap-8" tabContent="1">
+              <div class="grid @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr @xs/body:gap-4 @6xl/body:gap-8 bg-lightGray p-4" tabContent="1">
                 <div class="flex flex-col gap-2">
                   <p class="font-Montserrat font-semibold text-black @xs/body:text-base @6xl/body:text-lg">
                      Доступность: <span class="font-medium ">36 ак.часов.</span></p>
@@ -259,7 +264,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="hidden @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr @xs/body:gap-4 @6xl/body:gap-8" tabContent="2">
+              <div class="hidden @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr @xs/body:gap-4 @6xl/body:gap-8 p-4" tabContent="2">
                 <div class="flex flex-col gap-2">
                   <p class="font-Montserrat font-medium text-black @xs/body:text-base @6xl/body:text-lg">
                      6 Курсов</p>
@@ -289,7 +294,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="hidden @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr @xs/body:gap-4 @6xl/body:gap-8" tabContent="4">
+              <div class="hidden @xs/body:grid-cols-full @6xl/body:grid-cols-1fr-1fr @xs/body:gap-4 @6xl/body:gap-8 p-4" tabContent="4">
                 <div class="flex flex-col gap-2">
                   <ul class="list-disc pl-4">
                     <li class=" marker:text-primary">
