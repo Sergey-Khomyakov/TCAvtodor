@@ -4391,6 +4391,50 @@ body {
   }
 }
 
+@container header (min-width: 56rem) {
+  .\@4xl\/header\:relative {
+    position: relative;
+  }
+
+  .\@4xl\/header\:left-auto {
+    left: auto;
+  }
+
+  .\@4xl\/header\:top-auto {
+    top: auto;
+  }
+
+  .\@4xl\/header\:block {
+    display: block;
+  }
+
+  .\@4xl\/header\:h-full {
+    height: 100%;
+  }
+
+  .\@4xl\/header\:w-full {
+    width: 100%;
+  }
+
+  .\@4xl\/header\:w-max {
+    width: -moz-max-content;
+    width: max-content;
+  }
+
+  .\@4xl\/header\:max-w-max {
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+
+  .\@4xl\/header\:flex-row {
+    flex-direction: row;
+  }
+
+  .\@4xl\/header\:flex-wrap {
+    flex-wrap: wrap;
+  }
+}
+
 @container body (min-width: 64rem) {
   .\@5xl\/body\:grid {
     display: grid;
@@ -4665,8 +4709,46 @@ body {
 }
 
 @container header (min-width: 80rem) {
-  .\@7xl\/header\:flex {
-    display: flex;
+  .\@7xl\/header\:relative {
+    position: relative;
+  }
+
+  .\@7xl\/header\:left-auto {
+    left: auto;
+  }
+
+  .\@7xl\/header\:top-auto {
+    top: auto;
+  }
+
+  .\@7xl\/header\:block {
+    display: block;
+  }
+
+  .\@7xl\/header\:h-full {
+    height: 100%;
+  }
+
+  .\@7xl\/header\:w-full {
+    width: 100%;
+  }
+
+  .\@7xl\/header\:w-max {
+    width: -moz-max-content;
+    width: max-content;
+  }
+
+  .\@7xl\/header\:max-w-max {
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+
+  .\@7xl\/header\:flex-row {
+    flex-direction: row;
+  }
+
+  .\@7xl\/header\:flex-wrap {
+    flex-wrap: wrap;
   }
 
   .\@7xl\/header\:justify-normal {
